@@ -208,10 +208,8 @@
         width: 52px;
         height: 52px;
         border-radius: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 26px;
+        display: block;
+        object-fit: cover;
         margin-bottom: 14px;
       }
       .mode-card.rx .emoji-badge {
@@ -591,7 +589,11 @@
 
         <div class="mode-grid">
           <div class="mode-card rx" onclick="startQuiz('mode1')">
-            <div class="emoji-badge">📋</div>
+            <img
+              class="emoji-badge"
+              src="https://i.pinimg.com/564x/18/c7/09/18c709646eec0f5db283d00ca3ffbdd4.jpg"
+              alt="Translate Prescriptions icon"
+            />
             <h3>Translate Prescriptions</h3>
             <p>
               Read a full prescription order written in abbreviations, then
@@ -600,7 +602,11 @@
             <div class="go">Start mode →</div>
           </div>
           <div class="mode-card en" onclick="startQuiz('mode2')">
-            <div class="emoji-badge">✍️</div>
+            <img
+              class="emoji-badge"
+              src="https://i.pinimg.com/236x/bf/31/90/bf319024e5b7d794480ce4df5c96a32d.jpg"
+              alt="English to Prescriptions icon"
+            />
             <h3>English to Prescriptions</h3>
             <p>
               Take a plain-English order and convert the bolded phrases into
