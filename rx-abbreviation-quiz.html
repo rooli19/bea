@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEA Reviewer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#3B2E4A;
+    --ink-soft:#7A6B8A;
+    --page-1:#FCE7F1;
+    --page-2:#E4E7FB;
+    --paper:#FFF8FB;
+    --paper-line:#F1DCE9;
+    --card:#FFFFFF;
+    --pink:#F2A6C4;
+    --pink-deep:#D9679C;
+    --lav:#B7A9EC;
+    --lav-deep:#8B77D6;
+    --mint:#A9E0C9;
+    --mint-deep:#4FAF87;
+    --amber-light:#FCE7CF;
+    --red:#D9736A;
+    --red-light:#FBE3E0;
+    --green:#4FAF87;
+    --green-light:#DEF3E9;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:linear-gradient(160deg, var(--page-1) 0%, var(--page-2) 100%);
+    min-height:100vh;
+    font-family:'Quicksand',sans-serif;
+    color:var(--ink);
+    display:flex;
+    justify-content:center;
+    padding:40px 16px 60px;
+  }
+  .app{
+    width:100%;
+    max-width:760px;
+  }
+  .brand{
+    text-align:center;
+    margin-bottom:26px;
+  }
+  .brand .badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--card);
+    border:1.5px solid var(--paper-line);
+    border-radius:999px;
+    padding:10px 22px;
+    box-shadow:0 6px 18px rgba(139,119,214,0.15);
+  }
+  .brand .dot{
+    width:8px; height:8px; border-radius:50%;
+    background:var(--pink-deep);
+  }
+  .brand .dot.alt{ background:var(--lav-deep); }
+  .brand .title{
+    font-family:'Fredoka',sans-serif;
+    font-weight:700;
+    font-size:22px;
+    background:linear-gradient(90deg, var(--pink-deep), var(--lav-deep));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    letter-spacing:0.3px;
+  }
+
+  .pad{
+    background:var(--paper);
+    border-radius:22px;
+    box-shadow:0 20px 50px rgba(139,119,214,0.22);
+    overflow:hidden;
+  }
+  .pad-inner{
+    padding:34px 34px 30px;
+  }
+
+  /* ---------- MODE SELECT ---------- */
+  .select-screen h1{
+    font-family:'Fredoka',sans-serif;
+    font-weight:600;
+    font-size:25px;
+    margin:6px 0 6px;
+    color:var(--lav-deep);
+  }
+  .select-screen p.lead{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    line-height:1.55;
+    margin:0 0 28px;
+    max-width:520px;
+  }
+  .mode-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+  }
+  @media (max-width:600px){ .mode-grid{grid-template-columns:1fr;} }
+  .mode-card{
+    background:var(--card);
+    border:1.5px solid var(--paper-line);
+    border-radius:var(--radius);
+    padding:22px 20px;
+    cursor:pointer;
+    text-align:left;
+    transition:border-color .15s ease, transform .1s ease;
+    font-family:inherit;
+  }
+  .mode-card:hover{border-color:var(--pink-deep); transform:translateY(-2px);}
+  .mode-card .tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--pink-deep);
+    display:block;
+    margin-bottom:10px;
+  }
+  .mode-card h3{
+    font-family:'Fredoka',sans-serif;
+    font-weight:600;
+    font-size:19px;
+    margin:0 0 8px;
+    color:var(--ink);
+  }
+  .mode-card p{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    line-height:1.5;
+    margin:0;
+  }
+  .mode-card .example{
+    margin-top:14px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    background:var(--page-1);
+    border:1px dashed var(--paper-line);
+    border-radius:8px;
+    padding:8px 10px;
+    color:var(--lav-deep);
+  }
+
+  /* ---------- QUIZ SCREEN ---------- */
+  .quiz-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:20px;
+    gap:16px;
+  }
+  .quiz-mode-label{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--pink-deep);
+  }
+  .quiz-progress-track{
+    height:6px;
+    background:var(--paper-line);
+    border-radius:4px;
+    overflow:hidden;
+    margin-top:6px;
+    width:200px;
+  }
+  .quiz-progress-fill{
+    height:100%;
+    background:linear-gradient(90deg, var(--pink-deep), var(--lav-deep));
+    transition:width .3s ease;
+  }
+  .score-pill{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    background:var(--card);
+    border:1.5px solid var(--paper-line);
+    border-radius:20px;
+    padding:6px 14px;
+    white-space:nowrap;
+  }
+  .score-pill b{color:var(--lav-deep);}
+
+  .qnum{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-bottom:10px;
+  }
+
+  .rx-slip{
+    background:var(--card);
+    border:1.5px solid var(--paper-line);
+    border-radius:var(--radius);
+    padding:22px 24px;
+    margin-bottom:22px;
+    position:relative;
+  }
+  .rx-slip .glyph{
+    position:absolute;
+    top:16px; right:20px;
+    font-family:'Fredoka',sans-serif;
+    font-size:24px;
+    color:var(--paper-line);
+    font-weight:700;
+  }
+  .rx-slip .label{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--ink-soft);
+    margin-bottom:10px;
+  }
+  .rx-slip .content{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:16px;
+    line-height:1.7;
+    color:var(--ink);
+    max-width:88%;
+  }
+  .rx-slip .content.english{
+    font-family:'Quicksand',sans-serif;
+    font-weight:500;
+    font-size:15.5px;
+  }
+
+  textarea, input[type=text]{
+    width:100%;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:14.5px;
+    padding:14px 16px;
+    border-radius:12px;
+    border:1.5px solid var(--paper-line);
+    background:var(--card);
+    color:var(--ink);
+    resize:vertical;
+    line-height:1.6;
+  }
+  textarea:focus, input[type=text]:focus{
+    outline:none;
+    border-color:var(--lav-deep);
+  }
+
+  .field-label{
+    font-size:12.5px;
+    color:var(--ink-soft);
+    margin-bottom:8px;
+    display:block;
+  }
+
+  .keyboard{
+    margin-top:18px;
+  }
+  .kb-group{
+    margin-bottom:12px;
+  }
+  .kb-group .kb-label{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color:var(--ink-soft);
+    margin-bottom:6px;
+    display:block;
+  }
+  .kb-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  .kb-btn{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    background:var(--page-1);
+    border:1.5px solid var(--paper-line);
+    color:var(--lav-deep);
+    padding:6px 11px;
+    border-radius:9px;
+    cursor:pointer;
+    transition:background .12s ease, transform .08s ease;
+  }
+  .kb-btn:hover{ background:var(--pink); border-color:var(--pink-deep); color:#5C2748; }
+  .kb-btn:active{ transform:scale(0.94); }
+
+  .actions{
+    margin-top:22px;
+    display:flex;
+    gap:12px;
+  }
+  .btn{
+    font-family:'Fredoka',sans-serif;
+    font-weight:600;
+    font-size:14.5px;
+    padding:12px 22px;
+    border-radius:12px;
+    border:none;
+    cursor:pointer;
+    transition:transform .08s ease, opacity .12s ease;
+  }
+  .btn:active{ transform:scale(0.97); }
+  .btn-primary{
+    background:linear-gradient(90deg, var(--pink-deep), var(--lav-deep));
+    color:#fff;
+  }
+  .btn-primary:hover{ opacity:0.92; }
+  .btn-primary:disabled{ opacity:0.4; cursor:not-allowed; }
+  .btn-ghost{
+    background:transparent;
+    border:1.5px solid var(--paper-line);
+    color:var(--ink-soft);
+  }
+  .btn-ghost:hover{ border-color:var(--lav-deep); color:var(--lav-deep); }
+
+  .feedback{
+    margin-top:22px;
+    border-radius:var(--radius);
+    padding:20px 22px;
+    display:none;
+  }
+  .feedback.show{ display:block; }
+  .feedback.correct{ background:var(--green-light); border:1.5px solid #BFE4D2; }
+  .feedback.incorrect{ background:var(--red-light); border:1.5px solid #F1C4BE; }
+  .feedback .verdict{
+    font-family:'Fredoka',sans-serif;
+    font-weight:600;
+    font-size:18px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:4px;
+  }
+  .feedback.correct .verdict{ color:var(--green); }
+  .feedback.incorrect .verdict{ color:var(--red); }
+  .feedback .correct-answer{
+    margin-top:12px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13.5px;
+    line-height:1.6;
+    background:rgba(255,255,255,0.65);
+    border-radius:10px;
+    padding:12px 14px;
+    color:var(--ink);
+  }
+  .feedback .correct-answer .ca-label{
+    font-family:'Quicksand',sans-serif;
+    font-weight:600;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color:var(--ink-soft);
+    display:block;
+    margin-bottom:6px;
+  }
+  .feedback .note{
+    margin-top:10px;
+    font-size:13px;
+    color:var(--ink-soft);
+    line-height:1.5;
+  }
+
+  /* ---------- RESULTS ---------- */
+  .results h1{
+    font-family:'Fredoka',sans-serif;
+    font-weight:600;
+    font-size:27px;
+    margin:4px 0 6px;
+    color:var(--lav-deep);
+  }
+  .results .score-big{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:52px;
+    font-weight:600;
+    color:var(--pink-deep);
+    margin:18px 0 4px;
+  }
+  .results .score-caption{
+    color:var(--ink-soft);
+    font-size:14px;
+    margin-bottom:26px;
+  }
+  .results .btn{ margin-right:10px; }
+
+  .back-link{
+    background:none;
+    border:none;
+    color:var(--ink-soft);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    cursor:pointer;
+    padding:0;
+    margin-bottom:14px;
+    display:inline-block;
+  }
+  .back-link:hover{ color:var(--lav-deep); }
+
+  .sr-only{
+    position:absolute; width:1px; height:1px;
+    padding:0; margin:-1px; overflow:hidden;
+    clip:rect(0,0,0,0); white-space:nowrap; border:0;
+  }
+
+  ::selection{ background:var(--pink); }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="brand">
+    <span class="badge">
+      <span class="dot"></span>
+      <span class="title">BEA Reviewer</span>
+      <span class="dot alt"></span>
+    </span>
+  </div>
+
+  <div class="pad">
+    <div class="pad-inner" id="app-root"></div>
+  </div>
+</div>
+
+<script>
+/* ---------------- DATA ---------------- */
+
+// Set A: given a prescription in shorthand, translate to plain English
+const RX_TO_ENGLISH = [
+  {
+    rx: "Cap 500 mg #21\nSig: i cap PO tid ac and hs prn pain\nDisp #21\nNon rep",
+    answer: "Take one 500 mg capsule by mouth three times a day before meals and at bedtime, as needed for pain. Dispense 21 capsules. Do not repeat.",
+    keyGroups: [
+      ["one","1","i cap"], ["500 mg","500mg"], ["by mouth","po","orally","oral"],
+      ["three times a day","tid","thrice"], ["before meals","ac"], ["bedtime","hs"],
+      ["as needed","prn","when needed"], ["pain"], ["dispense 21","disp 21","21 capsules"],
+      ["do not repeat","non rep","no refill","no refills"]
+    ]
+  },
+  {
+    rx: "Tab 0.25 mg #60\nSig: ss tab PO bid pc prn nausea, max 2 tab/day\nDisp #60\nRept x1",
+    answer: "Take one-half of a 0.25 mg tablet by mouth twice a day after meals, as needed for nausea, up to a maximum of 2 tablets per day. Dispense 60 tablets. May be repeated once.",
+    keyGroups: [
+      ["one-half","half","0.5","ss"], ["0.25 mg"], ["by mouth","po","orally"],
+      ["twice a day","bid"], ["after meals","pc"], ["as needed","prn"], ["nausea"],
+      ["maximum 2","max 2","2 tablets"], ["dispense 60","disp 60","60 tablets"],
+      ["may be repeated once","repeat once","rept x1","refill once","one refill"]
+    ]
+  },
+  {
+    rx: "Susp 125 mg/5 mL\nSig: 5 mL PO q6h x 10 d\nAgit well ac use\nDisp qs",
+    answer: "Take 5 mL of the 125 mg/5 mL suspension by mouth every 6 hours for 10 days. Shake well before using. Dispense a sufficient quantity.",
+    keyGroups: [
+      ["5 ml"], ["suspension","susp"], ["by mouth","po","orally"],
+      ["every 6 hours","q6h"], ["10 days","x 10 d","ten days"],
+      ["shake","agit"], ["before use","before using","ac use"],
+      ["sufficient quantity","qs","enough to last"]
+    ]
+  },
+  {
+    rx: "Sig: 2 mL IM stat, may rept q4h prn severe pain, max 3 doses/24h",
+    answer: "Give 2 mL intramuscularly right away. May repeat every 4 hours as needed for severe pain, up to a maximum of 3 doses in 24 hours.",
+    keyGroups: [
+      ["2 ml"], ["intramuscularly","im","into the muscle"],
+      ["right away","at once","stat","immediately"],
+      ["repeat","rept"], ["every 4 hours","q4h"], ["as needed","prn"],
+      ["severe pain"], ["maximum 3","max 3","3 doses"], ["24 hours","24h"]
+    ]
+  },
+  {
+    rx: "Sig: ii gtt OU qid\nHold if irritation occurs\nDisp 1 bottle\nNon rep",
+    answer: "Instill two drops in both eyes four times a day. Hold the medication if irritation occurs. Dispense one bottle. Do not repeat.",
+    keyGroups: [
+      ["two drops","2 drops","ii gtt"], ["both eyes","ou"],
+      ["four times a day","qid"], ["hold","stop","discontinue"],
+      ["irritation"], ["dispense one bottle","disp 1 bottle","one bottle"],
+      ["do not repeat","non rep","no refill"]
+    ]
+  },
+  {
+    rx: "Sig: i supp PR hs sos",
+    answer: "Insert one suppository rectally at bedtime, if needed.",
+    keyGroups: [
+      ["one","1","i supp"], ["suppository","supp"], ["rectally","pr","per rectum"],
+      ["bedtime","hs"], ["if needed","sos","as needed","prn"]
+    ]
+  },
+  {
+    rx: "D5W 1000 mL IVPB q8h\nIV, non rep",
+    answer: "Give 1000 mL of 5% dextrose in water intravenously as an IV piggyback every 8 hours. Do not repeat.",
+    keyGroups: [
+      ["1000 ml"], ["dextrose 5%","5% dextrose","d5w","dextrose in water"],
+      ["intravenously","iv","intravenous"], ["piggyback","ivpb"],
+      ["every 8 hours","q8h"], ["do not repeat","non rep"]
+    ]
+  },
+  {
+    rx: "Sig: 10 units SC qam ac breakfast\nHold if blood glucose <70",
+    answer: "Give 10 units subcutaneously every morning before breakfast. Hold the dose if blood glucose is below 70.",
+    keyGroups: [
+      ["10 units"], ["subcutaneously","sc","sq","under the skin"],
+      ["every morning","qam"], ["before breakfast","ac"],
+      ["hold","withhold","skip"], ["blood glucose","glucose"], ["70"]
+    ]
+  },
+  {
+    rx: "Tab gr 1/4\nSig: i tab PO q4-6h prn pain, max 6 tab/day\nDisp #100\nNon rep",
+    answer: "Take one 1/4 grain tablet by mouth every 4 to 6 hours as needed for pain, up to a maximum of 6 tablets a day. Dispense 100 tablets. Do not repeat.",
+    keyGroups: [
+      ["1/4 grain","quarter grain","gr 1/4"], ["one tablet","i tab"],
+      ["by mouth","po","orally"], ["every 4 to 6 hours","q4-6h","every 4-6 hours"],
+      ["as needed","prn"], ["pain"], ["maximum 6","max 6","6 tablets"],
+      ["dispense 100","disp 100","100 tablets"], ["do not repeat","non rep"]
+    ]
+  },
+  {
+    rx: "KCl 20 mEq\nSig: PO daily pc\nDisp #30\nNon rep",
+    answer: "Take 20 milliequivalents of potassium chloride by mouth once daily after meals. Dispense 30. Do not repeat.",
+    keyGroups: [
+      ["20 milliequivalents","20 meq"], ["potassium chloride","kcl"],
+      ["by mouth","po","orally"], ["daily","once a day","once daily"],
+      ["after meals","pc"], ["dispense 30","disp 30","30 tablets"],
+      ["do not repeat","non rep"]
+    ]
+  },
+  {
+    rx: "Tab 250 mg #40\nSig: i tab PO q8h x 10 d\nDisp #40\nNon rep",
+    answer: "Take one 250 mg tablet by mouth every 8 hours for 10 days. Dispense 40 tablets. Do not repeat.",
+    keyGroups: [
+      ["one tablet","i tab"], ["250 mg"], ["by mouth","po","orally"],
+      ["every 8 hours","q8h"], ["10 days"], ["dispense 40","disp 40","40 tablets"],
+      ["do not repeat","non rep"]
+    ]
+  },
+  {
+    rx: "Cap 20 mg #14\nSig: i cap PO qam ac breakfast\nDisp #14\nRept x3",
+    answer: "Take one 20 mg capsule by mouth every morning before breakfast. Dispense 14 capsules. May be repeated 3 times.",
+    keyGroups: [
+      ["one capsule","i cap"], ["20 mg"], ["by mouth","po","orally"],
+      ["every morning","qam"], ["before breakfast","ac"],
+      ["dispense 14","disp 14","14 capsules"], ["repeated 3","repeat 3","rept x3","3 refills"]
+    ]
+  },
+  {
+    rx: "Elix 15 mg/5mL\nSig: 10 mL PO q4h prn cough, max 4 doses/day\nDisp qs",
+    answer: "Take 10 mL of the elixir by mouth every 4 hours as needed for cough, up to a maximum of 4 doses a day. Dispense a sufficient quantity.",
+    keyGroups: [
+      ["10 ml"], ["elixir","elix"], ["by mouth","po","orally"],
+      ["every 4 hours","q4h"], ["as needed","prn"], ["cough"],
+      ["maximum 4","max 4","4 doses"], ["sufficient quantity","qs"]
+    ]
+  },
+  {
+    rx: "Sig: i tab PO hs prn insomnia\nDisp #10\nNon rep",
+    answer: "Take one tablet by mouth at bedtime as needed for insomnia. Dispense 10 tablets. Do not repeat.",
+    keyGroups: [
+      ["one tablet","i tab"], ["by mouth","po","orally"], ["bedtime","hs"],
+      ["as needed","prn"], ["insomnia"], ["dispense 10","disp 10","10 tablets"],
+      ["do not repeat","non rep"]
+    ]
+  },
+  {
+    rx: "Sig: ii tab PO stat, then i tab PO q6h prn fever >38.5C",
+    answer: "Take two tablets by mouth right away, then one tablet by mouth every 6 hours as needed if fever is above 38.5 degrees Celsius.",
+    keyGroups: [
+      ["two tablets","ii tab"], ["right away","at once","stat"],
+      ["one tablet","i tab"], ["every 6 hours","q6h"], ["as needed","prn"],
+      ["fever"], ["38.5"]
+    ]
+  },
+  {
+    rx: "Sup 25 mg\nSig: i supp PR q8h prn nausea\nDisp #12",
+    answer: "Insert one 25 mg suppository rectally every 8 hours as needed for nausea. Dispense 12 suppositories.",
+    keyGroups: [
+      ["one suppository","i supp"], ["25 mg"], ["rectally","pr","per rectum"],
+      ["every 8 hours","q8h"], ["as needed","prn"], ["nausea"],
+      ["dispense 12","disp 12","12 suppositories"]
+    ]
+  },
+  {
+    rx: "Sig: i tab vag qhs x 7 d\nNon rep",
+    answer: "Insert one tablet vaginally every night at bedtime for 7 days. Do not repeat.",
+    keyGroups: [
+      ["one tablet","i tab"], ["vaginally","vag"], ["every night at bedtime","qhs"],
+      ["7 days"], ["do not repeat","non rep"]
+    ]
+  },
+  {
+    rx: "Sig: iii gtt OD tid x 5 d\nHold if pain worsens",
+    answer: "Instill three drops in the right eye three times a day for 5 days. Hold if pain worsens.",
+    keyGroups: [
+      ["three drops","iii gtt"], ["right eye","od"], ["three times a day","tid"],
+      ["5 days"], ["hold","stop"], ["pain worsens"]
+    ]
+  },
+  {
+    rx: "Sig: ii gtt OS q4h while awake x 3 d",
+    answer: "Instill two drops in the left eye every 4 hours while awake for 3 days.",
+    keyGroups: [
+      ["two drops","ii gtt"], ["left eye","os"], ["every 4 hours","q4h"],
+      ["while awake"], ["3 days"]
+    ]
+  },
+  {
+    rx: "Sig: 1 g IV q6h x 7 d\nIVPB over 30 min",
+    answer: "Give 1 gram intravenously every 6 hours for 7 days, as an IV piggyback infused over 30 minutes.",
+    keyGroups: [
+      ["1 gram","1 g"], ["intravenously","iv"], ["every 6 hours","q6h"],
+      ["7 days"], ["piggyback","ivpb"], ["30 minutes"]
+    ]
+  },
+  {
+    rx: "Sig: 500 mL D5W IV q12h\nNon rep",
+    answer: "Give 500 mL of 5% dextrose in water intravenously every 12 hours. Do not repeat.",
+    keyGroups: [
+      ["500 ml"], ["dextrose 5%","d5w","5% dextrose"], ["intravenously","iv"],
+      ["every 12 hours","q12h"], ["do not repeat","non rep"]
+    ]
+  },
+  {
+    rx: "Sig: 0.4 mg SC stat, may rept q15min prn, max 3 doses",
+    answer: "Give 0.4 mg subcutaneously right away. May repeat every 15 minutes as needed, up to a maximum of 3 doses.",
+    keyGroups: [
+      ["0.4 mg"], ["subcutaneously","sc","sq"], ["right away","stat"],
+      ["repeat","rept"], ["every 15 minutes","q15min"], ["as needed","prn"],
+      ["maximum 3","max 3"]
+    ]
+  },
+  {
+    rx: "Sig: 40 mEq PO bid pc x 5 d\nDisp #10\nNon rep",
+    answer: "Take 40 milliequivalents by mouth twice a day after meals for 5 days. Dispense 10 doses. Do not repeat.",
+    keyGroups: [
+      ["40 milliequivalents","40 meq"], ["by mouth","po","orally"],
+      ["twice a day","bid"], ["after meals","pc"], ["5 days"],
+      ["dispense 10","disp 10"], ["do not repeat","non rep"]
+    ]
+  },
+  {
+    rx: "Tab gr 5 #30\nSig: i tab PO tid ac, hold if drowsy\nDisp #30",
+    answer: "Take one 5 grain tablet by mouth three times a day before meals; hold if drowsy. Dispense 30 tablets.",
+    keyGroups: [
+      ["5 grain","gr 5"], ["one tablet","i tab"], ["by mouth","po","orally"],
+      ["three times a day","tid"], ["before meals","ac"], ["hold","stop"],
+      ["drowsy"], ["dispense 30","disp 30","30 tablets"]
+    ]
+  },
+  {
+    rx: "Susp 250 mg/5mL\nSig: 5 mL PO qid x 10 d c food\nAgit ac use",
+    answer: "Take 5 mL of the suspension by mouth four times a day for 10 days, with food. Shake before using.",
+    keyGroups: [
+      ["5 ml"], ["suspension","susp"], ["by mouth","po","orally"],
+      ["four times a day","qid"], ["10 days"], ["with food"], ["shake","agit"]
+    ]
+  },
+  {
+    rx: "Tinct, Sig: 20 gtt PO tid c Aq, dil in water ac use",
+    answer: "Take 20 drops of the tincture by mouth three times a day mixed with water; dilute in water before using.",
+    keyGroups: [
+      ["20 drops","20 gtt"], ["tincture","tinct"], ["by mouth","po","orally"],
+      ["three times a day","tid"], ["with water","c aq"], ["dilute","dil"]
+    ]
+  },
+  {
+    rx: "Sig: 5 mg IM q4-6h prn pain, max 4 doses/24h",
+    answer: "Give 5 mg intramuscularly every 4 to 6 hours as needed for pain, up to a maximum of 4 doses in 24 hours.",
+    keyGroups: [
+      ["5 mg"], ["intramuscularly","im"], ["every 4 to 6 hours","q4-6h"],
+      ["as needed","prn"], ["pain"], ["maximum 4","max 4"], ["24 hours"]
+    ]
+  },
+  {
+    rx: "Sig: i tab PO qod\nDisp #15\nNon rep",
+    answer: "Take one tablet by mouth every other day. Dispense 15 tablets. Do not repeat.",
+    keyGroups: [
+      ["one tablet","i tab"], ["by mouth","po","orally"], ["every other day","qod"],
+      ["dispense 15","disp 15","15 tablets"], ["do not repeat","non rep"]
+    ]
+  },
+  {
+    rx: "Sig: ii cap PO stat, then i cap PO q12h x 5 d\nNon rep",
+    answer: "Take two capsules by mouth right away, then one capsule by mouth every 12 hours for 5 days. Do not repeat.",
+    keyGroups: [
+      ["two capsules","ii cap"], ["right away","stat"], ["one capsule","i cap"],
+      ["every 12 hours","q12h"], ["5 days"], ["do not repeat","non rep"]
+    ]
+  },
+  {
+    rx: "Sig: i tab PR q6h prn pain, hold if HR <60\nDisp #12",
+    answer: "Insert one tablet rectally every 6 hours as needed for pain; hold if heart rate is below 60. Dispense 12 tablets.",
+    keyGroups: [
+      ["one tablet","i tab"], ["rectally","pr"], ["every 6 hours","q6h"],
+      ["as needed","prn"], ["pain"], ["hold","stop"], ["heart rate","hr"], ["60"],
+      ["dispense 12","disp 12","12 tablets"]
+    ]
+  }
+];
+
+// Set B: given a plain English instruction, translate to shorthand Rx
+const ENGLISH_TO_RX = [
+  {
+    english: "Take one 500 mg capsule by mouth three times a day, before meals and at bedtime, as needed for pain. Dispense 21 capsules. Do not repeat.",
+    answer: "Cap 500 mg. Sig: i cap PO tid ac and hs prn pain. Disp #21. Non rep.",
+    required: ["cap","po","tid","ac","hs","prn","disp","non rep"]
+  },
+  {
+    english: "Give 2 mL intramuscularly right away. May repeat every 4 hours as needed for severe pain, maximum 3 doses in 24 hours.",
+    answer: "Sig: 2 mL IM stat. May rept q4h prn pain, max 3 doses/24h.",
+    required: ["im","stat","rept","q4h","prn"]
+  },
+  {
+    english: "Instill two drops in both eyes, four times a day.",
+    answer: "Sig: ii gtt OU qid.",
+    required: ["gtt","ou","qid","ii"]
+  },
+  {
+    english: "Insert one suppository rectally at bedtime, as needed.",
+    answer: "Sig: i supp PR hs prn.",
+    required: ["supp","pr","hs","prn"]
+  },
+  {
+    english: "Give 1000 mL of 5% dextrose in water as an IV piggyback, every 8 hours.",
+    answer: "D5W 1000 mL IVPB q8h.",
+    required: ["d5w","ivpb","q8h"]
+  },
+  {
+    english: "Give 10 units subcutaneously every morning, before breakfast.",
+    answer: "Sig: 10 units SC qam ac.",
+    required: ["units","sc","qam","ac"]
+  },
+  {
+    english: "Take one-half tablet by mouth twice a day after meals, as needed for nausea, maximum 2 tablets a day.",
+    answer: "Sig: ss tab PO bid pc prn nausea, max 2 tab/day.",
+    required: ["ss","tab","po","bid","pc","prn"]
+  },
+  {
+    english: "Take 5 mL of the suspension by mouth every 6 hours for 10 days. Shake well before use.",
+    answer: "Susp. Sig: 5 mL PO q6h x 10 d. Agit ac use.",
+    required: ["susp","po","q6h","agit"]
+  },
+  {
+    english: "Take a 1/4 grain tablet by mouth every 4 to 6 hours as needed for pain, maximum 6 tablets a day. Do not repeat.",
+    answer: "Tab gr 1/4. Sig: i tab PO q4-6h prn pain, max 6 tab/day. Non rep.",
+    required: ["gr","tab","po","prn","non rep"]
+  },
+  {
+    english: "Take 20 milliequivalents of potassium chloride by mouth once daily after meals. Dispense 30 tablets. Do not repeat.",
+    answer: "KCl 20 mEq. Sig: PO daily pc. Disp #30. Non rep.",
+    required: ["meq","po","pc","disp","non rep"]
+  },
+  {
+    english: "Take one 250 mg tablet by mouth every 8 hours for 10 days. Dispense 40 tablets. Do not repeat.",
+    answer: "Tab 250 mg. Sig: i tab PO q8h x 10 d. Disp #40. Non rep.",
+    required: ["tab","po","q8h","disp","non rep"]
+  },
+  {
+    english: "Take one 20 mg capsule by mouth every morning before breakfast. Dispense 14 capsules. May be repeated 3 times.",
+    answer: "Cap 20 mg. Sig: i cap PO qam ac. Disp #14. Rept x3.",
+    required: ["cap","po","qam","ac","disp","rept"]
+  },
+  {
+    english: "Take 10 mL of the elixir by mouth every 4 hours as needed for cough, maximum 4 doses a day.",
+    answer: "Elix. Sig: 10 mL PO q4h prn cough, max 4 doses/day.",
+    required: ["elix","po","q4h","prn"]
+  },
+  {
+    english: "Take one tablet by mouth at bedtime as needed for insomnia. Dispense 10 tablets. Do not repeat.",
+    answer: "Tab. Sig: i tab PO hs prn insomnia. Disp #10. Non rep.",
+    required: ["tab","po","hs","prn","disp","non rep"]
+  },
+  {
+    english: "Insert one 25 mg suppository rectally every 8 hours as needed for nausea. Dispense 12 suppositories.",
+    answer: "Supp 25 mg. Sig: i supp PR q8h prn nausea. Disp #12.",
+    required: ["supp","pr","q8h","prn","disp"]
+  },
+  {
+    english: "Insert one tablet vaginally every night at bedtime for 7 days. Do not repeat.",
+    answer: "Tab. Sig: i tab vag qhs x 7 d. Non rep.",
+    required: ["vag","qhs","non rep"]
+  },
+  {
+    english: "Instill three drops in the right eye three times a day for 5 days.",
+    answer: "Sig: iii gtt OD tid x 5 d.",
+    required: ["gtt","od","tid"]
+  },
+  {
+    english: "Give 1 gram intravenously every 6 hours for 7 days, as an IV piggyback.",
+    answer: "Sig: 1 g IV q6h x 7 d. IVPB.",
+    required: ["iv","q6h","ivpb"]
+  },
+  {
+    english: "Give 500 mL of 5% dextrose in water intravenously every 12 hours. Do not repeat.",
+    answer: "Sig: 500 mL D5W IV q12h. Non rep.",
+    required: ["d5w","iv","q12h","non rep"]
+  },
+  {
+    english: "Give 0.4 mg subcutaneously right away. May repeat every 15 minutes as needed, maximum 3 doses.",
+    answer: "Sig: 0.4 mg SC stat. May rept q15min prn, max 3 doses.",
+    required: ["sc","stat","rept","prn"]
+  },
+  {
+    english: "Take 40 milliequivalents by mouth twice a day after meals for 5 days. Dispense 10 doses. Do not repeat.",
+    answer: "Sig: 40 mEq PO bid pc x 5 d. Disp #10. Non rep.",
+    required: ["meq","po","bid","pc","disp","non rep"]
+  },
+  {
+    english: "Take one 5 grain tablet by mouth three times a day before meals; hold if drowsy. Dispense 30 tablets.",
+    answer: "Tab gr 5. Sig: i tab PO tid ac. Disp #30.",
+    required: ["gr","tab","po","tid","ac","disp"]
+  },
+  {
+    english: "Take 5 mL of the suspension by mouth four times a day for 10 days, with food. Shake before use.",
+    answer: "Susp. Sig: 5 mL PO qid x 10 d c food. Agit ac use.",
+    required: ["susp","po","qid","agit"]
+  },
+  {
+    english: "Take 20 drops of the tincture by mouth three times a day mixed with water; dilute before use.",
+    answer: "Tinct. Sig: 20 gtt PO tid c Aq. Dil ac use.",
+    required: ["tinct","gtt","po","tid","dil"]
+  },
+  {
+    english: "Give 5 mg intramuscularly every 4 to 6 hours as needed for pain, maximum 4 doses in 24 hours.",
+    answer: "Sig: 5 mg IM q4-6h prn pain, max 4 doses/24h.",
+    required: ["im","prn"]
+  },
+  {
+    english: "Take one tablet by mouth every other day. Dispense 15 tablets. Do not repeat.",
+    answer: "Tab. Sig: i tab PO qod. Disp #15. Non rep.",
+    required: ["tab","po","qod","disp","non rep"]
+  },
+  {
+    english: "Take two capsules by mouth right away, then one capsule by mouth every 12 hours for 5 days. Do not repeat.",
+    answer: "Cap. Sig: ii cap PO stat, then i cap PO q12h x 5 d. Non rep.",
+    required: ["cap","po","stat","q12h","non rep"]
+  },
+  {
+    english: "Insert one tablet rectally every 6 hours as needed for pain; hold if heart rate is below 60. Dispense 12 tablets.",
+    answer: "Tab. Sig: i tab PR q6h prn pain. Disp #12.",
+    required: ["pr","q6h","prn","disp"]
+  },
+  {
+    english: "Instill two drops in the left eye every 4 hours while awake for 3 days.",
+    answer: "Sig: ii gtt OS q4h x 3 d.",
+    required: ["gtt","os","q4h"]
+  },
+  {
+    english: "Take two tablets by mouth right away, then one tablet by mouth every 6 hours as needed if fever is above 38.5 degrees Celsius.",
+    answer: "Sig: ii tab PO stat, then i tab PO q6h prn fever.",
+    required: ["tab","po","stat","q6h","prn"]
+  }
+];
+
+const KEYBOARD_GROUPS = [
+  { label: "Route", keys: ["PO","PR","IM","IV","IVPB","SC","SQ","vag"] },
+  { label: "Eye", keys: ["OD","OS","OU"] },
+  { label: "Form", keys: ["tab","cap","supp","susp","elix","gtt","Tr"] },
+  { label: "Amount", keys: ["mg","g","mEq","gr","mL","units","i","ii","iii","iv","v","ss","no.","#"] },
+  { label: "Timing", keys: ["ac","pc","hs","qam","q4h","q6h","q8h","q12h","q4-6h","bid","tid","qid","daily","qod"] },
+  { label: "As needed / stop", keys: ["prn","sos","stat","non rep","rept","qs"] },
+  { label: "Symbols", keys: ["ā","p̄","c̄","s̄","Sig","Rx","agit","disp","D5W","dil"] }
+];
+
+/* ---------------- STATE ---------------- */
+let state = {
+  screen: "select", // select | quiz | results
+  mode: null,        // "rx2eng" | "eng2rx"
+  order: [],
+  index: 0,
+  score: 0,
+  answered: false,
+  lastCorrect: false
+};
+
+function shuffledIndices(n){
+  const arr = Array.from({length:n}, (_,i)=>i);
+  for(let i=arr.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [arr[i],arr[j]] = [arr[j],arr[i]];
+  }
+  return arr;
+}
+
+function startQuiz(mode){
+  const bank = mode === "rx2eng" ? RX_TO_ENGLISH : ENGLISH_TO_RX;
+  state = {
+    screen:"quiz",
+    mode,
+    order: shuffledIndices(bank.length),
+    index:0,
+    score:0,
+    answered:false,
+    lastCorrect:false
+  };
+  render();
+}
+
+function normalize(str){
+  return str.toLowerCase()
+    .replace(/[.,;:#\/\\]/g," ")
+    .replace(/[āàá]/g,"a")
+    .replace(/[p̄]/g,"p")
+    .replace(/[c̄]/g,"c")
+    .replace(/[s̄]/g,"s")
+    .replace(/\s+/g," ")
+    .trim();
+}
+
+function checkRx2Eng(item, userInput){
+  const norm = " " + normalize(userInput) + " ";
+  let matched = 0;
+  for(const group of item.keyGroups){
+    if(group.some(term => norm.includes(" "+normalize(term)+" ") || norm.includes(normalize(term)))){
+      matched++;
+    }
+  }
+  const ratio = matched / item.keyGroups.length;
+  return ratio >= 0.75;
+}
+
+function checkEng2Rx(item, userInput){
+  const norm = normalize(userInput);
+  let matched = 0;
+  for(const token of item.required){
+    if(norm.includes(normalize(token))) matched++;
+  }
+  return matched >= item.required.length;
+}
+
+function submitAnswer(){
+  const bank = state.mode === "rx2eng" ? RX_TO_ENGLISH : ENGLISH_TO_RX;
+  const item = bank[state.order[state.index]];
+  const inputEl = document.getElementById("answer-input");
+  const userInput = inputEl.value;
+  let correct;
+  if(state.mode === "rx2eng"){
+    correct = checkRx2Eng(item, userInput);
+  } else {
+    correct = checkEng2Rx(item, userInput);
+  }
+  state.answered = true;
+  state.lastCorrect = correct;
+  if(correct) state.score++;
+  render();
+}
+
+function nextQuestion(){
+  const bank = state.mode === "rx2eng" ? RX_TO_ENGLISH : ENGLISH_TO_RX;
+  if(state.index + 1 >= bank.length){
+    state.screen = "results";
+  } else {
+    state.index++;
+    state.answered = false;
+    state.lastCorrect = false;
+  }
+  render();
+}
+
+function insertKey(key){
+  const inputEl = document.getElementById("answer-input");
+  if(!inputEl) return;
+  const start = inputEl.selectionStart ?? inputEl.value.length;
+  const end = inputEl.selectionEnd ?? inputEl.value.length;
+  const before = inputEl.value.slice(0,start);
+  const after = inputEl.value.slice(end);
+  const needsSpaceBefore = before.length && !/\s$/.test(before);
+  const insertion = (needsSpaceBefore ? " " : "") + key + " ";
+  inputEl.value = before + insertion + after;
+  const pos = (before + insertion).length;
+  inputEl.focus();
+  inputEl.setSelectionRange(pos,pos);
+}
+
+function goHome(){
+  state = { screen:"select", mode:null, order:[], index:0, score:0, answered:false, lastCorrect:false };
+  render();
+}
+
+function retrySameMode(){
+  startQuiz(state.mode);
+}
+
+/* ---------------- RENDER ---------------- */
+function escapeHtml(str){
+  return str.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+
+function render(){
+  const root = document.getElementById("app-root");
+  if(state.screen === "select"){
+    root.innerHTML = renderSelect();
+    attachSelectHandlers();
+  } else if(state.screen === "quiz"){
+    root.innerHTML = renderQuiz();
+    attachQuizHandlers();
+  } else {
+    root.innerHTML = renderResults();
+    attachResultsHandlers();
+  }
+}
+
+function renderSelect(){
+  return `
+    <div class="select-screen">
+      <h1>Choose a drill</h1>
+      <p class="lead">30 questions per mode, built only from the standard prescription abbreviation table. Each question combines dosage, route, frequency, PRN conditions, and maximum-dose or hold instructions.</p>
+      <div class="mode-grid">
+        <button class="mode-card" data-mode="rx2eng">
+          <span class="tag">Mode 1</span>
+          <h3>Translate prescriptions</h3>
+          <p>Read a shorthand prescription and type its meaning in plain English.</p>
+          <div class="example">Cap 500 mg. Sig: i cap PO tid ac and hs prn pain&hellip;</div>
+        </button>
+        <button class="mode-card" data-mode="eng2rx">
+          <span class="tag">Mode 2</span>
+          <h3>Translate to prescriptions</h3>
+          <p>Read a plain-English instruction and write it using standard abbreviations.</p>
+          <div class="example">Give 10 units subcutaneously every morning&hellip;</div>
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function attachSelectHandlers(){
+  document.querySelectorAll(".mode-card").forEach(btn=>{
+    btn.addEventListener("click", ()=> startQuiz(btn.dataset.mode));
+  });
+}
+
+function renderQuiz(){
+  const bank = state.mode === "rx2eng" ? RX_TO_ENGLISH : ENGLISH_TO_RX;
+  const item = bank[state.order[state.index]];
+  const total = bank.length;
+  const pct = Math.round(((state.index) / total) * 100);
+  const modeLabel = state.mode === "rx2eng" ? "Mode 1 &middot; Prescription &rarr; English" : "Mode 2 &middot; English &rarr; Prescription";
+
+  const promptBlock = state.mode === "rx2eng"
+    ? `<div class="rx-slip">
+         <div class="label">Prescription</div>
+         <div class="content">${escapeHtml(item.rx).replace(/\n/g,"<br>")}</div>
+       </div>`
+    : `<div class="rx-slip">
+         <div class="label">Physician's instruction</div>
+         <div class="content english">${escapeHtml(item.english)}</div>
+       </div>`;
+
+  const inputBlock = state.mode === "rx2eng"
+    ? `<span class="field-label">Write the plain-English meaning</span>
+       <textarea id="answer-input" rows="4" placeholder="Take one capsule by mouth..." ${state.answered ? "disabled" : ""}></textarea>`
+    : `<span class="field-label">Write the prescription using standard abbreviations</span>
+       <textarea id="answer-input" rows="3" placeholder="Sig: ..." ${state.answered ? "disabled" : ""}></textarea>
+       <div class="keyboard">
+         ${KEYBOARD_GROUPS.map(g => `
+           <div class="kb-group">
+             <span class="kb-label">${g.label}</span>
+             <div class="kb-row">
+               ${g.keys.map(k => `<button type="button" class="kb-btn" data-key="${escapeHtml(k)}" ${state.answered ? "disabled" : ""}>${escapeHtml(k)}</button>`).join("")}
+             </div>
+           </div>
+         `).join("")}
+       </div>`;
+
+  const feedbackBlock = state.answered ? `
+    <div class="feedback show ${state.lastCorrect ? "correct" : "incorrect"}">
+      <div class="verdict">${state.lastCorrect ? "Correct" : "Incorrect"}</div>
+      ${state.lastCorrect
+        ? `<div class="note">Nice work, that covers the key elements of this order.</div>`
+        : `<div class="correct-answer"><span class="ca-label">Reference answer</span>${escapeHtml(item.answer)}</div>`
+      }
+    </div>
+  ` : `<div class="feedback"></div>`;
+
+  const actionsBlock = state.answered
+    ? `<div class="actions"><button class="btn btn-primary" id="next-btn">Next question</button></div>`
+    : `<div class="actions"><button class="btn btn-primary" id="submit-btn">Submit answer</button></div>`;
+
+  return `
+    <button class="back-link" id="home-link">&larr; change mode</button>
+    <div class="quiz-top">
+      <div>
+        <div class="quiz-mode-label">${modeLabel}</div>
+        <div class="quiz-progress-track"><div class="quiz-progress-fill" style="width:${pct}%"></div></div>
+      </div>
+      <div class="score-pill">Score <b>${state.score}</b> / ${total}</div>
+    </div>
+    <div class="qnum">Question ${state.index+1} of ${total}</div>
+    ${promptBlock}
+    ${inputBlock}
+    ${feedbackBlock}
+    ${actionsBlock}
+  `;
+}
+
+function attachQuizHandlers(){
+  const homeLink = document.getElementById("home-link");
+  if(homeLink) homeLink.addEventListener("click", goHome);
+
+  document.querySelectorAll(".kb-btn").forEach(btn=>{
+    btn.addEventListener("click", ()=> insertKey(btn.dataset.key));
+  });
+
+  const submitBtn = document.getElementById("submit-btn");
+  if(submitBtn) submitBtn.addEventListener("click", submitAnswer);
+
+  const nextBtn = document.getElementById("next-btn");
+  if(nextBtn) nextBtn.addEventListener("click", nextQuestion);
+
+  const inputEl = document.getElementById("answer-input");
+  if(inputEl){
+    inputEl.focus();
+    inputEl.addEventListener("keydown", (e)=>{
+      if(e.key === "Enter" && (e.metaKey || e.ctrlKey)){
+        e.preventDefault();
+        if(!state.answered) submitAnswer();
+      }
+    });
+  }
+}
+
+function renderResults(){
+  const bank = state.mode === "rx2eng" ? RX_TO_ENGLISH : ENGLISH_TO_RX;
+  const total = bank.length;
+  const pct = Math.round((state.score/total)*100);
+  let remark;
+  if(pct >= 90) remark = "Excellent command of the abbreviations.";
+  else if(pct >= 70) remark = "Solid grasp, review the missed items.";
+  else if(pct >= 50) remark = "Getting there, worth another pass.";
+  else remark = "Revisit the abbreviation table before trying again.";
+
+  return `
+    <button class="back-link" id="home-link">&larr; change mode</button>
+    <div class="results">
+      <h1>Drill complete</h1>
+      <div class="score-big">${state.score} / ${total}</div>
+      <div class="score-caption">${pct}% &middot; ${remark}</div>
+      <button class="btn btn-primary" id="retry-btn">Try again</button>
+      <button class="btn btn-ghost" id="switch-btn">Switch mode</button>
+    </div>
+  `;
+}
+
+function attachResultsHandlers(){
+  document.getElementById("home-link").addEventListener("click", goHome);
+  document.getElementById("retry-btn").addEventListener("click", retrySameMode);
+  document.getElementById("switch-btn").addEventListener("click", goHome);
+}
+
+render();
+</script>
+</body>
+</html>
