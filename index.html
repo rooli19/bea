@@ -123,15 +123,32 @@
       }
 
       .pill-icon {
-        width: 72px;
-        height: 44px;
+        width: 92px;
+        height: 66px;
         margin: 0 auto 18px;
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      .pill-icon svg {
-        width: 100%;
-        height: 100%;
+
+      .pill-icon img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
         display: block;
+        transform-origin: center center;
+        animation: paperMacheTilt 0.8s ease-in-out infinite alternate;
+        will-change: transform;
+      }
+
+      @keyframes paperMacheTilt {
+        0% {
+          transform: rotate(-7deg) translateY(1px);
+        }
+        100% {
+          transform: rotate(7deg) translateY(-1px);
+        }
       }
 
       .title {
@@ -568,7 +585,7 @@
       <!-- START SCREEN -->
       <div id="startScreen" class="card start-card">
         <div class="pill-icon">
-          <img src="pill-icon.jpg" alt="Icon" />
+          <img src="pill-icon.jpg" alt="Icon">
         </div>
         <h1 class="title">bea reviewer<span class="heart">♥</span></h1>
         <p class="subtitle">miss u beb!!!</p>
@@ -576,11 +593,7 @@
 
         <div class="mode-grid">
           <div class="mode-card rx" onclick="startQuiz('mode1')">
-            <img
-              class="emoji-badge"
-              src="https://i.pinimg.com/236x/bf/31/90/bf319024e5b7d794480ce4df5c96a32d.jpg"
-              alt="Translate Prescriptions icon"
-            />
+            <img class="emoji-badge" src="https://i.pinimg.com/236x/bf/31/90/bf319024e5b7d794480ce4df5c96a32d.jpg"" alt="Translate Prescriptions icon" />
             <h3>Translate Prescriptions</h3>
             <p>
               Read a full prescription order written in abbreviations, then
@@ -589,11 +602,7 @@
             <div class="go">Start mode →</div>
           </div>
           <div class="mode-card en" onclick="startQuiz('mode2')">
-            <img
-              class="emoji-badge"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GMAx59C1bF_CL-lTehTSqveINoH2EuE1c6o1mhH-vQ&s=10"
-              alt="English to Prescriptions icon"
-            />
+            <img class="emoji-badge" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GMAx59C1bF_CL-lTehTSqveINoH2EuE1c6o1mhH-vQ&s=10" alt="English to Prescriptions icon" />
             <h3>English to Prescriptions</h3>
             <p>
               Take a plain-English order and convert the bolded phrases into
