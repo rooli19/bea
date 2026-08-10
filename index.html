@@ -151,6 +151,24 @@
         }
       }
 
+
+      .pill-icon { cursor: pointer; }
+      .heart-particle {
+        position: fixed;
+        left: 0; top: 0;
+        pointer-events: none;
+        z-index: 9999;
+        font-size: 22px;
+        line-height: 1;
+        transform: translate(-50%, -50%);
+        animation: heartFirework 900ms cubic-bezier(.2,.75,.25,1) forwards;
+      }
+      @keyframes heartFirework {
+        0% { opacity: 1; transform: translate(-50%, -50%) scale(.65) rotate(0deg); }
+        65% { opacity: 1; }
+        100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.05) rotate(var(--rot)); }
+      }
+
       .title {
         font-family: "Fredoka", sans-serif;
         font-size: 44px;
@@ -584,12 +602,12 @@
     <div class="wrap">
       <!-- START SCREEN -->
       <div id="startScreen" class="card start-card">
-        <div class="pill-icon">
+        <div class="pill-icon" onclick="burstHearts(event)" role="button" aria-label="Send hearts">
           <img src="pill-icon.jpg" alt="Icon">
         </div>
         <h1 class="title">bea reviewer<span class="heart">♥</span></h1>
         <p class="subtitle">miss u beb!!!</p>
-        <span class="badge">30 ITEMS PER MODE</span>
+        <span class="badge">pharma rx</span>
 
         <div class="mode-grid">
           <div class="mode-card rx" onclick="startQuiz('mode1')">
@@ -1209,6 +1227,29 @@
 
         document.getElementById("resultsEmoji").textContent = emoji;
         document.getElementById("resultsTitle").textContent = title;
+      }
+
+
+      function burstHearts(event) {
+        const rect = event.currentTarget.getBoundingClientRect();
+        const cx = rect.left + rect.width / 2;
+        const cy = rect.top + rect.height / 2;
+        const hearts = ["♥", "♡", "💕", "♥", "💗", "♡", "💖", "♥", "💓", "♡", "💞", "♥"];
+        for (let i = 0; i < hearts.length; i++) {
+          const heart = document.createElement("span");
+          heart.className = "heart-particle";
+          heart.textContent = hearts[i];
+          const angle = (Math.PI * 2 * i / hearts.length) + (Math.random() - .5) * .35;
+          const distance = 70 + Math.random() * 80;
+          heart.style.left = cx + "px";
+          heart.style.top = cy + "px";
+          heart.style.setProperty("--dx", Math.cos(angle) * distance + "px");
+          heart.style.setProperty("--dy", Math.sin(angle) * distance + "px");
+          heart.style.setProperty("--rot", ((Math.random() - .5) * 70) + "deg");
+          heart.style.animationDelay = (Math.random() * 100) + "ms";
+          document.body.appendChild(heart);
+          setTimeout(() => heart.remove(), 1100);
+        }
       }
 
       function retrySameMode() {
