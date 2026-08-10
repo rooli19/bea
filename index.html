@@ -151,24 +151,6 @@
         }
       }
 
-
-      .pill-icon { cursor: pointer; }
-      .heart-particle {
-        position: fixed;
-        left: 0; top: 0;
-        pointer-events: none;
-        z-index: 9999;
-        font-size: 22px;
-        line-height: 1;
-        transform: translate(-50%, -50%);
-        animation: heartFirework 900ms cubic-bezier(.2,.75,.25,1) forwards;
-      }
-      @keyframes heartFirework {
-        0% { opacity: 1; transform: translate(-50%, -50%) scale(.65) rotate(0deg); }
-        65% { opacity: 1; }
-        100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.05) rotate(var(--rot)); }
-      }
-
       .title {
         font-family: "Fredoka", sans-serif;
         font-size: 44px;
@@ -602,12 +584,12 @@
     <div class="wrap">
       <!-- START SCREEN -->
       <div id="startScreen" class="card start-card">
-        <div class="pill-icon" onclick="burstHearts(event)" role="button" aria-label="Send hearts">
+        <div class="pill-icon">
           <img src="pill-icon.jpg" alt="Icon">
         </div>
         <h1 class="title">bea reviewer<span class="heart">♥</span></h1>
         <p class="subtitle">miss u beb!!!</p>
-        <span class="badge">pharma rx</span>
+        <span class="badge">30 ITEMS PER MODE</span>
 
         <div class="mode-grid">
           <div class="mode-card rx" onclick="startQuiz('mode1')">
@@ -711,412 +693,36 @@
     <script>
       /* ============ DATA ============ */
       const mode1Questions = [
-        {
-          rx: "Take 2 tabs PO bid ac for 10 days.",
-          answer:
-            "Take 2 tablets by mouth twice a day before meals for 10 days.",
-          keys: [
-            ["2 tablet", "two tablet"],
-            ["by mouth", "orally"],
-            ["twice a day", "twice daily", "two times a day"],
-            ["before meals"],
-            ["10 days", "ten days"],
-          ],
-        },
-
-        {
-          rx: "Give 1 cap PO tid pc with food, non rep.",
-          answer:
-            "Give 1 capsule by mouth three times a day after meals with food; do not repeat (no refills).",
-          keys: [
-            ["1 capsule", "one capsule"],
-            ["by mouth", "orally"],
-            ["three times a day", "thrice daily"],
-            ["after meals"],
-            ["do not repeat", "no refill", "no refills"],
-          ],
-        },
-
-        {
-          rx: "Instill 2 gtt OU qid.",
-          answer: "Instill 2 drops in both eyes four times a day.",
-          keys: [
-            ["2 drop", "two drop"],
-            ["both eyes"],
-            ["four times a day", "four times daily"],
-          ],
-        },
-
-        {
-          rx: "Inject 1 amp IM stat, then 0.5 mL SC q6h prn for pain.",
-          answer:
-            "Inject the contents of 1 ampule intramuscularly immediately, then 0.5 mL subcutaneously every 6 hours as needed for pain.",
-          keys: [
-            ["1 ampule", "one ampule", "1 amp"],
-            ["intramuscular"],
-            ["immediately", "at once", "stat"],
-            ["0.5 mL", "0.5 ml"],
-            ["subcutaneous"],
-            ["every 6 hours"],
-            ["as needed", "if needed", "prn"],
-            ["pain"],
-          ],
-        },
-
-        {
-          rx: "Insert 1 supp PR hs prn for constipation.",
-          answer:
-            "Insert 1 suppository per rectum at bedtime as needed for constipation.",
-          keys: [
-            ["1 suppository", "one suppository"],
-            ["per rectum", "rectally"],
-            ["at bedtime", "every night at bedtime"],
-            ["as needed", "prn"],
-            ["constipation"],
-          ],
-        },
-
-        {
-          rx: "Take 1 tab PO qhs, disp #30, non rep.",
-          answer:
-            "Take 1 tablet by mouth every night at bedtime; dispense 30 tablets; do not repeat.",
-          keys: [
-            ["1 tablet", "one tablet"],
-            ["by mouth"],
-            ["every night at bedtime", "at bedtime"],
-            ["dispense 30", "30 tablets"],
-            ["do not repeat", "no refill"],
-          ],
-        },
-
-        {
-          rx: "Give 5 mL susp PO q8h x 7 days, agit before use.",
-          answer:
-            "Give 5 mL of suspension by mouth every 8 hours for 7 days; shake well before use.",
-          keys: [
-            ["5 mL", "5 ml"],
-            ["suspension"],
-            ["by mouth"],
-            ["every 8 hours"],
-            ["7 days", "seven days"],
-            ["shake"],
-          ],
-        },
-
-        {
-          rx: "Take 2 tabs PO q4h prn for pain, not to exceed 8 tabs in 24 h.",
-          answer:
-            "Take 2 tablets by mouth every 4 hours as needed for pain, not to exceed 8 tablets in 24 hours.",
-          keys: [
-            ["2 tablet", "two tablet"],
-            ["by mouth"],
-            ["every 4 hours"],
-            ["as needed", "prn"],
-            ["pain"],
-            ["not to exceed 8", "maximum 8", "8 tablets"],
-            ["24 hours"],
-          ],
-        },
-
-        {
-          rx: "Apply ointment OD bid.",
-          answer: "Apply ointment to the right eye twice a day.",
-          keys: [["right eye"], ["twice a day", "twice daily"]],
-        },
-
-        {
-          rx: "Take 1 tab PO qam ac breakfast.",
-          answer: "Take 1 tablet by mouth every morning before breakfast.",
-          keys: [
-            ["1 tablet", "one tablet"],
-            ["by mouth"],
-            ["every morning"],
-            ["before breakfast", "before meals"],
-          ],
-        },
-
-        {
-          rx: "Give IVPB 500 mL D5W over 4h q12h.",
-          answer:
-            "Give 500 mL of dextrose 5% in water as an IV piggyback infusion over 4 hours every 12 hours.",
-          keys: [
-            ["500 mL", "500 ml"],
-            ["dextrose 5%", "d5w"],
-            ["iv piggyback", "ivpb"],
-            ["4 hours"],
-            ["every 12 hours"],
-          ],
-        },
-
-        {
-          rx: "Take ss tab PO in am and 1 tab in pm x 5 days.",
-          answer:
-            "Take one-half tablet by mouth in the morning and 1 tablet in the evening for 5 days.",
-          keys: [
-            ["one-half tablet", "half tablet", "1/2 tablet"],
-            ["by mouth"],
-            ["morning"],
-            ["evening", "afternoon"],
-            ["5 days", "five days"],
-          ],
-        },
-
-        {
-          rx: "Take 1 tab PO tid ac and hs x 14 days.",
-          answer:
-            "Take 1 tablet by mouth three times a day before meals and at bedtime for 14 days.",
-          keys: [
-            ["1 tablet", "one tablet"],
-            ["by mouth"],
-            ["three times a day"],
-            ["before meals"],
-            ["at bedtime"],
-            ["14 days"],
-          ],
-        },
-
-        {
-          rx: "Give 2 tabs PO stat, then 1 tab PO q6h RTC x 3 days.",
-          answer:
-            "Give 2 tablets by mouth immediately, then 1 tablet by mouth every 6 hours around the clock for 3 days.",
-          keys: [
-            ["2 tablet", "two tablet"],
-            ["immediately", "at once", "stat"],
-            ["1 tablet"],
-            ["every 6 hours"],
-            ["around the clock", "round the clock"],
-            ["3 days", "three days"],
-          ],
-        },
-
-        {
-          rx: "Instill 1 gtt OS q2h while awake x 5 days, non rep.",
-          answer:
-            "Instill 1 drop in the left eye every 2 hours while awake for 5 days; do not repeat.",
-          keys: [
-            ["1 drop", "one drop"],
-            ["left eye"],
-            ["every 2 hours"],
-            ["while awake"],
-            ["5 days"],
-            ["do not repeat"],
-          ],
-        },
-
-        {
-          rx: "Insert 1 tab vag hs x 7 days, non rep.",
-          answer:
-            "Insert 1 tablet vaginally at bedtime for 7 days; do not repeat.",
-          keys: [
-            ["1 tablet", "one tablet"],
-            ["vaginally"],
-            ["at bedtime"],
-            ["7 days"],
-            ["do not repeat"],
-          ],
-        },
-
-        {
-          rx: "Give 1 tab PO qod x 30 days, disp #15.",
-          answer:
-            "Give 1 tablet by mouth every other day for 30 days; dispense 15 tablets.",
-          keys: [
-            ["1 tablet"],
-            ["by mouth"],
-            ["every other day"],
-            ["30 days"],
-            ["dispense 15", "15 tablets"],
-          ],
-        },
-
-        {
-          rx: "Take 1-2 tabs PO q4-6h prn pain, max 6 tabs/24h; hold if drowsy.",
-          answer:
-            "Take 1 to 2 tablets by mouth every 4 to 6 hours as needed for pain, not to exceed 6 tablets in 24 hours; hold the dose if the patient is drowsy.",
-          keys: [
-            ["1 to 2 tablet", "1-2 tablet"],
-            ["by mouth"],
-            ["4 to 6 hours"],
-            ["as needed", "prn"],
-            ["pain"],
-            ["not to exceed 6", "maximum 6"],
-            ["24 hours"],
-            ["hold", "withhold"],
-            ["drowsy"],
-          ],
-        },
-
-        {
-          rx: "Inject 4 mEq KCl IV over 1h, dil in 100 mL NS.",
-          answer:
-            "Inject 4 milliequivalents of potassium chloride intravenously over 1 hour, diluted in 100 mL of normal saline.",
-          keys: [
-            ["4 milliequivalent", "4 meq"],
-            ["intravenous"],
-            ["1 hour"],
-            ["dilute", "diluted"],
-            ["100 mL"],
-          ],
-        },
-
-        {
-          rx: "Inject contents of 1 amp SC qam prn for nausea x 5 days.",
-          answer:
-            "Inject the contents of 1 ampule subcutaneously every morning as needed for nausea, for 5 days.",
-          keys: [
-            ["1 ampule", "one ampule"],
-            ["subcutaneous"],
-            ["every morning"],
-            ["as needed", "prn"],
-            ["nausea"],
-            ["5 days"],
-          ],
-        },
-
-        {
-          rx: "Take 500 mg PO q8h x 10 days, disp #30 cap, non rep.",
-          answer:
-            "Take 500 mg by mouth every 8 hours for 10 days; dispense 30 capsules; do not repeat.",
-          keys: [
-            ["500 mg"],
-            ["by mouth"],
-            ["every 8 hours"],
-            ["10 days"],
-            ["dispense 30", "30 capsules"],
-            ["do not repeat"],
-          ],
-        },
-
-        {
-          rx: "Give elix 15 mL PO tid pc x 7 days.",
-          answer:
-            "Give 15 mL of elixir by mouth three times a day after meals for 7 days.",
-          keys: [
-            ["15 mL"],
-            ["elixir"],
-            ["by mouth"],
-            ["three times a day"],
-            ["after meals"],
-            ["7 days"],
-          ],
-        },
-
-        {
-          rx: "Apply cream vag hs prn for itching x 7 days.",
-          answer:
-            "Apply cream vaginally at bedtime as needed for itching, for 7 days.",
-          keys: [
-            ["vaginally"],
-            ["at bedtime"],
-            ["as needed", "prn"],
-            ["itching"],
-            ["7 days"],
-          ],
-        },
-
-        {
-          rx: "Take 1 tab PO bid ac and hs, sos for indigestion.",
-          answer:
-            "Take 1 tablet by mouth twice a day before meals and at bedtime, if needed for indigestion.",
-          keys: [
-            ["1 tablet"],
-            ["by mouth"],
-            ["twice a day"],
-            ["before meals"],
-            ["at bedtime"],
-            ["if needed", "as needed", "sos"],
-            ["indigestion"],
-          ],
-        },
-
-        {
-          rx: "Give 1 tab PO q6h RTC x 48h, then prn thereafter.",
-          answer:
-            "Give 1 tablet by mouth every 6 hours around the clock for 48 hours, then as needed afterward.",
-          keys: [
-            ["1 tablet"],
-            ["by mouth"],
-            ["every 6 hours"],
-            ["around the clock", "round the clock"],
-            ["48 hours"],
-            ["as needed", "prn"],
-          ],
-        },
-
-        {
-          rx: "Instill 2 gtt OD and OS qid x 5 days, disp 1 bottle, non rep.",
-          answer:
-            "Instill 2 drops in the right eye and left eye four times a day for 5 days; dispense 1 bottle; do not repeat.",
-          keys: [
-            ["2 drop"],
-            ["right eye"],
-            ["left eye"],
-            ["four times a day"],
-            ["5 days"],
-            ["dispense 1", "1 bottle"],
-            ["do not repeat"],
-          ],
-        },
-
-        {
-          rx: "Take ss tab PO qhs prn for sleep.",
-          answer:
-            "Take one-half tablet by mouth every night at bedtime as needed for sleep.",
-          keys: [
-            ["one-half tablet", "half tablet"],
-            ["by mouth"],
-            ["every night at bedtime"],
-            ["as needed", "prn"],
-            ["sleep"],
-          ],
-        },
-
-        {
-          rx: "Give 1 tab PO ac tid x 14 days; hold if NPO.",
-          answer:
-            "Give 1 tablet by mouth three times a day before meals for 14 days; hold the dose if the patient is NPO (nothing by mouth).",
-          keys: [
-            ["1 tablet"],
-            ["by mouth"],
-            ["three times a day"],
-            ["before meals"],
-            ["14 days"],
-            ["hold", "withhold"],
-            ["npo", "nothing by mouth"],
-          ],
-        },
-
-        {
-          rx: "Inject 1 amp IM stat; repeat q4h prn for severe pain, max 4 doses/24h.",
-          answer:
-            "Inject 1 ampule intramuscularly immediately; repeat every 4 hours as needed for severe pain, not to exceed 4 doses in 24 hours.",
-          keys: [
-            ["1 ampule"],
-            ["intramuscular"],
-            ["immediately", "stat"],
-            ["every 4 hours"],
-            ["as needed", "prn"],
-            ["severe pain"],
-            ["not to exceed 4", "maximum 4"],
-            ["24 hours"],
-          ],
-        },
-
-        {
-          rx: "Take 1 cap PO qid ac and hs x 7 days, disp #28, non rep.",
-          answer:
-            "Take 1 capsule by mouth four times a day before meals and at bedtime for 7 days; dispense 28 capsules; do not repeat.",
-          keys: [
-            ["1 capsule"],
-            ["by mouth"],
-            ["four times a day"],
-            ["before meals"],
-            ["at bedtime"],
-            ["7 days"],
-            ["dispense 28", "28 capsules"],
-            ["do not repeat"],
-          ],
-        },
+      {rx:"Take 1 tab PO tid ac and hs prn for indigestion, non rep.",answer:"Take 1 tablet by mouth three times a day before meals and at bedtime as needed for indigestion; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["by mouth","orally"],["three times a day","thrice daily"],["before meals"],["at bedtime"],["as needed","prn"],["do not repeat","no refill","no refills"]]},
+      {rx:"Instill ss gtt OD q4h while awake x 5 days.",answer:"Instill one-half drop in the right eye every 4 hours while awake for 5 days.",keys:[["one-half drop","half a drop","0.5 drop"],["right eye"],["every 4 hours"],["while awake"],["5 days","five days"]]},
+      {rx:"Give 2 tabs PO stat, then 1 tab PO qid pc and hs x 7 days, disp #30.",answer:"Give 2 tablets by mouth immediately, then 1 tablet by mouth four times a day after meals and at bedtime for 7 days; dispense 30 tablets.",keys:[["2 tablets","two tablets"],["immediately","at once","stat"],["1 tablet","one tablet"],["four times a day","four times daily"],["after meals"],["at bedtime"],["7 days","seven days"],["dispense 30","disp 30"]]},
+      {rx:"Insert 1 supp PR q12h prn for pain, non rep.",answer:"Insert 1 suppository rectally every 12 hours as needed for pain; do not repeat (no refills).",keys:[["1 suppository","one suppository"],["rectally","per rectum"],["every 12 hours"],["as needed","prn"],["do not repeat","no refill","no refills"]]},
+      {rx:"Take 1-2 cap PO q6h prn for moderate to severe pain; do not exceed 8 cap in 24h.",answer:"Take 1 to 2 capsules by mouth every 6 hours as needed for moderate to severe pain; do not exceed 8 capsules in 24 hours.",keys:[["1 to 2 capsules","1-2 capsules","one to two capsules"],["by mouth","orally"],["every 6 hours"],["as needed","prn"],["moderate to severe pain"],["do not exceed 8 capsules","not more than 8 capsules"],["24 hours"]]},
+      {rx:"Apply ointment OS bid x 10 days, non rep.",answer:"Apply ointment to the left eye twice a day for 10 days; do not repeat (no refills).",keys:[["left eye"],["twice a day","twice daily"],["10 days","ten days"],["do not repeat","no refill","no refills"]]},
+      {rx:"Give 1 amp IV stat, dil in 100 mL D5W, infuse over 2h.",answer:"Give the contents of 1 ampule intravenously immediately, diluted in 100 mL of 5% dextrose in water, infused over 2 hours.",keys:[["1 ampule","one ampule"],["intravenously"],["immediately","at once","stat"],["diluted","dissolved"],["100 mL","100 ml"],["5% dextrose in water","D5W"],["2 hours"]]},
+      {rx:"Take ss tab PO qam ac breakfast x 30 days, disp #15, non rep.",answer:"Take one-half tablet by mouth every morning before breakfast for 30 days; dispense 15 tablets; do not repeat (no refills).",keys:[["one-half tablet","half a tablet"],["by mouth","orally"],["every morning"],["before breakfast"],["30 days"],["dispense 15","disp 15"],["do not repeat","no refill","no refills"]]},
+      {rx:"Instill 1 gtt OU hs prn for dryness, non rep.",answer:"Instill 1 drop in both eyes at bedtime as needed for dryness; do not repeat (no refills).",keys:[["1 drop","one drop"],["both eyes"],["at bedtime"],["as needed","prn"],["do not repeat","no refill","no refills"]]},
+      {rx:"Give 5 mL elix PO q4h prn for cough, agit before use.",answer:"Give 5 mL of elixir by mouth every 4 hours as needed for cough; shake before use.",keys:[["5 mL","5 ml"],["elixir"],["by mouth","orally"],["every 4 hours"],["as needed","prn"],["cough"],["shake","stir"]]},
+      {rx:"Take 1 tab PO qod x 60 days, disp #30, non rep.",answer:"Take 1 tablet by mouth every other day for 60 days; dispense 30 tablets; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["every other day"],["60 days"],["dispense 30","disp 30"],["do not repeat","no refill","no refills"]]},
+      {rx:"Inject 2 mEq/kg NaHCO3 IV, dil in D5W, infuse over 1h stat.",answer:"Inject 2 milliequivalents per kilogram of sodium bicarbonate intravenously, diluted in 5% dextrose in water, infused over 1 hour immediately.",keys:[["2 milliequivalents per kilogram","2 mEq/kg"],["intravenously"],["diluted","dissolved"],["5% dextrose in water","D5W"],["1 hour"],["immediately","at once","stat"]]},
+      {rx:"Give 1 tab PO bid pc x 14 days, sos for headache thereafter.",answer:"Give 1 tablet by mouth twice a day after meals for 14 days, then as needed for headache thereafter.",keys:[["1 tablet","one tablet"],["twice a day","twice daily"],["after meals"],["14 days"],["as needed","if needed","sos"],["headache"]]},
+      {rx:"Insert 1 tab vag qhs x 3 days, non rep.",answer:"Insert 1 tablet vaginally every night at bedtime for 3 days; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["vaginally"],["every night at bedtime"],["3 days","three days"],["do not repeat","no refill","no refills"]]},
+      {rx:"Give IVPB 250 mL NS over 1h q8h x 3 days.",answer:"Give 250 mL of normal saline as an IV piggyback over 1 hour every 8 hours for 3 days.",keys:[["250 mL","250 ml"],["normal saline","NS"],["IV piggyback","IVPB"],["1 hour"],["every 8 hours"],["3 days","three days"]]},
+      {rx:"Take 1 cap PO qhs, disp #90, rept x 2.",answer:"Take 1 capsule by mouth every night at bedtime; dispense 90 capsules; may be repeated 2 times.",keys:[["1 capsule","one capsule"],["every night at bedtime"],["dispense 90","disp 90"],["may be repeated","refill"],["2 times","twice"]]},
+      {rx:"Instill 2 gtt OD and OS bid x 14 days, non rep.",answer:"Instill 2 drops in the right eye and left eye twice a day for 14 days; do not repeat (no refills).",keys:[["2 drops","two drops"],["right eye"],["left eye"],["twice a day","twice daily"],["14 days"],["do not repeat","no refill","no refills"]]},
+      {rx:"Give 1 tab PO ac breakfast and hs prn for reflux x 30 days.",answer:"Give 1 tablet by mouth before breakfast and at bedtime as needed for reflux for 30 days.",keys:[["1 tablet","one tablet"],["before breakfast"],["at bedtime"],["as needed","prn"],["reflux"],["30 days"]]},
+      {rx:"Take 1 tab PO q am, disp #30, non rep.",answer:"Take 1 tablet by mouth every morning; dispense 30 tablets; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["every morning"],["dispense 30","disp 30"],["do not repeat","no refill","no refills"]]},
+      {rx:"Give 500 mg PO q6h ac and hs x 7 days, disp #28 tab.",answer:"Give 500 mg by mouth every 6 hours before meals and at bedtime for 7 days; dispense 28 tablets.",keys:[["500 mg"],["by mouth","orally"],["every 6 hours"],["before meals"],["at bedtime"],["7 days","seven days"],["dispense 28","disp 28"]]},
+      {rx:"Inject contents of 1 amp SC stat, then 0.25 mL SC q4h prn for nausea, non rep.",answer:"Inject the contents of 1 ampule subcutaneously immediately, then 0.25 mL subcutaneously every 4 hours as needed for nausea; do not repeat (no refills).",keys:[["1 ampule","one ampule"],["subcutaneously"],["immediately","at once","stat"],["0.25 mL","0.25 ml"],["every 4 hours"],["as needed","prn"],["nausea"],["do not repeat","no refill","no refills"]]},
+      {rx:"Apply cream OU bid x 5 days, non rep.",answer:"Apply cream to both eyes twice a day for 5 days; do not repeat (no refills).",keys:[["both eyes"],["twice a day","twice daily"],["5 days","five days"],["do not repeat","no refill","no refills"]]},
+      {rx:"Take 1 tab PO tid pc x 10 days; if no improvement, rept x 1.",answer:"Take 1 tablet by mouth three times a day after meals for 10 days; if no improvement, may be repeated 1 time.",keys:[["1 tablet","one tablet"],["three times a day","thrice daily"],["after meals"],["10 days","ten days"],["may be repeated","refill"],["1 time","once"]]},
+      {rx:"Give 1 tab PR sos for fever, non rep.",answer:"Give 1 tablet rectally as needed for fever; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["rectally","per rectum"],["as needed","if needed","sos"],["fever"],["do not repeat","no refill","no refills"]]},
+      {rx:"Instill 1 gtt OD q1h x 24h, then q4h thereafter while awake.",answer:"Instill 1 drop in the right eye every hour for 24 hours, then every 4 hours thereafter while awake.",keys:[["1 drop","one drop"],["right eye"],["every hour"],["24 hours"],["every 4 hours"],["while awake"]]},
+      {rx:"Take 1 tab PO bid ac x 5 days, then qd x 5 days more, non rep.",answer:"Take 1 tablet by mouth twice a day before meals for 5 days, then once daily for 5 more days; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["twice a day","twice daily"],["before meals"],["5 days","five days"],["once daily","once a day"],["do not repeat","no refill","no refills"]]},
+      {rx:"Give 10 mEq KCl PO bid pc x 14 days, disp qs for 14 days.",answer:"Give 10 milliequivalents of potassium chloride by mouth twice a day after meals for 14 days; dispense a sufficient quantity for 14 days.",keys:[["10 milliequivalents","10 mEq"],["potassium chloride","KCl"],["by mouth","orally"],["twice a day","twice daily"],["after meals"],["14 days"],["sufficient quantity","enough for"]]},
+      {rx:"Take 1 tab PO hs prn for sleep; non rep; do not exceed 1 tab per night.",answer:"Take 1 tablet by mouth at bedtime as needed for sleep; do not repeat (no refills); do not exceed 1 tablet per night.",keys:[["1 tablet","one tablet"],["at bedtime"],["as needed","prn"],["sleep"],["do not repeat","no refill","no refills"],["do not exceed 1 tablet","no more than 1 tablet"]]},
+      {rx:"Give 1 cap PO qid ac and hs x 10 days, non rep, disp #42.",answer:"Give 1 capsule by mouth four times a day before meals and at bedtime for 10 days; do not repeat (no refills); dispense 42 capsules.",keys:[["1 capsule","one capsule"],["four times a day","four times daily"],["before meals"],["at bedtime"],["10 days","ten days"],["do not repeat","no refill","no refills"],["dispense 42","disp 42"]]},
+      {rx:"Instill ss gtt OU tid x 7 days, non rep.",answer:"Instill one-half drop in both eyes three times a day for 7 days; do not repeat (no refills).",keys:[["one-half drop","half a drop"],["both eyes"],["three times a day","thrice daily"],["7 days","seven days"],["do not repeat","no refill","no refills"]]}
       ];
 
       const mode2Questions = [
@@ -1603,29 +1209,6 @@
 
         document.getElementById("resultsEmoji").textContent = emoji;
         document.getElementById("resultsTitle").textContent = title;
-      }
-
-
-      function burstHearts(event) {
-        const rect = event.currentTarget.getBoundingClientRect();
-        const cx = rect.left + rect.width / 2;
-        const cy = rect.top + rect.height / 2;
-        const hearts = ["♥", "♡", "💕", "♥", "💗", "♡", "💖", "♥", "💓", "♡", "💞", "♥"];
-        for (let i = 0; i < hearts.length; i++) {
-          const heart = document.createElement("span");
-          heart.className = "heart-particle";
-          heart.textContent = hearts[i];
-          const angle = (Math.PI * 2 * i / hearts.length) + (Math.random() - .5) * .35;
-          const distance = 70 + Math.random() * 80;
-          heart.style.left = cx + "px";
-          heart.style.top = cy + "px";
-          heart.style.setProperty("--dx", Math.cos(angle) * distance + "px");
-          heart.style.setProperty("--dy", Math.sin(angle) * distance + "px");
-          heart.style.setProperty("--rot", ((Math.random() - .5) * 70) + "deg");
-          heart.style.animationDelay = (Math.random() * 100) + "ms";
-          document.body.appendChild(heart);
-          setTimeout(() => heart.remove(), 1100);
-        }
       }
 
       function retrySameMode() {
