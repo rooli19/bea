@@ -253,6 +253,9 @@
       .mode-card.en .emoji-badge {
         background: var(--lavender);
       }
+      .mode-card.id .emoji-badge {
+        background: var(--mint);
+      }
       .mode-card h3 {
         font-family: "Fredoka", sans-serif;
         font-size: 19px;
@@ -628,6 +631,15 @@
             </p>
             <div class="go">Start mode →</div>
           </div>
+          <div class="mode-card id" onclick="startQuiz('mode3')">
+            <img class="emoji-badge" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b20e567-dc54-4608-951e-f35e81809225/dj6fgcr-ac58b3df-7586-45b3-8d2d-9aa2beffae31.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi81YjIwZTU2Ny1kYzU0LTQ2MDgtOTUxZS1mMzVlODE4MDkyMjUvZGo2Zmdjci1hYzU4YjNkZi03NTg2LTQ1YjMtOGQyZC05YWEyYmVmZmFlMzEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mQ05ixGuq_Caykvy6-Mh3sl9Pfr1EaoUyCxU16lDdpc"" alt="Identification Quiz icon" />
+            <h3>Identification Quiz</h3>
+            <p>
+              Read a description of a pharmacology term or route, then
+              identify the word, phrase, or term being described.
+            </p>
+            <div class="go">Start mode →</div>
+          </div>
         </div>
       </div>
 
@@ -956,6 +968,45 @@
         },
       ];
 
+      const mode3Questions = [
+        { q: "This branch of pharmacology \"describes the actions of a drug on the body.\"", answer: "Pharmacodynamics", keys: [["pharmacodynamics"]] },
+        { q: "This process is triggered by the drug-receptor interaction and causes changes in the biochemical or molecular activity of the cell.", answer: "Signal transduction", keys: [["signal transduction"]] },
+        { q: "This branch of pharmacology is summarized simply as \"what drug does to body.\"", answer: "Pharmacodynamics", keys: [["pharmacodynamics"]] },
+        { q: "This branch of pharmacology is defined as the study of \"what happens to the drug in the body.\"", answer: "Pharmacokinetics", keys: [["pharmacokinetics"]] },
+        { q: "This branch is commonly summarized as \"what body does to drug.\"", answer: "Pharmacokinetics", keys: [["pharmacokinetics"]] },
+        { q: "These are the four processes encompassed by pharmacokinetics.", answer: "Absorption, distribution, biotransformation, and excretion", keys: [["absorption"], ["distribution"], ["biotransformation", "metabolism"], ["excretion"]] },
+        { q: "This branch is described simply as \"a science of poisons.\"", answer: "Toxicology", keys: [["toxicology"]] },
+        { q: "This substance, at low doses, acts as an anticoagulant by inhibiting thromboxane A2, but at high doses can cause gastric ulceration and fatal bleeding.", answer: "Aspirin", keys: [["aspirin"]] },
+        { q: "This branch is defined as \"the art and science of compounding or preparing suitable dosage forms for administration of drugs in man and animals and dispensing drugs.\"", answer: "Pharmacy", keys: [["pharmacy"]] },
+        { q: "This is the patient-oriented health science discipline in which pharmacists optimize medication therapy and advise on proper drug use.", answer: "Clinical pharmacy", keys: [["clinical pharmacy"]] },
+        { q: "This branch of pharmacology involves the study of correct dosing, dosage intervals, and dosage regimen design (though not formally named in the text).", answer: "Posology", keys: [["posology"]] },
+        { q: "Two example drugs mentioned as having a narrow therapeutic window requiring extra caution in dosage selection.", answer: "Digoxin and lithium", keys: [["digoxin"], ["lithium"]] },
+        { q: "This branch is defined as being \"concerned with the effect of drug upon microorganisms and parasites, living and multiplying in living organisms.\"", answer: "Chemotherapy", keys: [["chemotherapy"]] },
+        { q: "Besides microorganisms and parasites, this disease is also treated using chemotherapy by targeting its cells.", answer: "Cancer", keys: [["cancer"]] },
+        { q: "This branch is defined as \"the study of the genetic variation that gives rise to different responses to drugs among individuals or populations.\"", answer: "Pharmacogenetics", keys: [["pharmacogenetics"]] },
+        { q: "This drug is given as a clinical example of genetic differences in acetylation status affecting biotransformation.", answer: "Isoniazid", keys: [["isoniazid"]] },
+        { q: "This branch is described as \"a branch of pharmacology dealing with drugs and their clinical use.\"", answer: "Clinical pharmacology", keys: [["clinical pharmacology"]] },
+        { q: "Besides identifying and reporting adverse drug reactions, this branch also includes clinical trials and promotion of this type of drug use.", answer: "Rational drug use", keys: [["rational drug use"]] },
+        { q: "This branch is defined as \"the description and analysis of the costs of drug therapy to healthcare systems and society.\"", answer: "Pharmacoeconomics", keys: [["pharmacoeconomics"]] },
+        { q: "Besides elderly patients, this other patient group is specifically mentioned in relation to pharmacoeconomic cost analysis.", answer: "AIDS patients", keys: [["aids patients", "aids"]] },
+        { q: "This branch is defined concisely as \"a study of the effect of the drugs on population.\"", answer: "Pharmacoepidemiology", keys: [["pharmacoepidemiology"]] },
+        { q: "This route is described as the safest, most common, convenient, and economical route of drug administration.", answer: "Oral (PO)", keys: [["oral", "po"]] },
+        { q: "This substance can be used as an antidote to manage toxicity or overdose of orally administered drugs.", answer: "Activated charcoal", keys: [["activated charcoal"]] },
+        { q: "This effect, caused by drug metabolism before reaching systemic circulation, is a disadvantage of the oral route.", answer: "First-pass effect (first-pass metabolism)", keys: [["first-pass effect", "first pass effect", "first-pass metabolism", "first pass metabolism"]] },
+        { q: "This route allows maximum control over the amount of drug delivered and produces immediate effects.", answer: "Intravenous (IV)", keys: [["intravenous", "iv"]] },
+        { q: "This type of injection technique, when given via the IV route, may result in adverse effects.", answer: "Bolus injection", keys: [["bolus injection", "bolus"]] },
+        { q: "This practice, required for the IV route, must be strictly followed to prevent infection.", answer: "Aseptic technique", keys: [["aseptic technique", "asepsis"]] },
+        { q: "This type of drug preparation, given via the IM route, allows for slow and sustained absorption.", answer: "Depot preparation", keys: [["depot preparation", "depot"]] },
+        { q: "This laboratory test can be affected by intramuscular injection.", answer: "Creatine kinase", keys: [["creatine kinase", "ck"]] },
+        { q: "This route bypasses the first-pass effect and destruction by stomach acid, with saliva pH helping maintain drug stability.", answer: "Sublingual (SL)", keys: [["sublingual", "sl"]] },
+        { q: "This example drug is commonly administered sublingually for rapid systemic absorption.", answer: "Nitroglycerin (or buprenorphine)", keys: [["nitroglycerin", "buprenorphine"]] },
+        { q: "This route is described as convenient and painless, and bypasses the first-pass effect via skin application.", answer: "Transdermal", keys: [["transdermal"]] },
+        { q: "This characteristic of a drug is required for effective transdermal absorption.", answer: "Lipophilicity (highly lipophilic)", keys: [["lipophilicity", "lipophilic", "highly lipophilic"]] },
+        { q: "This device is commonly used to deliver drugs through the transdermal route.", answer: "Patch (transdermal patch)", keys: [["patch", "transdermal patch"]] },
+        { q: "This route partially bypasses the first-pass effect and is useful for patients who are vomiting or unconscious.", answer: "Rectal (PR)", keys: [["rectal", "pr"]] },
+        { q: "This quality describes the absorption pattern of the rectal route, making it unpredictable.", answer: "Erratic and variable", keys: [["erratic"], ["variable"]] },
+      ];
+
       /* keyboard layout for mode 2 */
       const keyboardLayout = [
         {
@@ -1043,7 +1094,11 @@
       function startQuiz(mode) {
         currentMode = mode;
         currentQuestions = shuffle(
-          mode === "mode1" ? mode1Questions : mode2Questions,
+          mode === "mode1"
+            ? mode1Questions
+            : mode === "mode2"
+              ? mode2Questions
+              : mode3Questions,
         );
         currentIndex = 0;
         score = 0;
@@ -1055,11 +1110,15 @@
         document.getElementById("modeTag").textContent =
           mode === "mode1"
             ? "TRANSLATE PRESCRIPTIONS"
-            : "ENGLISH TO PRESCRIPTIONS";
+            : mode === "mode2"
+              ? "ENGLISH TO PRESCRIPTIONS"
+              : "IDENTIFICATION QUIZ";
         document.getElementById("qEyebrow").textContent =
           mode === "mode1"
             ? "Translate to plain English"
-            : "Convert the bolded phrases into abbreviations";
+            : mode === "mode2"
+              ? "Convert the bolded phrases into abbreviations"
+              : "Identify the term, phrase, or word being described";
 
         const kbWrap = document.getElementById("keyboardWrap");
         if (mode === "mode2") {
@@ -1109,7 +1168,11 @@
         const total = currentQuestions.length;
 
         document.getElementById("qText").innerHTML =
-          currentMode === "mode1" ? escapeHtml(q.rx) : boldify(q.plain);
+          currentMode === "mode1"
+            ? escapeHtml(q.rx)
+            : currentMode === "mode2"
+              ? boldify(q.plain)
+              : escapeHtml(q.q);
 
         document.getElementById("answerInput").value = "";
         document.getElementById("answerInput").disabled = false;
@@ -1165,7 +1228,8 @@
         const q = currentQuestions[currentIndex];
 
         const ratio = checkKeywordMatch(userAnswer, q.keys);
-        const threshold = currentMode === "mode1" ? 0.7 : 0.75;
+        const threshold =
+          currentMode === "mode1" ? 0.7 : currentMode === "mode2" ? 0.75 : 0.8;
         const isCorrect = userAnswer.length > 0 && ratio >= threshold;
 
         if (isCorrect) score++;
