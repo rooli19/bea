@@ -3,40 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>💗 dent mat flashcards</title>
+    <title>bea reviewer&lt;3</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap");
+
       :root {
-        --pink-1: #ffe4ef;
-        --pink-2: #ffc2d9;
-        --pink-3: #ff9dc4;
-        --pink-4: #ff6fa8;
-        --pink-deep: #e84393;
-        --purple: #c9a7ff;
-        --mint: #9be8c9;
+        --blush: #ffe6ef;
+        --lavender: #ede1ff;
+        --mint: #d9f7ec;
+        --cream: #fffbf9;
+        --coral: #ff7ca3;
+        --coral-dark: #e45c86;
+        --plum: #4a3b6b;
+        --plum-soft: #8577a3;
+        --white: #ffffff;
+        --mint-dark: #3fae8b;
+        --sun: #ffc857;
         --red: #ff8a8a;
-        --text-dark: #5a3550;
-        --white: #fffafd;
+        --red-dark: #e35656;
+        --shadow: 0 8px 24px rgba(122, 90, 158, 0.14);
+        --shadow-sm: 0 4px 12px rgba(122, 90, 158, 0.1);
+        --radius-lg: 28px;
+        --radius-md: 18px;
+        --radius-sm: 12px;
       }
+
       * {
         box-sizing: border-box;
       }
+
       body {
         margin: 0;
         min-height: 100vh;
-        font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-        background: radial-gradient(
-          circle at 20% 20%,
-          #ffe9f3,
-          #ffd6e8 40%,
-          #ffc3dc 100%
-        );
+        font-family: "Nunito", sans-serif;
+        background:
+          radial-gradient(
+            circle at 12% 18%,
+            rgba(255, 124, 163, 0.16),
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 88% 12%,
+            rgba(159, 231, 207, 0.28),
+            transparent 42%
+          ),
+          radial-gradient(
+            circle at 85% 85%,
+            rgba(237, 225, 255, 0.55),
+            transparent 45%
+          ),
+          var(--cream);
+        color: var(--plum);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        color: var(--text-dark);
         overflow-x: hidden;
-        padding-bottom: 40px;
+        padding: 24px 16px 60px;
+        position: relative;
       }
 
       .back-btn {
@@ -45,17 +69,31 @@
         left: 18px;
         z-index: 10;
         text-decoration: none;
-        color: var(--pink-deep);
+        background: var(--white);
+        color: var(--coral-dark);
+        border: none;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        box-shadow: var(--shadow-sm);
+        transition:
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
       }
       .back-btn:hover {
-        transform: translateY(-1px);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
       }
 
       .bg-heart {
         position: fixed;
         top: -40px;
         font-size: 22px;
-        opacity: 0.35;
+        opacity: 0.18;
         animation: floatDown linear infinite;
         pointer-events: none;
         z-index: 0;
@@ -70,23 +108,62 @@
         }
       }
 
+      .wrap {
+        max-width: 760px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       header {
         width: 100%;
+        max-width: 760px;
         text-align: center;
-        padding: 22px 10px 10px;
+        padding: 22px 10px 4px;
         z-index: 2;
       }
       h1 {
+        font-family: "Fredoka", sans-serif;
         margin: 0;
-        font-size: 2rem;
-        color: var(--pink-deep);
-        text-shadow: 1px 1px 0 #fff;
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--coral-dark);
         letter-spacing: 0.5px;
       }
+      h1 .heart {
+        color: var(--coral);
+        display: inline-block;
+        animation: beat 1.6s ease-in-out infinite;
+      }
+      @keyframes beat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.18);
+        }
+      }
       .subtitle {
-        color: #a86392;
-        font-size: 0.95rem;
-        margin-top: 4px;
+        font-size: 15px;
+        color: var(--plum-soft);
+        margin-top: 6px;
+        font-weight: 700;
+      }
+      #redemptionBadge {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 7px 18px;
+        border-radius: 999px;
+        background: var(--blush);
+        color: var(--coral-dark);
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 0.3px;
       }
 
       .topbar {
@@ -94,82 +171,88 @@
         gap: 10px;
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 14px;
         z-index: 2;
       }
       .icon-btn {
         background: var(--white);
-        border: 2px solid var(--pink-3);
+        border: none;
         border-radius: 50%;
         width: 44px;
         height: 44px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         cursor: pointer;
-        box-shadow: 0 3px 0 var(--pink-3);
+        box-shadow: var(--shadow-sm);
         transition:
-          transform 0.12s ease,
-          box-shadow 0.12s ease;
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
+      }
+      .icon-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
       }
       .icon-btn:active {
-        transform: translateY(3px);
-        box-shadow: 0 0 0 var(--pink-3);
+        transform: translateY(1px);
       }
 
       .score-board {
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 10px;
         justify-content: center;
-        margin: 18px 10px 6px;
+        margin: 20px 10px 6px;
         z-index: 2;
       }
       .score-pill {
         background: var(--white);
-        border-radius: 20px;
-        padding: 8px 16px;
-        box-shadow: 0 3px 8px rgba(255, 111, 168, 0.25);
-        font-size: 0.85rem;
-        font-weight: 600;
+        border-radius: 999px;
+        padding: 7px 16px;
+        box-shadow: var(--shadow-sm);
+        font-size: 13px;
+        font-weight: 800;
         display: flex;
         align-items: center;
         gap: 6px;
-        border: 2px solid var(--pink-2);
       }
       .score-pill.correct {
-        color: #2ea86b;
-        border-color: #b7f0d3;
+        color: #1f6e58;
+        background: var(--mint);
       }
       .score-pill.incorrect {
-        color: #e85a5a;
-        border-color: #ffd0d0;
+        color: var(--coral-dark);
+        background: var(--blush);
       }
       .score-pill.progress {
-        color: var(--pink-deep);
+        color: var(--plum);
+        background: var(--lavender);
       }
       .score-pill.percent {
-        color: #a06be0;
-        border-color: #e4d4ff;
+        color: var(--coral-dark);
+        background: var(--blush);
       }
 
       .progress-bar-wrap {
         width: min(560px, 90vw);
-        height: 14px;
-        background: #ffe0ee;
-        border-radius: 10px;
+        height: 16px;
+        background: var(--blush);
+        border-radius: 999px;
         overflow: hidden;
-        margin: 8px auto 0;
-        border: 2px solid var(--pink-2);
+        margin: 14px auto 0;
+        border: 2px solid var(--white);
+        box-shadow: inset 0 0 0 2px rgba(255, 124, 163, 0.25);
         z-index: 2;
+        position: relative;
       }
       .progress-bar-fill {
         height: 100%;
         width: 0%;
-        background: linear-gradient(90deg, var(--pink-3), var(--pink-deep));
+        background: linear-gradient(90deg, var(--coral), var(--sun));
         transition: width 0.4s ease;
-        border-radius: 10px 0 0 10px;
+        border-radius: 999px;
+        position: relative;
       }
 
       .stage {
@@ -229,7 +312,7 @@
       .face {
         position: absolute;
         inset: 0;
-        border-radius: 26px;
+        border-radius: var(--radius-lg);
         backface-visibility: hidden;
         display: flex;
         flex-direction: column;
@@ -237,72 +320,87 @@
         justify-content: center;
         padding: 26px;
         text-align: center;
-        box-shadow:
-          0 12px 30px rgba(232, 67, 147, 0.25),
-          inset 0 0 0 3px #fff;
+        background: var(--white);
+        box-shadow: var(--shadow);
+        overflow: hidden;
       }
       .front {
-        background: linear-gradient(160deg, #fff0f7, #ffd7e9);
+        background: var(--white);
       }
       .back {
-        background: linear-gradient(160deg, #fff5fb, #ffe0ef);
+        background: var(--white);
         transform: rotateY(180deg);
       }
       .card-label {
         position: absolute;
-        top: 16px;
-        left: 20px;
-        font-size: 0.75rem;
-        font-weight: 700;
-        color: var(--pink-deep);
-        background: #fff;
-        padding: 3px 10px;
-        border-radius: 12px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+        top: 18px;
+        left: 22px;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.6px;
+        color: var(--coral-dark);
+        background: var(--blush);
+        padding: 5px 12px;
+        border-radius: 999px;
+      }
+      .back .card-label {
+        color: #1f6e58;
+        background: var(--mint);
       }
       .card-num {
         position: absolute;
-        top: 16px;
-        right: 20px;
-        font-size: 0.75rem;
-        color: #a86392;
-        font-weight: 600;
+        top: 20px;
+        right: 22px;
+        font-size: 12px;
+        color: var(--plum-soft);
+        font-weight: 800;
       }
       .q-text,
       .a-text {
-        font-size: 1.15rem;
+        font-size: 19px;
         font-weight: 600;
-        line-height: 1.5;
-        max-height: 210px;
-        overflow-y: auto;
-        padding: 4px 6px;
+        line-height: 1.6;
+        overflow: hidden;
+        padding: 18px 20px;
+        background: var(--lavender);
+        border-radius: var(--radius-sm);
+        color: var(--plum);
+        margin-top: 8px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .a-text {
-        color: #c2277d;
+        background: var(--mint);
+        color: #1f6e58;
       }
       .explain-text {
-        margin-top: 12px;
-        font-size: 0.85rem;
-        color: #8a5878;
-        font-weight: 400;
-        max-height: 80px;
-        overflow-y: auto;
+        margin-top: 14px;
+        font-size: 13.5px;
+        color: var(--plum-soft);
+        font-weight: 700;
+        overflow: hidden;
+        padding: 0 4px;
+        width: 100%;
       }
       .hint {
-        margin-top: 14px;
-        font-size: 0.75rem;
-        color: #c98cae;
-        font-style: italic;
+        margin-top: 16px;
+        font-size: 12.5px;
+        color: var(--plum-soft);
+        font-weight: 700;
       }
 
       .assess-row {
         display: flex;
-        gap: 16px;
-        margin-top: 18px;
+        gap: 14px;
+        margin-top: 20px;
         z-index: 2;
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease;
+        justify-content: center;
+        width: 100%;
       }
       .assess-row.show {
         opacity: 1;
@@ -310,50 +408,65 @@
       }
       .assess-btn {
         border: none;
-        border-radius: 18px;
-        padding: 14px 28px;
-        font-size: 1rem;
-        font-weight: 700;
+        border-radius: 999px;
+        padding: 13px 26px;
+        font-family: "Nunito", sans-serif;
+        font-size: 14.5px;
+        font-weight: 800;
         cursor: pointer;
         color: #fff;
-        box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12);
         transition:
-          transform 0.1s ease,
-          box-shadow 0.1s ease;
+          transform 0.12s ease,
+          box-shadow 0.12s ease;
         display: flex;
         align-items: center;
         gap: 8px;
       }
       .assess-btn:active {
-        transform: translateY(4px);
-        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+        transform: scale(0.97);
       }
       .btn-correct {
-        background: linear-gradient(160deg, #8ee6b6, #3fbf82);
+        background: linear-gradient(135deg, #6fdba9, #2f9e6f);
+        box-shadow: 0 6px 16px rgba(63, 174, 139, 0.35);
+      }
+      .btn-correct:hover {
+        box-shadow: 0 8px 20px rgba(63, 174, 139, 0.45);
       }
       .btn-incorrect {
-        background: linear-gradient(160deg, #ff9d9d, #ef5f5f);
+        background: linear-gradient(135deg, var(--coral), var(--coral-dark));
+        box-shadow: 0 6px 16px rgba(228, 92, 134, 0.35);
+      }
+      .btn-incorrect:hover {
+        box-shadow: 0 8px 20px rgba(228, 92, 134, 0.45);
       }
 
       .nav-row {
         display: flex;
         gap: 14px;
-        margin-top: 10px;
+        margin-top: 14px;
         z-index: 2;
+        justify-content: center;
+        width: 100%;
       }
       .nav-btn {
         background: var(--white);
-        border: 2px solid var(--pink-3);
-        color: var(--pink-deep);
-        border-radius: 16px;
-        padding: 9px 18px;
-        font-weight: 700;
+        border: 2px solid var(--blush);
+        color: var(--plum);
+        border-radius: 999px;
+        padding: 10px 22px;
+        font-weight: 800;
+        font-size: 14px;
         cursor: pointer;
-        box-shadow: 0 3px 0 var(--pink-3);
-        transition: transform 0.1s ease;
+        font-family: "Nunito", sans-serif;
+        transition:
+          border-color 0.15s ease,
+          transform 0.1s ease;
+      }
+      .nav-btn:hover {
+        border-color: var(--coral);
       }
       .nav-btn:active {
-        transform: translateY(3px);
+        transform: scale(0.97);
       }
       .nav-btn:disabled {
         opacity: 0.4;
@@ -361,10 +474,12 @@
       }
 
       .tap-hint {
-        margin-top: 6px;
-        font-size: 0.8rem;
-        color: #b06090;
+        margin-top: 8px;
+        font-size: 13px;
+        color: var(--plum-soft);
+        font-weight: 700;
         z-index: 2;
+        text-align: center;
       }
 
       .results {
@@ -373,54 +488,61 @@
         align-items: center;
         text-align: center;
         background: var(--white);
-        border-radius: 28px;
-        padding: 40px 30px;
+        border-radius: var(--radius-lg);
+        padding: 50px 30px 40px;
         margin: 30px auto;
         width: min(500px, 90vw);
-        box-shadow: 0 15px 40px rgba(232, 67, 147, 0.3);
+        box-shadow: var(--shadow);
         z-index: 2;
         animation: popAnim 0.6s ease;
       }
       .results h2 {
-        color: var(--pink-deep);
-        font-size: 1.8rem;
+        font-family: "Fredoka", sans-serif;
+        color: var(--plum);
+        font-size: 26px;
+        font-weight: 600;
         margin-bottom: 4px;
       }
       .results .big-score {
-        font-size: 3.2rem;
+        font-family: "Fredoka", sans-serif;
+        font-size: 52px;
         font-weight: 800;
-        color: var(--pink-4);
-        margin: 10px 0;
+        color: var(--coral-dark);
+        margin: 12px 0 4px;
       }
       .results .msg {
-        font-size: 1.05rem;
-        color: #8a5878;
-        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--plum-soft);
+        margin-bottom: 26px;
       }
       .results .stat-row {
         display: flex;
-        gap: 14px;
-        margin-bottom: 22px;
+        gap: 12px;
+        margin-bottom: 20px;
         flex-wrap: wrap;
         justify-content: center;
       }
       .restart-btn {
-        background: linear-gradient(160deg, var(--pink-3), var(--pink-deep));
+        background: linear-gradient(135deg, var(--coral), var(--coral-dark));
         color: #fff;
         border: none;
-        padding: 16px 34px;
-        border-radius: 20px;
-        font-size: 1.05rem;
-        font-weight: 700;
+        padding: 15px 30px;
+        border-radius: 999px;
+        font-family: "Nunito", sans-serif;
+        font-size: 15px;
+        font-weight: 800;
         cursor: pointer;
-        box-shadow: 0 5px 0 #c2277d;
+        box-shadow: 0 6px 16px rgba(228, 92, 134, 0.35);
         transition:
-          transform 0.1s ease,
-          box-shadow 0.1s ease;
+          transform 0.12s ease,
+          box-shadow 0.12s ease;
+      }
+      .restart-btn:hover {
+        box-shadow: 0 8px 20px rgba(228, 92, 134, 0.45);
       }
       .restart-btn:active {
-        transform: translateY(4px);
-        box-shadow: 0 1px 0 #c2277d;
+        transform: scale(0.97);
       }
 
       .particle {
@@ -437,15 +559,17 @@
         width: 6px;
       }
       ::-webkit-scrollbar-thumb {
-        background: var(--pink-3);
+        background: var(--coral);
         border-radius: 6px;
       }
 
       footer {
-        margin-top: 20px;
-        font-size: 0.75rem;
-        color: #c98cae;
+        margin-top: 24px;
+        font-size: 12.5px;
+        color: var(--plum-soft);
+        font-weight: 700;
         z-index: 2;
+        text-align: center;
       }
 
       @media (max-width: 480px) {
@@ -453,11 +577,11 @@
           height: 380px;
         }
         h1 {
-          font-size: 1.5rem;
+          font-size: 30px;
         }
         .assess-btn {
           padding: 12px 20px;
-          font-size: 0.9rem;
+          font-size: 13px;
         }
       }
     </style>
@@ -471,82 +595,121 @@
       >←</a
     >
 
-    <header>
-      <h1>💗 Dent Matz</h1>
-      <div class="subtitle">u got this beb!</div>
-    </header>
-
-    <div class="topbar">
-      <button class="icon-btn" id="soundToggle" title="Mute/Unmute sounds">
-        🔊
-      </button>
-      <button class="icon-btn" id="shuffleBtn" title="Shuffle deck">🔀</button>
-    </div>
-
-    <div class="score-board">
-      <div class="score-pill correct">✅ <span id="correctCount">0</span></div>
-      <div class="score-pill incorrect">
-        ❌ <span id="incorrectCount">0</span>
-      </div>
-      <div class="score-pill progress">
-        📍 <span id="progressCount">1/150</span>
-      </div>
-      <div class="score-pill percent">🌸 <span id="percentScore">0%</span></div>
-    </div>
-
-    <div class="progress-bar-wrap">
-      <div class="progress-bar-fill" id="progressBarFill"></div>
-    </div>
-
-    <div class="stage" id="stage">
-      <div class="card" id="card">
-        <div class="face front">
-          <div class="card-label">QUESTION</div>
-          <div class="card-num" id="cardNumFront"></div>
-          <div class="q-text" id="questionText"></div>
-          <div class="hint">tap to reveal answer 🌷</div>
+    <div class="wrap">
+      <header>
+        <h1>💗 Dent Matz<span class="heart"></span></h1>
+        <div class="subtitle" id="subtitleText">u got this beb!</div>
+        <div id="redemptionBadge" style="display: none">
+          🔁 Redemption Round — retry your skipped &amp; incorrect cards!
         </div>
-        <div class="face back">
-          <div class="card-label">ANSWER</div>
-          <div class="card-num" id="cardNumBack"></div>
-          <div class="a-text" id="answerText"></div>
-          <div class="explain-text" id="explainText"></div>
-        </div>
+      </header>
+
+      <div class="topbar">
+        <button class="icon-btn" id="soundToggle" title="Mute/Unmute sounds">
+          🔊
+        </button>
+        <button class="icon-btn" id="shuffleBtn" title="Shuffle deck">
+          🔀
+        </button>
       </div>
-    </div>
 
-    <div class="tap-hint" id="tapHint">👆 Tap the card to flip</div>
-
-    <div class="assess-row" id="assessRow">
-      <button class="assess-btn btn-correct" id="btnCorrect">✅ Correct</button>
-      <button class="assess-btn btn-incorrect" id="btnIncorrect">
-        ❌ Incorrect
-      </button>
-    </div>
-
-    <div class="nav-row">
-      <button class="nav-btn" id="prevBtn">⬅ Prev</button>
-      <button class="nav-btn" id="skipBtn">Skip ➡</button>
-    </div>
-
-    <div class="results" id="results">
-      <h2>🎉 Deck Complete! 🎉</h2>
-      <div class="big-score" id="finalPercent">0%</div>
-      <div class="msg" id="finalMsg"></div>
-      <div class="stat-row">
+      <div class="score-board">
         <div class="score-pill correct">
-          ✅ <span id="finalCorrect">0</span> Correct
+          ✅ <span id="correctCount">0</span>
         </div>
         <div class="score-pill incorrect">
-          ❌ <span id="finalIncorrect">0</span> Incorrect
+          ❌ <span id="incorrectCount">0</span>
+        </div>
+        <div class="score-pill progress">
+          📍 <span id="progressCount">1/150</span>
+        </div>
+        <div class="score-pill percent">
+          🌸 <span id="percentScore">0%</span>
         </div>
       </div>
-      <button class="restart-btn" id="restartBtn">🔁 Restart Deck</button>
-    </div>
 
-    <footer>
-      Made with 💕 for reviewing Dental Materials — Impression Materials
-    </footer>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progressBarFill"></div>
+      </div>
+
+      <div class="stage" id="stage">
+        <div class="card" id="card">
+          <div class="face front">
+            <div class="card-label">QUESTION</div>
+            <div class="card-num" id="cardNumFront"></div>
+            <div class="q-text" id="questionText"></div>
+            <div class="hint">tap to reveal answer 🌷</div>
+          </div>
+          <div class="face back">
+            <div class="card-label">ANSWER</div>
+            <div class="card-num" id="cardNumBack"></div>
+            <div class="a-text" id="answerText"></div>
+            <div class="explain-text" id="explainText"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tap-hint" id="tapHint">👆 Tap the card to flip</div>
+
+      <div class="assess-row" id="assessRow">
+        <button class="assess-btn btn-correct" id="btnCorrect">
+          ✅ Correct
+        </button>
+        <button class="assess-btn btn-incorrect" id="btnIncorrect">
+          ❌ Incorrect
+        </button>
+      </div>
+
+      <div class="nav-row">
+        <button class="nav-btn" id="prevBtn">⬅ Prev</button>
+        <button class="nav-btn" id="skipBtn">Skip ➡</button>
+      </div>
+
+      <div class="results" id="results">
+        <h2>🎉 Deck Complete! 🎉</h2>
+        <div class="big-score" id="finalPercent">0%</div>
+        <div class="msg" id="finalMsg"></div>
+        <div class="stat-row">
+          <div class="score-pill correct">
+            ✅ <span id="finalCorrect">0</span> Correct
+          </div>
+          <div class="score-pill incorrect">
+            ❌ <span id="finalIncorrect">0</span> Incorrect
+          </div>
+        </div>
+        <div class="stat-row" id="redemptionStatRow" style="display: none">
+          <div class="score-pill correct">
+            💗 <span id="redeemedCount">0</span> Redeemed
+          </div>
+          <div class="score-pill incorrect">
+            ❌ <span id="stillMissedCount">0</span> Still Missed
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+          "
+        >
+          <button
+            class="restart-btn"
+            id="redemptionBtn"
+            style="
+              display: none;
+              background: linear-gradient(135deg, #6fdba9, #2f9e6f);
+              box-shadow: 0 6px 16px rgba(63, 174, 139, 0.35);
+            "
+          >
+            🌟 Start Redemption Round (<span id="redemptionCount">0</span>)
+          </button>
+          <button class="restart-btn" id="restartBtn">🔁 Restart Deck</button>
+        </div>
+      </div>
+
+      <footer>don't forget to kiss me or else you'll have to miss me</footer>
+    </div>
 
     <script>
       const cards = [
@@ -1309,6 +1472,14 @@
       let answeredThisCard = false;
       let soundOn = true;
 
+      // Redemption Round state
+      let missedIndices = new Set(); // original card indices skipped or marked incorrect
+      let isRedemption = false;
+      let mainCorrect = 0;
+      let mainIncorrect = 0;
+      let redemptionCorrect = 0;
+      let redemptionIncorrect = 0;
+
       let actx;
       function ensureAudio() {
         if (!actx) {
@@ -1378,6 +1549,80 @@
       const prevBtn = document.getElementById("prevBtn");
       const skipBtn = document.getElementById("skipBtn");
       const tapHint = document.getElementById("tapHint");
+      const redemptionBadge = document.getElementById("redemptionBadge");
+      const redemptionStatRow = document.getElementById("redemptionStatRow");
+      const redeemedCountEl = document.getElementById("redeemedCount");
+      const stillMissedCountEl = document.getElementById("stillMissedCount");
+      const redemptionBtn = document.getElementById("redemptionBtn");
+      const redemptionCountEl = document.getElementById("redemptionCount");
+      const frontFace = document.querySelector(".face.front");
+      const backFace = document.querySelector(".face.back");
+
+      // Base stage height matches the CSS defaults (desktop vs the mobile media query).
+      function getBaseStageHeight() {
+        return window.innerWidth <= 480 ? 380 : 340;
+      }
+
+      // Shrinks text within a face (question, or answer + explanation) until it
+      // fits without scrolling. If it still can't fit at the minimum readable
+      // size, the stage itself grows so nothing is ever cut off.
+      function fitFaceText(faceEl, mainEl, subEl) {
+        const MAIN_MAX = 19,
+          MAIN_MIN = 12;
+        const SUB_MAX = 13.5,
+          SUB_MIN = 10.5;
+
+        let mainSize = MAIN_MAX;
+        mainEl.style.fontSize = mainSize + "px";
+        mainEl.style.lineHeight = "1.6";
+
+        let subSize = SUB_MAX;
+        if (subEl) {
+          subSize = SUB_MAX;
+          subEl.style.fontSize = subSize + "px";
+          subEl.style.lineHeight = "1.5";
+        }
+
+        let guard = 0;
+        while (
+          faceEl.scrollHeight > faceEl.clientHeight &&
+          (mainSize > MAIN_MIN || (subEl && subSize > SUB_MIN)) &&
+          guard < 60
+        ) {
+          if (mainSize > MAIN_MIN) {
+            mainSize -= 0.5;
+            mainEl.style.fontSize = mainSize + "px";
+            mainEl.style.lineHeight = Math.max(
+              1.25,
+              1.6 - (MAIN_MAX - mainSize) * 0.018,
+            ).toFixed(2);
+          }
+          if (subEl && subSize > SUB_MIN) {
+            subSize -= 0.3;
+            subEl.style.fontSize = subSize + "px";
+          }
+          guard++;
+        }
+      }
+
+      function fitCardFaces() {
+        const baseHeight = getBaseStageHeight();
+        stage.style.height = baseHeight + "px";
+
+        fitFaceText(frontFace, questionText, null);
+        fitFaceText(backFace, answerText, explainText);
+
+        // Safety net: if content still overflows even at the smallest
+        // readable font size, grow the card so nothing is cut off.
+        const neededHeight = Math.max(
+          baseHeight,
+          frontFace.scrollHeight,
+          backFace.scrollHeight,
+        );
+        if (neededHeight > baseHeight) {
+          stage.style.height = neededHeight + "px";
+        }
+      }
 
       function loadCard() {
         answeredThisCard = false;
@@ -1391,6 +1636,7 @@
         explainText.textContent = c.e;
         cardNumFront.textContent = `${pos + 1} / ${deck.length}`;
         cardNumBack.textContent = `${pos + 1} / ${deck.length}`;
+        fitCardFaces();
         updateScoreboard();
         prevBtn.disabled = pos === 0;
       }
@@ -1435,8 +1681,14 @@
       function markAnswer(isCorrect) {
         if (answeredThisCard) return;
         answeredThisCard = true;
+        const idx = deck[pos];
         if (isCorrect) {
           correctCount++;
+          if (isRedemption) {
+            redemptionCorrect++;
+            // Redeemed! Remove from the missed set for good.
+            missedIndices.delete(idx);
+          }
           sfxCorrect();
           burst("celebrate");
           cardEl.style.setProperty("--rot", "180deg");
@@ -1444,6 +1696,13 @@
           setTimeout(() => cardEl.classList.remove("pop"), 500);
         } else {
           incorrectCount++;
+          if (isRedemption) {
+            redemptionIncorrect++;
+            // Still missed, stays in the set for another redemption attempt.
+            missedIndices.add(idx);
+          } else {
+            missedIndices.add(idx);
+          }
           sfxIncorrect();
           cardEl.style.setProperty("--rot", "180deg");
           cardEl.classList.add("shake");
@@ -1473,6 +1732,16 @@
       });
       skipBtn.addEventListener("click", () => {
         sfxClick();
+        // Skip means "I already know it" — count it as Correct and move on
+        // without revealing the answer or adding it to the Redemption pool.
+        const idx = deck[pos];
+        correctCount++;
+        if (isRedemption) {
+          redemptionCorrect++;
+          // Redeemed! Remove from the missed set for good.
+          missedIndices.delete(idx);
+        }
+        updateScoreboard();
         nextCard();
       });
 
@@ -1501,6 +1770,33 @@
         pos = 0;
         correctCount = 0;
         incorrectCount = 0;
+        missedIndices = new Set();
+        isRedemption = false;
+        mainCorrect = 0;
+        mainIncorrect = 0;
+        redemptionCorrect = 0;
+        redemptionIncorrect = 0;
+        redemptionBadge.style.display = "none";
+        resultsEl.style.display = "none";
+        stage.style.display = "flex";
+        document.querySelector(".tap-hint").style.display = "block";
+        document.querySelector(".nav-row").style.display = "flex";
+        document.querySelector(".score-board").style.display = "flex";
+        document.querySelector(".progress-bar-wrap").style.display = "block";
+        loadCard();
+      });
+
+      redemptionBtn.addEventListener("click", () => {
+        sfxClick();
+        // Start (or continue) a redemption round over the skipped/incorrect cards.
+        deck = [...missedIndices];
+        pos = 0;
+        correctCount = 0;
+        incorrectCount = 0;
+        redemptionCorrect = 0;
+        redemptionIncorrect = 0;
+        isRedemption = true;
+        redemptionBadge.style.display = "block";
         resultsEl.style.display = "none";
         stage.style.display = "flex";
         document.querySelector(".tap-hint").style.display = "block";
@@ -1517,24 +1813,70 @@
         assessRow.classList.remove("show");
         document.querySelector(".nav-row").style.display = "none";
         resultsEl.style.display = "flex";
-        const total = correctCount + incorrectCount;
-        const pct = total ? Math.round((correctCount / total) * 100) : 0;
-        finalPercent.textContent = `${pct}%`;
-        finalCorrect.textContent = correctCount;
-        finalIncorrect.textContent = incorrectCount;
-        let msg = "";
-        if (pct === 100)
-          msg = "Perfect score! You're a true dental materials master! 🦷💖";
-        else if (pct >= 85)
-          msg = "Amazing work! You really know your stuff! 🌸";
-        else if (pct >= 70)
-          msg = "Great job! Just a bit more review and you'll be golden! ✨";
-        else if (pct >= 50)
-          msg = "Nice effort! Keep reviewing — you're getting there! 🌷";
-        else
-          msg =
-            "Good start! Review the deck again and watch your score grow! 💪";
-        finalMsg.textContent = msg;
+        redemptionBadge.style.display = "none";
+
+        if (isRedemption) {
+          // Wrapping up a redemption round: show redemption-specific stats.
+          const rTotal = redemptionCorrect + redemptionIncorrect;
+          const rPct = rTotal
+            ? Math.round((redemptionCorrect / rTotal) * 100)
+            : 0;
+          finalPercent.textContent = `${rPct}%`;
+          finalCorrect.textContent = redemptionCorrect;
+          finalIncorrect.textContent = redemptionIncorrect;
+
+          redemptionStatRow.style.display = "flex";
+          redeemedCountEl.textContent = redemptionCorrect;
+          stillMissedCountEl.textContent = missedIndices.size;
+
+          if (missedIndices.size === 0) {
+            document.querySelector(".results h2").textContent =
+              "🎉 All Redeemed! 🎉";
+            finalMsg.textContent =
+              "You cleared every skipped and incorrect card — amazing comeback! 💖";
+            redemptionBtn.style.display = "none";
+          } else {
+            document.querySelector(".results h2").textContent =
+              "🔁 Redemption Round Complete";
+            finalMsg.textContent = `You still have ${missedIndices.size} card${missedIndices.size === 1 ? "" : "s"} to redeem. Give it another go!`;
+            redemptionBtn.style.display = "inline-block";
+            redemptionCountEl.textContent = missedIndices.size;
+          }
+        } else {
+          // Wrapping up the main deck.
+          mainCorrect = correctCount;
+          mainIncorrect = incorrectCount;
+          const total = correctCount + incorrectCount;
+          const pct = total ? Math.round((correctCount / total) * 100) : 0;
+          finalPercent.textContent = `${pct}%`;
+          finalCorrect.textContent = correctCount;
+          finalIncorrect.textContent = incorrectCount;
+          redemptionStatRow.style.display = "none";
+          document.querySelector(".results h2").textContent =
+            "🎉 Deck Complete! 🎉";
+
+          let msg = "";
+          if (pct === 100)
+            msg = "Perfect score! You're a true dental materials master! 🦷💖";
+          else if (pct >= 85)
+            msg = "Amazing work! You really know your stuff! 🌸";
+          else if (pct >= 70)
+            msg = "Great job! Just a bit more review and you'll be golden! ✨";
+          else if (pct >= 50)
+            msg = "Nice effort! Keep reviewing — you're getting there! 🌷";
+          else
+            msg =
+              "Good start! Review the deck again and watch your score grow! 💪";
+          finalMsg.textContent = msg;
+
+          if (missedIndices.size > 0) {
+            redemptionBtn.style.display = "inline-block";
+            redemptionCountEl.textContent = missedIndices.size;
+          } else {
+            redemptionBtn.style.display = "none";
+          }
+        }
+
         sfxComplete();
         burst("confetti");
       }
@@ -1613,6 +1955,12 @@
           pos--;
           loadCard();
         }
+      });
+
+      let resizeFitTimer;
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeFitTimer);
+        resizeFitTimer = setTimeout(fitCardFaces, 150);
       });
 
       loadCard();
