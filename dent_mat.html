@@ -63,6 +63,7 @@
         position: relative;
       }
 
+      /* ---- Two back buttons: fixed top-left & top-right ---- */
       .back-btn {
         position: fixed;
         top: 18px;
@@ -79,14 +80,51 @@
         align-items: center;
         justify-content: center;
         font-weight: 800;
+        font-size: 1.1rem;
         box-shadow: var(--shadow-sm);
         transition:
           transform 0.15s ease,
           box-shadow 0.15s ease;
+        cursor: pointer;
       }
       .back-btn:hover {
         transform: translateY(-2px);
         box-shadow: var(--shadow);
+      }
+      .back-btn:active {
+        transform: translateY(1px);
+      }
+
+      .home-btn {
+        position: fixed;
+        top: 18px;
+        right: 18px;
+        z-index: 10;
+        text-decoration: none;
+        background: var(--white);
+        color: var(--plum-soft);
+        border: none;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 1.1rem;
+        box-shadow: var(--shadow-sm);
+        transition:
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
+        cursor: pointer;
+      }
+      .home-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
+        color: var(--coral-dark);
+      }
+      .home-btn:active {
+        transform: translateY(1px);
       }
 
       .bg-heart {
@@ -192,7 +230,10 @@
         font-size: 17px;
         cursor: pointer;
         font-family: "Nunito", sans-serif;
-        transition: border-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+        transition:
+          border-color 0.2s ease,
+          transform 0.1s ease,
+          box-shadow 0.2s ease;
         width: min(400px, 90vw);
         box-shadow: var(--shadow-sm);
       }
@@ -207,7 +248,7 @@
 
       /* GAME UI WRAPPERS */
       #gameUI {
-        display: none; /* Hidden until set is chosen */
+        display: none;
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -640,18 +681,43 @@
           padding: 12px 20px;
           font-size: 13px;
         }
+        .back-btn,
+        .home-btn {
+          width: 36px;
+          height: 36px;
+          font-size: 0.95rem;
+        }
+        .back-btn {
+          top: 12px;
+          left: 12px;
+        }
+        .home-btn {
+          top: 12px;
+          right: 12px;
+        }
       }
     </style>
   </head>
   <body>
-    <!-- Reload page / menu -->
+    <!-- Back to Sets (←) -->
     <button
-      class="icon-btn back-btn"
+      class="back-btn"
       id="backBtn"
-      title="Back to menu"
-      aria-label="Back to menu"
-      >←</button
+      title="Back to flashcard sets"
+      aria-label="Back to sets"
     >
+      ←
+    </button>
+
+    <!-- Back to index.html (🏠) -->
+    <button
+      class="home-btn"
+      id="homeBtn"
+      title="Go to index.html"
+      aria-label="Go to home"
+    >
+      🏠
+    </button>
 
     <div class="wrap">
       <header>
@@ -664,8 +730,12 @@
 
       <div class="selection-screen" id="selectionScreen">
         <h2>Choose a Flashcard Set</h2>
-        <button class="set-btn" id="btnPart1">Part 1: Impression Materials</button>
-        <button class="set-btn" id="btnPart2">Part 2: Dental Materials Intro</button>
+        <button class="set-btn" id="btnPart1">
+          Part 1: Impression Materials
+        </button>
+        <button class="set-btn" id="btnPart2">
+          Part 2: Dental Materials Intro
+        </button>
       </div>
 
       <div id="gameUI">
@@ -771,7 +841,9 @@
             🌟 Start Redemption Round (<span id="redemptionCount">0</span>)
           </button>
           <button class="restart-btn" id="restartBtn">🔁 Restart Deck</button>
-          <button class="restart-btn alt" id="menuBtn">🏠 Choose Another Set</button>
+          <button class="restart-btn alt" id="menuBtn">
+            🏠 Choose Another Set
+          </button>
         </div>
       </div>
 
@@ -779,200 +851,949 @@
     </div>
 
     <script>
+      // -------- DATA --------
       const part1Cards = [
-        { q: "What is the definition of Impression?", a: "Negative reproduction", e: "Impression = negative reproduction; Cast = positive reproduction." },
-        { q: "What is the objective of impression materials?", a: "To copy accurately the teeth and other structures in the oral cavity", e: "Objective: to copy accurately the teeth and other structures in the oral cavity." },
-        { q: "What setting mechanism describes an irreversible reaction implying that chemical reaction have occurred and that the material can't revert to its present state?", a: "Thermo set", e: "Thermo set – irreversible reaction implies that chemical reaction have occurred and that the material can't revert to its present state. Ex: alginate, zinc oxide eugenol impression paste." },
-        { q: "What are examples of Thermoplastic materials?", a: "Reversible hydrocolloid and the impression compound", e: "Thermoplastic – reversible materials softened under heat and solidify when they are cooled, with no chemical change taking place." },
-        { q: "What is the definition of Impression Trays?", a: "Appliance used to reach the patient's mouth", e: "Impression Trays – appliance used to reach the patient's mouth." },
-        { q: "Which tray is used for modelling compound for preliminary impression, has no perforations, and has good adhesive property?", a: "Stock tray", e: "Stock tray – used for modelling compound for preliminary impression; no perforations; Good adhesive property." },
-        { q: "Which tray is used when impression materials do not adhere to the tray, with perforations?", a: "Perforated tray", e: "Perforated tray – used when impression materials do not adhere to the tray; with perforations." },
-        { q: "Which tray has a locking mechanism and no perforations?", a: "Rim-lock tray", e: "Rim-lock tray – there's a locking mechanism; no perforations." },
-        { q: "Which tray is custom-built, self-made, and used in final impression for study cast?", a: "Individual tray", e: "Individual tray – custom-built; self-made; used in final impression for study cast (Resin, Shellac base plate, Type II modelling compound)." },
-        { q: "Which tray is used for agar impression?", a: "Water-cooled tray", e: "Water-cooled tray – used for agar impression." },
-        { q: "Which tray is made of plastic?", a: "Disposable tray", e: "Disposable tray – made of plastic." },
-        { q: 'What type of impression is described as preliminary impression; final impression/secondary; "wash"; more accurate; corrects the defect of preliminary impression?', a: "Double impression", e: 'Double impression – preliminary impression; final impression/secondary; "wash"; more accurate; corrects the defect of preliminary impression.' },
-        { q: "According to physical properties, under Rigid/Inelastic (edentulous patient) and Thermoset (irreversible), what materials are listed?", a: "Plaster of Paris and ZOE paste", e: "Thermoset (irreversible) - Rigid/Inelastic: Plaster of Paris, ZOE paste. Elastic: Alginate, Rubber impression material (Polysulfide, Polyether, Condensation silicone, Addition silicone)." },
-        { q: "Under Thermoplastic (reversible), what is listed for Rigid/Inelastic and Elastic categories respectively?", a: "Modelling compound and Agar", e: "Thermoplastic (reversible) - Rigid/Inelastic: Modelling compound. Elastic: Agar." },
-        { q: "What is the manner of withdrawal for Rigid/Inelastic (edentulous patient) materials?", a: "Teasing movement", e: "Manner of Withdrawal - Rigid/Inelastic: Teasing movement." },
-        { q: "What is the manner of withdrawal for Elastic (dentate patient) materials?", a: "Sudden pull parallel to the long axis of the tooth", e: "Manner of Withdrawal - Elastic: Sudden pull parallel to the long axis of the tooth." },
-        { q: "What is the composition of Soluble Plaster?", a: "80% plaster of paris (β-hemihydrate)", e: "Composition: 80% plaster of paris (β-hemihydrate)." },
-        { q: "In Soluble Plaster, what is the function of KSO4?", a: "Accelerator; speed up setting time (3-5 mins)", e: "KSO4 – accelerator; speed up setting time (3-5 mins)." },
-        { q: "In Soluble Plaster, what is the function of Potato starch?", a: "Makes the plaster soluble; help in separating cast and impression material when submerged in hot water (soluble plaster swells when placed in hot water)", e: "Potato starch – makes the plaster soluble; help in separating cast and impression material when submerged in hot water." },
-        { q: "What is the function of Coloring materials in Soluble Plaster?", a: "Help in interpreting the impression; provides ease in reading the impression; for easy identification of impression from cast", e: "Coloring materials – help in interpreting the impression; provides ease in reading the impression; for easy identification of impression from cast." },
-        { q: "What is Soluble Plaster's use, according to the Properties table?", a: "For taking secondary impression", e: "Use: For taking secondary impression." },
-        { q: "What is the WP ratio of Soluble Plaster?", a: "0.50-0.75", e: "WP ratio: 0.50-0.75." },
-        { q: "What is the compressive strength of Soluble Plaster?", a: "580 +/-290 psi", e: "Compressive strength: 580 +/-290 psi; Easy to break; Not popular in the market anymore." },
-        { q: "What is the manner of withdrawal for Soluble Plaster?", a: "Teasing movement", e: "Manner of withdrawal: Teasing movement." },
-        { q: "In the Boxing Method of cast construction, how wide is the wax strip placed around the tray?", a: "1 inch", e: 'Boxing Method: Place a 1" wax strip around the tray. Pour cast material on tray and level it to the wax. Let it set. Remove the wax and separate the cast after setting.' },
-        { q: "In the Inversion Method, after pouring cast material on the tray, what is done with the excess?", a: "Poured on a glass slab or on the tiled working table, then the impression tray is inverted on slab or table and the flowing cast is scraped", e: "Inversion Method: Pour cast material on tray. Pour the excess on a glass slab or on the tiled working table. Invert the impression tray on slab or table. Scrape flowing cast." },
-        { q: "In the Rubber Base Former method, what do you invert the tray on, instead of a slab or table?", a: "A rubber base former", e: "Rubber Base Former: Instead of inverting on a slab or table, invert on a rubber base former." },
-        { q: "What are the Properties of Good Cast?", a: "No porosities/nodules; No distortion: copy accordingly the given impression; Dimensionally stable", e: "Properties of Good Cast: No porosities/nodules; No distortion: copy accordingly the given impression; Dimensionally stable." },
-        { q: '"Modelling compound" is supplied in what form, and is it for edentulous or dentate ridges?', a: "Supplied in the form of sheets and sticks; for edentulous ridges", e: '"Modelling compound" is supplied in the form of sheets and sticks. It is softened by heat, inserted in an impression tray, place against tissue. It is for edentulous ridges.' },
-        { q: "What type of Modelling Compound is described as: True impression compound, has high flow property, for preliminary impression?", a: "Type I", e: "Type I: True impression compound; Has high flow property; For preliminary impression." },
-        { q: "What type of Modelling Compound is the tray compound, more rigid, for individual tray?", a: "Type II", e: "Type II: Tray compound; More rigid; for individual tray." },
-        { q: "In the Components of Modelling Compound, what are Beeswax and thermoplastic resin responsible for?", a: "For thermoplastic property", e: "Beeswax and thermoplastic resin: For thermoplastic property." },
-        { q: "In the Components of Modelling Compound, Shellac, gutta percha, and stearic acid are responsible for what?", a: "Can improve workability, act as plasticizer/hardening agent", e: "Shellac, gutta percha, stearic acid: Can improve workability, act as plasticizer/hardening agent." },
-        { q: "In the Components of Modelling Compound, French chalk, talc, and diatomaceous earth fillers are responsible for what?", a: "Hardeners; for strength", e: "French chalk, talc, diatomaceous earth fillers: Hardeners; for strength." },
-        { q: "What type of Modelling Compound (by dispensing form) is used for full arch impression (preliminary)?", a: "Cake", e: "Cake – for full arch impression (preliminary)." },
-        { q: 'What type of Modelling Compound is used for single tooth, called "impression tube" with the use of copper band (matrix band)?', a: "Stick", e: 'Stick – for single tooth; "impression tube" with the use of copper band (matrix band).' },
-        { q: "What are the Uses of Modelling Compound?", a: "For impression taking (preliminary); Individual tray construction (stick); For border molds (makes the rim higher; stick); Serve as a wedge material to hold the matrix in place", e: "Uses: For impression taking (preliminary); Individual tray construction (stick); For border molds (makes the rim higher; stick); Serve as a wedge material to hold the matrix in place." },
-        { q: "In the Moist heat method of manipulating Modelling Compound, at what temperature is the water bath?", a: "50-70°C", e: "Moist heat method: Water bath 50-70°C. Because of poor thermal conductivity/poor heat transfer, the outer surface softens while the inner surface remains hard. Homogenously soft in and out." },
-        { q: "What is the Dry heat method for Modelling Compound?", a: "Open flame", e: "Dry heat method: Open flame." },
-        { q: "What happens during Overheating of Modelling Compound (indicated by sparks)?", a: "Important ingredients are lost during melting; sparks indicate that some components (plasticizers) are leached out", e: "Important ingredients are lost during melting. Overheating – sparks indicate that some components (plasticizers) are leached out. If during heating, the modelling compound isn't shiny... plasticizers are lost already." },
-        { q: "What is the dimensional change (shrinkage) of Modelling Compound?", a: "0.3-0.4%", e: "Dimensional change: shrinks at 0.3-0.4%." },
-        { q: "What is the disadvantage of Modelling Compound's continuous flow property?", a: "Can be a source of error, if you fail to construct the cast immediately after withdrawing the impression from the patient's mouth", e: "Disadvantage: continuous flow property can be a source of error, if you fail to construct the cast immediately after withdrawing the impression from the patient's mouth." },
-        { q: "For Modelling Compound cast construction and separation, is a separating medium needed?", a: "No need for separating medium", e: "Cast Construction and Separation: Wash in running water after withdrawal; No need for separating medium; Mix plaster of paris to make study cast; Immerse in hot water (MC softens)." },
-        { q: "Which of the following is NOT a use of Zinc Oxide Eugenol (ZOE)?", a: "Water-cooled tray material", e: "ZOE uses include secondary impression for edentulous ridge, surgical dressing, stabilizes occlusion rims, temporary filling material, temporary relining material, root canal sealer, cementing medium, pulp capping agent, heat insulating bases, and bite registration paste. Water-cooled tray is not a ZOE use." },
-        { q: "What is the base of ZOE used to stabilize occlusion rims made of?", a: "Shellac; made of wax", e: "Stabilizes occlusion rims (prostho) — Base: shellac; made of wax." },
-        { q: "Why do dentures become loose, prompting the use of ZOE as a temporary relining material?", a: "Because the bone resorbs", e: "Temporary relining material for loose dentures: Dentures become loose because the bone resorbs. Remedy: relining/rebasing depends on the extent of looseness." },
-        { q: "What is Relining, as opposed to Rebasing?", a: "Adding acrylic resin; resurfacing the tissue side of a denture; to achieve accurate fit", e: "Relining: adding acrylic resin; resurfacing the tissue side of a denture; to achieve accurate fit. Rebasing: removing the entire denture base." },
-        { q: "As a root canal sealer (endo), ZOE is used to gutta ercha sticks inserted into the canal. What is ZOE described as?", a: "A sealer or obtundant material", e: "Root canal sealer (endo): Used to gutta ercha sticks inserted into the canal. ZOE is a sealer or obtundant material." },
-        { q: "As a cementing medium, what are the two varieties of ZOE cement?", a: "Weak: temporary cement; Strong: permanent cementing medium", e: "Cementing medium (crowns, onlays, ortho brackets): Weak: temporary cement; Strong: permanent cementing medium; they must be cemented on the prepared cavity." },
-        { q: "What is the difference between Onlays and Inlays?", a: "Onlays: restorations for mixing cusps (restorations fabricated outside the mouth); Inlays: confined within the walls of the cavity", e: "Onlays: restorations for mixing cusps (restorations that are fabricated outside the mouth). Inlays: confined within the walls of the cavity." },
-        { q: "ZOE is used as a Pulp capping agent (resto) when there is what condition?", a: "Excessive cavitation", e: "Pulp capping agent (resto): When there's excessive cavitation." },
-        { q: "According to Depth of Cavity, what is the ideal depth cavity for Class A?", a: "0.2-0.5mm beyond DEJ", e: "Class A: 0.2-0.5mm beyond DEJ; ideal depth cavity." },
-        { q: "According to Depth of Cavity, Class C has no pulp involvement yet. What is used and what procedure is performed?", a: "Use ZOE, indirect pulp capping procedure", e: "Class C: No pulp involvement yet. Use ZOE, indirect pulp capping procedure." },
-        { q: "According to Depth of Cavity, Class D has pinpoint pulp involvement. What agent is used, and what procedure is performed, to prevent bleeding?", a: "Not a ZOE but a cement-based capping agent (calcium hydroxide); direct pulp capping", e: "Class D: With pinpoint pulp involvement. Not a ZOE but a cement-based capping agent (calcium hydroxide) direct pulp capping — to prevent bleeding." },
-        { q: "What is ZOE used for heat insulating bases?", a: "Used to absorb heat coming from outside stimulus before amalgam restoration", e: "For heat insulating bases: Used to absorb heat coming from outside stimulus before amalgam restoration." },
-        { q: "For bite registration paste using ZOE, what steps are followed?", a: "Seat the horseshoe-shaped wax or ZOE paste on mouth; allow ZOE paste to set; transfer the bite cast", e: "Bite registration paste: To stimulate the occlusal relationship between the upper and lower arches. Use of bite wax and ZOE paste. Seat the horseshoe-shaped wax or ZOE paste on mouth. Allow ZOE paste to set. Transfer the bite cast." },
-        { q: "What are the two dispensing forms of ZOE?", a: "2 paste form; Powder:liquid form (resto)", e: "Dispensing Form of ZOE: 2 paste form (Tube 1: universal/base - bigger tube; Tube 2: reactor/catalyst/accelerator); Powder:liquid form (ZOE) – resto." },
-        { q: "In Tube 1 (Universal/Base) of ZOE, what does the 13% fixed vegetable or mineral oil act as?", a: "A plasticizer and aids in offsetting the action of the eugenol as an irritant", e: "13% fixed vegetable or mineral oil: Acts as a plasticizer and aids in offsetting the action of the eugenol as an irritant." },
-        { q: "In Tube 2 (Reactor/Catalyst/Accelerator) of ZOE, what percentage of eugenol does Oil of cloves contain, and what effect does it have?", a: "Contains 70-85% eugenol; produces less burning sensation for patients", e: "Oil of cloves – contains 70-85% eugenol; produces less burning sensation for patients." },
-        { q: "What does Gum/polymerized resin do in Tube 2 of ZOE?", a: "Facilitates the speed of the reaction and yields a smoother, homogenous product", e: "Gum/polymerized resin – facilitates the speed of the reaction and yields a smoother, homogenous product." },
-        { q: "What is the function of Accelerators (CaCl2) in ZOE Tube 2?", a: "Speed up setting time", e: "Accelerators – CaCl2 (speed up setting time)." },
-        { q: "What is the function of Olive oil in ZOE Tube 2?", a: "Dilute the content", e: "Olive oil – dilute the content." },
-        { q: "During ZOE manipulation, what tool is used for mixing?", a: "Stainless steel spatula", e: "Use stainless steel spatula for mixing procedure. Combine the two strips of contrasting colors, mixing continued for approximately 1 min, or as directed by the manufacturer, until uniform color is achieved." },
-        { q: "What is a Hydrocolloid?", a: "Mixture of 2/more substances; one is suspended", e: "Hydrocolloids: Mixture of 2/more substances; one is suspended." },
-        { q: "What are the two Types of Hydrocolloids?", a: "Reversible and Irreversible", e: "Types: Reversible, Irreversible." },
-        { q: "Agar is the reversible hydrocolloid. In what forms is it dispensed?", a: "Tubes, sticks", e: "Reversible: agar hydrocolloid. Dispensing form: tubes, sticks." },
-        { q: "What is Agar, in terms of composition?", a: "Extract of seaweed (agar-agar)", e: 'Agar – extract of seaweed (agar-agar). Tray material (8-15%) – heavier type. Syringe material (6-8%) – more "flowy".' },
-        { q: "In agar hydrocolloid composition, what percentage is Water?", a: "70-80%", e: "Water (70-80%)." },
-        { q: "In agar hydrocolloid composition, what does Borax (0.02%) do?", a: "Improves the viscosity of the sol and the strength of the gel", e: "Borax (0.02%) – improves the viscosity of the sol and the strength of the gel." },
-        { q: "In agar hydrocolloid composition, what does K2SO4 (1%) do, and what should be done if it's absent?", a: "Accelerator; ensures the setting of gypsum. If absent, immerse the agar impression in a 2% K2SO4 solution for 5mins", e: "K2SO4 (1%) – accelerator; ensures the setting of gypsum. **If there's no K2SO4 present, immerse the agar impression in a 2% K2SO4 solution for 5mins." },
-        { q: "What is the plasticizer used in agar hydrocolloid?", a: "Glycerine", e: "Plasticizer (glycerine)." },
-        { q: "What are the bactericide/antifungal agents in agar hydrocolloid, and what do they do?", a: "Thymol, HCl – kills bacteria", e: "Bactericide/antifungal agents (thymol, HCl) – kills bacteria." },
-        { q: "What apparatus is needed for agar hydrocolloid impressions?", a: "Hydrocolloid conditioner, agar hydrocolloid, water-cooled tray with tubing", e: "Apparatus needed: hydrocolloid conditioner, agar hydrocolloid, water-cooled tray with tubing." },
-        { q: "What is the Liquefying temperature and time for agar hydrocolloid manipulation?", a: "98-100°C for 10 minutes, so that it would be softer", e: "FIRST (Liquefying temperature): 98-100°C, 10 minutes, so that it would be softer." },
-        { q: "What is the Storing temperature for agar hydrocolloid, and for how long?", a: "64-68°C, all day, for storage", e: "SECOND (Storing temperature): 64-68°C, all day, for storage." },
-        { q: "What is the Tempering temperature for agar hydrocolloid, and why?", a: "44-48°C, 3 minutes, to let it cool a little so that it will be tolerable by your patient", e: "THIRD (Tempering temperature): 44-48°C, 3 minutes, to let it cool a little so that it will be tolerable by your patient." },
-        { q: "Once the tray is properly seated in the patient's mouth, water is turned on to cool the material to what temperature range?", a: "30-44°C", e: "Once the tray is properly seated in the patient's mouth, water is turned on to cool the material to 30-44°C." },
-        { q: "Within how many minutes does the hydrocolloid (agar) gel?", a: "3 minutes", e: "The hydrocolloid gels within 3 minutes." },
-        { q: "After tray removal, how should the impression material be pulled?", a: "By holding the vestibular area", e: "Pull the impression material by holding the vestibular area. Also: Disinfect impression surface after removal; Pour cast immediately; Blow using mouth." },
-        { q: "What clinical application makes agar hydrocolloid very useful?", a: "Taking impressions when the margins of a crown prep or subgingival area is not easily kept dry", e: "Clinical Application: Very useful for taking impressions when the margins of a crown prep or subgingival and not easily kept dry. Duplicate causeful in laboratory can be used to duplicate cast models (cost-efficient bec reversible)." },
-        { q: "What are the Advantages of agar hydrocolloid?", a: "Works well in a wet environment; Takes a very accurate impression; Hydrocolloid itself is very inexpensive", e: "Advantages: Works well in a wet environment; Takes a very accurate impression; Hydrocolloid itself is very inexpensive." },
-        { q: "What are the Disadvantages of agar hydrocolloid?", a: "Hydrocolloid conditioner is expensive; can be poured only once; dimensionally unstable; has poor tear strength; requires the use of water-cooled trays", e: "Disadvantages: Hydrocolloid conditioner is expensive; Can be poured only once; Dimensionally unstable; Has poor tear strength; Requires the use of water-cooled trays." },
-        { q: "What is Hysteresis?", a: "Melting and gelling temperature are different", e: "Hysteresis – melting and gelling temperature are different." },
-        { q: "What is Syneresis?", a: "Liquid component is squeezed out of the material; loss of water = shrinkage", e: "Syneresis – liquid component is squeezed out of the material; loss of water = shrinkage." },
-        { q: "What is Imbibition?", a: "Material takes in water; increase in H2O = swell", e: "Imbibition – material takes in water; increase in H2O = swell." },
-        { q: "Gypsum is described by setting time; agar is described by what term?", a: "Gelation time", e: "Gypsum:setting time; agar:gelation time. Melting point: 85°C. Boiling point: 32°C." },
-        { q: "What is the melting point and boiling point mentioned for agar's associated terminologies?", a: "Melting point: 85°C; Boiling point: 32°C", e: "Melting point: 85°C. Boiling point: 32°C." },
-        { q: "In agar hydrocolloid manipulation, what does tempering do?", a: "Increase the viscosity of the material", e: "Tempering increase the viscosity of the material. For syringe material, there's no need to temper the hydrocolloid." },
-        { q: "What is the manner of withdrawal for reversible (agar) hydrocolloid?", a: "Quick snap", e: "Manner of withdrawal: quick snap." },
-        { q: "What is the classification of Irreversible hydrocolloid (alginate)?", a: "Thermoset, elastic", e: "Irreversible hydrocolloids: alginate. Classification: thermoset, elastic." },
-        { q: "What is the dispensing form of alginate?", a: "Powder", e: "Dispensing form: powder." },
-        { q: "What are the two Types of alginate, based on setting time?", a: "Type I: fast set (1-2mins); Type II: regular set (2.5-4mins)", e: "Types: Type I: fast set (1-2mins); Type II: regular set (2.5-4mins)." },
-        { q: "In alginate composition, what does Calcium sulphate (CaSO4) hemihydrate do?", a: "Increases shelf life of the powder and increases dimensional stability of the gel", e: "Calcium sulphate (CaSO4): Reactor, hemihydrates: commonly used. Hemihydrate: increases shelf life of the powder and increases dimensional stability of the gel." },
-        { q: "In alginate composition, what do Fillers (diatomaceous earth, zinc oxide) do?", a: "Increases strength and stiffness; produces a smooth texture; ensures a firm gel surface that is not tacky; disperses the alginate powder particles in water", e: "Fillers (diatomaceous earth, zinc oxide): Increases strength and stiffness; Produces a smooth texture; Ensures a firm gel surface that is not tacky; Disperses the alginate powder particles in water." },
-        { q: "What does Potassium Titanium Fluoride do in alginate?", a: "Accelerates setting of the stone; plaster hardener", e: "Potassium Titanium Fluoride: Accelerates setting of the stone; Plaste hardener." },
-        { q: "What does Trisodium phosphate (Na3PO4) do in alginate?", a: "Retarder, allows proper manipulation, prolongs working time", e: "Trisodium phosphate (Na3PO4): retarder, allows proper manipulation, prolongs working time." },
-        { q: "What does Organic glycol do in alginate composition?", a: 'Makes alginate "dust free"', e: 'Organic glycol: Makes alginate "dust free".' },
-        { q: "What do Coloring and flavouring materials do in alginate?", a: "Adds palatability; aids in reading the impression", e: "Coloring and flavouring materials: Adds palatability; Aids in reading the impression." },
-        { q: "What is the First reaction in Gelation of alginate?", a: "3CaSO4 + 2Na3PO4 → Ca3(PO4) + 3NaSO4", e: "First reaction: 3CaSO4 + 2Na3PO4 → Ca3(PO4) + 3NaSO4." },
-        { q: "What is the Second reaction in Gelation of alginate?", a: "Na/K 2n alg + nCaSO4 → nNa2/K2SO4 + Ca alg", e: "Second reaction: Na/K 2n alg + nCaSO4 → nNa2/K2SO4 + Ca alg." },
-        { q: "How long does gelation of alginate occur at room temperature?", a: "About 3-4 mins", e: "Gelation occurs in about 3-4 mins at room temperature." },
-        { q: "How does increasing water affect alginate's gelation time?", a: "↑water = longer gelation time", e: "↑water = longer gelation time. ↓water = shorter gelation time." },
-        { q: "How does increasing temperature affect alginate's gelation time?", a: "↑temp = longer gelation time", e: "According to the source PDF: ↑temp = longer gelation time; ↓temp = shorter gelation time. (Note: the source document text on this point was somewhat unclear — double check against your lecture notes.)" },
-        { q: "How does increasing spatulation affect alginate's setting?", a: "↑spatulation = faster", e: "↑spatulation = faster. ↓spatulation = slower." },
-        { q: "What is the W/P ratio for alginate manipulation, and what is the small pack amount?", a: "15-18g of powder per 40-50cc of water; small pack: 17g", e: "W/P ratio: 15-18g of powder per 40-50cc of water. Small pack: 17g." },
-        { q: "In alginate manipulation, what order are water and powder combined, and what mixing motion is used?", a: "Water first before powder; use horizontal figure 8 while swiping and stropping the mixture against the sides of the bowl", e: "Water first before powder. Use horizontal figure 8 while swiping and stropping the mixture against the sides of the bowl. Result: smooth, creamy mixture." },
-        { q: "What is the mixing time for alginate?", a: "45 sec to 1 minute", e: "Mixing time: 45 sec to 1 minute." },
-        { q: "When making the alginate impression, what type of trays should be used?", a: "Perforated trays or plastic trays with tray adhesives", e: "Use perforated trays or plastic trays with tray adhesives." },
-        { q: "What must be the minimum thickness of alginate between the tray and tissues?", a: "At least 3mm", e: "Thickness of alginate must be at least 3mm between the tray and tissues." },
-        { q: "How long should you wait after gelation before withdrawing the alginate impression?", a: "2-3 mins", e: "Wait for 2-3 mins after gelation before withdrawing the impression." },
-        { q: "What is the Elasticity and Compressive strength properties of alginate?", a: "Elasticity (97.8%); Compressive strength (49.8 psi)", e: "Properties: Elasticity (97.8%); Compressive strength (49.8 psi); Good flow property." },
-        { q: "What are the 2 major factors to consider for alginate's shelf life?", a: "Storage temperature; Moisture contamination from the air", e: "Shelf life - 2 major factors to consider: 1. Storage temperature 2. Moisture contamination from the air. **store in cool, dry environment in containers with tight lids." },
-        { q: "What are the Advantages of alginate?", a: "Easy to manipulate; Comfortable for the patient; Relatively inexpensive", e: "Advantages: Easy to manipulate; Comfortable for the patient; Relatively inexpensive." },
-        { q: "Rubber Impression Materials/Elastomers refer to what?", a: "A group of rubbery polymers, which are either chemically/physically cross-linked", e: "Rubber Impression Materials/Elastomers: Refers to a group of rubbery polymers, which are either chemically/physically cross-linked. Setting occurs through a combination of chain-lengthening polymerization and chemical cross-linking by either a condensation reaction/addition reaction." },
-        { q: "What is the classification and manner of withdrawal for Rubber Impression Materials?", a: "Classification: thermoset, elastic; Manner of withdrawal: sudden pull parallel to the long axis of the teeth", e: "Classification: thermoset, elastic. Manner of withdrawal: sudden pull parallel to the long axis of the teeth." },
-        { q: "What are the dispensing forms of Rubber Impression Materials?", a: "2 paste form (base and catalyst); Paste-liquid form (base: paste; liquid: catalyst)", e: "Dispensing form: 2 paste form (base and catalyst); Paste-liquid form (base: paste; liquid: catalyst)." },
-        { q: "What are the Uses of Rubber Impression Materials?", a: "For impression taking with undercuts; Stabilize occlusion rims; Wash and corrective trims", e: "Uses: For impression taking with undercuts; Stabilize occlusion rims; Wash and corrective trims." },
-        { q: "What are the four Types of Rubber Impression Materials?", a: "Polysulfide, Polyether, Condensation-polymerizing silicone, Addition-polymerizing silicone", e: "Types: Polysulfide, Polyether, Condensation-polymerizing silicone, Addition-polymerizing silicone." },
-        { q: "According to consistency, which classification is the tray material for double technique?", a: "Heavy putty", e: "Heavy putty – tray material for double technique." },
-        { q: "According to consistency, which classification is the tray material for single impression taking?", a: "Reg/medium body", e: "Reg/medium body – tray material for single impression taking." },
-        { q: "According to consistency, which classification is the syringe material for double technique, with thin consistency and good flow?", a: "Syringe/light body", e: "Syringe/light body – syringe material for double technique; has thin consistency and good flow." },
-        { q: "For 2 paste form manipulation of RIM, how are the pastes placed and mixed?", a: "Place equal amount of pastes on a glass slab/mixing pad with calibration; with plaster spatula, mix the pastes in a rotator motion until the mixture is homogenous", e: "Manipulation of RIM (For 2 paste form): Place equal amount of pastes on a glass slab/mixing pad with calibration. With plaster spatula, mix the pastes in a rotator motion until the mixture is homogenous." },
-        { q: "In Manipulation of Condensation Silicone, how is the liquid measured?", a: "In terms of drops per unit length of base", e: "The liquid is measured in terms of drops per unit length of base. Knead with fingers until homogenously colored." },
-        { q: "In Manipulation of Condensation Silicone, what happens at initial setting time?", a: "Withdraw from the mouth, scrape off some parts, then put the light material on the tray and around the tooth, and seat the tray again", e: "At initial setting time, withdraw from the mouth. Scrape off some parts then put the light material on the tray and around the tooth. Seat the tray again and wait for the final setting time." },
-        { q: 'What does "Plastic = create space" refer to, in the context of impression manipulation?', a: "Plastic creates space (as noted at the end of the Condensation Silicone manipulation section)", e: "Plastic = create space (noted after Manipulation of Condensation Silicone)." },
-        { q: "For Polysulfide/Thiokol/Mercaptan Rubber, what is a distinguishing characteristic regarding odor and trays used?", a: "With obnoxious odor; used with custom made trays", e: "Polysulfide/Thiokol/Mercaptan Rubber: With obnoxious odor; Used with custom made trays." },
-        { q: "For Polysulfide, within how many minutes should it be poured, and what is the by-product?", a: "Should be poured immediately within 30 minutes; By-product: water", e: "Should be poured immediately within 30 minutes. Radiopaque. By-product: water. Elasticity: 97.9%." },
-        { q: "What is the Base of Polysulfide, and what is its plasticizer?", a: "Polysulfide polymer (also acts as filler); Plasticizer: dibutyl phthalate - improves workability", e: "Base (Polysulfide): Polysulfide polymer – filler; Plasticizer: dibutyl phthalate - improves workability; Accelerator: sulfur (0.5%), plasticizer to confer the right viscosity." },
-        { q: "What is the main component (Catalyst) of Polysulfide, producing dark brown color?", a: "Lead dioxide", e: "Catalyst (Polysulfide): Lead dioxide – main component of polysulfide; produces dark brown color; to improve physical property and causes the foul smell. Also: Fillers, Plasticizers, Retarder: stearic acid and oleic acid, & sulfur." },
-        { q: "What are the Fillers of Polysulfide?", a: "Lithopone, Titanium dioxide", e: "Filler (Polysulfide): Lithopone, Titanium dioxide." },
-        { q: "For Polyether, what characteristic relates to dimensional stability and water affinity?", a: "Excellent dimensional stability; Hydrophilic", e: "Polyether: Excellent dimensional stability; Hydrophilic." },
-        { q: "What percentage of individuals have shown some reaction to Polyether material, and what is its ratio of base-accelerator?", a: "0.5% of individuals; 8:1 ratio of base-accelerator", e: "0.5% of individuals have shown some reaction to this material. 8:1 ratio of base-accelerator. Brittle. Elasticity: 98.9%." },
-        { q: "What is the main component (Base) of Polyether?", a: "Polyether polymer", e: "Base (Polyether): polyether polymer; Plasticizer: glycol ether/phthalate." },
-        { q: "What is the main component (Catalyst) of Polyether?", a: "Alkyl aromatic sulfonate", e: "Catalyst (Polyether): Alkyl aromatic sulfonate – main component; Plasticizer: Glycol ether phthalate. Colloidal silica is the filler." },
-        { q: "What are the Fillers of Polyether?", a: "Colloidal silica, silica", e: "Filler (Polyether): colloidal silica, silica." },
-        { q: "For Condensation Silicone, what is the dispensing form and by-product?", a: "Dispensing form: paste and liquid; By-product: ethanol", e: "Condensation Silicone: dispensing form: paste and liquid; by-product: ethanol." },
-        { q: "Within how many hours must Condensation Silicone be poured, and what happens to the dies produced?", a: "Must be poured within 6 hours; dies produced are smaller", e: "must be poured within 6 hours; dies produced are smaller. Elasticity: 99.5%." },
-        { q: "What is the main component (Base) of Condensation Silicone?", a: "Polydimethyl siloxane", e: "Base (Condensation Silicone): polydimethyl siloxane – main component; & silica – filler." },
-        { q: "What is the Catalyst of Condensation Silicone, and does it contain fillers?", a: "Tin octoate/stannous octate, alkyl silicate; no fillers – fillers are necessary to form a paste", e: "Catalyst (Condensation Silicone): tin octoate/stannous octate; alkyl silicate; no fillers - fillers are necessary to form a paste." },
-        { q: "What are the Fillers of Condensation Silicone?", a: "Silica, microsized metal oxide", e: "Filler (Condensation Silicone): silica, microsized metal oxide." },
-        { q: "For Addition Silicone, what is it least affected by, compared to other materials?", a: "Least affected by pouring delay of any material", e: "Addition Silicone: Polyvinylsiloxane / vinyl polysiloxane. Least affected by pouring delay of any material." },
-        { q: "What varieties does Addition Silicone come in?", a: "Putty-wash, wash-wash", e: "Comes in many varieties (putty-wash, wash-wash)." },
-        { q: "For Addition Silicone, what has been added to decrease its hydrophobia, and how much softer are the dies?", a: "Surfactants has been added; dies are 14-33% softer", e: "Surfactants has been added to decrease its hydrophobia; dies are 14-33% softer. Elasticity: 97.9%. More expensive than condensation silicone." },
-        { q: "What is the main component of the Base of Addition Silicone?", a: "Silicone polymer", e: "Base (Addition Silicone): Silicone polymer, Polymethyl hydrogen siloxane, Chloroplatinic acid, Fillers, Retarder: Aluminium sulfate." },
-        { q: "What is the Catalyst (Activator) of Addition Silicone?", a: "Divinyl polymethyl siloxane; Activator – platinum salt; Fillers", e: "Catalyst (Addition Silicone): Divinyl polymethyl siloxane; Activator – platinum salt; Fillers." },
-        { q: "What is the Retarder used in the Base of Addition Silicone?", a: "Aluminium sulfate", e: "Retarder (Addition Silicone Base): Aluminium sulfate." },
-        { q: "What are the Advantages of rubber impression materials over hydrocolloids?", a: "More flexible; has a higher tear strength... rubber; more dimensionally stable", e: "Advantages over hydrocolloids: More flexible; Has a higher tear strength.... rubber; More dimensionally stable." },
-        { q: "What rate does shrinkage occur for rubber impression materials, and what causes it?", a: "0.05-0.36%; Loss of volatile compounds, Thermal changes, polymerization shrinkage", e: "Properties: Shrinkage occurs at a rate of 0.05-0.36%: Loss of volatile compounds; Thermal changes; polymerization shrinkage." },
-        { q: "What is the elasticity percentage of Condensation Silicone (CS), Polyether (PE), Polysulfide (PS), and Addition Silicone (AS)?", a: "CS: 99.5%; PE: 98.9%; PS: 97.9%; AS: 97.9%", e: "Elasticity: CS: 99.5%; PE: 98.9%; PS: 97.9%; AS: 97.9%." },
-        { q: "What is the tear strength of rubber impression materials?", a: "25-35psi", e: "Tear strength of 25-35psi." },
+        {
+          q: "What is the definition of Impression?",
+          a: "Negative reproduction",
+          e: "Impression = negative reproduction; Cast = positive reproduction.",
+        },
+        {
+          q: "What is the objective of impression materials?",
+          a: "To copy accurately the teeth and other structures in the oral cavity",
+          e: "Objective: to copy accurately the teeth and other structures in the oral cavity.",
+        },
+        {
+          q: "What setting mechanism describes an irreversible reaction implying that chemical reaction have occurred and that the material can't revert to its present state?",
+          a: "Thermo set",
+          e: "Thermo set – irreversible reaction implies that chemical reaction have occurred and that the material can't revert to its present state. Ex: alginate, zinc oxide eugenol impression paste.",
+        },
+        {
+          q: "What are examples of Thermoplastic materials?",
+          a: "Reversible hydrocolloid and the impression compound",
+          e: "Thermoplastic – reversible materials softened under heat and solidify when they are cooled, with no chemical change taking place.",
+        },
+        {
+          q: "What is the definition of Impression Trays?",
+          a: "Appliance used to reach the patient's mouth",
+          e: "Impression Trays – appliance used to reach the patient's mouth.",
+        },
+        {
+          q: "Which tray is used for modelling compound for preliminary impression, has no perforations, and has good adhesive property?",
+          a: "Stock tray",
+          e: "Stock tray – used for modelling compound for preliminary impression; no perforations; Good adhesive property.",
+        },
+        {
+          q: "Which tray is used when impression materials do not adhere to the tray, with perforations?",
+          a: "Perforated tray",
+          e: "Perforated tray – used when impression materials do not adhere to the tray; with perforations.",
+        },
+        {
+          q: "Which tray has a locking mechanism and no perforations?",
+          a: "Rim-lock tray",
+          e: "Rim-lock tray – there's a locking mechanism; no perforations.",
+        },
+        {
+          q: "Which tray is custom-built, self-made, and used in final impression for study cast?",
+          a: "Individual tray",
+          e: "Individual tray – custom-built; self-made; used in final impression for study cast (Resin, Shellac base plate, Type II modelling compound).",
+        },
+        {
+          q: "Which tray is used for agar impression?",
+          a: "Water-cooled tray",
+          e: "Water-cooled tray – used for agar impression.",
+        },
+        {
+          q: "Which tray is made of plastic?",
+          a: "Disposable tray",
+          e: "Disposable tray – made of plastic.",
+        },
+        {
+          q: 'What type of impression is described as preliminary impression; final impression/secondary; "wash"; more accurate; corrects the defect of preliminary impression?',
+          a: "Double impression",
+          e: 'Double impression – preliminary impression; final impression/secondary; "wash"; more accurate; corrects the defect of preliminary impression.',
+        },
+        {
+          q: "According to physical properties, under Rigid/Inelastic (edentulous patient) and Thermoset (irreversible), what materials are listed?",
+          a: "Plaster of Paris and ZOE paste",
+          e: "Thermoset (irreversible) - Rigid/Inelastic: Plaster of Paris, ZOE paste. Elastic: Alginate, Rubber impression material (Polysulfide, Polyether, Condensation silicone, Addition silicone).",
+        },
+        {
+          q: "Under Thermoplastic (reversible), what is listed for Rigid/Inelastic and Elastic categories respectively?",
+          a: "Modelling compound and Agar",
+          e: "Thermoplastic (reversible) - Rigid/Inelastic: Modelling compound. Elastic: Agar.",
+        },
+        {
+          q: "What is the manner of withdrawal for Rigid/Inelastic (edentulous patient) materials?",
+          a: "Teasing movement",
+          e: "Manner of Withdrawal - Rigid/Inelastic: Teasing movement.",
+        },
+        {
+          q: "What is the manner of withdrawal for Elastic (dentate patient) materials?",
+          a: "Sudden pull parallel to the long axis of the tooth",
+          e: "Manner of Withdrawal - Elastic: Sudden pull parallel to the long axis of the tooth.",
+        },
+        {
+          q: "What is the composition of Soluble Plaster?",
+          a: "80% plaster of paris (β-hemihydrate)",
+          e: "Composition: 80% plaster of paris (β-hemihydrate).",
+        },
+        {
+          q: "In Soluble Plaster, what is the function of KSO4?",
+          a: "Accelerator; speed up setting time (3-5 mins)",
+          e: "KSO4 – accelerator; speed up setting time (3-5 mins).",
+        },
+        {
+          q: "In Soluble Plaster, what is the function of Potato starch?",
+          a: "Makes the plaster soluble; help in separating cast and impression material when submerged in hot water (soluble plaster swells when placed in hot water)",
+          e: "Potato starch – makes the plaster soluble; help in separating cast and impression material when submerged in hot water.",
+        },
+        {
+          q: "What is the function of Coloring materials in Soluble Plaster?",
+          a: "Help in interpreting the impression; provides ease in reading the impression; for easy identification of impression from cast",
+          e: "Coloring materials – help in interpreting the impression; provides ease in reading the impression; for easy identification of impression from cast.",
+        },
+        {
+          q: "What is Soluble Plaster's use, according to the Properties table?",
+          a: "For taking secondary impression",
+          e: "Use: For taking secondary impression.",
+        },
+        {
+          q: "What is the WP ratio of Soluble Plaster?",
+          a: "0.50-0.75",
+          e: "WP ratio: 0.50-0.75.",
+        },
+        {
+          q: "What is the compressive strength of Soluble Plaster?",
+          a: "580 +/-290 psi",
+          e: "Compressive strength: 580 +/-290 psi; Easy to break; Not popular in the market anymore.",
+        },
+        {
+          q: "What is the manner of withdrawal for Soluble Plaster?",
+          a: "Teasing movement",
+          e: "Manner of withdrawal: Teasing movement.",
+        },
+        {
+          q: "In the Boxing Method of cast construction, how wide is the wax strip placed around the tray?",
+          a: "1 inch",
+          e: 'Boxing Method: Place a 1" wax strip around the tray. Pour cast material on tray and level it to the wax. Let it set. Remove the wax and separate the cast after setting.',
+        },
+        {
+          q: "In the Inversion Method, after pouring cast material on the tray, what is done with the excess?",
+          a: "Poured on a glass slab or on the tiled working table, then the impression tray is inverted on slab or table and the flowing cast is scraped",
+          e: "Inversion Method: Pour cast material on tray. Pour the excess on a glass slab or on the tiled working table. Invert the impression tray on slab or table. Scrape flowing cast.",
+        },
+        {
+          q: "In the Rubber Base Former method, what do you invert the tray on, instead of a slab or table?",
+          a: "A rubber base former",
+          e: "Rubber Base Former: Instead of inverting on a slab or table, invert on a rubber base former.",
+        },
+        {
+          q: "What are the Properties of Good Cast?",
+          a: "No porosities/nodules; No distortion: copy accordingly the given impression; Dimensionally stable",
+          e: "Properties of Good Cast: No porosities/nodules; No distortion: copy accordingly the given impression; Dimensionally stable.",
+        },
+        {
+          q: '"Modelling compound" is supplied in what form, and is it for edentulous or dentate ridges?',
+          a: "Supplied in the form of sheets and sticks; for edentulous ridges",
+          e: '"Modelling compound" is supplied in the form of sheets and sticks. It is softened by heat, inserted in an impression tray, place against tissue. It is for edentulous ridges.',
+        },
+        {
+          q: "What type of Modelling Compound is described as: True impression compound, has high flow property, for preliminary impression?",
+          a: "Type I",
+          e: "Type I: True impression compound; Has high flow property; For preliminary impression.",
+        },
+        {
+          q: "What type of Modelling Compound is the tray compound, more rigid, for individual tray?",
+          a: "Type II",
+          e: "Type II: Tray compound; More rigid; for individual tray.",
+        },
+        {
+          q: "In the Components of Modelling Compound, what are Beeswax and thermoplastic resin responsible for?",
+          a: "For thermoplastic property",
+          e: "Beeswax and thermoplastic resin: For thermoplastic property.",
+        },
+        {
+          q: "In the Components of Modelling Compound, Shellac, gutta percha, and stearic acid are responsible for what?",
+          a: "Can improve workability, act as plasticizer/hardening agent",
+          e: "Shellac, gutta percha, stearic acid: Can improve workability, act as plasticizer/hardening agent.",
+        },
+        {
+          q: "In the Components of Modelling Compound, French chalk, talc, and diatomaceous earth fillers are responsible for what?",
+          a: "Hardeners; for strength",
+          e: "French chalk, talc, diatomaceous earth fillers: Hardeners; for strength.",
+        },
+        {
+          q: "What type of Modelling Compound (by dispensing form) is used for full arch impression (preliminary)?",
+          a: "Cake",
+          e: "Cake – for full arch impression (preliminary).",
+        },
+        {
+          q: 'What type of Modelling Compound is used for single tooth, called "impression tube" with the use of copper band (matrix band)?',
+          a: "Stick",
+          e: 'Stick – for single tooth; "impression tube" with the use of copper band (matrix band).',
+        },
+        {
+          q: "What are the Uses of Modelling Compound?",
+          a: "For impression taking (preliminary); Individual tray construction (stick); For border molds (makes the rim higher; stick); Serve as a wedge material to hold the matrix in place",
+          e: "Uses: For impression taking (preliminary); Individual tray construction (stick); For border molds (makes the rim higher; stick); Serve as a wedge material to hold the matrix in place.",
+        },
+        {
+          q: "In the Moist heat method of manipulating Modelling Compound, at what temperature is the water bath?",
+          a: "50-70°C",
+          e: "Moist heat method: Water bath 50-70°C. Because of poor thermal conductivity/poor heat transfer, the outer surface softens while the inner surface remains hard. Homogenously soft in and out.",
+        },
+        {
+          q: "What is the Dry heat method for Modelling Compound?",
+          a: "Open flame",
+          e: "Dry heat method: Open flame.",
+        },
+        {
+          q: "What happens during Overheating of Modelling Compound (indicated by sparks)?",
+          a: "Important ingredients are lost during melting; sparks indicate that some components (plasticizers) are leached out",
+          e: "Important ingredients are lost during melting. Overheating – sparks indicate that some components (plasticizers) are leached out. If during heating, the modelling compound isn't shiny... plasticizers are lost already.",
+        },
+        {
+          q: "What is the dimensional change (shrinkage) of Modelling Compound?",
+          a: "0.3-0.4%",
+          e: "Dimensional change: shrinks at 0.3-0.4%.",
+        },
+        {
+          q: "What is the disadvantage of Modelling Compound's continuous flow property?",
+          a: "Can be a source of error, if you fail to construct the cast immediately after withdrawing the impression from the patient's mouth",
+          e: "Disadvantage: continuous flow property can be a source of error, if you fail to construct the cast immediately after withdrawing the impression from the patient's mouth.",
+        },
+        {
+          q: "For Modelling Compound cast construction and separation, is a separating medium needed?",
+          a: "No need for separating medium",
+          e: "Cast Construction and Separation: Wash in running water after withdrawal; No need for separating medium; Mix plaster of paris to make study cast; Immerse in hot water (MC softens).",
+        },
+        {
+          q: "Which of the following is NOT a use of Zinc Oxide Eugenol (ZOE)?",
+          a: "Water-cooled tray material",
+          e: "ZOE uses include secondary impression for edentulous ridge, surgical dressing, stabilizes occlusion rims, temporary filling material, temporary relining material, root canal sealer, cementing medium, pulp capping agent, heat insulating bases, and bite registration paste. Water-cooled tray is not a ZOE use.",
+        },
+        {
+          q: "What is the base of ZOE used to stabilize occlusion rims made of?",
+          a: "Shellac; made of wax",
+          e: "Stabilizes occlusion rims (prostho) — Base: shellac; made of wax.",
+        },
+        {
+          q: "Why do dentures become loose, prompting the use of ZOE as a temporary relining material?",
+          a: "Because the bone resorbs",
+          e: "Temporary relining material for loose dentures: Dentures become loose because the bone resorbs. Remedy: relining/rebasing depends on the extent of looseness.",
+        },
+        {
+          q: "What is Relining, as opposed to Rebasing?",
+          a: "Adding acrylic resin; resurfacing the tissue side of a denture; to achieve accurate fit",
+          e: "Relining: adding acrylic resin; resurfacing the tissue side of a denture; to achieve accurate fit. Rebasing: removing the entire denture base.",
+        },
+        {
+          q: "As a root canal sealer (endo), ZOE is used to gutta ercha sticks inserted into the canal. What is ZOE described as?",
+          a: "A sealer or obtundant material",
+          e: "Root canal sealer (endo): Used to gutta ercha sticks inserted into the canal. ZOE is a sealer or obtundant material.",
+        },
+        {
+          q: "As a cementing medium, what are the two varieties of ZOE cement?",
+          a: "Weak: temporary cement; Strong: permanent cementing medium",
+          e: "Cementing medium (crowns, onlays, ortho brackets): Weak: temporary cement; Strong: permanent cementing medium; they must be cemented on the prepared cavity.",
+        },
+        {
+          q: "What is the difference between Onlays and Inlays?",
+          a: "Onlays: restorations for mixing cusps (restorations fabricated outside the mouth); Inlays: confined within the walls of the cavity",
+          e: "Onlays: restorations for mixing cusps (restorations that are fabricated outside the mouth). Inlays: confined within the walls of the cavity.",
+        },
+        {
+          q: "ZOE is used as a Pulp capping agent (resto) when there is what condition?",
+          a: "Excessive cavitation",
+          e: "Pulp capping agent (resto): When there's excessive cavitation.",
+        },
+        {
+          q: "According to Depth of Cavity, what is the ideal depth cavity for Class A?",
+          a: "0.2-0.5mm beyond DEJ",
+          e: "Class A: 0.2-0.5mm beyond DEJ; ideal depth cavity.",
+        },
+        {
+          q: "According to Depth of Cavity, Class C has no pulp involvement yet. What is used and what procedure is performed?",
+          a: "Use ZOE, indirect pulp capping procedure",
+          e: "Class C: No pulp involvement yet. Use ZOE, indirect pulp capping procedure.",
+        },
+        {
+          q: "According to Depth of Cavity, Class D has pinpoint pulp involvement. What agent is used, and what procedure is performed, to prevent bleeding?",
+          a: "Not a ZOE but a cement-based capping agent (calcium hydroxide); direct pulp capping",
+          e: "Class D: With pinpoint pulp involvement. Not a ZOE but a cement-based capping agent (calcium hydroxide) direct pulp capping — to prevent bleeding.",
+        },
+        {
+          q: "What is ZOE used for heat insulating bases?",
+          a: "Used to absorb heat coming from outside stimulus before amalgam restoration",
+          e: "For heat insulating bases: Used to absorb heat coming from outside stimulus before amalgam restoration.",
+        },
+        {
+          q: "For bite registration paste using ZOE, what steps are followed?",
+          a: "Seat the horseshoe-shaped wax or ZOE paste on mouth; allow ZOE paste to set; transfer the bite cast",
+          e: "Bite registration paste: To stimulate the occlusal relationship between the upper and lower arches. Use of bite wax and ZOE paste. Seat the horseshoe-shaped wax or ZOE paste on mouth. Allow ZOE paste to set. Transfer the bite cast.",
+        },
+        {
+          q: "What are the two dispensing forms of ZOE?",
+          a: "2 paste form; Powder:liquid form (resto)",
+          e: "Dispensing Form of ZOE: 2 paste form (Tube 1: universal/base - bigger tube; Tube 2: reactor/catalyst/accelerator); Powder:liquid form (ZOE) – resto.",
+        },
+        {
+          q: "In Tube 1 (Universal/Base) of ZOE, what does the 13% fixed vegetable or mineral oil act as?",
+          a: "A plasticizer and aids in offsetting the action of the eugenol as an irritant",
+          e: "13% fixed vegetable or mineral oil: Acts as a plasticizer and aids in offsetting the action of the eugenol as an irritant.",
+        },
+        {
+          q: "In Tube 2 (Reactor/Catalyst/Accelerator) of ZOE, what percentage of eugenol does Oil of cloves contain, and what effect does it have?",
+          a: "Contains 70-85% eugenol; produces less burning sensation for patients",
+          e: "Oil of cloves – contains 70-85% eugenol; produces less burning sensation for patients.",
+        },
+        {
+          q: "What does Gum/polymerized resin do in Tube 2 of ZOE?",
+          a: "Facilitates the speed of the reaction and yields a smoother, homogenous product",
+          e: "Gum/polymerized resin – facilitates the speed of the reaction and yields a smoother, homogenous product.",
+        },
+        {
+          q: "What is the function of Accelerators (CaCl2) in ZOE Tube 2?",
+          a: "Speed up setting time",
+          e: "Accelerators – CaCl2 (speed up setting time).",
+        },
+        {
+          q: "What is the function of Olive oil in ZOE Tube 2?",
+          a: "Dilute the content",
+          e: "Olive oil – dilute the content.",
+        },
+        {
+          q: "During ZOE manipulation, what tool is used for mixing?",
+          a: "Stainless steel spatula",
+          e: "Use stainless steel spatula for mixing procedure. Combine the two strips of contrasting colors, mixing continued for approximately 1 min, or as directed by the manufacturer, until uniform color is achieved.",
+        },
+        {
+          q: "What is a Hydrocolloid?",
+          a: "Mixture of 2/more substances; one is suspended",
+          e: "Hydrocolloids: Mixture of 2/more substances; one is suspended.",
+        },
+        {
+          q: "What are the two Types of Hydrocolloids?",
+          a: "Reversible and Irreversible",
+          e: "Types: Reversible, Irreversible.",
+        },
+        {
+          q: "Agar is the reversible hydrocolloid. In what forms is it dispensed?",
+          a: "Tubes, sticks",
+          e: "Reversible: agar hydrocolloid. Dispensing form: tubes, sticks.",
+        },
+        {
+          q: "What is Agar, in terms of composition?",
+          a: "Extract of seaweed (agar-agar)",
+          e: 'Agar – extract of seaweed (agar-agar). Tray material (8-15%) – heavier type. Syringe material (6-8%) – more "flowy".',
+        },
+        {
+          q: "In agar hydrocolloid composition, what percentage is Water?",
+          a: "70-80%",
+          e: "Water (70-80%).",
+        },
+        {
+          q: "In agar hydrocolloid composition, what does Borax (0.02%) do?",
+          a: "Improves the viscosity of the sol and the strength of the gel",
+          e: "Borax (0.02%) – improves the viscosity of the sol and the strength of the gel.",
+        },
+        {
+          q: "In agar hydrocolloid composition, what does K2SO4 (1%) do, and what should be done if it's absent?",
+          a: "Accelerator; ensures the setting of gypsum. If absent, immerse the agar impression in a 2% K2SO4 solution for 5mins",
+          e: "K2SO4 (1%) – accelerator; ensures the setting of gypsum. **If there's no K2SO4 present, immerse the agar impression in a 2% K2SO4 solution for 5mins.",
+        },
+        {
+          q: "What is the plasticizer used in agar hydrocolloid?",
+          a: "Glycerine",
+          e: "Plasticizer (glycerine).",
+        },
+        {
+          q: "What are the bactericide/antifungal agents in agar hydrocolloid, and what do they do?",
+          a: "Thymol, HCl – kills bacteria",
+          e: "Bactericide/antifungal agents (thymol, HCl) – kills bacteria.",
+        },
+        {
+          q: "What apparatus is needed for agar hydrocolloid impressions?",
+          a: "Hydrocolloid conditioner, agar hydrocolloid, water-cooled tray with tubing",
+          e: "Apparatus needed: hydrocolloid conditioner, agar hydrocolloid, water-cooled tray with tubing.",
+        },
+        {
+          q: "What is the Liquefying temperature and time for agar hydrocolloid manipulation?",
+          a: "98-100°C for 10 minutes, so that it would be softer",
+          e: "FIRST (Liquefying temperature): 98-100°C, 10 minutes, so that it would be softer.",
+        },
+        {
+          q: "What is the Storing temperature for agar hydrocolloid, and for how long?",
+          a: "64-68°C, all day, for storage",
+          e: "SECOND (Storing temperature): 64-68°C, all day, for storage.",
+        },
+        {
+          q: "What is the Tempering temperature for agar hydrocolloid, and why?",
+          a: "44-48°C, 3 minutes, to let it cool a little so that it will be tolerable by your patient",
+          e: "THIRD (Tempering temperature): 44-48°C, 3 minutes, to let it cool a little so that it will be tolerable by your patient.",
+        },
+        {
+          q: "Once the tray is properly seated in the patient's mouth, water is turned on to cool the material to what temperature range?",
+          a: "30-44°C",
+          e: "Once the tray is properly seated in the patient's mouth, water is turned on to cool the material to 30-44°C.",
+        },
+        {
+          q: "Within how many minutes does the hydrocolloid (agar) gel?",
+          a: "3 minutes",
+          e: "The hydrocolloid gels within 3 minutes.",
+        },
+        {
+          q: "After tray removal, how should the impression material be pulled?",
+          a: "By holding the vestibular area",
+          e: "Pull the impression material by holding the vestibular area. Also: Disinfect impression surface after removal; Pour cast immediately; Blow using mouth.",
+        },
+        {
+          q: "What clinical application makes agar hydrocolloid very useful?",
+          a: "Taking impressions when the margins of a crown prep or subgingival area is not easily kept dry",
+          e: "Clinical Application: Very useful for taking impressions when the margins of a crown prep or subgingival and not easily kept dry. Duplicate causeful in laboratory can be used to duplicate cast models (cost-efficient bec reversible).",
+        },
+        {
+          q: "What are the Advantages of agar hydrocolloid?",
+          a: "Works well in a wet environment; Takes a very accurate impression; Hydrocolloid itself is very inexpensive",
+          e: "Advantages: Works well in a wet environment; Takes a very accurate impression; Hydrocolloid itself is very inexpensive.",
+        },
+        {
+          q: "What are the Disadvantages of agar hydrocolloid?",
+          a: "Hydrocolloid conditioner is expensive; can be poured only once; dimensionally unstable; has poor tear strength; requires the use of water-cooled trays",
+          e: "Disadvantages: Hydrocolloid conditioner is expensive; Can be poured only once; Dimensionally unstable; Has poor tear strength; Requires the use of water-cooled trays.",
+        },
+        {
+          q: "What is Hysteresis?",
+          a: "Melting and gelling temperature are different",
+          e: "Hysteresis – melting and gelling temperature are different.",
+        },
+        {
+          q: "What is Syneresis?",
+          a: "Liquid component is squeezed out of the material; loss of water = shrinkage",
+          e: "Syneresis – liquid component is squeezed out of the material; loss of water = shrinkage.",
+        },
+        {
+          q: "What is Imbibition?",
+          a: "Material takes in water; increase in H2O = swell",
+          e: "Imbibition – material takes in water; increase in H2O = swell.",
+        },
+        {
+          q: "Gypsum is described by setting time; agar is described by what term?",
+          a: "Gelation time",
+          e: "Gypsum:setting time; agar:gelation time. Melting point: 85°C. Boiling point: 32°C.",
+        },
+        {
+          q: "What is the melting point and boiling point mentioned for agar's associated terminologies?",
+          a: "Melting point: 85°C; Boiling point: 32°C",
+          e: "Melting point: 85°C. Boiling point: 32°C.",
+        },
+        {
+          q: "In agar hydrocolloid manipulation, what does tempering do?",
+          a: "Increase the viscosity of the material",
+          e: "Tempering increase the viscosity of the material. For syringe material, there's no need to temper the hydrocolloid.",
+        },
+        {
+          q: "What is the manner of withdrawal for reversible (agar) hydrocolloid?",
+          a: "Quick snap",
+          e: "Manner of withdrawal: quick snap.",
+        },
+        {
+          q: "What is the classification of Irreversible hydrocolloid (alginate)?",
+          a: "Thermoset, elastic",
+          e: "Irreversible hydrocolloids: alginate. Classification: thermoset, elastic.",
+        },
+        {
+          q: "What is the dispensing form of alginate?",
+          a: "Powder",
+          e: "Dispensing form: powder.",
+        },
+        {
+          q: "What are the two Types of alginate, based on setting time?",
+          a: "Type I: fast set (1-2mins); Type II: regular set (2.5-4mins)",
+          e: "Types: Type I: fast set (1-2mins); Type II: regular set (2.5-4mins).",
+        },
+        {
+          q: "In alginate composition, what does Calcium sulphate (CaSO4) hemihydrate do?",
+          a: "Increases shelf life of the powder and increases dimensional stability of the gel",
+          e: "Calcium sulphate (CaSO4): Reactor, hemihydrates: commonly used. Hemihydrate: increases shelf life of the powder and increases dimensional stability of the gel.",
+        },
+        {
+          q: "In alginate composition, what do Fillers (diatomaceous earth, zinc oxide) do?",
+          a: "Increases strength and stiffness; produces a smooth texture; ensures a firm gel surface that is not tacky; disperses the alginate powder particles in water",
+          e: "Fillers (diatomaceous earth, zinc oxide): Increases strength and stiffness; Produces a smooth texture; Ensures a firm gel surface that is not tacky; Disperses the alginate powder particles in water.",
+        },
+        {
+          q: "What does Potassium Titanium Fluoride do in alginate?",
+          a: "Accelerates setting of the stone; plaster hardener",
+          e: "Potassium Titanium Fluoride: Accelerates setting of the stone; Plaste hardener.",
+        },
+        {
+          q: "What does Trisodium phosphate (Na3PO4) do in alginate?",
+          a: "Retarder, allows proper manipulation, prolongs working time",
+          e: "Trisodium phosphate (Na3PO4): retarder, allows proper manipulation, prolongs working time.",
+        },
+        {
+          q: "What does Organic glycol do in alginate composition?",
+          a: 'Makes alginate "dust free"',
+          e: 'Organic glycol: Makes alginate "dust free".',
+        },
+        {
+          q: "What do Coloring and flavouring materials do in alginate?",
+          a: "Adds palatability; aids in reading the impression",
+          e: "Coloring and flavouring materials: Adds palatability; Aids in reading the impression.",
+        },
+        {
+          q: "What is the First reaction in Gelation of alginate?",
+          a: "3CaSO4 + 2Na3PO4 → Ca3(PO4) + 3NaSO4",
+          e: "First reaction: 3CaSO4 + 2Na3PO4 → Ca3(PO4) + 3NaSO4.",
+        },
+        {
+          q: "What is the Second reaction in Gelation of alginate?",
+          a: "Na/K 2n alg + nCaSO4 → nNa2/K2SO4 + Ca alg",
+          e: "Second reaction: Na/K 2n alg + nCaSO4 → nNa2/K2SO4 + Ca alg.",
+        },
+        {
+          q: "How long does gelation of alginate occur at room temperature?",
+          a: "About 3-4 mins",
+          e: "Gelation occurs in about 3-4 mins at room temperature.",
+        },
+        {
+          q: "How does increasing water affect alginate's gelation time?",
+          a: "↑water = longer gelation time",
+          e: "↑water = longer gelation time. ↓water = shorter gelation time.",
+        },
+        {
+          q: "How does increasing temperature affect alginate's gelation time?",
+          a: "↑temp = longer gelation time",
+          e: "According to the source PDF: ↑temp = longer gelation time; ↓temp = shorter gelation time. (Note: the source document text on this point was somewhat unclear — double check against your lecture notes.)",
+        },
+        {
+          q: "How does increasing spatulation affect alginate's setting?",
+          a: "↑spatulation = faster",
+          e: "↑spatulation = faster. ↓spatulation = slower.",
+        },
+        {
+          q: "What is the W/P ratio for alginate manipulation, and what is the small pack amount?",
+          a: "15-18g of powder per 40-50cc of water; small pack: 17g",
+          e: "W/P ratio: 15-18g of powder per 40-50cc of water. Small pack: 17g.",
+        },
+        {
+          q: "In alginate manipulation, what order are water and powder combined, and what mixing motion is used?",
+          a: "Water first before powder; use horizontal figure 8 while swiping and stropping the mixture against the sides of the bowl",
+          e: "Water first before powder. Use horizontal figure 8 while swiping and stropping the mixture against the sides of the bowl. Result: smooth, creamy mixture.",
+        },
+        {
+          q: "What is the mixing time for alginate?",
+          a: "45 sec to 1 minute",
+          e: "Mixing time: 45 sec to 1 minute.",
+        },
+        {
+          q: "When making the alginate impression, what type of trays should be used?",
+          a: "Perforated trays or plastic trays with tray adhesives",
+          e: "Use perforated trays or plastic trays with tray adhesives.",
+        },
+        {
+          q: "What must be the minimum thickness of alginate between the tray and tissues?",
+          a: "At least 3mm",
+          e: "Thickness of alginate must be at least 3mm between the tray and tissues.",
+        },
+        {
+          q: "How long should you wait after gelation before withdrawing the alginate impression?",
+          a: "2-3 mins",
+          e: "Wait for 2-3 mins after gelation before withdrawing the impression.",
+        },
+        {
+          q: "What is the Elasticity and Compressive strength properties of alginate?",
+          a: "Elasticity (97.8%); Compressive strength (49.8 psi)",
+          e: "Properties: Elasticity (97.8%); Compressive strength (49.8 psi); Good flow property.",
+        },
+        {
+          q: "What are the 2 major factors to consider for alginate's shelf life?",
+          a: "Storage temperature; Moisture contamination from the air",
+          e: "Shelf life - 2 major factors to consider: 1. Storage temperature 2. Moisture contamination from the air. **store in cool, dry environment in containers with tight lids.",
+        },
+        {
+          q: "What are the Advantages of alginate?",
+          a: "Easy to manipulate; Comfortable for the patient; Relatively inexpensive",
+          e: "Advantages: Easy to manipulate; Comfortable for the patient; Relatively inexpensive.",
+        },
+        {
+          q: "Rubber Impression Materials/Elastomers refer to what?",
+          a: "A group of rubbery polymers, which are either chemically/physically cross-linked",
+          e: "Rubber Impression Materials/Elastomers: Refers to a group of rubbery polymers, which are either chemically/physically cross-linked. Setting occurs through a combination of chain-lengthening polymerization and chemical cross-linking by either a condensation reaction/addition reaction.",
+        },
+        {
+          q: "What is the classification and manner of withdrawal for Rubber Impression Materials?",
+          a: "Classification: thermoset, elastic; Manner of withdrawal: sudden pull parallel to the long axis of the teeth",
+          e: "Classification: thermoset, elastic. Manner of withdrawal: sudden pull parallel to the long axis of the teeth.",
+        },
+        {
+          q: "What are the dispensing forms of Rubber Impression Materials?",
+          a: "2 paste form (base and catalyst); Paste-liquid form (base: paste; liquid: catalyst)",
+          e: "Dispensing form: 2 paste form (base and catalyst); Paste-liquid form (base: paste; liquid: catalyst).",
+        },
+        {
+          q: "What are the Uses of Rubber Impression Materials?",
+          a: "For impression taking with undercuts; Stabilize occlusion rims; Wash and corrective trims",
+          e: "Uses: For impression taking with undercuts; Stabilize occlusion rims; Wash and corrective trims.",
+        },
+        {
+          q: "What are the four Types of Rubber Impression Materials?",
+          a: "Polysulfide, Polyether, Condensation-polymerizing silicone, Addition-polymerizing silicone",
+          e: "Types: Polysulfide, Polyether, Condensation-polymerizing silicone, Addition-polymerizing silicone.",
+        },
+        {
+          q: "According to consistency, which classification is the tray material for double technique?",
+          a: "Heavy putty",
+          e: "Heavy putty – tray material for double technique.",
+        },
+        {
+          q: "According to consistency, which classification is the tray material for single impression taking?",
+          a: "Reg/medium body",
+          e: "Reg/medium body – tray material for single impression taking.",
+        },
+        {
+          q: "According to consistency, which classification is the syringe material for double technique, with thin consistency and good flow?",
+          a: "Syringe/light body",
+          e: "Syringe/light body – syringe material for double technique; has thin consistency and good flow.",
+        },
+        {
+          q: "For 2 paste form manipulation of RIM, how are the pastes placed and mixed?",
+          a: "Place equal amount of pastes on a glass slab/mixing pad with calibration; with plaster spatula, mix the pastes in a rotator motion until the mixture is homogenous",
+          e: "Manipulation of RIM (For 2 paste form): Place equal amount of pastes on a glass slab/mixing pad with calibration. With plaster spatula, mix the pastes in a rotator motion until the mixture is homogenous.",
+        },
+        {
+          q: "In Manipulation of Condensation Silicone, how is the liquid measured?",
+          a: "In terms of drops per unit length of base",
+          e: "The liquid is measured in terms of drops per unit length of base. Knead with fingers until homogenously colored.",
+        },
+        {
+          q: "In Manipulation of Condensation Silicone, what happens at initial setting time?",
+          a: "Withdraw from the mouth, scrape off some parts, then put the light material on the tray and around the tooth, and seat the tray again",
+          e: "At initial setting time, withdraw from the mouth. Scrape off some parts then put the light material on the tray and around the tooth. Seat the tray again and wait for the final setting time.",
+        },
+        {
+          q: 'What does "Plastic = create space" refer to, in the context of impression manipulation?',
+          a: "Plastic creates space (as noted at the end of the Condensation Silicone manipulation section)",
+          e: "Plastic = create space (noted after Manipulation of Condensation Silicone).",
+        },
+        {
+          q: "For Polysulfide/Thiokol/Mercaptan Rubber, what is a distinguishing characteristic regarding odor and trays used?",
+          a: "With obnoxious odor; used with custom made trays",
+          e: "Polysulfide/Thiokol/Mercaptan Rubber: With obnoxious odor; Used with custom made trays.",
+        },
+        {
+          q: "For Polysulfide, within how many minutes should it be poured, and what is the by-product?",
+          a: "Should be poured immediately within 30 minutes; By-product: water",
+          e: "Should be poured immediately within 30 minutes. Radiopaque. By-product: water. Elasticity: 97.9%.",
+        },
+        {
+          q: "What is the Base of Polysulfide, and what is its plasticizer?",
+          a: "Polysulfide polymer (also acts as filler); Plasticizer: dibutyl phthalate - improves workability",
+          e: "Base (Polysulfide): Polysulfide polymer – filler; Plasticizer: dibutyl phthalate - improves workability; Accelerator: sulfur (0.5%), plasticizer to confer the right viscosity.",
+        },
+        {
+          q: "What is the main component (Catalyst) of Polysulfide, producing dark brown color?",
+          a: "Lead dioxide",
+          e: "Catalyst (Polysulfide): Lead dioxide – main component of polysulfide; produces dark brown color; to improve physical property and causes the foul smell. Also: Fillers, Plasticizers, Retarder: stearic acid and oleic acid, & sulfur.",
+        },
+        {
+          q: "What are the Fillers of Polysulfide?",
+          a: "Lithopone, Titanium dioxide",
+          e: "Filler (Polysulfide): Lithopone, Titanium dioxide.",
+        },
+        {
+          q: "For Polyether, what characteristic relates to dimensional stability and water affinity?",
+          a: "Excellent dimensional stability; Hydrophilic",
+          e: "Polyether: Excellent dimensional stability; Hydrophilic.",
+        },
+        {
+          q: "What percentage of individuals have shown some reaction to Polyether material, and what is its ratio of base-accelerator?",
+          a: "0.5% of individuals; 8:1 ratio of base-accelerator",
+          e: "0.5% of individuals have shown some reaction to this material. 8:1 ratio of base-accelerator. Brittle. Elasticity: 98.9%.",
+        },
+        {
+          q: "What is the main component (Base) of Polyether?",
+          a: "Polyether polymer",
+          e: "Base (Polyether): polyether polymer; Plasticizer: glycol ether/phthalate.",
+        },
+        {
+          q: "What is the main component (Catalyst) of Polyether?",
+          a: "Alkyl aromatic sulfonate",
+          e: "Catalyst (Polyether): Alkyl aromatic sulfonate – main component; Plasticizer: Glycol ether phthalate. Colloidal silica is the filler.",
+        },
+        {
+          q: "What are the Fillers of Polyether?",
+          a: "Colloidal silica, silica",
+          e: "Filler (Polyether): colloidal silica, silica.",
+        },
+        {
+          q: "For Condensation Silicone, what is the dispensing form and by-product?",
+          a: "Dispensing form: paste and liquid; By-product: ethanol",
+          e: "Condensation Silicone: dispensing form: paste and liquid; by-product: ethanol.",
+        },
+        {
+          q: "Within how many hours must Condensation Silicone be poured, and what happens to the dies produced?",
+          a: "Must be poured within 6 hours; dies produced are smaller",
+          e: "must be poured within 6 hours; dies produced are smaller. Elasticity: 99.5%.",
+        },
+        {
+          q: "What is the main component (Base) of Condensation Silicone?",
+          a: "Polydimethyl siloxane",
+          e: "Base (Condensation Silicone): polydimethyl siloxane – main component; & silica – filler.",
+        },
+        {
+          q: "What is the Catalyst of Condensation Silicone, and does it contain fillers?",
+          a: "Tin octoate/stannous octate, alkyl silicate; no fillers – fillers are necessary to form a paste",
+          e: "Catalyst (Condensation Silicone): tin octoate/stannous octate; alkyl silicate; no fillers - fillers are necessary to form a paste.",
+        },
+        {
+          q: "What are the Fillers of Condensation Silicone?",
+          a: "Silica, microsized metal oxide",
+          e: "Filler (Condensation Silicone): silica, microsized metal oxide.",
+        },
+        {
+          q: "For Addition Silicone, what is it least affected by, compared to other materials?",
+          a: "Least affected by pouring delay of any material",
+          e: "Addition Silicone: Polyvinylsiloxane / vinyl polysiloxane. Least affected by pouring delay of any material.",
+        },
+        {
+          q: "What varieties does Addition Silicone come in?",
+          a: "Putty-wash, wash-wash",
+          e: "Comes in many varieties (putty-wash, wash-wash).",
+        },
+        {
+          q: "For Addition Silicone, what has been added to decrease its hydrophobia, and how much softer are the dies?",
+          a: "Surfactants has been added; dies are 14-33% softer",
+          e: "Surfactants has been added to decrease its hydrophobia; dies are 14-33% softer. Elasticity: 97.9%. More expensive than condensation silicone.",
+        },
+        {
+          q: "What is the main component of the Base of Addition Silicone?",
+          a: "Silicone polymer",
+          e: "Base (Addition Silicone): Silicone polymer, Polymethyl hydrogen siloxane, Chloroplatinic acid, Fillers, Retarder: Aluminium sulfate.",
+        },
+        {
+          q: "What is the Catalyst (Activator) of Addition Silicone?",
+          a: "Divinyl polymethyl siloxane; Activator – platinum salt; Fillers",
+          e: "Catalyst (Addition Silicone): Divinyl polymethyl siloxane; Activator – platinum salt; Fillers.",
+        },
+        {
+          q: "What is the Retarder used in the Base of Addition Silicone?",
+          a: "Aluminium sulfate",
+          e: "Retarder (Addition Silicone Base): Aluminium sulfate.",
+        },
+        {
+          q: "What are the Advantages of rubber impression materials over hydrocolloids?",
+          a: "More flexible; has a higher tear strength... rubber; more dimensionally stable",
+          e: "Advantages over hydrocolloids: More flexible; Has a higher tear strength.... rubber; More dimensionally stable.",
+        },
+        {
+          q: "What rate does shrinkage occur for rubber impression materials, and what causes it?",
+          a: "0.05-0.36%; Loss of volatile compounds, Thermal changes, polymerization shrinkage",
+          e: "Properties: Shrinkage occurs at a rate of 0.05-0.36%: Loss of volatile compounds; Thermal changes; polymerization shrinkage.",
+        },
+        {
+          q: "What is the elasticity percentage of Condensation Silicone (CS), Polyether (PE), Polysulfide (PS), and Addition Silicone (AS)?",
+          a: "CS: 99.5%; PE: 98.9%; PS: 97.9%; AS: 97.9%",
+          e: "Elasticity: CS: 99.5%; PE: 98.9%; PS: 97.9%; AS: 97.9%.",
+        },
+        {
+          q: "What is the tear strength of rubber impression materials?",
+          a: "25-35psi",
+          e: "Tear strength of 25-35psi.",
+        },
       ];
 
       const part2Cards = [
-        { q: "The study of different chemical and physical properties, their manipulation, and the clinical application or usage of the various materials used in dental practice.", a: "Dental Materials", e: "" },
-        { q: "The field of dentistry that deals with the inside of the tooth, the pulp, and surrounding tissues, often utilizing gutta percha.", a: "Endodontics", e: "" },
-        { q: "The field of dentistry focused on structures or replacements of missing teeth.", a: "Prosthodontics", e: "" },
-        { q: "The field of dentistry aimed at restoring the tooth in its original form.", a: "Restorative Dentistry", e: "" },
-        { q: "The individual who divided dental caries into six distinct classifications.", a: "GV Black", e: "" },
-        { q: "The caries classification that involves the occlusal surfaces of posterior teeth and lingual surfaces of anterior teeth.", a: "Class 1", e: "" },
-        { q: "The caries classification that involves the proximal surfaces of anterior teeth but does not involve the incisal angle.", a: "Class 3", e: "" },
-        { q: "The caries classification that involves the proximal surfaces of anterior teeth and includes the incisal angle.", a: "Class 4", e: "" },
-        { q: "The caries classification that involves the cervical region of the tooth.", a: "Class 5", e: "" },
-        { q: "The ability of a material to resist applied forces without fracture or excessive deformation.", a: "Strength", e: "" },
-        { q: "The maximum stress that a structure can withstand without sustaining a specific amount of plastic strain.", a: "Yield strength", e: "" },
-        { q: "The stress at the exact point of fracture.", a: "Ultimate strength", e: "" },
-        { q: "An external force acting upon a solid body, calculated as force divided by area.", a: "Stress", e: "" },
+        {
+          q: "The study of different chemical and physical properties, their manipulation, and the clinical application or usage of the various materials used in dental practice.",
+          a: "Dental Materials",
+          e: "",
+        },
+        {
+          q: "The field of dentistry that deals with the inside of the tooth, the pulp, and surrounding tissues, often utilizing gutta percha.",
+          a: "Endodontics",
+          e: "",
+        },
+        {
+          q: "The field of dentistry focused on structures or replacements of missing teeth.",
+          a: "Prosthodontics",
+          e: "",
+        },
+        {
+          q: "The field of dentistry aimed at restoring the tooth in its original form.",
+          a: "Restorative Dentistry",
+          e: "",
+        },
+        {
+          q: "The individual who divided dental caries into six distinct classifications.",
+          a: "GV Black",
+          e: "",
+        },
+        {
+          q: "The caries classification that involves the occlusal surfaces of posterior teeth and lingual surfaces of anterior teeth.",
+          a: "Class 1",
+          e: "",
+        },
+        {
+          q: "The caries classification that involves the proximal surfaces of anterior teeth but does not involve the incisal angle.",
+          a: "Class 3",
+          e: "",
+        },
+        {
+          q: "The caries classification that involves the proximal surfaces of anterior teeth and includes the incisal angle.",
+          a: "Class 4",
+          e: "",
+        },
+        {
+          q: "The caries classification that involves the cervical region of the tooth.",
+          a: "Class 5",
+          e: "",
+        },
+        {
+          q: "The ability of a material to resist applied forces without fracture or excessive deformation.",
+          a: "Strength",
+          e: "",
+        },
+        {
+          q: "The maximum stress that a structure can withstand without sustaining a specific amount of plastic strain.",
+          a: "Yield strength",
+          e: "",
+        },
+        {
+          q: "The stress at the exact point of fracture.",
+          a: "Ultimate strength",
+          e: "",
+        },
+        {
+          q: "An external force acting upon a solid body, calculated as force divided by area.",
+          a: "Stress",
+          e: "",
+        },
         { q: "The response of a material to stress.", a: "Strain", e: "" },
-        { q: "The amount of energy absorbed by a structure when it is stressed without exceeding its proportional limit.", a: "Resilience / Springiness", e: "" },
-        { q: "The greatest stress to which a material can be subjected such that it will return to its original dimension when the forces are released.", a: "Elastic limit", e: "" },
-        { q: "The ability of a material to absorb elastic energy and to deform plastically before fracturing, making it difficult to break.", a: "Toughness", e: "" },
-        { q: "The fracture of a material at or near its proportional limit, indicating a relative inability to deform plastically.", a: "Brittleness", e: "" },
-        { q: "The ability of a material to withstand or resist scratching or indentation using a sharp instrument.", a: "Hardness", e: "" },
-        { q: "The ability of materials to be twisted or contoured into any desired form or shape without breaking.", a: "Flexibility", e: "" },
-        { q: "The property of a material, such as amalgam, to be deformed continuously even without altering the magnitude of the applied force.", a: "Flow", e: "" },
-        { q: "The ability of a material, such as gold, to withstand a permanent deformation under a compressive load.", a: "Malleability", e: "" },
-        { q: "The ability of a material to withstand a permanent deformation under a tensile load without rapture.", a: "Ductility", e: "" },
-        { q: "The presence of dissimilar or different metals in the oral cavity producing an electric shock.", a: "Galvanism", e: "" },
-        { q: "Rocks or solid particles ground to powder and heated, also known chemically as calcium sulphate dehydrate.", a: "Gypsum Products", e: "" },
+        {
+          q: "The amount of energy absorbed by a structure when it is stressed without exceeding its proportional limit.",
+          a: "Resilience / Springiness",
+          e: "",
+        },
+        {
+          q: "The greatest stress to which a material can be subjected such that it will return to its original dimension when the forces are released.",
+          a: "Elastic limit",
+          e: "",
+        },
+        {
+          q: "The ability of a material to absorb elastic energy and to deform plastically before fracturing, making it difficult to break.",
+          a: "Toughness",
+          e: "",
+        },
+        {
+          q: "The fracture of a material at or near its proportional limit, indicating a relative inability to deform plastically.",
+          a: "Brittleness",
+          e: "",
+        },
+        {
+          q: "The ability of a material to withstand or resist scratching or indentation using a sharp instrument.",
+          a: "Hardness",
+          e: "",
+        },
+        {
+          q: "The ability of materials to be twisted or contoured into any desired form or shape without breaking.",
+          a: "Flexibility",
+          e: "",
+        },
+        {
+          q: "The property of a material, such as amalgam, to be deformed continuously even without altering the magnitude of the applied force.",
+          a: "Flow",
+          e: "",
+        },
+        {
+          q: "The ability of a material, such as gold, to withstand a permanent deformation under a compressive load.",
+          a: "Malleability",
+          e: "",
+        },
+        {
+          q: "The ability of a material to withstand a permanent deformation under a tensile load without rapture.",
+          a: "Ductility",
+          e: "",
+        },
+        {
+          q: "The presence of dissimilar or different metals in the oral cavity producing an electric shock.",
+          a: "Galvanism",
+          e: "",
+        },
+        {
+          q: "Rocks or solid particles ground to powder and heated, also known chemically as calcium sulphate dehydrate.",
+          a: "Gypsum Products",
+          e: "",
+        },
         { q: "The process of heating gypsum.", a: "Calcination", e: "" },
-        { q: "The product of open calcination at 110°C to 120°C, characterized by large, irregularly-shaped, and spongy orthorhombic crystal particles.", a: "β-hemihydrate / Plaster of Paris", e: "" },
-        { q: "The product of closed calcination under pressure at 120°C to 130°C, characterized by smaller, regularly-shaped crystalline rods or prisms.", a: "α-hemihydrate / Dental Stone", e: "" },
-        { q: "The ADA classification for gypsum used to take impressions, though not for dentulous patients.", a: "Type I / Impression or Soluble Plaster", e: "" },
-        { q: "The ADA classification for gypsum used for record keeping and making study casts.", a: "Type II / Plaster Model or Plaster of Paris", e: "" },
-        { q: "The ADA classification for gypsum used to create working casts that can withstand applied forces.", a: "Type III / Dental Stone", e: "" },
-        { q: "The ADA classification for gypsum used as a working die for crown restorations and measurements.", a: "Type IV / Dental Stone High Strength", e: "" },
-        { q: "The ADA classification for gypsum utilized as an investing medium to compensate for the high shrinkage of metals like chrome cobalt ion.", a: "Type V / Dental Stone High Strength High Expansion", e: "" },
-        { q: "The instrument used to measure the initial setting time of gypsum utilizing a 1/4 lb needle.", a: "Vicat needle", e: "" },
-        { q: "The instrument used to measure both the final setting time (1/4 lb) and initial setting time (1/2 lb) of gypsum.", a: "Gillmore needle", e: "" },
-        { q: "The specific stage when you should trim off extra plaster or stone that overflowed to prevent breakage.", a: "Initial Setting Time", e: "" },
-        { q: "The best chemical accelerator for gypsum, effective regardless of its concentration.", a: "K2SO4 / Potassium Sulfate", e: "" },
-        { q: "Substances such as borax, nitrates, and citrates that create a surface coating on crystals, making them less soluble to water and slowing the setting time.", a: "Retarders", e: "" }
+        {
+          q: "The product of open calcination at 110°C to 120°C, characterized by large, irregularly-shaped, and spongy orthorhombic crystal particles.",
+          a: "β-hemihydrate / Plaster of Paris",
+          e: "",
+        },
+        {
+          q: "The product of closed calcination under pressure at 120°C to 130°C, characterized by smaller, regularly-shaped crystalline rods or prisms.",
+          a: "α-hemihydrate / Dental Stone",
+          e: "",
+        },
+        {
+          q: "The ADA classification for gypsum used to take impressions, though not for dentulous patients.",
+          a: "Type I / Impression or Soluble Plaster",
+          e: "",
+        },
+        {
+          q: "The ADA classification for gypsum used for record keeping and making study casts.",
+          a: "Type II / Plaster Model or Plaster of Paris",
+          e: "",
+        },
+        {
+          q: "The ADA classification for gypsum used to create working casts that can withstand applied forces.",
+          a: "Type III / Dental Stone",
+          e: "",
+        },
+        {
+          q: "The ADA classification for gypsum used as a working die for crown restorations and measurements.",
+          a: "Type IV / Dental Stone High Strength",
+          e: "",
+        },
+        {
+          q: "The ADA classification for gypsum utilized as an investing medium to compensate for the high shrinkage of metals like chrome cobalt ion.",
+          a: "Type V / Dental Stone High Strength High Expansion",
+          e: "",
+        },
+        {
+          q: "The instrument used to measure the initial setting time of gypsum utilizing a 1/4 lb needle.",
+          a: "Vicat needle",
+          e: "",
+        },
+        {
+          q: "The instrument used to measure both the final setting time (1/4 lb) and initial setting time (1/2 lb) of gypsum.",
+          a: "Gillmore needle",
+          e: "",
+        },
+        {
+          q: "The specific stage when you should trim off extra plaster or stone that overflowed to prevent breakage.",
+          a: "Initial Setting Time",
+          e: "",
+        },
+        {
+          q: "The best chemical accelerator for gypsum, effective regardless of its concentration.",
+          a: "K2SO4 / Potassium Sulfate",
+          e: "",
+        },
+        {
+          q: "Substances such as borax, nitrates, and citrates that create a surface coating on crystals, making them less soluble to water and slowing the setting time.",
+          a: "Retarders",
+          e: "",
+          q: "The exact mechanism by which addition silicone achieves its dimensional stability superior to condensation silicone",
+          a: "I LOVE U ALWAYZ BEB HEHE TRICK QUESTIONN",
+          e: "",
+        },
       ];
 
+      // -------- STATE --------
       let cards = [];
       let deck = [];
       let pos = 0;
@@ -981,7 +1802,6 @@
       let answeredThisCard = false;
       let soundOn = true;
 
-      // Redemption Round state
       let missedIndices = new Set();
       let isRedemption = false;
       let mainCorrect = 0;
@@ -990,6 +1810,8 @@
       let redemptionIncorrect = 0;
 
       let actx;
+
+      // -------- AUDIO --------
       function ensureAudio() {
         if (!actx) {
           actx = new (window.AudioContext || window.webkitAudioContext)();
@@ -1032,12 +1854,13 @@
         );
       }
 
-      // DOM Elements
+      // -------- DOM --------
       const selectionScreen = document.getElementById("selectionScreen");
       const gameUI = document.getElementById("gameUI");
       const btnPart1 = document.getElementById("btnPart1");
       const btnPart2 = document.getElementById("btnPart2");
       const backBtn = document.getElementById("backBtn");
+      const homeBtn = document.getElementById("homeBtn");
       const menuBtn = document.getElementById("menuBtn");
 
       const cardEl = document.getElementById("card");
@@ -1075,6 +1898,7 @@
       const frontFace = document.querySelector(".face.front");
       const backFace = document.querySelector(".face.back");
 
+      // -------- NAVIGATION --------
       function startSet(setCards) {
         sfxClick();
         cards = setCards;
@@ -1093,14 +1917,25 @@
 
       btnPart1.addEventListener("click", () => startSet(part1Cards));
       btnPart2.addEventListener("click", () => startSet(part2Cards));
+
+      // Back to Sets (←)
       backBtn.addEventListener("click", (e) => {
         e.preventDefault();
         showMenu();
       });
+
+      // Back to index.html (🏠)
+      homeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        // Navigate to index.html (or root if index.html isn't served)
+        window.location.href = "index.html";
+      });
+
       menuBtn.addEventListener("click", () => {
         showMenu();
       });
 
+      // -------- CARD HELPERS --------
       function getBaseStageHeight() {
         return window.innerWidth <= 480 ? 380 : 340;
       }
@@ -1161,6 +1996,7 @@
         }
       }
 
+      // -------- LOAD CARD --------
       function loadCard() {
         answeredThisCard = false;
         cardEl.classList.remove("flipped");
@@ -1265,6 +2101,7 @@
           loadCard();
         }
       });
+
       skipBtn.addEventListener("click", () => {
         sfxClick();
         const idx = deck[pos];
@@ -1296,6 +2133,7 @@
         loadCard();
       });
 
+      // -------- RESET / REDEMPTION --------
       function resetDeck() {
         deck = [...cards.keys()];
         pos = 0;
@@ -1341,6 +2179,7 @@
         loadCard();
       });
 
+      // -------- RESULTS --------
       function showResults() {
         progressBarFill.style.width = "100%";
         stage.style.display = "none";
@@ -1414,6 +2253,7 @@
         burst("confetti");
       }
 
+      // -------- PARTICLES --------
       function burst(kind) {
         const emojisCelebrate = ["✨", "💖", "🌸", "⭐", "💕"];
         const emojisConfetti = ["🎉", "✨", "💗", "🌟", "🎊", "💖"];
@@ -1460,6 +2300,7 @@
         }
       }
 
+      // -------- BG HEARTS --------
       function spawnBgHearts() {
         const hearts = ["💗", "💕", "🩷", "💖"];
         for (let i = 0; i < 10; i++) {
@@ -1475,8 +2316,13 @@
       }
       spawnBgHearts();
 
+      // -------- KEYBOARD --------
       document.addEventListener("keydown", (e) => {
-        if (resultsEl.style.display === "flex" || selectionScreen.style.display === "flex") return;
+        if (
+          resultsEl.style.display === "flex" ||
+          selectionScreen.style.display === "flex"
+        )
+          return;
         if (e.code === "Space") {
           e.preventDefault();
           flipCard();
@@ -1490,6 +2336,7 @@
         }
       });
 
+      // -------- RESIZE --------
       let resizeFitTimer;
       window.addEventListener("resize", () => {
         if (gameUI.style.display === "flex") {
