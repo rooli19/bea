@@ -151,22 +151,33 @@
         }
       }
 
-
-      .pill-icon { cursor: pointer; }
+      .pill-icon {
+        cursor: pointer;
+      }
       .heart-particle {
         position: fixed;
-        left: 0; top: 0;
+        left: 0;
+        top: 0;
         pointer-events: none;
         z-index: 9999;
         font-size: 22px;
         line-height: 1;
         transform: translate(-50%, -50%);
-        animation: heartFirework 900ms cubic-bezier(.2,.75,.25,1) forwards;
+        animation: heartFirework 900ms cubic-bezier(0.2, 0.75, 0.25, 1) forwards;
       }
       @keyframes heartFirework {
-        0% { opacity: 1; transform: translate(-50%, -50%) scale(.65) rotate(0deg); }
-        65% { opacity: 1; }
-        100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.05) rotate(var(--rot)); }
+        0% {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(0.65) rotate(0deg);
+        }
+        65% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy)))
+            scale(1.05) rotate(var(--rot));
+        }
       }
 
       .title {
@@ -378,6 +389,53 @@
         background: rgba(255, 124, 163, 0.18);
         padding: 1px 6px;
         border-radius: 6px;
+      }
+
+      .options-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+      @media (max-width: 480px) {
+        .options-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .option-btn {
+        background: var(--cream);
+        border: 2px solid var(--blush);
+        border-radius: var(--radius-sm);
+        padding: 12px 16px;
+        font-family: "Nunito", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--plum);
+        cursor: pointer;
+        text-align: left;
+        transition:
+          border-color 0.15s ease,
+          background 0.15s ease;
+      }
+      .option-btn:hover:not(:disabled) {
+        border-color: var(--coral);
+        background: var(--white);
+      }
+      .option-btn.selected {
+        border-color: var(--coral-dark);
+        background: var(--blush);
+      }
+      .option-btn.correct-reveal {
+        border-color: #2e7d5e;
+        background: var(--mint);
+      }
+      .option-btn.incorrect-reveal {
+        border-color: var(--coral-dark);
+        background: var(--blush);
+      }
+      .option-btn:disabled {
+        cursor: default;
+        opacity: 0.8;
       }
 
       textarea#answerInput {
@@ -609,8 +667,13 @@
     <div class="wrap">
       <!-- START SCREEN -->
       <div id="startScreen" class="card start-card">
-        <div class="pill-icon" onclick="burstHearts(event)" role="button" aria-label="Send hearts">
-          <img src="pill-icon.jpg" alt="Icon">
+        <div
+          class="pill-icon"
+          onclick="burstHearts(event)"
+          role="button"
+          aria-label="Send hearts"
+        >
+          <img src="pill-icon.jpg" alt="Icon" />
         </div>
         <h1 class="title">bea reviewer<span class="heart">♥</span></h1>
         <p class="subtitle">miss u beb!!!</p>
@@ -618,7 +681,11 @@
 
         <div class="mode-grid">
           <div class="mode-card rx" onclick="startQuiz('mode1')">
-            <img class="emoji-badge" src="https://i.pinimg.com/236x/bf/31/90/bf319024e5b7d794480ce4df5c96a32d.jpg"" alt="Translate Prescriptions icon" />
+            <img
+              class="emoji-badge"
+              src="https://i.pinimg.com/236x/bf/31/90/bf319024e5b7d794480ce4df5c96a32d.jpg"
+              alt="Translate Prescriptions icon"
+            />
             <h3>Translate Prescriptions</h3>
             <p>
               Read a full prescription order written in abbreviations, then
@@ -627,7 +694,11 @@
             <div class="go">Start mode →</div>
           </div>
           <div class="mode-card en" onclick="startQuiz('mode2')">
-            <img class="emoji-badge" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GMAx59C1bF_CL-lTehTSqveINoH2EuE1c6o1mhH-vQ&s=10" alt="English to Prescriptions icon" />
+            <img
+              class="emoji-badge"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GMAx59C1bF_CL-lTehTSqveINoH2EuE1c6o1mhH-vQ&s=10"
+              alt="English to Prescriptions icon"
+            />
             <h3>English to Prescriptions</h3>
             <p>
               Take a plain-English order and convert the bolded phrases into
@@ -636,27 +707,44 @@
             <div class="go">Start mode →</div>
           </div>
           <div class="mode-card id" onclick="startQuiz('mode3')">
-            <img class="emoji-badge" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b20e567-dc54-4608-951e-f35e81809225/dj6fgcr-ac58b3df-7586-45b3-8d2d-9aa2beffae31.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi81YjIwZTU2Ny1kYzU0LTQ2MDgtOTUxZS1mMzVlODE4MDkyMjUvZGo2Zmdjci1hYzU4YjNkZi03NTg2LTQ1YjMtOGQyZC05YWEyYmVmZmFlMzEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mQ05ixGuq_Caykvy6-Mh3sl9Pfr1EaoUyCxU16lDdpc" alt="Identification Quiz icon" />
+            <img
+              class="emoji-badge"
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b20e567-dc54-4608-951e-f35e81809225/dj6fgcr-ac58b3df-7586-45b3-8d2d-9aa2beffae31.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi81YjIwZTU2Ny1kYzU0LTQ2MDgtOTUxZS1mMzVlODE4MDkyMjUvZGo2Zmdjci1hYzU4YjNkZi03NTg2LTQ1YjMtOGQyZC05YWEyYmVmZmFlMzEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mQ05ixGuq_Caykvy6-Mh3sl9Pfr1EaoUyCxU16lDdpc"
+              alt="Identification Quiz icon"
+            />
             <h3>Identification Quiz</h3>
             <p>
-              Read a description of a pharmacology term or route, then
-              identify the word, phrase, or term being described.
+              Read a description of a pharmacology term or route, then identify
+              the word, phrase, or term being described.
             </p>
             <div class="go">Start mode →</div>
           </div>
           <div class="mode-card patho" onclick="startQuiz('mode4')">
-            <img class="emoji-badge" src="https://avatars.githubusercontent.com/u/10540422?v=4" alt="Pathology Quiz icon" />
+            <img
+              class="emoji-badge"
+              src="https://avatars.githubusercontent.com/u/10540422?v=4"
+              alt="Pathology Quiz icon"
+            />
             <h3>Pathology Quiz</h3>
             <p>
-              Test your knowledge of hemodynamics, edema, hemostasis, and shock with these pathology questions.
+              Test your knowledge of hemodynamics, edema, hemostasis, and shock
+              with these multiple-choice questions.
             </p>
             <div class="go">Start mode →</div>
           </div>
-          <div class="mode-card flashcards" onclick="window.location.href='dent_mat.html'">
-            <img class="emoji-badge" src="https://static.wikia.nocookie.net/chiikawa/images/2/2c/AdorableCutieChiikawa.png/revision/latest?cb=20240709065538" alt="Dent Mat Flashcards icon" />
+          <div
+            class="mode-card flashcards"
+            onclick="window.location.href = 'dent_mat.html'"
+          >
+            <img
+              class="emoji-badge"
+              src="https://static.wikia.nocookie.net/chiikawa/images/2/2c/AdorableCutieChiikawa.png/revision/latest?cb=20240709065538"
+              alt="Dent Mat Flashcards icon"
+            />
             <h3>Dent Mat Flashcards</h3>
             <p>
-              Review dental materials through flashcards and test how well you remember each term and answer.
+              Review dental materials through flashcards and test how well you
+              remember each term and answer.
             </p>
             <div class="go">Open flashcards →</div>
           </div>
@@ -685,6 +773,7 @@
               TRANSLATE TO PLAIN ENGLISH
             </div>
             <div class="q-text" id="qText"></div>
+            <div id="optionsContainer" class="options-grid"></div>
             <textarea
               id="answerInput"
               placeholder="Type your answer here..."
@@ -743,36 +832,394 @@
     <script>
       /* ============ DATA ============ */
       const mode1Questions = [
-      {rx:"Take 1 tab PO tid ac and hs prn for indigestion, non rep.",answer:"Take 1 tablet by mouth three times a day before meals and at bedtime as needed for indigestion; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["by mouth","orally"],["three times a day","thrice daily"],["before meals"],["at bedtime"],["as needed","prn"],["do not repeat","no refill","no refills"]]},
-      {rx:"Instill ss gtt OD q4h while awake x 5 days.",answer:"Instill one-half drop in the right eye every 4 hours while awake for 5 days.",keys:[["one-half drop","half a drop","0.5 drop"],["right eye"],["every 4 hours"],["while awake"],["5 days","five days"]]},
-      {rx:"Give 2 tabs PO stat, then 1 tab PO qid pc and hs x 7 days, disp #30.",answer:"Give 2 tablets by mouth immediately, then 1 tablet by mouth four times a day after meals and at bedtime for 7 days; dispense 30 tablets.",keys:[["2 tablets","two tablets"],["immediately","at once","stat"],["1 tablet","one tablet"],["four times a day","four times daily"],["after meals"],["at bedtime"],["7 days","seven days"],["dispense 30","disp 30"]]},
-      {rx:"Insert 1 supp PR q12h prn for pain, non rep.",answer:"Insert 1 suppository rectally every 12 hours as needed for pain; do not repeat (no refills).",keys:[["1 suppository","one suppository"],["rectally","per rectum"],["every 12 hours"],["as needed","prn"],["do not repeat","no refill","no refills"]]},
-      {rx:"Take 1-2 cap PO q6h prn for moderate to severe pain; do not exceed 8 cap in 24h.",answer:"Take 1 to 2 capsules by mouth every 6 hours as needed for moderate to severe pain; do not exceed 8 capsules in 24 hours.",keys:[["1 to 2 capsules","1-2 capsules","one to two capsules"],["by mouth","orally"],["every 6 hours"],["as needed","prn"],["moderate to severe pain"],["do not exceed 8 capsules","not more than 8 capsules"],["24 hours"]]},
-      {rx:"Apply ointment OS bid x 10 days, non rep.",answer:"Apply ointment to the left eye twice a day for 10 days; do not repeat (no refills).",keys:[["left eye"],["twice a day","twice daily"],["10 days","ten days"],["do not repeat","no refill","no refills"]]},
-      {rx:"Give 1 amp IV stat, dil in 100 mL D5W, infuse over 2h.",answer:"Give the contents of 1 ampule intravenously immediately, diluted in 100 mL of 5% dextrose in water, infused over 2 hours.",keys:[["1 ampule","one ampule"],["intravenously"],["immediately","at once","stat"],["diluted","dissolved"],["100 mL","100 ml"],["5% dextrose in water","D5W"],["2 hours"]]},
-      {rx:"Take ss tab PO qam ac breakfast x 30 days, disp #15, non rep.",answer:"Take one-half tablet by mouth every morning before breakfast for 30 days; dispense 15 tablets; do not repeat (no refills).",keys:[["one-half tablet","half a tablet"],["by mouth","orally"],["every morning"],["before breakfast"],["30 days"],["dispense 15","disp 15"],["do not repeat","no refill","no refills"]]},
-      {rx:"Instill 1 gtt OU hs prn for dryness, non rep.",answer:"Instill 1 drop in both eyes at bedtime as needed for dryness; do not repeat (no refills).",keys:[["1 drop","one drop"],["both eyes"],["at bedtime"],["as needed","prn"],["do not repeat","no refill","no refills"]]},
-      {rx:"Give 5 mL elix PO q4h prn for cough, agit before use.",answer:"Give 5 mL of elixir by mouth every 4 hours as needed for cough; shake before use.",keys:[["5 mL","5 ml"],["elixir"],["by mouth","orally"],["every 4 hours"],["as needed","prn"],["cough"],["shake","stir"]]},
-      {rx:"Take 1 tab PO qod x 60 days, disp #30, non rep.",answer:"Take 1 tablet by mouth every other day for 60 days; dispense 30 tablets; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["every other day"],["60 days"],["dispense 30","disp 30"],["do not repeat","no refill","no refills"]]},
-      {rx:"Inject 2 mEq/kg NaHCO3 IV, dil in D5W, infuse over 1h stat.",answer:"Inject 2 milliequivalents per kilogram of sodium bicarbonate intravenously, diluted in 5% dextrose in water, infused over 1 hour immediately.",keys:[["2 milliequivalents per kilogram","2 mEq/kg"],["intravenously"],["diluted","dissolved"],["5% dextrose in water","D5W"],["1 hour"],["immediately","at once","stat"]]},
-      {rx:"Give 1 tab PO bid pc x 14 days, sos for headache thereafter.",answer:"Give 1 tablet by mouth twice a day after meals for 14 days, then as needed for headache thereafter.",keys:[["1 tablet","one tablet"],["twice a day","twice daily"],["after meals"],["14 days"],["as needed","if needed","sos"],["headache"]]},
-      {rx:"Insert 1 tab vag qhs x 3 days, non rep.",answer:"Insert 1 tablet vaginally every night at bedtime for 3 days; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["vaginally"],["every night at bedtime"],["3 days","three days"],["do not repeat","no refill","no refills"]]},
-      {rx:"Give IVPB 250 mL NS over 1h q8h x 3 days.",answer:"Give 250 mL of normal saline as an IV piggyback over 1 hour every 8 hours for 3 days.",keys:[["250 mL","250 ml"],["normal saline","NS"],["IV piggyback","IVPB"],["1 hour"],["every 8 hours"],["3 days","three days"]]},
-      {rx:"Take 1 cap PO qhs, disp #90, rept x 2.",answer:"Take 1 capsule by mouth every night at bedtime; dispense 90 capsules; may be repeated 2 times.",keys:[["1 capsule","one capsule"],["every night at bedtime"],["dispense 90","disp 90"],["may be repeated","refill"],["2 times","twice"]]},
-      {rx:"Instill 2 gtt OD and OS bid x 14 days, non rep.",answer:"Instill 2 drops in the right eye and left eye twice a day for 14 days; do not repeat (no refills).",keys:[["2 drops","two drops"],["right eye"],["left eye"],["twice a day","twice daily"],["14 days"],["do not repeat","no refill","no refills"]]},
-      {rx:"Give 1 tab PO ac breakfast and hs prn for reflux x 30 days.",answer:"Give 1 tablet by mouth before breakfast and at bedtime as needed for reflux for 30 days.",keys:[["1 tablet","one tablet"],["before breakfast"],["at bedtime"],["as needed","prn"],["reflux"],["30 days"]]},
-      {rx:"Take 1 tab PO q am, disp #30, non rep.",answer:"Take 1 tablet by mouth every morning; dispense 30 tablets; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["every morning"],["dispense 30","disp 30"],["do not repeat","no refill","no refills"]]},
-      {rx:"Give 500 mg PO q6h ac and hs x 7 days, disp #28 tab.",answer:"Give 500 mg by mouth every 6 hours before meals and at bedtime for 7 days; dispense 28 tablets.",keys:[["500 mg"],["by mouth","orally"],["every 6 hours"],["before meals"],["at bedtime"],["7 days","seven days"],["dispense 28","disp 28"]]},
-      {rx:"Inject contents of 1 amp SC stat, then 0.25 mL SC q4h prn for nausea, non rep.",answer:"Inject the contents of 1 ampule subcutaneously immediately, then 0.25 mL subcutaneously every 4 hours as needed for nausea; do not repeat (no refills).",keys:[["1 ampule","one ampule"],["subcutaneously"],["immediately","at once","stat"],["0.25 mL","0.25 ml"],["every 4 hours"],["as needed","prn"],["nausea"],["do not repeat","no refill","no refills"]]},
-      {rx:"Apply cream OU bid x 5 days, non rep.",answer:"Apply cream to both eyes twice a day for 5 days; do not repeat (no refills).",keys:[["both eyes"],["twice a day","twice daily"],["5 days","five days"],["do not repeat","no refill","no refills"]]},
-      {rx:"Take 1 tab PO tid pc x 10 days; if no improvement, rept x 1.",answer:"Take 1 tablet by mouth three times a day after meals for 10 days; if no improvement, may be repeated 1 time.",keys:[["1 tablet","one tablet"],["three times a day","thrice daily"],["after meals"],["10 days","ten days"],["may be repeated","refill"],["1 time","once"]]},
-      {rx:"Give 1 tab PR sos for fever, non rep.",answer:"Give 1 tablet rectally as needed for fever; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["rectally","per rectum"],["as needed","if needed","sos"],["fever"],["do not repeat","no refill","no refills"]]},
-      {rx:"Instill 1 gtt OD q1h x 24h, then q4h thereafter while awake.",answer:"Instill 1 drop in the right eye every hour for 24 hours, then every 4 hours thereafter while awake.",keys:[["1 drop","one drop"],["right eye"],["every hour"],["24 hours"],["every 4 hours"],["while awake"]]},
-      {rx:"Take 1 tab PO bid ac x 5 days, then qd x 5 days more, non rep.",answer:"Take 1 tablet by mouth twice a day before meals for 5 days, then once daily for 5 more days; do not repeat (no refills).",keys:[["1 tablet","one tablet"],["twice a day","twice daily"],["before meals"],["5 days","five days"],["once daily","once a day"],["do not repeat","no refill","no refills"]]},
-      {rx:"Give 10 mEq KCl PO bid pc x 14 days, disp qs for 14 days.",answer:"Give 10 milliequivalents of potassium chloride by mouth twice a day after meals for 14 days; dispense a sufficient quantity for 14 days.",keys:[["10 milliequivalents","10 mEq"],["potassium chloride","KCl"],["by mouth","orally"],["twice a day","twice daily"],["after meals"],["14 days"],["sufficient quantity","enough for"]]},
-      {rx:"Take 1 tab PO hs prn for sleep; non rep; do not exceed 1 tab per night.",answer:"Take 1 tablet by mouth at bedtime as needed for sleep; do not repeat (no refills); do not exceed 1 tablet per night.",keys:[["1 tablet","one tablet"],["at bedtime"],["as needed","prn"],["sleep"],["do not repeat","no refill","no refills"],["do not exceed 1 tablet","no more than 1 tablet"]]},
-      {rx:"Give 1 cap PO qid ac and hs x 10 days, non rep, disp #42.",answer:"Give 1 capsule by mouth four times a day before meals and at bedtime for 10 days; do not repeat (no refills); dispense 42 capsules.",keys:[["1 capsule","one capsule"],["four times a day","four times daily"],["before meals"],["at bedtime"],["10 days","ten days"],["do not repeat","no refill","no refills"],["dispense 42","disp 42"]]},
-      {rx:"Instill ss gtt OU tid x 7 days, non rep.",answer:"Instill one-half drop in both eyes three times a day for 7 days; do not repeat (no refills).",keys:[["one-half drop","half a drop"],["both eyes"],["three times a day","thrice daily"],["7 days","seven days"],["do not repeat","no refill","no refills"]]}
+        {
+          rx: "Take 1 tab PO tid ac and hs prn for indigestion, non rep.",
+          answer:
+            "Take 1 tablet by mouth three times a day before meals and at bedtime as needed for indigestion; do not repeat (no refills).",
+          keys: [
+            ["1 tablet", "one tablet"],
+            ["by mouth", "orally"],
+            ["three times a day", "thrice daily"],
+            ["before meals"],
+            ["at bedtime"],
+            ["as needed", "prn"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Instill ss gtt OD q4h while awake x 5 days.",
+          answer:
+            "Instill one-half drop in the right eye every 4 hours while awake for 5 days.",
+          keys: [
+            ["one-half drop", "half a drop", "0.5 drop"],
+            ["right eye"],
+            ["every 4 hours"],
+            ["while awake"],
+            ["5 days", "five days"],
+          ],
+        },
+        {
+          rx: "Give 2 tabs PO stat, then 1 tab PO qid pc and hs x 7 days, disp #30.",
+          answer:
+            "Give 2 tablets by mouth immediately, then 1 tablet by mouth four times a day after meals and at bedtime for 7 days; dispense 30 tablets.",
+          keys: [
+            ["2 tablets", "two tablets"],
+            ["immediately", "at once", "stat"],
+            ["1 tablet", "one tablet"],
+            ["four times a day", "four times daily"],
+            ["after meals"],
+            ["at bedtime"],
+            ["7 days", "seven days"],
+            ["dispense 30", "disp 30"],
+          ],
+        },
+        {
+          rx: "Insert 1 supp PR q12h prn for pain, non rep.",
+          answer:
+            "Insert 1 suppository rectally every 12 hours as needed for pain; do not repeat (no refills).",
+          keys: [
+            ["1 suppository", "one suppository"],
+            ["rectally", "per rectum"],
+            ["every 12 hours"],
+            ["as needed", "prn"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Take 1-2 cap PO q6h prn for moderate to severe pain; do not exceed 8 cap in 24h.",
+          answer:
+            "Take 1 to 2 capsules by mouth every 6 hours as needed for moderate to severe pain; do not exceed 8 capsules in 24 hours.",
+          keys: [
+            ["1 to 2 capsules", "1-2 capsules", "one to two capsules"],
+            ["by mouth", "orally"],
+            ["every 6 hours"],
+            ["as needed", "prn"],
+            ["moderate to severe pain"],
+            ["do not exceed 8 capsules", "not more than 8 capsules"],
+            ["24 hours"],
+          ],
+        },
+        {
+          rx: "Apply ointment OS bid x 10 days, non rep.",
+          answer:
+            "Apply ointment to the left eye twice a day for 10 days; do not repeat (no refills).",
+          keys: [
+            ["left eye"],
+            ["twice a day", "twice daily"],
+            ["10 days", "ten days"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Give 1 amp IV stat, dil in 100 mL D5W, infuse over 2h.",
+          answer:
+            "Give the contents of 1 ampule intravenously immediately, diluted in 100 mL of 5% dextrose in water, infused over 2 hours.",
+          keys: [
+            ["1 ampule", "one ampule"],
+            ["intravenously"],
+            ["immediately", "at once", "stat"],
+            ["diluted", "dissolved"],
+            ["100 mL", "100 ml"],
+            ["5% dextrose in water", "D5W"],
+            ["2 hours"],
+          ],
+        },
+        {
+          rx: "Take ss tab PO qam ac breakfast x 30 days, disp #15, non rep.",
+          answer:
+            "Take one-half tablet by mouth every morning before breakfast for 30 days; dispense 15 tablets; do not repeat (no refills).",
+          keys: [
+            ["one-half tablet", "half a tablet"],
+            ["by mouth", "orally"],
+            ["every morning"],
+            ["before breakfast"],
+            ["30 days"],
+            ["dispense 15", "disp 15"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Instill 1 gtt OU hs prn for dryness, non rep.",
+          answer:
+            "Instill 1 drop in both eyes at bedtime as needed for dryness; do not repeat (no refills).",
+          keys: [
+            ["1 drop", "one drop"],
+            ["both eyes"],
+            ["at bedtime"],
+            ["as needed", "prn"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Give 5 mL elix PO q4h prn for cough, agit before use.",
+          answer:
+            "Give 5 mL of elixir by mouth every 4 hours as needed for cough; shake before use.",
+          keys: [
+            ["5 mL", "5 ml"],
+            ["elixir"],
+            ["by mouth", "orally"],
+            ["every 4 hours"],
+            ["as needed", "prn"],
+            ["cough"],
+            ["shake", "stir"],
+          ],
+        },
+        {
+          rx: "Take 1 tab PO qod x 60 days, disp #30, non rep.",
+          answer:
+            "Take 1 tablet by mouth every other day for 60 days; dispense 30 tablets; do not repeat (no refills).",
+          keys: [
+            ["1 tablet", "one tablet"],
+            ["every other day"],
+            ["60 days"],
+            ["dispense 30", "disp 30"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Inject 2 mEq/kg NaHCO3 IV, dil in D5W, infuse over 1h stat.",
+          answer:
+            "Inject 2 milliequivalents per kilogram of sodium bicarbonate intravenously, diluted in 5% dextrose in water, infused over 1 hour immediately.",
+          keys: [
+            ["2 milliequivalents per kilogram", "2 mEq/kg"],
+            ["intravenously"],
+            ["diluted", "dissolved"],
+            ["5% dextrose in water", "D5W"],
+            ["1 hour"],
+            ["immediately", "at once", "stat"],
+          ],
+        },
+        {
+          rx: "Give 1 tab PO bid pc x 14 days, sos for headache thereafter.",
+          answer:
+            "Give 1 tablet by mouth twice a day after meals for 14 days, then as needed for headache thereafter.",
+          keys: [
+            ["1 tablet", "one tablet"],
+            ["twice a day", "twice daily"],
+            ["after meals"],
+            ["14 days"],
+            ["as needed", "if needed", "sos"],
+            ["headache"],
+          ],
+        },
+        {
+          rx: "Insert 1 tab vag qhs x 3 days, non rep.",
+          answer:
+            "Insert 1 tablet vaginally every night at bedtime for 3 days; do not repeat (no refills).",
+          keys: [
+            ["1 tablet", "one tablet"],
+            ["vaginally"],
+            ["every night at bedtime"],
+            ["3 days", "three days"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Give IVPB 250 mL NS over 1h q8h x 3 days.",
+          answer:
+            "Give 250 mL of normal saline as an IV piggyback over 1 hour every 8 hours for 3 days.",
+          keys: [
+            ["250 mL", "250 ml"],
+            ["normal saline", "NS"],
+            ["IV piggyback", "IVPB"],
+            ["1 hour"],
+            ["every 8 hours"],
+            ["3 days", "three days"],
+          ],
+        },
+        {
+          rx: "Take 1 cap PO qhs, disp #90, rept x 2.",
+          answer:
+            "Take 1 capsule by mouth every night at bedtime; dispense 90 capsules; may be repeated 2 times.",
+          keys: [
+            ["1 capsule", "one capsule"],
+            ["every night at bedtime"],
+            ["dispense 90", "disp 90"],
+            ["may be repeated", "refill"],
+            ["2 times", "twice"],
+          ],
+        },
+        {
+          rx: "Instill 2 gtt OD and OS bid x 14 days, non rep.",
+          answer:
+            "Instill 2 drops in the right eye and left eye twice a day for 14 days; do not repeat (no refills).",
+          keys: [
+            ["2 drops", "two drops"],
+            ["right eye"],
+            ["left eye"],
+            ["twice a day", "twice daily"],
+            ["14 days"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Give 1 tab PO ac breakfast and hs prn for reflux x 30 days.",
+          answer:
+            "Give 1 tablet by mouth before breakfast and at bedtime as needed for reflux for 30 days.",
+          keys: [
+            ["1 tablet", "one tablet"],
+            ["before breakfast"],
+            ["at bedtime"],
+            ["as needed", "prn"],
+            ["reflux"],
+            ["30 days"],
+          ],
+        },
+        {
+          rx: "Take 1 tab PO q am, disp #30, non rep.",
+          answer:
+            "Take 1 tablet by mouth every morning; dispense 30 tablets; do not repeat (no refills).",
+          keys: [
+            ["1 tablet", "one tablet"],
+            ["every morning"],
+            ["dispense 30", "disp 30"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Give 500 mg PO q6h ac and hs x 7 days, disp #28 tab.",
+          answer:
+            "Give 500 mg by mouth every 6 hours before meals and at bedtime for 7 days; dispense 28 tablets.",
+          keys: [
+            ["500 mg"],
+            ["by mouth", "orally"],
+            ["every 6 hours"],
+            ["before meals"],
+            ["at bedtime"],
+            ["7 days", "seven days"],
+            ["dispense 28", "disp 28"],
+          ],
+        },
+        {
+          rx: "Inject contents of 1 amp SC stat, then 0.25 mL SC q4h prn for nausea, non rep.",
+          answer:
+            "Inject the contents of 1 ampule subcutaneously immediately, then 0.25 mL subcutaneously every 4 hours as needed for nausea; do not repeat (no refills).",
+          keys: [
+            ["1 ampule", "one ampule"],
+            ["subcutaneously"],
+            ["immediately", "at once", "stat"],
+            ["0.25 mL", "0.25 ml"],
+            ["every 4 hours"],
+            ["as needed", "prn"],
+            ["nausea"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Apply cream OU bid x 5 days, non rep.",
+          answer:
+            "Apply cream to both eyes twice a day for 5 days; do not repeat (no refills).",
+          keys: [
+            ["both eyes"],
+            ["twice a day", "twice daily"],
+            ["5 days", "five days"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Take 1 tab PO tid pc x 10 days; if no improvement, rept x 1.",
+          answer:
+            "Take 1 tablet by mouth three times a day after meals for 10 days; if no improvement, may be repeated 1 time.",
+          keys: [
+            ["1 tablet", "one tablet"],
+            ["three times a day", "thrice daily"],
+            ["after meals"],
+            ["10 days", "ten days"],
+            ["may be repeated", "refill"],
+            ["1 time", "once"],
+          ],
+        },
+        {
+          rx: "Give 1 tab PR sos for fever, non rep.",
+          answer:
+            "Give 1 tablet rectally as needed for fever; do not repeat (no refills).",
+          keys: [
+            ["1 tablet", "one tablet"],
+            ["rectally", "per rectum"],
+            ["as needed", "if needed", "sos"],
+            ["fever"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Instill 1 gtt OD q1h x 24h, then q4h thereafter while awake.",
+          answer:
+            "Instill 1 drop in the right eye every hour for 24 hours, then every 4 hours thereafter while awake.",
+          keys: [
+            ["1 drop", "one drop"],
+            ["right eye"],
+            ["every hour"],
+            ["24 hours"],
+            ["every 4 hours"],
+            ["while awake"],
+          ],
+        },
+        {
+          rx: "Take 1 tab PO bid ac x 5 days, then qd x 5 days more, non rep.",
+          answer:
+            "Take 1 tablet by mouth twice a day before meals for 5 days, then once daily for 5 more days; do not repeat (no refills).",
+          keys: [
+            ["1 tablet", "one tablet"],
+            ["twice a day", "twice daily"],
+            ["before meals"],
+            ["5 days", "five days"],
+            ["once daily", "once a day"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
+        {
+          rx: "Give 10 mEq KCl PO bid pc x 14 days, disp qs for 14 days.",
+          answer:
+            "Give 10 milliequivalents of potassium chloride by mouth twice a day after meals for 14 days; dispense a sufficient quantity for 14 days.",
+          keys: [
+            ["10 milliequivalents", "10 mEq"],
+            ["potassium chloride", "KCl"],
+            ["by mouth", "orally"],
+            ["twice a day", "twice daily"],
+            ["after meals"],
+            ["14 days"],
+            ["sufficient quantity", "enough for"],
+          ],
+        },
+        {
+          rx: "Take 1 tab PO hs prn for sleep; non rep; do not exceed 1 tab per night.",
+          answer:
+            "Take 1 tablet by mouth at bedtime as needed for sleep; do not repeat (no refills); do not exceed 1 tablet per night.",
+          keys: [
+            ["1 tablet", "one tablet"],
+            ["at bedtime"],
+            ["as needed", "prn"],
+            ["sleep"],
+            ["do not repeat", "no refill", "no refills"],
+            ["do not exceed 1 tablet", "no more than 1 tablet"],
+          ],
+        },
+        {
+          rx: "Give 1 cap PO qid ac and hs x 10 days, non rep, disp #42.",
+          answer:
+            "Give 1 capsule by mouth four times a day before meals and at bedtime for 10 days; do not repeat (no refills); dispense 42 capsules.",
+          keys: [
+            ["1 capsule", "one capsule"],
+            ["four times a day", "four times daily"],
+            ["before meals"],
+            ["at bedtime"],
+            ["10 days", "ten days"],
+            ["do not repeat", "no refill", "no refills"],
+            ["dispense 42", "disp 42"],
+          ],
+        },
+        {
+          rx: "Instill ss gtt OU tid x 7 days, non rep.",
+          answer:
+            "Instill one-half drop in both eyes three times a day for 7 days; do not repeat (no refills).",
+          keys: [
+            ["one-half drop", "half a drop"],
+            ["both eyes"],
+            ["three times a day", "thrice daily"],
+            ["7 days", "seven days"],
+            ["do not repeat", "no refill", "no refills"],
+          ],
+        },
       ];
 
       const mode2Questions = [
@@ -989,153 +1436,901 @@
       ];
 
       const mode3Questions = [
-        { q: "This branch of pharmacology \"describes the actions of a drug on the body.\"", answer: "Pharmacodynamics", keys: [["pharmacodynamics"]] },
-        { q: "This process is triggered by the drug-receptor interaction and causes changes in the biochemical or molecular activity of the cell.", answer: "Signal transduction", keys: [["signal transduction"]] },
-        { q: "This branch of pharmacology is summarized simply as \"what drug does to body.\"", answer: "Pharmacodynamics", keys: [["pharmacodynamics"]] },
-        { q: "This branch of pharmacology is defined as the study of \"what happens to the drug in the body.\"", answer: "Pharmacokinetics", keys: [["pharmacokinetics"]] },
-        { q: "This branch is commonly summarized as \"what body does to drug.\"", answer: "Pharmacokinetics", keys: [["pharmacokinetics"]] },
-        { q: "These are the four processes encompassed by pharmacokinetics.", answer: "Absorption, distribution, biotransformation, and excretion", keys: [["absorption"], ["distribution"], ["biotransformation", "metabolism"], ["excretion"]] },
-        { q: "This branch is described simply as \"a science of poisons.\"", answer: "Toxicology", keys: [["toxicology"]] },
-        { q: "This substance, at low doses, acts as an anticoagulant by inhibiting thromboxane A2, but at high doses can cause gastric ulceration and fatal bleeding.", answer: "Aspirin", keys: [["aspirin"]] },
-        { q: "This branch is defined as \"the art and science of compounding or preparing suitable dosage forms for administration of drugs in man and animals and dispensing drugs.\"", answer: "Pharmacy", keys: [["pharmacy"]] },
-        { q: "This is the patient-oriented health science discipline in which pharmacists optimize medication therapy and advise on proper drug use.", answer: "Clinical pharmacy", keys: [["clinical pharmacy"]] },
-        { q: "This branch of pharmacology involves the study of correct dosing, dosage intervals, and dosage regimen design (though not formally named in the text).", answer: "Posology", keys: [["posology"]] },
-        { q: "Two example drugs mentioned as having a narrow therapeutic window requiring extra caution in dosage selection.", answer: "Digoxin and lithium", keys: [["digoxin"], ["lithium"]] },
-        { q: "This branch is defined as being \"concerned with the effect of drug upon microorganisms and parasites, living and multiplying in living organisms.\"", answer: "Chemotherapy", keys: [["chemotherapy"]] },
-        { q: "Besides microorganisms and parasites, this disease is also treated using chemotherapy by targeting its cells.", answer: "Cancer", keys: [["cancer"]] },
-        { q: "This branch is defined as \"the study of the genetic variation that gives rise to different responses to drugs among individuals or populations.\"", answer: "Pharmacogenetics", keys: [["pharmacogenetics"]] },
-        { q: "This drug is given as a clinical example of genetic differences in acetylation status affecting biotransformation.", answer: "Isoniazid", keys: [["isoniazid"]] },
-        { q: "This branch is described as \"a branch of pharmacology dealing with drugs and their clinical use.\"", answer: "Clinical pharmacology", keys: [["clinical pharmacology"]] },
-        { q: "Besides identifying and reporting adverse drug reactions, this branch also includes clinical trials and promotion of this type of drug use.", answer: "Rational drug use", keys: [["rational drug use"]] },
-        { q: "This branch is defined as \"the description and analysis of the costs of drug therapy to healthcare systems and society.\"", answer: "Pharmacoeconomics", keys: [["pharmacoeconomics"]] },
-        { q: "Besides elderly patients, this other patient group is specifically mentioned in relation to pharmacoeconomic cost analysis.", answer: "AIDS patients", keys: [["aids patients", "aids"]] },
-        { q: "This branch is defined concisely as \"a study of the effect of the drugs on population.\"", answer: "Pharmacoepidemiology", keys: [["pharmacoepidemiology"]] },
-        { q: "This route is described as the safest, most common, convenient, and economical route of drug administration.", answer: "Oral (PO)", keys: [["oral", "po"]] },
-        { q: "This substance can be used as an antidote to manage toxicity or overdose of orally administered drugs.", answer: "Activated charcoal", keys: [["activated charcoal"]] },
-        { q: "This effect, caused by drug metabolism before reaching systemic circulation, is a disadvantage of the oral route.", answer: "First-pass effect (first-pass metabolism)", keys: [["first-pass effect", "first pass effect", "first-pass metabolism", "first pass metabolism"]] },
-        { q: "This route allows maximum control over the amount of drug delivered and produces immediate effects.", answer: "Intravenous (IV)", keys: [["intravenous", "iv"]] },
-        { q: "This type of injection technique, when given via the IV route, may result in adverse effects.", answer: "Bolus injection", keys: [["bolus injection", "bolus"]] },
-        { q: "This practice, required for the IV route, must be strictly followed to prevent infection.", answer: "Aseptic technique", keys: [["aseptic technique", "asepsis"]] },
-        { q: "This type of drug preparation, given via the IM route, allows for slow and sustained absorption.", answer: "Depot preparation", keys: [["depot preparation", "depot"]] },
-        { q: "This laboratory test can be affected by intramuscular injection.", answer: "Creatine kinase", keys: [["creatine kinase", "ck"]] },
-        { q: "This route bypasses the first-pass effect and destruction by stomach acid, with saliva pH helping maintain drug stability.", answer: "Sublingual (SL)", keys: [["sublingual", "sl"]] },
-        { q: "This example drug is commonly administered sublingually for rapid systemic absorption.", answer: "Nitroglycerin (or buprenorphine)", keys: [["nitroglycerin", "buprenorphine"]] },
-        { q: "This route is described as convenient and painless, and bypasses the first-pass effect via skin application.", answer: "Transdermal", keys: [["transdermal"]] },
-        { q: "This characteristic of a drug is required for effective transdermal absorption.", answer: "Lipophilicity (highly lipophilic)", keys: [["lipophilicity", "lipophilic", "highly lipophilic"]] },
-        { q: "This device is commonly used to deliver drugs through the transdermal route.", answer: "Patch (transdermal patch)", keys: [["patch", "transdermal patch"]] },
-        { q: "This route partially bypasses the first-pass effect and is useful for patients who are vomiting or unconscious.", answer: "Rectal (PR)", keys: [["rectal", "pr"]] },
-        { q: "This quality describes the absorption pattern of the rectal route, making it unpredictable.", answer: "Erratic and variable", keys: [["erratic"], ["variable"]] },
-        { q: "Term for what the drugs do to the body.", answer: "Pharmacodynamics", keys: [["pharmacodynamics"]] },
-        { q: "In BAIAE, what drug class treats swelling of the airways?", answer: "Steroids", keys: [["steroids", "steroid"]] },
-        { q: "What anticholinergic drug is used to dry out fluid accumulation in the airways?", answer: "Ipratropium", keys: [["ipratropium"]] },
-        { q: "Give the term for Bronchial Asthma In Acute Exacerbation (abbreviation).", answer: "Bronchial Asthma In Acute Exacerbation", keys: [["bronchial asthma in acute exacerbation", "baiae"]] },
-        { q: "Give the term for Bronchial Asthma Not In Acute Exacerbation (abbreviation).", answer: "Bronchial Asthma Not In Acute Exacerbation", keys: [["bronchial asthma not in acute exacerbation", "banae"]] },
-        { q: "Define: any response to a medicine that is noxious and unintended at normal doses.", answer: "Adverse Drug Reaction (ADR)", keys: [["adverse drug reaction", "adr"]] },
-        { q: "Diphenhydramine causes sleepiness by blocking what receptor?", answer: "Histamine (H1) receptor", keys: [["histamine", "h1 receptor", "h1"]] },
-        { q: "Diazepam is a complement of what major inhibitory neurotransmitter?", answer: "GABA (Gamma-Aminobutyric Acid)", keys: [["gaba", "gamma-aminobutyric acid", "gamma aminobutyric acid"]] },
-        { q: "ADR type described as \"exaggeration of effects\" (e.g., aspirin, heparin, warfarin).", answer: "Type A – Augmented Effects", keys: [["type a", "augmented effects", "augmented"]] },
-        { q: "ADR type described as idiosyncratic, unpredictable reactions (e.g., phenytoin).", answer: "Type B – Bizarre Effects", keys: [["type b", "bizarre effects", "bizarre"]] },
-        { q: "Brand name of Phenytoin.", answer: "Dilantin", keys: [["dilantin"]] },
-        { q: "General drug category of Phenytoin.", answer: "Hydantoin", keys: [["hydantoin"]] },
-        { q: "ADR type for continuing reactions that persist a long time (e.g., avascular necrosis from corticosteroids).", answer: "Type C – Chronic Effects", keys: [["type c", "chronic effects", "chronic"]] },
-        { q: "ADR type that occurs after drug use, involving decreased WBC from doxorubicin.", answer: "Type D – Delayed Effects", keys: [["type d", "delayed effects", "delayed"]] },
-        { q: "ADR type involving withdrawal effects (e.g., rebound hypertension from clonidine).", answer: "Type E – End of Treatment", keys: [["type e", "end of treatment"]] },
-        { q: "ADR type where treatment fails, e.g., drug accumulation during dialysis.", answer: "Type F – Fail of Treatment", keys: [["type f", "fail of treatment", "failure of treatment"]] },
-        { q: "Term for contraction of the heart.", answer: "Inotropy", keys: [["inotropy"]] },
-        { q: "Which drug is a B1-selective inotrope?", answer: "Dobutamine", keys: [["dobutamine"]] },
-        { q: "Which drug is B2-selective and used for asthma?", answer: "Terbutaline", keys: [["terbutaline"]] },
-        { q: "Which non-selective drug can be used for both hypertensive and asthmatic patients?", answer: "Epinephrine", keys: [["epinephrine", "adrenaline"]] },
-        { q: "Formula for Blood Pressure (BP).", answer: "BP = SV x HR x TPR", keys: [["bp = sv x hr x tpr", "sv x hr x tpr", "bp=svxhrxtpr"]] },
-        { q: "Formula for Cardiac Output (CO).", answer: "CO = SV x HR", keys: [["co = sv x hr", "sv x hr", "co=svxhr"]] },
-        { q: "Set of patient characteristics that prevent the use of a drug.", answer: "Clinical Contraindications", keys: [["contraindications", "clinical contraindications"]] },
-        { q: "Tetracycline-class drug used for leptospirosis, contraindicated in children 7 and below.", answer: "Doxycycline", keys: [["doxycycline"]] },
-        { q: "Type of contraindication that can be persuaded if benefits outweigh risks.", answer: "Relative Contraindication", keys: [["relative contraindication", "relative"]] },
-        { q: "Type of contraindication that can never be given under any situation.", answer: "Absolute Contraindication", keys: [["absolute contraindication", "absolute"]] },
-        { q: "Term for what the body does to the drugs.", answer: "Pharmacokinetics", keys: [["pharmacokinetics"]] },
-        { q: "The four processes of pharmacokinetics (name all).", answer: "Absorption, Distribution, Metabolism, Elimination", keys: [["absorption"], ["distribution"], ["metabolism", "biotransformation"], ["elimination", "excretion"]] },
-        { q: "Blood vessel that supplies the liver with blood from the GIT.", answer: "Hepatic portal vein", keys: [["hepatic portal vein"]] },
-        { q: "Fraction of unchanged drug reaching systemic circulation.", answer: "Bioavailability", keys: [["bioavailability"]] },
-        { q: "Phenomenon where a drug is metabolized between site of administration and site of sampling.", answer: "First pass effect", keys: [["first pass effect", "first-pass effect"]] },
-        { q: "Route of administration with 100% bioavailability by definition.", answer: "Intravenous (IV)", keys: [["intravenous", "iv"]] },
-        { q: "Route of administration that doesn't need to reach the blood, targeting the respiratory system directly.", answer: "Inhalation", keys: [["inhalation", "inhaled"]] },
-        { q: "Metabolic enzyme in the liver responsible for drug metabolism (name the enzyme and its two most important isoforms).", answer: "Cytochrome P450 (isoforms 3A4 and 3A5)", keys: [["cytochrome p450", "cyp450", "cyp 450"], ["3a4"], ["3a5"]] },
-        { q: "Drug named as the \"gold standard\" for pharmaceutical equivalence.", answer: "Cefixime (Tergecef)", keys: [["cefixime", "tergecef"]] },
-        { q: "Absence of significant difference in rate/extent of active ingredient availability at the site of action.", answer: "Bioequivalence", keys: [["bioequivalence"]] },
-        { q: "Term for drugs that are pharmaceutical equivalents with the same clinical effect and safety profile.", answer: "Therapeutic equivalence", keys: [["therapeutic equivalence"]] },{ q: "A measure of the apparent space in the body available to contain a drug based on the amount administered versus what is found in the systemic circulation.", answer: "Volume of Distribution", keys: [["volume of distribution"]] },
-{ q: "Structures that function to prevent the destruction of self-substances and prevent microbes from penetrating body parts.", answer: "Barriers", keys: [["barriers", "blood-brain barrier", "blood-testes barrier", "blood-placenta barrier"]] },
-{ q: "A measure of the body's efficiency in eliminating drugs from the systemic circulation.", answer: "Clearance", keys: [["clearance"]] },
-{ q: "The duration of time required to change the amount of a drug in the body by one-half during elimination.", answer: "Elimination Half-life", keys: [["elimination half-life", "half-life"]] },
-{ q: "One or a series of doses given at the onset of therapy to rapidly achieve a target effect and aim to stop a current pathology.", answer: "Loading Dose", keys: [["loading dose"]] },
-{ q: "A series of repetitive doses or continuous infusion to maintain a steady-state concentration associated with the therapeutic window.", answer: "Maintenance Dose", keys: [["maintenance dose"]] },
-{ q: "The state where drug elimination equals drug availability when a drug is administered at a constant rate.", answer: "Steady-State Concentration", keys: [["steady-state concentration"]] },
-{ q: "The ability of a ligand to bind to a receptor and promote a change in receptor conformation that evokes a downstream response to treat a medical condition.", answer: "Efficacy", keys: [["efficacy"]] },
-{ q: "A measure of how well a drug works, its tolerability, and ease of use.", answer: "Effectiveness", keys: [["effectiveness"]] },
-{ q: "The phase of clinical testing that uses 20 to 100 young, healthy male subjects to test a drug's safety and pharmacokinetics.", answer: "Phase I", keys: [["phase i", "phase 1"]] },
-{ q: "The phase of clinical testing that uses 100 to 200 subjects to test if the drug will work on a greater number of individuals.", answer: "Phase II", keys: [["phase ii", "phase 2"]] },
-{ q: "The phase of clinical testing that utilizes double or triple blinding and placebos to eliminate bias.", answer: "Phase III", keys: [["phase iii", "phase 3"]] },
-{ q: "The phase of drug testing that involves post-marketing surveillance after the drug is released to the general public.", answer: "Phase IV", keys: [["phase iv", "phase 4", "post marketing surveillance"]] },
-{ q: "The ability of a drug to exhibit strong receptor interaction for targeted action while avoiding binding to other receptors to minimize adverse drug reactions.", answer: "Specificity", keys: [["specificity"]] },
-{ q: "The dose producing a response that is 50% of the maximum obtainable, treating 50% of the subjects.", answer: "Median Effective Dose (ED50)", keys: [["median effective dose", "ed50"]] },
-{ q: "The dose causing toxicity to 50% of the subjects.", answer: "Median Toxic Dose (TD50)", keys: [["median toxic dose", "td50"]] },
-{ q: "The dose causing death to 50% of animals.", answer: "Median Lethal Dose (LD50)", keys: [["median lethal dose", "ld50"]] },
-{ q: "An expression of the activity of a drug in terms of concentration or amount required to produce a defined effect.", answer: "Potency", keys: [["potency"]] },
-{ q: "The range of doses at which the drugs are both efficacious and safe.", answer: "Therapeutic Window", keys: [["therapeutic window"]] },
-{ q: "The ability of a drug to bind to its biological target, which is inversely proportional to the required dose.", answer: "Affinity", keys: [["affinity"]] },
-{ q: "The ratio of the TD50 to ED50 in humans, indicating the safety of the drug where a higher index is safer.", answer: "Therapeutic Index", keys: [["therapeutic index"]] },
-{ q: "A decrease in the ability of a drug, through time, to elicit a response in the usual dose.", answer: "Tolerance", keys: [["tolerance"]] },
-{ q: "A sudden acute decline in response to a drug with repeated administration, believed to be secondary to the genetics of an individual.", answer: "Tachyphylaxis", keys: [["tachyphylaxis"]] },
-{ q: "The emergence or re-emergence of symptoms that were absent or controlled, appearing stronger when a medication is abruptly discontinued or reduced in dosage.", answer: "Overshoot/Rebound Phenomenon", keys: [["overshoot phenomenon", "rebound phenomenon"]] },
-{ q: "A Type B adverse drug reaction that is unique to the individual, rare, and not related to the known pharmacological properties of the drug.", answer: "Idiosyncrasy", keys: [["idiosyncrasy"]] },
-{ q: "An inert material with the same physical appearance, odor, and consistency as an active dosage form but is medically ineffectual.", answer: "Placebo", keys: [["placebo"]] },
-{ q: "Substances absorbed or ingested either unintentionally or deliberately that shouldn't be in the body but have pharmacological effects.", answer: "Xenobiotics", keys: [["xenobiotics"]] },
-{ q: "A uterotonic medication and prostaglandin e1 analog that stimulates receptors at the uterine wall, known to cause abortion as an adverse effect.", answer: "Cytotec / Misoprostol", keys: [["cytotec", "misoprostol"]] }
+        {
+          q: 'This branch of pharmacology "describes the actions of a drug on the body."',
+          answer: "Pharmacodynamics",
+          keys: [["pharmacodynamics"]],
+        },
+        {
+          q: "This process is triggered by the drug-receptor interaction and causes changes in the biochemical or molecular activity of the cell.",
+          answer: "Signal transduction",
+          keys: [["signal transduction"]],
+        },
+        {
+          q: 'This branch of pharmacology is summarized simply as "what drug does to body."',
+          answer: "Pharmacodynamics",
+          keys: [["pharmacodynamics"]],
+        },
+        {
+          q: 'This branch of pharmacology is defined as the study of "what happens to the drug in the body."',
+          answer: "Pharmacokinetics",
+          keys: [["pharmacokinetics"]],
+        },
+        {
+          q: 'This branch is commonly summarized as "what body does to drug."',
+          answer: "Pharmacokinetics",
+          keys: [["pharmacokinetics"]],
+        },
+        {
+          q: "These are the four processes encompassed by pharmacokinetics.",
+          answer: "Absorption, distribution, biotransformation, and excretion",
+          keys: [
+            ["absorption"],
+            ["distribution"],
+            ["biotransformation", "metabolism"],
+            ["excretion"],
+          ],
+        },
+        {
+          q: 'This branch is described simply as "a science of poisons."',
+          answer: "Toxicology",
+          keys: [["toxicology"]],
+        },
+        {
+          q: "This substance, at low doses, acts as an anticoagulant by inhibiting thromboxane A2, but at high doses can cause gastric ulceration and fatal bleeding.",
+          answer: "Aspirin",
+          keys: [["aspirin"]],
+        },
+        {
+          q: 'This branch is defined as "the art and science of compounding or preparing suitable dosage forms for administration of drugs in man and animals and dispensing drugs."',
+          answer: "Pharmacy",
+          keys: [["pharmacy"]],
+        },
+        {
+          q: "This is the patient-oriented health science discipline in which pharmacists optimize medication therapy and advise on proper drug use.",
+          answer: "Clinical pharmacy",
+          keys: [["clinical pharmacy"]],
+        },
+        {
+          q: "This branch of pharmacology involves the study of correct dosing, dosage intervals, and dosage regimen design (though not formally named in the text).",
+          answer: "Posology",
+          keys: [["posology"]],
+        },
+        {
+          q: "Two example drugs mentioned as having a narrow therapeutic window requiring extra caution in dosage selection.",
+          answer: "Digoxin and lithium",
+          keys: [["digoxin"], ["lithium"]],
+        },
+        {
+          q: 'This branch is defined as being "concerned with the effect of drug upon microorganisms and parasites, living and multiplying in living organisms."',
+          answer: "Chemotherapy",
+          keys: [["chemotherapy"]],
+        },
+        {
+          q: "Besides microorganisms and parasites, this disease is also treated using chemotherapy by targeting its cells.",
+          answer: "Cancer",
+          keys: [["cancer"]],
+        },
+        {
+          q: 'This branch is defined as "the study of the genetic variation that gives rise to different responses to drugs among individuals or populations."',
+          answer: "Pharmacogenetics",
+          keys: [["pharmacogenetics"]],
+        },
+        {
+          q: "This drug is given as a clinical example of genetic differences in acetylation status affecting biotransformation.",
+          answer: "Isoniazid",
+          keys: [["isoniazid"]],
+        },
+        {
+          q: 'This branch is described as "a branch of pharmacology dealing with drugs and their clinical use."',
+          answer: "Clinical pharmacology",
+          keys: [["clinical pharmacology"]],
+        },
+        {
+          q: "Besides identifying and reporting adverse drug reactions, this branch also includes clinical trials and promotion of this type of drug use.",
+          answer: "Rational drug use",
+          keys: [["rational drug use"]],
+        },
+        {
+          q: 'This branch is defined as "the description and analysis of the costs of drug therapy to healthcare systems and society."',
+          answer: "Pharmacoeconomics",
+          keys: [["pharmacoeconomics"]],
+        },
+        {
+          q: "Besides elderly patients, this other patient group is specifically mentioned in relation to pharmacoeconomic cost analysis.",
+          answer: "AIDS patients",
+          keys: [["aids patients", "aids"]],
+        },
+        {
+          q: 'This branch is defined concisely as "a study of the effect of the drugs on population."',
+          answer: "Pharmacoepidemiology",
+          keys: [["pharmacoepidemiology"]],
+        },
+        {
+          q: "This route is described as the safest, most common, convenient, and economical route of drug administration.",
+          answer: "Oral (PO)",
+          keys: [["oral", "po"]],
+        },
+        {
+          q: "This substance can be used as an antidote to manage toxicity or overdose of orally administered drugs.",
+          answer: "Activated charcoal",
+          keys: [["activated charcoal"]],
+        },
+        {
+          q: "This effect, caused by drug metabolism before reaching systemic circulation, is a disadvantage of the oral route.",
+          answer: "First-pass effect (first-pass metabolism)",
+          keys: [
+            [
+              "first-pass effect",
+              "first pass effect",
+              "first-pass metabolism",
+              "first pass metabolism",
+            ],
+          ],
+        },
+        {
+          q: "This route allows maximum control over the amount of drug delivered and produces immediate effects.",
+          answer: "Intravenous (IV)",
+          keys: [["intravenous", "iv"]],
+        },
+        {
+          q: "This type of injection technique, when given via the IV route, may result in adverse effects.",
+          answer: "Bolus injection",
+          keys: [["bolus injection", "bolus"]],
+        },
+        {
+          q: "This practice, required for the IV route, must be strictly followed to prevent infection.",
+          answer: "Aseptic technique",
+          keys: [["aseptic technique", "asepsis"]],
+        },
+        {
+          q: "This type of drug preparation, given via the IM route, allows for slow and sustained absorption.",
+          answer: "Depot preparation",
+          keys: [["depot preparation", "depot"]],
+        },
+        {
+          q: "This laboratory test can be affected by intramuscular injection.",
+          answer: "Creatine kinase",
+          keys: [["creatine kinase", "ck"]],
+        },
+        {
+          q: "This route bypasses the first-pass effect and destruction by stomach acid, with saliva pH helping maintain drug stability.",
+          answer: "Sublingual (SL)",
+          keys: [["sublingual", "sl"]],
+        },
+        {
+          q: "This example drug is commonly administered sublingually for rapid systemic absorption.",
+          answer: "Nitroglycerin (or buprenorphine)",
+          keys: [["nitroglycerin", "buprenorphine"]],
+        },
+        {
+          q: "This route is described as convenient and painless, and bypasses the first-pass effect via skin application.",
+          answer: "Transdermal",
+          keys: [["transdermal"]],
+        },
+        {
+          q: "This characteristic of a drug is required for effective transdermal absorption.",
+          answer: "Lipophilicity (highly lipophilic)",
+          keys: [["lipophilicity", "lipophilic", "highly lipophilic"]],
+        },
+        {
+          q: "This device is commonly used to deliver drugs through the transdermal route.",
+          answer: "Patch (transdermal patch)",
+          keys: [["patch", "transdermal patch"]],
+        },
+        {
+          q: "This route partially bypasses the first-pass effect and is useful for patients who are vomiting or unconscious.",
+          answer: "Rectal (PR)",
+          keys: [["rectal", "pr"]],
+        },
+        {
+          q: "This quality describes the absorption pattern of the rectal route, making it unpredictable.",
+          answer: "Erratic and variable",
+          keys: [["erratic"], ["variable"]],
+        },
+        {
+          q: "Term for what the drugs do to the body.",
+          answer: "Pharmacodynamics",
+          keys: [["pharmacodynamics"]],
+        },
+        {
+          q: "In BAIAE, what drug class treats swelling of the airways?",
+          answer: "Steroids",
+          keys: [["steroids", "steroid"]],
+        },
+        {
+          q: "What anticholinergic drug is used to dry out fluid accumulation in the airways?",
+          answer: "Ipratropium",
+          keys: [["ipratropium"]],
+        },
+        {
+          q: "Give the term for Bronchial Asthma In Acute Exacerbation (abbreviation).",
+          answer: "Bronchial Asthma In Acute Exacerbation",
+          keys: [["bronchial asthma in acute exacerbation", "baiae"]],
+        },
+        {
+          q: "Give the term for Bronchial Asthma Not In Acute Exacerbation (abbreviation).",
+          answer: "Bronchial Asthma Not In Acute Exacerbation",
+          keys: [["bronchial asthma not in acute exacerbation", "banae"]],
+        },
+        {
+          q: "Define: any response to a medicine that is noxious and unintended at normal doses.",
+          answer: "Adverse Drug Reaction (ADR)",
+          keys: [["adverse drug reaction", "adr"]],
+        },
+        {
+          q: "Diphenhydramine causes sleepiness by blocking what receptor?",
+          answer: "Histamine (H1) receptor",
+          keys: [["histamine", "h1 receptor", "h1"]],
+        },
+        {
+          q: "Diazepam is a complement of what major inhibitory neurotransmitter?",
+          answer: "GABA (Gamma-Aminobutyric Acid)",
+          keys: [
+            ["gaba", "gamma-aminobutyric acid", "gamma aminobutyric acid"],
+          ],
+        },
+        {
+          q: 'ADR type described as "exaggeration of effects" (e.g., aspirin, heparin, warfarin).',
+          answer: "Type A – Augmented Effects",
+          keys: [["type a", "augmented effects", "augmented"]],
+        },
+        {
+          q: "ADR type described as idiosyncratic, unpredictable reactions (e.g., phenytoin).",
+          answer: "Type B – Bizarre Effects",
+          keys: [["type b", "bizarre effects", "bizarre"]],
+        },
+        {
+          q: "Brand name of Phenytoin.",
+          answer: "Dilantin",
+          keys: [["dilantin"]],
+        },
+        {
+          q: "General drug category of Phenytoin.",
+          answer: "Hydantoin",
+          keys: [["hydantoin"]],
+        },
+        {
+          q: "ADR type for continuing reactions that persist a long time (e.g., avascular necrosis from corticosteroids).",
+          answer: "Type C – Chronic Effects",
+          keys: [["type c", "chronic effects", "chronic"]],
+        },
+        {
+          q: "ADR type that occurs after drug use, involving decreased WBC from doxorubicin.",
+          answer: "Type D – Delayed Effects",
+          keys: [["type d", "delayed effects", "delayed"]],
+        },
+        {
+          q: "ADR type involving withdrawal effects (e.g., rebound hypertension from clonidine).",
+          answer: "Type E – End of Treatment",
+          keys: [["type e", "end of treatment"]],
+        },
+        {
+          q: "ADR type where treatment fails, e.g., drug accumulation during dialysis.",
+          answer: "Type F – Fail of Treatment",
+          keys: [["type f", "fail of treatment", "failure of treatment"]],
+        },
+        {
+          q: "Term for contraction of the heart.",
+          answer: "Inotropy",
+          keys: [["inotropy"]],
+        },
+        {
+          q: "Which drug is a B1-selective inotrope?",
+          answer: "Dobutamine",
+          keys: [["dobutamine"]],
+        },
+        {
+          q: "Which drug is B2-selective and used for asthma?",
+          answer: "Terbutaline",
+          keys: [["terbutaline"]],
+        },
+        {
+          q: "Which non-selective drug can be used for both hypertensive and asthmatic patients?",
+          answer: "Epinephrine",
+          keys: [["epinephrine", "adrenaline"]],
+        },
+        {
+          q: "Formula for Blood Pressure (BP).",
+          answer: "BP = SV x HR x TPR",
+          keys: [["bp = sv x hr x tpr", "sv x hr x tpr", "bp=svxhrxtpr"]],
+        },
+        {
+          q: "Formula for Cardiac Output (CO).",
+          answer: "CO = SV x HR",
+          keys: [["co = sv x hr", "sv x hr", "co=svxhr"]],
+        },
+        {
+          q: "Set of patient characteristics that prevent the use of a drug.",
+          answer: "Clinical Contraindications",
+          keys: [["contraindications", "clinical contraindications"]],
+        },
+        {
+          q: "Tetracycline-class drug used for leptospirosis, contraindicated in children 7 and below.",
+          answer: "Doxycycline",
+          keys: [["doxycycline"]],
+        },
+        {
+          q: "Type of contraindication that can be persuaded if benefits outweigh risks.",
+          answer: "Relative Contraindication",
+          keys: [["relative contraindication", "relative"]],
+        },
+        {
+          q: "Type of contraindication that can never be given under any situation.",
+          answer: "Absolute Contraindication",
+          keys: [["absolute contraindication", "absolute"]],
+        },
+        {
+          q: "Term for what the body does to the drugs.",
+          answer: "Pharmacokinetics",
+          keys: [["pharmacokinetics"]],
+        },
+        {
+          q: "The four processes of pharmacokinetics (name all).",
+          answer: "Absorption, Distribution, Metabolism, Elimination",
+          keys: [
+            ["absorption"],
+            ["distribution"],
+            ["metabolism", "biotransformation"],
+            ["elimination", "excretion"],
+          ],
+        },
+        {
+          q: "Blood vessel that supplies the liver with blood from the GIT.",
+          answer: "Hepatic portal vein",
+          keys: [["hepatic portal vein"]],
+        },
+        {
+          q: "Fraction of unchanged drug reaching systemic circulation.",
+          answer: "Bioavailability",
+          keys: [["bioavailability"]],
+        },
+        {
+          q: "Phenomenon where a drug is metabolized between site of administration and site of sampling.",
+          answer: "First pass effect",
+          keys: [["first pass effect", "first-pass effect"]],
+        },
+        {
+          q: "Route of administration with 100% bioavailability by definition.",
+          answer: "Intravenous (IV)",
+          keys: [["intravenous", "iv"]],
+        },
+        {
+          q: "Route of administration that doesn't need to reach the blood, targeting the respiratory system directly.",
+          answer: "Inhalation",
+          keys: [["inhalation", "inhaled"]],
+        },
+        {
+          q: "Metabolic enzyme in the liver responsible for drug metabolism (name the enzyme and its two most important isoforms).",
+          answer: "Cytochrome P450 (isoforms 3A4 and 3A5)",
+          keys: [["cytochrome p450", "cyp450", "cyp 450"], ["3a4"], ["3a5"]],
+        },
+        {
+          q: 'Drug named as the "gold standard" for pharmaceutical equivalence.',
+          answer: "Cefixime (Tergecef)",
+          keys: [["cefixime", "tergecef"]],
+        },
+        {
+          q: "Absence of significant difference in rate/extent of active ingredient availability at the site of action.",
+          answer: "Bioequivalence",
+          keys: [["bioequivalence"]],
+        },
+        {
+          q: "Term for drugs that are pharmaceutical equivalents with the same clinical effect and safety profile.",
+          answer: "Therapeutic equivalence",
+          keys: [["therapeutic equivalence"]],
+        },
+        {
+          q: "A measure of the apparent space in the body available to contain a drug based on the amount administered versus what is found in the systemic circulation.",
+          answer: "Volume of Distribution",
+          keys: [["volume of distribution"]],
+        },
+        {
+          q: "Structures that function to prevent the destruction of self-substances and prevent microbes from penetrating body parts.",
+          answer: "Barriers",
+          keys: [
+            [
+              "barriers",
+              "blood-brain barrier",
+              "blood-testes barrier",
+              "blood-placenta barrier",
+            ],
+          ],
+        },
+        {
+          q: "A measure of the body's efficiency in eliminating drugs from the systemic circulation.",
+          answer: "Clearance",
+          keys: [["clearance"]],
+        },
+        {
+          q: "The duration of time required to change the amount of a drug in the body by one-half during elimination.",
+          answer: "Elimination Half-life",
+          keys: [["elimination half-life", "half-life"]],
+        },
+        {
+          q: "One or a series of doses given at the onset of therapy to rapidly achieve a target effect and aim to stop a current pathology.",
+          answer: "Loading Dose",
+          keys: [["loading dose"]],
+        },
+        {
+          q: "A series of repetitive doses or continuous infusion to maintain a steady-state concentration associated with the therapeutic window.",
+          answer: "Maintenance Dose",
+          keys: [["maintenance dose"]],
+        },
+        {
+          q: "The state where drug elimination equals drug availability when a drug is administered at a constant rate.",
+          answer: "Steady-State Concentration",
+          keys: [["steady-state concentration"]],
+        },
+        {
+          q: "The ability of a ligand to bind to a receptor and promote a change in receptor conformation that evokes a downstream response to treat a medical condition.",
+          answer: "Efficacy",
+          keys: [["efficacy"]],
+        },
+        {
+          q: "A measure of how well a drug works, its tolerability, and ease of use.",
+          answer: "Effectiveness",
+          keys: [["effectiveness"]],
+        },
+        {
+          q: "The phase of clinical testing that uses 20 to 100 young, healthy male subjects to test a drug's safety and pharmacokinetics.",
+          answer: "Phase I",
+          keys: [["phase i", "phase 1"]],
+        },
+        {
+          q: "The phase of clinical testing that uses 100 to 200 subjects to test if the drug will work on a greater number of individuals.",
+          answer: "Phase II",
+          keys: [["phase ii", "phase 2"]],
+        },
+        {
+          q: "The phase of clinical testing that utilizes double or triple blinding and placebos to eliminate bias.",
+          answer: "Phase III",
+          keys: [["phase iii", "phase 3"]],
+        },
+        {
+          q: "The phase of drug testing that involves post-marketing surveillance after the drug is released to the general public.",
+          answer: "Phase IV",
+          keys: [["phase iv", "phase 4", "post marketing surveillance"]],
+        },
+        {
+          q: "The ability of a drug to exhibit strong receptor interaction for targeted action while avoiding binding to other receptors to minimize adverse drug reactions.",
+          answer: "Specificity",
+          keys: [["specificity"]],
+        },
+        {
+          q: "The dose producing a response that is 50% of the maximum obtainable, treating 50% of the subjects.",
+          answer: "Median Effective Dose (ED50)",
+          keys: [["median effective dose", "ed50"]],
+        },
+        {
+          q: "The dose causing toxicity to 50% of the subjects.",
+          answer: "Median Toxic Dose (TD50)",
+          keys: [["median toxic dose", "td50"]],
+        },
+        {
+          q: "The dose causing death to 50% of animals.",
+          answer: "Median Lethal Dose (LD50)",
+          keys: [["median lethal dose", "ld50"]],
+        },
+        {
+          q: "An expression of the activity of a drug in terms of concentration or amount required to produce a defined effect.",
+          answer: "Potency",
+          keys: [["potency"]],
+        },
+        {
+          q: "The range of doses at which the drugs are both efficacious and safe.",
+          answer: "Therapeutic Window",
+          keys: [["therapeutic window"]],
+        },
+        {
+          q: "The ability of a drug to bind to its biological target, which is inversely proportional to the required dose.",
+          answer: "Affinity",
+          keys: [["affinity"]],
+        },
+        {
+          q: "The ratio of the TD50 to ED50 in humans, indicating the safety of the drug where a higher index is safer.",
+          answer: "Therapeutic Index",
+          keys: [["therapeutic index"]],
+        },
+        {
+          q: "A decrease in the ability of a drug, through time, to elicit a response in the usual dose.",
+          answer: "Tolerance",
+          keys: [["tolerance"]],
+        },
+        {
+          q: "A sudden acute decline in response to a drug with repeated administration, believed to be secondary to the genetics of an individual.",
+          answer: "Tachyphylaxis",
+          keys: [["tachyphylaxis"]],
+        },
+        {
+          q: "The emergence or re-emergence of symptoms that were absent or controlled, appearing stronger when a medication is abruptly discontinued or reduced in dosage.",
+          answer: "Overshoot/Rebound Phenomenon",
+          keys: [["overshoot phenomenon", "rebound phenomenon"]],
+        },
+        {
+          q: "A Type B adverse drug reaction that is unique to the individual, rare, and not related to the known pharmacological properties of the drug.",
+          answer: "Idiosyncrasy",
+          keys: [["idiosyncrasy"]],
+        },
+        {
+          q: "An inert material with the same physical appearance, odor, and consistency as an active dosage form but is medically ineffectual.",
+          answer: "Placebo",
+          keys: [["placebo"]],
+        },
+        {
+          q: "Substances absorbed or ingested either unintentionally or deliberately that shouldn't be in the body but have pharmacological effects.",
+          answer: "Xenobiotics",
+          keys: [["xenobiotics"]],
+        },
+        {
+          q: "A uterotonic medication and prostaglandin e1 analog that stimulates receptors at the uterine wall, known to cause abortion as an adverse effect.",
+          answer: "Cytotec / Misoprostol",
+          keys: [["cytotec", "misoprostol"]],
+        },
       ];
 
-      // Pathology quiz data (mode4)
+      // Multiple-choice Pathology Quiz (mode4)
       const mode4Questions = [
-        { q: "What process do the health of cells and tissues depend on, which delivers oxygen and nutrients and removes wastes generated by cellular metabolism?", answer: "Circulation of blood (or The process of hemodynamics)", keys: [["circulation"], ["hemodynamics"]] },
-        { q: "What is the accumulation of excess fluid in the interstitial space (including the extravascular space)?", answer: "Edema", keys: [["edema"]] },
-        { q: "What is the space found in the extracellular compartment that is between the blood vessels and other cells?", answer: "Interstitial space", keys: [["interstitial"]] },
-        { q: "What is the term for normal blood flow, maintained by the integrity of blood vessels, smooth flow of blood, and coagulation?", answer: "Hemostasis", keys: [["hemostasis"]] },
-        { q: "What are inflammation-related edema and effusions that are protein-rich and caused by increases in local vascular permeability called?", answer: "Exudates", keys: [["exudates"]] },
-        { q: "What are noninflammatory edema and effusions that are protein-poor fluids, common in disorders including heart failure, liver failure, renal disease, and malnutrition called?", answer: "Transudates", keys: [["transudates"]] },
-        { q: "In most cases, what is the term for subcutaneous edema whose distribution is influenced by gravity (e.g., the legs when standing, the sacrum when recumbent)?", answer: "Dependent edema", keys: [["dependent"]] },
-        { q: "What is a specific feature of dependent edema where pressing on the swollen area leaves a dent?", answer: "Pitting edema", keys: [["pitting"]] },
-        { q: "What type of edema occurs in the early stages of renal dysfunction and is usually focused on the eyes (in the eyelids)?", answer: "Periorbital edema (Nephrotic edema)", keys: [["periorbital"], ["nephrotic"]] },
-        { q: "What is the presence of fluid inside the pleural cavity called?", answer: "Hydrothorax", keys: [["hydrothorax"]] },
-        { q: "What is the term for edema in the whole body?", answer: "Anasarca", keys: [["anasarca"]] },
-        { q: "What is the active process in which arteriolar dilation leads to increased blood flow, causing affected tissues to turn red (erythema)?", answer: "Hyperemia", keys: [["hyperemia"]] },
-        { q: "What is the passive process resulting from reduced venous outflow of blood from a tissue, causing tissues to have an abnormal blue-red color (cyanosis)?", answer: "Congestion", keys: [["congestion"]] },
-        { q: "What is the precisely orchestrated process involving platelets, clotting factors, and endothelium that occurs at the site of vascular injury by which blood clots form?", answer: "Hemostasis", keys: [["hemostasis"]] },
-        { q: "Which stage of hemostasis involves the formation of a platelet plug?", answer: "Primary hemostasis", keys: [["primary"]] },
-        { q: "Which stage of hemostasis involves the deposition of FIBRIN?", answer: "Secondary hemostasis", keys: [["secondary"]] },
-        { q: "Which arachidonic acid metabolite is a vasodilator and potent inhibitor of platelet aggregation?", answer: "Prostacyclin (PGI2)", keys: [["prostacyclin"], ["pgi2"]] },
-        { q: "Which arachidonic acid metabolite is a potent platelet aggregating agent and vasoconstrictor?", answer: "Thromboxane A2 (TXA2)", keys: [["thromboxane"], ["txa2"]] },
-        { q: "Which disease is caused by a deficiency in the GpIIb-IIIa complex?", answer: "Glanzmann thrombasthenia", keys: [["glanzmann"]] },
-        { q: "Which syndrome is caused by a deficiency in GpIb?", answer: "Bernard-Soulier syndrome", keys: [["bernard-soulier"]] },
-        { q: "What is the series of amplifying enzymatic reactions that lead to the deposition of an insoluble FIBRIN clot?", answer: "Coagulation cascade", keys: [["coagulation"]] },
-        { q: "Which test assesses the function of the extrinsic pathway (factors VII, X, V, II, I)?", answer: "Prothrombin Time (PT)", keys: [["prothrombin time"], ["pt"]] },
-        { q: "Which test assesses the function of the intrinsic pathway?", answer: "Activated Partial Thromboplastin Time (PTT / aPTT)", keys: [["ptt"], ["aptt"]] },
-        { q: "What limits the size of the clot and leads to the dissolution of the clot?", answer: "Fibrinolytic cascade", keys: [["fibrinolytic"]] },
-        { q: "What is the size range of Petechiae?", answer: "1-2 mm", keys: [["1-2 mm"]] },
-        { q: "What is the size range of Purpura?", answer: "≥ 3 mm", keys: [["3 mm"]] },
-        { q: "What is the size range of Ecchymosis?", answer: "> 1-2 cms", keys: [["1-2 cms"]] },
-        { q: "What are the three primary abnormalities that lead to thrombosis (the Virchow triad)?", answer: "1. Endothelial injury, 2. Stasis or abnormal/turbulent blood flow, 3. Hypercoagulability of the blood", keys: [["endothelial"], ["stasis"], ["hypercoagulability"]] },
-        { q: "What is the major prothrombotic alteration involving the downregulation of thrombomodulin, Protein C, and tissue factor protein inhibitor called?", answer: "Procoagulant changes", keys: [["procoagulant"]] },
-        { q: "What feature of antemortem thrombi consists of alternating dark red cell-rich layers and pale platelets with fibrin?", answer: "Lines of Zahn", keys: [["zahn"]] },
-        { q: "What are the four potential fates of a thrombus?", answer: "1. Propagation, 2. Embolization, 3. Dissolution, 4. Organization and recanalization", keys: [["propagation"], ["embolization"], ["dissolution"], ["organization"]] },
-        { q: "What is widespread thrombosis within the microcirculation that may be of sudden or insidious onset and is a complication of conditions associated with systemic activation of thrombin?", answer: "Disseminated Intravascular Coagulation (DIC)", keys: [["dic"], ["intravascular"]] },
-        { q: "What is a detached intravascular solid, liquid, or gaseous mass that is carried by the blood from its point of origin to a distant site?", answer: "An embolus", keys: [["embolus"]] },
-        { q: "What is characterized by tumor-associated inflammation and coagulation factors released from tumor cells that all contribute to the increased risk of thromboembolism?", answer: "Trousseau syndrome", keys: [["trousseau"]] },
-        { q: "What is the presence of microscopic fat globules in the vasculature after fractures of long bones or in the setting of soft tissue trauma and burns?", answer: "Fat embolism", keys: [["fat embolism"]] },
-        { q: "What is the chronic form of decompression sickness where persistence of gas emboli in the skeletal system leads to multiple foci of ischemic necrosis?", answer: "Caisson disease", keys: [["caisson"]] },
-        { q: "What is an area of ischemic necrosis caused by occlusion of either the arterial supply or the venous drainage?", answer: "An infarct", keys: [["infarct"]] },
-        { q: "What is the dominant histologic characteristic of infarction that occurs in organs that suffered hypoxic-ischemic injury (with the exception of the brain)?", answer: "Ischemic coagulative necrosis", keys: [["coagulative"]] },
-        { q: "What is a state of circulatory failure that impairs tissue perfusion and leads to cellular hypoxia?", answer: "Shock", keys: [["shock"]] },
-        { q: "What type of shock results from the failure of the myocardial pump resulting from intrinsic myocardial damage, extrinsic compression, or obstruction to outflow?", answer: "Cardiogenic shock", keys: [["cardiogenic"]] },
-        { q: "What is a life-threatening organ dysfunction caused by a dysregulated host response to infection?", answer: "Sepsis", keys: [["sepsis"]] },
-        { q: "What are the three stages of shock?", answer: "1. A nonprogressive stage (compensated stage), 2. A progressive stage, 3. An irreversible stage", keys: [["nonprogressive"], ["progressive"], ["irreversible"]] },
-        { q: "What type of shock is caused by any factor that stimulates parasympathetic activity or inhibits sympathetic activity of vascular smooth muscles, resulting in widespread and massive vasodilation?", answer: "Neurogenic shock", keys: [["neurogenic"]] }
+        {
+          q: "What process do the health of cells and tissues depend on, which delivers oxygen and nutrients and removes wastes generated by cellular metabolism?",
+          options: [
+            "Hemostasis",
+            "Circulation of blood (hemodynamics)",
+            "Coagulation cascade",
+            "Fibrinolysis",
+          ],
+          correct: 1,
+        },
+        {
+          q: "What is the accumulation of excess fluid in the interstitial space (including the extravascular space)?",
+          options: ["Congestion", "Hyperemia", "Edema", "Effusion"],
+          correct: 2,
+        },
+        {
+          q: "What is the space found in the extracellular compartment that is between the blood vessels and other cells?",
+          options: [
+            "Pleural space",
+            "Interstitial space",
+            "Intravascular space",
+            "Synovial joint space",
+          ],
+          correct: 1,
+        },
+        {
+          q: "What is the term for normal blood flow, maintained by the integrity of blood vessels, smooth flow of blood, and coagulation?",
+          options: ["Hemostasis", "Hemodynamics", "Hyperemia", "Fibrinolysis"],
+          correct: 0,
+        },
+        {
+          q: "What are inflammation-related edema and effusions that are protein-rich and caused by increases in local vascular permeability called?",
+          options: ["Transudates", "Exudates", "Petechiae", "Purpura"],
+          correct: 1,
+        },
+        {
+          q: "What are noninflammatory edema and effusions that are protein-poor fluids, common in disorders including heart failure, liver failure, renal disease, and malnutrition called?",
+          options: ["Exudates", "Transudates", "Hydrothorax", "Ascites"],
+          correct: 1,
+        },
+        {
+          q: "In most cases, what is the term for subcutaneous edema whose distribution is influenced by gravity (e.g., the legs when standing, the sacrum when recumbent)?",
+          options: [
+            "Dependent edema",
+            "Pitting edema",
+            "Periorbital edema",
+            "Systemic edema",
+          ],
+          correct: 0,
+        },
+        {
+          q: "What is a specific feature of dependent edema where pressing on the swollen area leaves a dent?",
+          options: [
+            "Localized edema",
+            "Pitting edema",
+            "Pulmonary edema",
+            "Nephrotic edema",
+          ],
+          correct: 1,
+        },
+        {
+          q: "What type of edema occurs in the early stages of renal dysfunction and is usually focused on the eyes (in the eyelids)?",
+          options: [
+            "Periorbital edema (Nephrotic edema)",
+            "Subcutaneous edema",
+            "Pulmonary edema",
+            "Brain edema",
+          ],
+          correct: 0,
+        },
+        {
+          q: "What is the presence of fluid inside the pleural cavity called?",
+          options: [
+            "Hydropericardium",
+            "Hydroperitoneum",
+            "Hydrothorax",
+            "Ascites",
+          ],
+          correct: 2,
+        },
+        {
+          q: "What is the term for edema in the whole body?",
+          options: ["Hyperemia", "Ascites", "Elephantiasis", "Anasarca"],
+          correct: 3,
+        },
+        {
+          q: "What is the active process in which arteriolar dilation leads to increased blood flow, causing affected tissues to turn red (erythema)?",
+          options: ["Congestion", "Hyperemia", "Cyanosis", "Hemostasis"],
+          correct: 1,
+        },
+        {
+          q: "What is the passive process resulting from reduced venous outflow of blood from a tissue, causing tissues to have an abnormal blue-red color (cyanosis)?",
+          options: ["Hyperemia", "Erythema", "Congestion", "Ischemia"],
+          correct: 2,
+        },
+        {
+          q: "What is the precisely orchestrated process involving platelets, clotting factors, and endothelium that occurs at the site of vascular injury by which blood clots form?",
+          options: ["Fibrinolysis", "Hemostasis", "Thrombosis", "Hemorrhage"],
+          correct: 1,
+        },
+        {
+          q: "Which stage of hemostasis involves the formation of a platelet plug?",
+          options: [
+            "Primary hemostasis",
+            "Secondary hemostasis",
+            "Vasoconstriction",
+            "Thrombus and antithrombotic events",
+          ],
+          correct: 0,
+        },
+        {
+          q: "Which stage of hemostasis involves the deposition of FIBRIN?",
+          options: [
+            "Primary hemostasis",
+            "Secondary hemostasis",
+            "Vasoconstriction",
+            "Fibrinolytic cascade",
+          ],
+          correct: 1,
+        },
+        {
+          q: "Which arachidonic acid metabolite is a vasodilator and potent inhibitor of platelet aggregation?",
+          options: [
+            "Thromboxane A2 (TXA2)",
+            "Prostacyclin (PGI2)",
+            "Adenosine diphosphate (ADP)",
+            "Plasminogen activator inhibitor (PAI)",
+          ],
+          correct: 1,
+        },
+        {
+          q: "Which arachidonic acid metabolite is a potent platelet aggregating agent and vasoconstrictor?",
+          options: [
+            "Prostacyclin (PGI2)",
+            "Plasmin",
+            "Thromboxane A2 (TXA2)",
+            "Alpha-2 antiplasmin",
+          ],
+          correct: 2,
+        },
+        {
+          q: "Which disease is caused by a deficiency in the GpIIb-IIIa complex?",
+          options: [
+            "Bernard-Soulier syndrome",
+            "von Willebrand disease",
+            "Glanzmann thrombasthenia",
+            "Hemophilia A",
+          ],
+          correct: 2,
+        },
+        {
+          q: "Which syndrome is caused by a deficiency in GpIb?",
+          options: [
+            "Glanzmann thrombasthenia",
+            "Bernard-Soulier syndrome",
+            "Factor V Leiden mutation",
+            "von Willebrand disease",
+          ],
+          correct: 1,
+        },
+        {
+          q: "What is the series of amplifying enzymatic reactions that lead to the deposition of an insoluble FIBRIN clot?",
+          options: [
+            "Fibrinolytic cascade",
+            "Coagulation cascade",
+            "Primary hemostasis",
+            "Vasoconstriction",
+          ],
+          correct: 1,
+        },
+        {
+          q: "Which test assesses the function of the extrinsic pathway (factors VII, X, V, II, I)?",
+          options: [
+            "Activated Partial Thromboplastin Time (PTT)",
+            "Thrombin Time",
+            "Platelet Count",
+            "Prothrombin Time (PT)",
+          ],
+          correct: 3,
+        },
+        {
+          q: "Which test assesses the function of the intrinsic pathway?",
+          options: [
+            "Prothrombin Time (PT)",
+            "Activated Partial Thromboplastin Time (PTT / aPTT)",
+            "Thrombin Time",
+            "D-Dimer",
+          ],
+          correct: 1,
+        },
+        {
+          q: "What limits the size of the clot and leads to the dissolution of the clot?",
+          options: [
+            "Coagulation cascade",
+            "Secondary hemostasis",
+            "Fibrinolytic cascade",
+            "Procoagulant changes",
+          ],
+          correct: 2,
+        },
+        {
+          q: "What is the size range of Petechiae?",
+          options: ["1-2 mm", "≥ 3 mm", "> 1-2 cms", "1-2 cm"],
+          correct: 0,
+        },
+        {
+          q: "What is the size range of Purpura?",
+          options: ["1-2 mm", "> 1-2 cms", "≥ 3 mm", "1-2 cm"],
+          correct: 2,
+        },
+        {
+          q: "What is the size range of Ecchymosis?",
+          options: ["1-2 mm", "≥ 3 mm", "0.5-1 cm", "> 1-2 cms"],
+          correct: 3,
+        },
+        {
+          q: "What are the three primary abnormalities that lead to thrombosis (the Virchow triad)?",
+          options: [
+            "Hypoxia, Ischemia, Infarction",
+            "Endothelial injury, Stasis or turbulent blood flow, Hypercoagulability of the blood",
+            "Vasoconstriction, Primary hemostasis, Secondary hemostasis",
+            "Platelet adhesion, Secretion, Platelet aggregation",
+          ],
+          correct: 1,
+        },
+        {
+          q: "What is the major prothrombotic alteration involving the downregulation of thrombomodulin, Protein C, and tissue factor protein inhibitor called?",
+          options: [
+            "Antifibrinolytic effects",
+            "Fibrinolytic cascade",
+            "Procoagulant changes",
+            "Endothelial activation",
+          ],
+          correct: 2,
+        },
+        {
+          q: "What feature of antemortem thrombi consists of alternating dark red cell-rich layers and pale platelets with fibrin?",
+          options: [
+            "Chicken fat clot",
+            "Currant jelly clot",
+            "Mural thrombi",
+            "Lines of Zahn",
+          ],
+          correct: 3,
+        },
+        {
+          q: "What are the four potential fates of a thrombus?",
+          options: [
+            "Vasoconstriction, Primary plug, Secondary plug, Antithrombotic events",
+            "Propagation, Embolization, Dissolution, Organization and recanalization",
+            "Petechiae, Purpura, Ecchymosis, Hematoma",
+            "Hypoxia, Ischemia, Infarction, Irreversible injury",
+          ],
+          correct: 1,
+        },
+        {
+          q: "What is widespread thrombosis within the microcirculation that may be of sudden or insidious onset and is a complication of conditions associated with systemic activation of thrombin?",
+          options: [
+            "Factor V Leiden",
+            "Deep vein thrombosis (DVT)",
+            "Disseminated Intravascular Coagulation (DIC)",
+            "Trousseau syndrome",
+          ],
+          correct: 2,
+        },
+        {
+          q: "What is a detached intravascular solid, liquid, or gaseous mass that is carried by the blood from its point of origin to a distant site?",
+          options: ["Thrombus", "Embolus", "Exudate", "Transudate"],
+          correct: 1,
+        },
+        {
+          q: "What is characterized by tumor-associated inflammation and coagulation factors released from tumor cells that all contribute to the increased risk of thromboembolism?",
+          options: [
+            "Trousseau syndrome",
+            "Bernard-Soulier syndrome",
+            "Glanzmann thrombasthenia",
+            "Caisson disease",
+          ],
+          correct: 0,
+        },
+        {
+          q: "What is the presence of microscopic fat globules in the vasculature after fractures of long bones or in the setting of soft tissue trauma and burns?",
+          options: [
+            "Air embolism",
+            "Amniotic fluid embolism",
+            "Systemic thromboembolism",
+            "Fat embolism",
+          ],
+          correct: 3,
+        },
+        {
+          q: "What is the chronic form of decompression sickness where persistence of gas emboli in the skeletal system leads to multiple foci of ischemic necrosis?",
+          options: [
+            "Fat embolism syndrome",
+            "Caisson disease",
+            "Trousseau syndrome",
+            "Nephrotic syndrome",
+          ],
+          correct: 1,
+        },
+        {
+          q: "What is an area of ischemic necrosis caused by occlusion of either the arterial supply or the venous drainage?",
+          options: ["Edema", "Embolus", "Infarct", "Thrombus"],
+          correct: 2,
+        },
+        {
+          q: "What is the dominant histologic characteristic of infarction that occurs in organs that suffered hypoxic-ischemic injury (with the exception of the brain)?",
+          options: [
+            "Liquefactive necrosis",
+            "Ischemic coagulative necrosis",
+            "Microvascular thrombosis",
+            "Fibrinoid necrosis",
+          ],
+          correct: 1,
+        },
+        {
+          q: "What is a state of circulatory failure that impairs tissue perfusion and leads to cellular hypoxia?",
+          options: ["Shock", "Congestion", "Hyperemia", "Hemorrhage"],
+          correct: 0,
+        },
+        {
+          q: "What type of shock results from the failure of the myocardial pump resulting from intrinsic myocardial damage, extrinsic compression, or obstruction to outflow?",
+          options: [
+            "Hypovolemic shock",
+            "Cardiogenic shock",
+            "Septic shock",
+            "Neurogenic shock",
+          ],
+          correct: 1,
+        },
+        {
+          q: "What is a life-threatening organ dysfunction caused by a dysregulated host response to infection?",
+          options: [
+            "Sepsis",
+            "Systemic Inflammatory Response Syndrome (SIRS)",
+            "Hypovolemia",
+            "Anaphylaxis",
+          ],
+          correct: 0,
+        },
+        {
+          q: "What are the three stages of shock?",
+          options: [
+            "Primary, Secondary, Tertiary",
+            "Propagation, Embolization, Dissolution",
+            "Hypoxemia, Ischemia, Infarction",
+            "A nonprogressive stage, A progressive stage, An irreversible stage",
+          ],
+          correct: 3,
+        },
+        {
+          q: "What type of shock is caused by any factor that stimulates parasympathetic activity or inhibits sympathetic activity of vascular smooth muscles, resulting in widespread and massive vasodilation?",
+          options: [
+            "Hypovolemic shock",
+            "Cardiogenic shock",
+            "Neurogenic shock",
+            "Septic shock",
+          ],
+          correct: 2,
+        },
       ];
 
       /* keyboard layout for mode 2 */
@@ -1208,6 +2403,7 @@
       let currentIndex = 0;
       let score = 0;
       let answered = false;
+      let selectedOption = -1;
 
       const startScreen = document.getElementById("startScreen");
       const quizScreen = document.getElementById("quizScreen");
@@ -1224,7 +2420,7 @@
 
       function startQuiz(mode) {
         currentMode = mode;
-        if (mode === 'mode4') {
+        if (mode === "mode4") {
           currentQuestions = shuffle(mode4Questions);
         } else {
           currentQuestions = shuffle(
@@ -1238,6 +2434,7 @@
         currentIndex = 0;
         score = 0;
         answered = false;
+        selectedOption = -1;
         startScreen.classList.add("hidden");
         resultsScreen.classList.add("hidden");
         quizScreen.classList.remove("hidden");
@@ -1255,7 +2452,7 @@
           eyebrowText = "Identify the term, phrase, or word being described";
         } else if (mode === "mode4") {
           modeLabel = "PATHOLOGY QUIZ";
-          eyebrowText = "Answer the pathology question";
+          eyebrowText = "Select the correct answer";
         }
         document.getElementById("modeTag").textContent = modeLabel;
         document.getElementById("qEyebrow").textContent = eyebrowText;
@@ -1265,6 +2462,17 @@
           kbWrap.innerHTML = buildKeyboardHTML();
         } else {
           kbWrap.innerHTML = "";
+        }
+
+        // Show/hide options container and textarea based on mode
+        const optionsContainer = document.getElementById("optionsContainer");
+        const answerInput = document.getElementById("answerInput");
+        if (mode === "mode4") {
+          optionsContainer.classList.remove("hidden");
+          answerInput.classList.add("hidden");
+        } else {
+          optionsContainer.classList.add("hidden");
+          answerInput.classList.remove("hidden");
         }
 
         renderQuestion();
@@ -1304,6 +2512,7 @@
 
       function renderQuestion() {
         answered = false;
+        selectedOption = -1;
         const q = currentQuestions[currentIndex];
         const total = currentQuestions.length;
 
@@ -1312,13 +2521,29 @@
           questionText = escapeHtml(q.rx);
         } else if (currentMode === "mode2") {
           questionText = boldify(q.plain);
-        } else {
+        } else if (currentMode === "mode3") {
+          questionText = escapeHtml(q.q);
+        } else if (currentMode === "mode4") {
           questionText = escapeHtml(q.q);
         }
         document.getElementById("qText").innerHTML = questionText;
 
-        document.getElementById("answerInput").value = "";
-        document.getElementById("answerInput").disabled = false;
+        // Render options for mode4
+        const optionsContainer = document.getElementById("optionsContainer");
+        if (currentMode === "mode4") {
+          const labels = ["A", "B", "C", "D"];
+          optionsContainer.innerHTML = q.options
+            .map(
+              (opt, idx) =>
+                `<button class="option-btn" data-index="${idx}" onclick="selectOption(${idx})">${labels[idx]}. ${escapeHtml(opt)}</button>`,
+            )
+            .join("");
+          document.getElementById("answerInput").value = "";
+          document.getElementById("answerInput").disabled = false;
+        } else {
+          document.getElementById("answerInput").value = "";
+          document.getElementById("answerInput").disabled = false;
+        }
 
         const pct = Math.round((currentIndex / total) * 100);
         document.getElementById("progressFill").style.width = pct + "%";
@@ -1332,7 +2557,18 @@
         document.getElementById("submitBtn").disabled = false;
         document.getElementById("nextBtn").classList.add("hidden");
 
-        document.getElementById("answerInput").focus();
+        if (currentMode !== "mode4") {
+          document.getElementById("answerInput").focus();
+        }
+      }
+
+      function selectOption(index) {
+        if (answered) return;
+        selectedOption = index;
+        const btns = document.querySelectorAll(".option-btn");
+        btns.forEach((btn, i) => {
+          btn.classList.toggle("selected", i === index);
+        });
       }
 
       function escapeHtml(str) {
@@ -1367,31 +2603,67 @@
 
       function submitAnswer() {
         if (answered) return;
-        const userAnswer = document.getElementById("answerInput").value.trim();
+
+        let isCorrect = false;
         const q = currentQuestions[currentIndex];
 
-        const ratio = checkKeywordMatch(userAnswer, q.keys);
-        const threshold =
-          currentMode === "mode1" ? 0.7 : currentMode === "mode2" ? 0.75 : 0.8;
-        const isCorrect = userAnswer.length > 0 && ratio >= threshold;
+        if (currentMode === "mode4") {
+          if (selectedOption === -1) return;
+          isCorrect = selectedOption === q.correct;
+          if (isCorrect) score++;
+          answered = true;
 
-        if (isCorrect) score++;
-        answered = true;
+          // Show correct/incorrect on options
+          const btns = document.querySelectorAll(".option-btn");
+          btns.forEach((btn, i) => {
+            btn.disabled = true;
+            if (i === q.correct) btn.classList.add("correct-reveal");
+            if (i === selectedOption && i !== q.correct)
+              btn.classList.add("incorrect-reveal");
+          });
 
-        const fb = document.getElementById("feedback");
-        fb.className = "feedback show " + (isCorrect ? "correct" : "incorrect");
-        document.getElementById("feedbackTitle").innerHTML = isCorrect
-          ? "✅ Correct!"
-          : "❌ Not quite";
-        document.getElementById("feedbackSub").textContent = isCorrect
-          ? "Here's a model answer for reference:"
-          : "Here is the correct answer:";
-        document.getElementById("feedbackAnswer").textContent = q.answer;
+          const fb = document.getElementById("feedback");
+          fb.className =
+            "feedback show " + (isCorrect ? "correct" : "incorrect");
+          document.getElementById("feedbackTitle").innerHTML = isCorrect
+            ? "✅ Correct!"
+            : "❌ Not quite";
+          document.getElementById("feedbackSub").textContent = isCorrect
+            ? "Great job!"
+            : "The correct answer was:";
+          document.getElementById("feedbackAnswer").textContent =
+            q.options[q.correct];
+        } else {
+          const userAnswer = document
+            .getElementById("answerInput")
+            .value.trim();
+          const ratio = checkKeywordMatch(userAnswer, q.keys);
+          const threshold =
+            currentMode === "mode1"
+              ? 0.7
+              : currentMode === "mode2"
+                ? 0.75
+                : 0.8;
+          isCorrect = userAnswer.length > 0 && ratio >= threshold;
+          if (isCorrect) score++;
+          answered = true;
 
-        document.getElementById("answerInput").disabled = true;
+          const fb = document.getElementById("feedback");
+          fb.className =
+            "feedback show " + (isCorrect ? "correct" : "incorrect");
+          document.getElementById("feedbackTitle").innerHTML = isCorrect
+            ? "✅ Correct!"
+            : "❌ Not quite";
+          document.getElementById("feedbackSub").textContent = isCorrect
+            ? "Here's a model answer for reference:"
+            : "Here is the correct answer:";
+          document.getElementById("feedbackAnswer").textContent = q.answer;
+
+          document.getElementById("answerInput").disabled = true;
+        }
+
         document.getElementById("submitBtn").classList.add("hidden");
         document.getElementById("nextBtn").classList.remove("hidden");
-
         document.getElementById("scoreTag").textContent =
           `Score: ${score} / ${currentIndex + 1}`;
       }
@@ -1436,24 +2708,37 @@
         document.getElementById("resultsTitle").textContent = title;
       }
 
-
       function burstHearts(event) {
         const rect = event.currentTarget.getBoundingClientRect();
         const cx = rect.left + rect.width / 2;
         const cy = rect.top + rect.height / 2;
-        const hearts = ["♥", "♡", "💕", "♥", "💗", "♡", "💖", "♥", "💓", "♡", "💞", "♥"];
+        const hearts = [
+          "♥",
+          "♡",
+          "💕",
+          "♥",
+          "💗",
+          "♡",
+          "💖",
+          "♥",
+          "💓",
+          "♡",
+          "💞",
+          "♥",
+        ];
         for (let i = 0; i < hearts.length; i++) {
           const heart = document.createElement("span");
           heart.className = "heart-particle";
           heart.textContent = hearts[i];
-          const angle = (Math.PI * 2 * i / hearts.length) + (Math.random() - .5) * .35;
+          const angle =
+            (Math.PI * 2 * i) / hearts.length + (Math.random() - 0.5) * 0.35;
           const distance = 70 + Math.random() * 80;
           heart.style.left = cx + "px";
           heart.style.top = cy + "px";
           heart.style.setProperty("--dx", Math.cos(angle) * distance + "px");
           heart.style.setProperty("--dy", Math.sin(angle) * distance + "px");
-          heart.style.setProperty("--rot", ((Math.random() - .5) * 70) + "deg");
-          heart.style.animationDelay = (Math.random() * 100) + "ms";
+          heart.style.setProperty("--rot", (Math.random() - 0.5) * 70 + "deg");
+          heart.style.animationDelay = Math.random() * 100 + "ms";
           document.body.appendChild(heart);
           setTimeout(() => heart.remove(), 1100);
         }
