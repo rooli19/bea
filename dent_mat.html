@@ -245,6 +245,11 @@
       .set-btn:active {
         transform: scale(0.97);
       }
+      .set-btn.loading {
+        opacity: 0.6;
+        cursor: wait;
+        pointer-events: none;
+      }
 
       /* GAME UI WRAPPERS */
       #gameUI {
@@ -721,7 +726,7 @@
 
     <div class="wrap">
       <header>
-        <h1>💗 Dent Matz<span class="heart"></span></h1>
+        <h1>💗 flashcards for u<span class="heart"></span></h1>
         <div class="subtitle" id="subtitleText">u got this beb!</div>
         <div id="redemptionBadge" style="display: none">
           🔁 Redemption Round — retry your skipped &amp; incorrect cards!
@@ -731,11 +736,12 @@
       <div class="selection-screen" id="selectionScreen">
         <h2>Choose a Flashcard Set</h2>
         <button class="set-btn" id="btnPart1">
-          Part 1: Impression Materials
+          DENT MAT: Impression Materials
         </button>
         <button class="set-btn" id="btnPart2">
-          Part 2: Dental Materials Intro
+          DENT MAT: Dental Materials Intro
         </button>
+        <button class="set-btn" id="btnMisc">physio</button>
       </div>
 
       <div id="gameUI">
@@ -2067,6 +2073,8 @@
           q: "Substances such as borax, nitrates, and citrates that create a surface coating on crystals, making them less soluble to water and slowing the setting time.",
           a: "Retarders",
           e: "",
+        },
+        {
           q: "The exact mechanism by which addition silicone achieves its dimensional stability superior to condensation silicone",
           a: "I LOVE U ALWAYZ BEB HEHE TRICK QUESTIONN",
           e: "",
@@ -2139,6 +2147,7 @@
       const gameUI = document.getElementById("gameUI");
       const btnPart1 = document.getElementById("btnPart1");
       const btnPart2 = document.getElementById("btnPart2");
+      const btnMisc = document.getElementById("btnMisc");
       const backBtn = document.getElementById("backBtn");
       const homeBtn = document.getElementById("homeBtn");
       const menuBtn = document.getElementById("menuBtn");
@@ -2197,6 +2206,31 @@
 
       btnPart1.addEventListener("click", () => startSet(part1Cards));
       btnPart2.addEventListener("click", () => startSet(part2Cards));
+
+      // Misc: load from data.json
+      btnMisc.addEventListener("click", async () => {
+        btnMisc.textContent = "Loading...";
+        btnMisc.classList.add("loading");
+        try {
+          const resp = await fetch("data.json");
+          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+          const json = await resp.json();
+          // Expect array of { q, a, e? }
+          const miscCards = json.map((item) => ({
+            q: item.q || "No question",
+            a: item.a || "No answer",
+            e: item.e || "",
+          }));
+          if (miscCards.length === 0) throw new Error("No cards found in JSON");
+          startSet(miscCards);
+        } catch (err) {
+          alert(`Error loading data.json: ${err.message}`);
+          btnMisc.textContent = "Misc (from data.json)";
+          btnMisc.classList.remove("loading");
+        }
+        btnMisc.textContent = "Misc (from data.json)";
+        btnMisc.classList.remove("loading");
+      });
 
       // Back to Sets (←)
       backBtn.addEventListener("click", (e) => {
