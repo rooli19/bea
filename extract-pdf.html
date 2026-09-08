@@ -260,6 +260,41 @@
         URL.revokeObjectURL(url);
       });
 
+      function itemsToLines(items) {
+        // Group text items into lines based on their vertical (y) position,
+        // similar to how pdfplumber preserves line breaks rather than
+        // flattening a page into one long string.
+        if (!items.length) return "";
+
+        const lines = [];
+        let currentLine = [];
+        let currentY = null;
+        const Y_TOLERANCE = 2; // px difference still counted as "same line"
+
+        for (const item of items) {
+          const y = item.transform[5];
+
+          if (currentY === null || Math.abs(y - currentY) <= Y_TOLERANCE) {
+            currentLine.push(item);
+          } else {
+            lines.push(currentLine);
+            currentLine = [item];
+          }
+          currentY = y;
+        }
+        if (currentLine.length) lines.push(currentLine);
+
+        return lines
+          .map((line) =>
+            line
+              .map((item) => item.str)
+              .join(" ")
+              .replace(/\s+/g, " ")
+              .trim(),
+          )
+          .join("\n");
+      }
+
       async function handleFile(file) {
         errorEl.style.display = "none";
         resultEl.style.display = "none";
@@ -288,12 +323,12 @@
 
             const page = await pdf.getPage(i);
             const content = await page.getTextContent();
-            const pageText = content.items.map((item) => item.str).join(" ");
+            const pageText = itemsToLines(content.items);
 
             fullText += `--- Page ${i} ---\n${pageText.trim()}\n\n`;
           }
 
-          statusEl.textContent = `Done — ${totalPages} page${totalPages === 1 ? "" : "s"} processed.`;
+          statusEl.textContent = `done ${totalPages} page${totalPages === 1 ? "" : "s"} processed ╰(*°▽°*)╯.`;
           progressFill.style.width = "100%";
 
           resultTitle.textContent = `Extracted text (${totalPages} page${totalPages === 1 ? "" : "s"})`;
