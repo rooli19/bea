@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bea pdf extractor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <style>
+      :root {
+        --ink: #1c1a17;
+        --paper: #faf8f4;
+        --line: #ddd7cc;
+        --accent: #2f5d50;
+        --accent-soft: #e4ede9;
+        --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          "IBM Plex Sans",
+          -apple-system,
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 64px 24px 96px;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        margin: 0 0 8px;
+      }
+
+      .sub {
+        color: #6b6559;
+        font-size: 15px;
+        margin: 0 0 40px;
+        max-width: 46ch;
+      }
+
+      .dropzone {
+        border: 1.5px dashed var(--line);
+        border-radius: 4px;
+        padding: 48px 24px;
+        text-align: center;
+        cursor: pointer;
+        transition:
+          border-color 0.15s ease,
+          background 0.15s ease;
+      }
+
+      .dropzone:hover,
+      .dropzone.drag {
+        border-color: var(--accent);
+        background: var(--accent-soft);
+      }
+
+      .dropzone p {
+        margin: 0;
+        font-size: 15px;
+        color: #57524a;
+      }
+
+      .dropzone .filetype {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: #948d7f;
+        margin-top: 6px;
+      }
+
+      input[type="file"] {
+        display: none;
+      }
+
+      .status {
+        margin-top: 24px;
+        font-family: var(--mono);
+        font-size: 13px;
+        color: #57524a;
+        min-height: 20px;
+      }
+
+      .progress-track {
+        margin-top: 10px;
+        height: 3px;
+        background: var(--line);
+        border-radius: 2px;
+        overflow: hidden;
+        display: none;
+      }
+
+      .progress-fill {
+        height: 100%;
+        width: 0%;
+        background: var(--accent);
+        transition: width 0.2s ease;
+      }
+
+      .result {
+        margin-top: 40px;
+        display: none;
+      }
+
+      .result-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+
+      .result-head h2 {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      .actions button {
+        font-family: inherit;
+        font-size: 13px;
+        padding: 7px 14px;
+        border-radius: 3px;
+        border: 1px solid var(--accent);
+        background: var(--accent);
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .actions button:hover {
+        background: #274b41;
+      }
+
+      textarea {
+        width: 100%;
+        height: 360px;
+        font-family: var(--mono);
+        font-size: 12.5px;
+        line-height: 1.55;
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        background: #fff;
+        color: var(--ink);
+        resize: vertical;
+      }
+
+      .error {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #a3311f;
+        display: none;
+      }
+
+      footer {
+        margin-top: 64px;
+        font-size: 12px;
+        color: #a39c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <button
+        class="home-btn"
+        id="homeBtn"
+        title="Go to home"
+        aria-label="Go to home"
+        onclick="window.location.href = 'index.html'"
+      >
+        BACK 2 HOME
+      </button>
+      <h1>PDF Extract text</h1>
+      <p class="sub">
+        extract lang yung mga text hindi kasama mga images hehe. sorry di match
+        ung theme, aq lng kc nag design (●'◡'●)
+      </p>
+
+      <div class="dropzone" id="dropzone">
+        <p><strong>click 2 choose a PDF</strong> or drag</p>
+        <p class="filetype">.pdf ONLY!!</p>
+        <input type="file" id="fileInput" accept="application/pdf" />
+      </div>
+
+      <div class="status" id="status"></div>
+      <div class="progress-track" id="progressTrack">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="error" id="error"></div>
+
+      <div class="result" id="result">
+        <div class="result-head">
+          <h2 id="resultTitle">extracted text</h2>
+          <div class="actions">
+            <button id="downloadBtn">download .txt</button>
+          </div>
+        </div>
+        <textarea id="output" readonly spellcheck="false"></textarea>
+      </div>
+
+      <footer>love u lobveeee.</footer>
+    </div>
+
+    <script>
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+      const dropzone = document.getElementById("dropzone");
+      const fileInput = document.getElementById("fileInput");
+      const statusEl = document.getElementById("status");
+      const progressTrack = document.getElementById("progressTrack");
+      const progressFill = document.getElementById("progressFill");
+      const errorEl = document.getElementById("error");
+      const resultEl = document.getElementById("result");
+      const resultTitle = document.getElementById("resultTitle");
+      const output = document.getElementById("output");
+      const downloadBtn = document.getElementById("downloadBtn");
+
+      let currentFilename = "extracted";
+
+      dropzone.addEventListener("click", () => fileInput.click());
+
+      dropzone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        dropzone.classList.add("drag");
+      });
+
+      dropzone.addEventListener("dragleave", () =>
+        dropzone.classList.remove("drag"),
+      );
+
+      dropzone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        dropzone.classList.remove("drag");
+        if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+      });
+
+      fileInput.addEventListener("change", () => {
+        if (fileInput.files.length) handleFile(fileInput.files[0]);
+      });
+
+      downloadBtn.addEventListener("click", () => {
+        const blob = new Blob([output.value], { type: "text/plain" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = currentFilename + "_extracted.txt";
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+
+      async function handleFile(file) {
+        errorEl.style.display = "none";
+        resultEl.style.display = "none";
+        output.value = "";
+
+        if (file.type !== "application/pdf") {
+          showError("That doesn't look like a PDF. Please choose a .pdf file.");
+          return;
+        }
+
+        currentFilename = file.name.replace(/\.pdf$/i, "");
+
+        statusEl.textContent = "Reading file...";
+        progressTrack.style.display = "block";
+        progressFill.style.width = "0%";
+
+        try {
+          const buffer = await file.arrayBuffer();
+          const pdf = await pdfjsLib.getDocument({ data: buffer }).promise;
+          const totalPages = pdf.numPages;
+          let fullText = "";
+
+          for (let i = 1; i <= totalPages; i++) {
+            statusEl.textContent = `Extracting page ${i} of ${totalPages}...`;
+            progressFill.style.width = `${(i / totalPages) * 100}%`;
+
+            const page = await pdf.getPage(i);
+            const content = await page.getTextContent();
+            const pageText = content.items.map((item) => item.str).join(" ");
+
+            fullText += `--- Page ${i} ---\n${pageText.trim()}\n\n`;
+          }
+
+          statusEl.textContent = `Done — ${totalPages} page${totalPages === 1 ? "" : "s"} processed.`;
+          progressFill.style.width = "100%";
+
+          resultTitle.textContent = `Extracted text (${totalPages} page${totalPages === 1 ? "" : "s"})`;
+          output.value = fullText.trim();
+          resultEl.style.display = "block";
+        } catch (err) {
+          showError("Couldn't read that PDF: " + err.message);
+          statusEl.textContent = "";
+          progressTrack.style.display = "none";
+        }
+      }
+
+      function showError(msg) {
+        errorEl.textContent = msg;
+        errorEl.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
