@@ -761,6 +761,16 @@
             <p>Extract all the typed text inside a pdf. (images not kasama)</p>
             <div class="go">Go →</div>
           </div>
+          <div class="mode-card ddi" onclick="startQuiz('mode67')">
+            <img
+              class="emoji-badge"
+              src="https://media.tenor.com/t4vCjO3QGkEAAAAM/cat-cat-meme.gif"
+              alt="extract pdf icon"
+            />
+            <h3>ddi quiz</h3>
+            <p>ddi identi</p>
+            <div class="go">Go →</div>
+          </div>
         </div>
       </div>
 
@@ -1448,6 +1458,660 @@
         },
       ];
 
+      const mode67Questions = [
+        // ===== Prelims Quiz 1 (Q1-41) =====
+        {
+          q: "This refers to how many bytes of data the CPU can retrieve from RAM at once.",
+          answer: "Bit size",
+          keys: [["bit size"]],
+        },
+        {
+          q: "MHz (megahertz) and GHz (gigahertz) speed specifications indicate the speed of the clock – a _____ timing device that specifies the speed for executing instructions.",
+          answer: "Control processor",
+          keys: [["control processor"]],
+        },
+        {
+          q: "This is a small amount of memory stored on the CPU itself, apart from the registers, where it is almost instantly available.",
+          answer: "Level 1 cache",
+          keys: [["level 1 cache"]],
+        },
+        {
+          q: "The faster the machine cycle, the faster your computer processes data. (True/False)",
+          answer: "True",
+          keys: [["true"]],
+        },
+        {
+          q: "This carries out the commands in the instruction.",
+          answer: "Executing",
+          keys: [["executing"]],
+        },
+        {
+          q: "This writes the result to memory and not to a storage medium.",
+          answer: "Storing",
+          keys: [["storing"]],
+        },
+        {
+          q: "The decode takes place in what part of the CPU?",
+          answer: "Control unit",
+          keys: [["control unit"]],
+        },
+        {
+          q: "8>5 will be processed in what part of the CPU?",
+          answer: "Arithmetic unit",
+          keys: [["arithmetic unit"]],
+        },
+        {
+          q: 'When you read that "the control unit fetches the instruction from memory" it is referring to memory called _____.',
+          answer: "ROM",
+          keys: [["rom"]],
+        },
+        {
+          q: "The fetch and store happen in what part of the computer?",
+          answer: "Memory",
+          keys: [["memory"]],
+        },
+        {
+          q: "This is larger amount of memory that can reside on the CPU or on a chip that has a direct connection to the CPU.",
+          answer: "Level 2 cache",
+          keys: [["level 2 cache"]],
+        },
+        {
+          q: "What is part 6? (motherboard diagram) NOTE: Please answer in capital letters only. Acronyms or non-acronyms accepted.",
+          answer: "MOTHERBOARD",
+          keys: [["motherboard"]],
+        },
+        { q: "Typically, ___ bits make one byte.", answer: "8", keys: [["8"]] },
+        {
+          q: "This retrieves an instruction of a data item from memory.",
+          answer: "Fetching",
+          keys: [["fetching"]],
+        },
+        {
+          q: "This translates the instruction into a form the computer can execute.",
+          answer: "Decoding",
+          keys: [["decoding"]],
+        },
+        {
+          q: "What is part #2? (motherboard diagram) NOTE: Please answer in capital letters only.",
+          answer: "HEAT SINK",
+          keys: [["heat sink"]],
+        },
+        {
+          q: "A hertz is one cycle per second. (True/False)",
+          answer: "True",
+          keys: [["true"]],
+        },
+        {
+          q: "This occurs when the virtual memory of a computer is rapidly exchanging data for data on the hard disk, to the exclusion of most application-level processing.",
+          answer: "Thrashing",
+          keys: [["thrashing"]],
+        },
+        {
+          q: "You understand that for every machine cycle the processor repeats a set of four basic operations. Which of the steps is the first step in the cycle?",
+          answer: "The control unit fetches instruction from the memory",
+          keys: [["the control unit fetches instruction from the memory"]],
+        },
+        {
+          q: 'When you read that "the control unit fetches the instruction from memory" it is referring to memory called?',
+          answer: "ROM",
+          keys: [["rom"]],
+        },
+        {
+          q: "The fetch store happens in what part of the computer.",
+          answer: "Control unit",
+          keys: [["control unit"]],
+        },
+        {
+          q: "8>5 will be processed in what part of the CPU?",
+          answer: "Arithmetic unit",
+          keys: [["arithmetic unit"]],
+        },
+        {
+          q: "The faster the cycle, the faster your computer processes data. (True/False)",
+          answer: "True",
+          keys: [["true"]],
+        },
+        {
+          q: "This is a memory management technique where secondary memory can be used as if it were a part of the main memory.",
+          answer: "Virtual memory",
+          keys: [["virtual memory"]],
+        },
+        {
+          q: "In a multicore processor, there are several chips which contain a processor each. Like in the case of a quadcore, there are 4 chips which contain a processor in each chip. (True/False)",
+          answer: "False",
+          keys: [["false"]],
+        },
+        {
+          q: "MHz (megahertz) and GHz (gigahertz) speed specifications indicate the speed of the clock - a _____ timing device that specifies the speed for executing instructions.",
+          answer: "Control processor",
+          keys: [["control processor"]],
+        },
+        {
+          q: "This occurs when the virtual memory of a computer is rapidly exchanging data for data on the hard disk, to the exclusion of most application-level processing.",
+          answer: "Thrashing",
+          keys: [["thrashing"]],
+        },
+        {
+          q: "This refers to how many bytes of data the CPU can retrieve from RAM at once.",
+          answer: "Bit size",
+          keys: [["bit size"]],
+        },
+        {
+          q: "This is the number of instructions the CPU can process per second.",
+          answer: "Clock speed",
+          keys: [["clock speed"]],
+        },
+        {
+          q: "A gigahertz (GHz) is 1 billion cycles per second so a 2GHz is equivalent to how many _____ cycles per second?",
+          answer: "2 billion",
+          keys: [["2 billion"]],
+        },
+        {
+          q: "A hertz is one cycle per second. (True/False)",
+          answer: "True",
+          keys: [["true"]],
+        },
+        {
+          q: "This writes the result to memory and not to a storage medium.",
+          answer:
+            "Decoding (as listed in source; note this duplicates Q6's question with a different labeled answer)",
+          keys: [["decoding"]],
+        },
+        {
+          q: "How many bytes of data can a 64-bit CPU retrieve from RAM at once?",
+          answer: "8",
+          keys: [["8"]],
+        },
+        {
+          q: "This carries out the commands in the instruction.",
+          answer:
+            "Fetching (as listed in source; note this duplicates Q5's question with a different labeled answer)",
+          keys: [["fetching"]],
+        },
+        {
+          q: "This retrieves an instruction or a data item from memory.",
+          answer: "Fetching",
+          keys: [["fetching"]],
+        },
+        { q: "Typically, ___ bits make one byte.", answer: "8", keys: [["8"]] },
+        {
+          q: "The decode takes place in what part of the CPU?",
+          answer: "Control unit",
+          keys: [["control unit"]],
+        },
+        {
+          q: "A picosecond is measured in _____.",
+          answer: "Trillionth of a second",
+          keys: [["trillionth of a second"]],
+        },
+        {
+          q: "This translates the instruction into a form the computer can execute.",
+          answer: "Decoding",
+          keys: [["decoding"]],
+        },
+        {
+          q: "Instruction 6+3*5 will be processed in what part of the CPU?",
+          answer: "Arithmetic unit",
+          keys: [["arithmetic unit"]],
+        },
+        {
+          q: "_____ is a diagnostics tool used to test DirectX functionality and troubleshoot video or sound related hardware problems. (small letters)",
+          answer: "dxdiag",
+          keys: [["dxdiag"]],
+        },
+
+        // ===== Motherboard diagram labels =====
+        { q: "What part is number 1?", answer: "Fan", keys: [["fan"]] },
+        {
+          q: "What part is number 5?",
+          answer: "ROM / ROM chip",
+          keys: [["rom", "rom chip"]],
+        },
+        { q: "What is part number 3?", answer: "CPU", keys: [["cpu"]] },
+        {
+          q: "What is part number 4?",
+          answer: "RAM board / RAM",
+          keys: [["ram board", "ram"]],
+        },
+        {
+          q: "What is part number 6?",
+          answer: "Motherboard",
+          keys: [["motherboard"]],
+        },
+        {
+          q: "What is part number 2?",
+          answer: "Heatsink",
+          keys: [["heatsink"]],
+        },
+
+        // ===== Prelims: Software Usage =====
+        {
+          q: "_____ is a database software that works with related tables.",
+          answer: "Relational database software",
+          keys: [["relational database software"]],
+        },
+        {
+          q: "_____ are video segments you work with when you use video-editing software.",
+          answer: "Clips",
+          keys: [["clips"]],
+        },
+        {
+          q: "Presentation software provides _____ which are pre-set arrangements for slide content including text and graphics.",
+          answer: "Layouts",
+          keys: [["layouts"]],
+        },
+        {
+          q: "Name the 3 general types of software.",
+          answer: "System software, application software, programming language",
+          keys: [
+            ["system software, application software, programming language"],
+          ],
+        },
+        {
+          q: "_____ – this is a word processing feature that automatically transfers a word for which there is insufficient space from the end of one line of text to the beginning of the next.",
+          answer: "Word wrap",
+          keys: [["word wrap"]],
+        },
+        {
+          q: "In a spreadsheet, a _____ is the column letter and row number of the cell such as A1.",
+          answer: "Cell reference",
+          keys: [["cell reference"]],
+        },
+        {
+          q: "Main purpose of spreadsheet software is to perform _____.",
+          answer: "Calculations",
+          keys: [["calculations"]],
+        },
+        {
+          q: "_____ is a type of software that has been developed for composing music.",
+          answer: "Music composition software",
+          keys: [["music composition software"]],
+        },
+        {
+          q: "What is the correct data hierarchy in a database?",
+          answer: "Database > tables > fields",
+          keys: [["database > tables > fields"]],
+        },
+        {
+          q: "A file system error known as _____ occurs if the operating system loses track of which clusters contain the data that belongs to a particular file.",
+          answer: "Bad sector",
+          keys: [["bad sector"]],
+        },
+
+        // ===== Prelims: Computer concepts / peripheral devices =====
+        {
+          q: "_____ - plastic tags attached to garments or products to track their movement from the store whether the garments or products are already purchased.",
+          answer: "RFID hard tags",
+          keys: [["rfid hard tags"]],
+        },
+        {
+          q: "_____ - most popular technology for computer monitors.",
+          answer: "LCD (Liquid Crystal Display)",
+          keys: [["lcd", "liquid crystal display"]],
+        },
+        {
+          q: "_____ - to connect a wireless mouse to a laptop computer, you might use this.",
+          answer: "USB adapter",
+          keys: [["usb adapter"]],
+        },
+        {
+          q: "_____ - This acts as a bridge between the port and the CPU.",
+          answer: "Bus",
+          keys: [["bus"]],
+        },
+        {
+          q: "The following terms are used to refer to an expansion card: interface adapter, add-on card, _____.",
+          answer: "Expansion card",
+          keys: [["expansion card", "interface adapter", "add-on card"]],
+        },
+        {
+          q: "_____ – smallest types of removable media.",
+          answer: "Express card modules",
+          keys: [["express card modules"]],
+        },
+        {
+          q: "_____ - type of bus developed by Apple to connect multimedia devices to a computer.",
+          answer: "Firewire",
+          keys: [["firewire"]],
+        },
+        {
+          q: "_____ - screens manipulate light within a layer of liquid crystal cells to produce an image.",
+          answer: "LCD",
+          keys: [["lcd"]],
+        },
+        {
+          q: "Name the following types of keyboard: specialized, ergonomic, _____.",
+          answer: "Foldable",
+          keys: [["foldable", "specialized", "ergonomic"]],
+        },
+        {
+          q: "Do all hard drives use magnetic storage technology to retain data? (True/False)",
+          answer: "Not all hard drives (False)",
+          keys: [["not all hard drives", "false"]],
+        },
+        {
+          q: "_____ - is a pointing device that works like a mouse with a ball on top of the device.",
+          answer: "Trackball",
+          keys: [["trackball"]],
+        },
+        {
+          q: "_____ - uses flash memory technology to store data as electrical rather than magnetic charges.",
+          answer: "Solid-state drive",
+          keys: [["solid-state drive"]],
+        },
+        {
+          q: "_____ - produce output where a laser beam etches text and images on the drum as a pattern of electrical charges; the printer then coats the drum with toner.",
+          answer: "Laser printers",
+          keys: [["laser printers"]],
+        },
+        {
+          q: "_____ - is stationary, it is a good pointing device to use when you have limited desktop space.",
+          answer: "Trackball",
+          keys: [["trackball"]],
+        },
+        {
+          q: "_____ - This is most often used to connect digital cameras, external hard drives, and other devices that can benefit from the high transfer rates (up to 480 Mbps).",
+          answer: "Firewire",
+          keys: [["firewire"]],
+        },
+
+        // ===== Prelims: Hardware Concepts =====
+        {
+          q: "A picosecond is measured in _____.",
+          answer: "Trillionths of a second",
+          keys: [["trillionths of a second"]],
+        },
+        {
+          q: "Every machine cycle the processor repeats a set of four basic operations. What is the FIRST step in the cycle?",
+          answer: "The control unit fetches the instruction from memory",
+          keys: [["the control unit fetches the instruction from memory"]],
+        },
+        {
+          q: "Name the sub-activities in the Execution Cycle.",
+          answer: "Execute and Store",
+          keys: [["execute and store"]],
+        },
+        {
+          q: "_____ memory is a small amount of memory stored on the CPU itself, apart from the registers, where it is almost instantly available.",
+          answer: "Level 1 cache",
+          keys: [["level 1 cache"]],
+        },
+        {
+          q: "RAM is also referred to as _____.",
+          answer: "Primary memory",
+          keys: [["primary memory"]],
+        },
+        {
+          q: "Application version 1 to Application version 2 is an example of _____.",
+          answer: "Upgrade",
+          keys: [["upgrade"]],
+        },
+        {
+          q: "_____ refers to how many bytes of data the CPU can retrieve from RAM at once.",
+          answer: "Bit size",
+          keys: [["bit size"]],
+        },
+        {
+          q: "How many bits makes one byte?",
+          answer: "8 bits",
+          keys: [["8", "8 bits"]],
+        },
+        {
+          q: "Central to all of this is a system board that mounts into the case — what is it called?",
+          answer: "Motherboard",
+          keys: [["motherboard"]],
+        },
+        {
+          q: "This is a basic unit of a process. Like in MS Word, the possible ones are: edit, print the document, insert a picture, to name a few.",
+          answer: "Thread",
+          keys: [["thread"]],
+        },
+        {
+          q: "This gives you a behind-the-scenes glimpse at how Windows is interacting with hardware resources and other software.",
+          answer: "Task manager",
+          keys: [["task manager"]],
+        },
+        {
+          q: "Is a byte represented by one or zero? (True/False statement re: byte representation)",
+          answer:
+            "Not represented by one or zero (statement as given in source)",
+          keys: [["not represented by one or zero"]],
+        },
+        {
+          q: "_____ - is the boss, so to speak, and coordinates all of the processor's activities.",
+          answer: "Control unit",
+          keys: [["control unit"]],
+        },
+        {
+          q: "To store a file or information permanently, you use secondary storage devices such as the _____.",
+          answer: "Computer's hard disk drive",
+          keys: [["computer's hard disk drive", "hard disk drive"]],
+        },
+        {
+          q: "_____ chips are used to store specific instructions that are needed for computer operations.",
+          answer: "ROM",
+          keys: [["rom"]],
+        },
+        {
+          q: "_____ - occurs when the virtual memory of a computer is rapidly exchanging data for data on the hard disk, to the exclusion of most application-level processing.",
+          answer: "Thrashing",
+          keys: [["thrashing"]],
+        },
+        {
+          q: "This is the number of instructions the CPU can process per second.",
+          answer: "Clock speed",
+          keys: [["clock speed"]],
+        },
+        {
+          q: "_____ - is an expansion that provides for more than two separate processors.",
+          answer: "Multi-core",
+          keys: [["multi-core"]],
+        },
+        {
+          q: "_____ - temporary storage area built into a CPU.",
+          answer: "Register",
+          keys: [["register"]],
+        },
+        {
+          q: '"The control unit fetches the instruction from memory" — it is referring to memory called _____.',
+          answer: "RAM",
+          keys: [["ram"]],
+        },
+
+        // ===== Midterms: Computer Hardware (in-quiz questions) =====
+        {
+          q: "A _____ is a device that connects wireless communications devices together to create a wireless network.",
+          answer: "WAP (Wireless Access Point)",
+          keys: [["wap", "wireless access point"]],
+        },
+        {
+          q: "You realize that several university buildings are located 15 miles away from the center of the campus. You include _____ in your research since this type of network connects resources in a geographic area or region larger than a local area network, but smaller than a wide area network.",
+          answer: "MAN (Metropolitan Area Network)",
+          keys: [["man", "metropolitan area network"]],
+        },
+        {
+          q: "Microwave towers must be positioned every ___ miles in order for the signals to travel smoothly.",
+          answer: "30 miles",
+          keys: [["30 miles", "30"]],
+        },
+        {
+          q: "In a client/server network, one or more computers on the network act as a ___.",
+          answer: "Server",
+          keys: [["server"]],
+        },
+        {
+          q: "Fiber-optic cable is made from thin, flexible ___ tubing.",
+          answer: "Glass",
+          keys: [["glass"]],
+        },
+        {
+          q: "In a ___ network, all of the computers are equal and no computer is designated as the server.",
+          answer: "Peer-to-peer",
+          keys: [["peer-to-peer"]],
+        },
+        {
+          q: "Each device on a network is called a ___.",
+          answer: "Node",
+          keys: [["node"]],
+        },
+        {
+          q: "WAP is short for Wireless Applications Protocol. (True/False)",
+          answer: "True",
+          keys: [["true"]],
+        },
+        {
+          q: "One advantage of a computer network is that any authorized user can access computers on the network to share information and data. (True/False)",
+          answer: "True",
+          keys: [["true"]],
+        },
+        {
+          q: "A network is a group of ___ or more computers linked together.",
+          answer: "5",
+          keys: [["5"]],
+        },
+        {
+          q: "Which of the following was NOT listed as a benefit of networks?",
+          answer: "Affordable setup costs",
+          keys: [["affordable setup costs"]],
+        },
+
+        // ===== Prelims (handwritten/second set, Q1-30) =====
+        {
+          q: "This is a memory management technique where secondary memory can be used as if it were a part of the main memory.",
+          answer: "Virtual Memory",
+          keys: [["virtual memory"]],
+        },
+        {
+          q: "What is part #6?",
+          answer: "Motherboard",
+          keys: [["motherboard"]],
+        },
+        {
+          q: "This retrieves an instruction or a data item from memory.",
+          answer: "Fetching",
+          keys: [["fetching"]],
+        },
+        {
+          q: "The memory that contains the boot up instructions of your computer.",
+          answer: "ROM",
+          keys: [["rom"]],
+        },
+        {
+          q: "This is the number of instructions the CPU can process per second.",
+          answer: "Clock speed",
+          keys: [["clock speed"]],
+        },
+        {
+          q: "This translates the instruction into a form the computer can execute.",
+          answer: "Decoding",
+          keys: [["decoding"]],
+        },
+        {
+          q: "This is a small amount of memory stored on the CPU itself, apart from the registers, where it is almost instantly available.",
+          answer: "Level 1 cache",
+          keys: [["level 1 cache"]],
+        },
+        {
+          q: "A picosecond is measured in _____.",
+          answer: "Trillionths of a second",
+          keys: [["trillionths of a second"]],
+        },
+        {
+          q: "This writes the result to memory and not to a storage medium.",
+          answer: "Storing",
+          keys: [["storing"]],
+        },
+        {
+          q: "The fetch and store happens in what part of the computer?",
+          answer: "Memory",
+          keys: [["memory"]],
+        },
+        {
+          q: "A gigahertz (GHz) is 1 billion cycles per second so a 2 GHz is equivalent to how many _____ cycles per second?",
+          answer: "2 billion",
+          keys: [["2 billion"]],
+        },
+        {
+          q: "In a multicore processor, there are several chips which contain a processor each. Like in the case of a quadcore, there are 4 chips which contain a processor in each chip. (True/False)",
+          answer: "False",
+          keys: [["false"]],
+        },
+        { q: "What is part #3?", answer: "CPU", keys: [["cpu"]] },
+        { q: "What is part #5?", answer: "ROM", keys: [["rom"]] },
+        {
+          q: "8>5 will be processed in what part of the CPU?",
+          answer: "Logic unit",
+          keys: [["logic unit"]],
+        },
+        {
+          q: "This is a larger amount of memory that can reside on the CPU or on a chip that has a direct connection to the CPU.",
+          answer: "Level 2 cache",
+          keys: [["level 2 cache"]],
+        },
+        { q: "What is part #2?", answer: "Heat sink", keys: [["heat sink"]] },
+        {
+          q: "Instruction 6+3*5 will be processed in what part of the CPU?",
+          answer: "Arithmetic unit",
+          keys: [["arithmetic unit"]],
+        },
+        {
+          q: "This occurs when the virtual memory of a computer is rapidly exchanging data for data on the hard disk, to the exclusion of most application-level processing.",
+          answer: "Thrashing",
+          keys: [["thrashing"]],
+        },
+        {
+          q: "What is part #4?",
+          answer: "RAM board",
+          keys: [["ram board", "ram"]],
+        },
+        { q: "What is part #1?", answer: "Fan", keys: [["fan"]] },
+        {
+          q: 'When you read that "the control unit fetches the instruction from memory" it is referring to memory called _____.',
+          answer: "RAM",
+          keys: [["ram"]],
+        },
+        {
+          q: "_____ is a diagnostics tool used to test DirectX functionality and troubleshoot video- or sound-related hardware problems.",
+          answer: "Dxdiag",
+          keys: [["dxdiag"]],
+        },
+        {
+          q: "This refers to how many bytes of data the CPU can retrieve from RAM at once.",
+          answer: "Bit size",
+          keys: [["bit size"]],
+        },
+        {
+          q: "You understand that for every machine cycle the processor repeats a set of four basic operations. Which of the steps is the FIRST step in the cycle?",
+          answer: "The ALU executes the instruction",
+          keys: [["the alu executes the instruction"]],
+        },
+        {
+          q: "Typically, _____ bits makes one byte.",
+          answer: "8",
+          keys: [["8"]],
+        },
+        {
+          q: "This carries out the commands in the instruction.",
+          answer: "Executing",
+          keys: [["executing"]],
+        },
+        {
+          q: "How many bytes of data can a 64-bit CPU retrieve from RAM at once?",
+          answer: "8",
+          keys: [["8"]],
+        },
+        {
+          q: "MHz (megahertz) and GHz (gigahertz) speed specifications indicate the speed of the clock - a _____ timing device that specifies the speed for executing instructions.",
+          answer: "Microprocessor",
+          keys: [["microprocessor"]],
+        },
+        {
+          q: "The faster the machine cycle, the faster your computer processes data. (True/False)",
+          answer: "True",
+          keys: [["true"]],
+        },
+      ];
+
       const mode3Questions = [
         {
           q: "Pharmacology is the study of substances that interact with living systems through this process.",
@@ -1816,7 +2480,6 @@
           answer: "PKA",
           keys: [["pka", "protein kinase a"]],
         },
-        ,
         {
           q: 'This branch of pharmacology "describes the actions of a drug on the body."',
           answer: "Pharmacodynamics",
@@ -2801,17 +3464,21 @@
 
       function startQuiz(mode) {
         currentMode = mode;
-        if (mode === "mode4") {
+
+        if (mode === "mode1") {
+          currentQuestions = shuffle(mode1Questions);
+        } else if (mode === "mode2") {
+          currentQuestions = shuffle(mode2Questions);
+        } else if (mode === "mode3") {
+          currentQuestions = shuffle(mode3Questions);
+        } else if (mode === "mode4") {
           currentQuestions = shuffle(mode4Questions);
+        } else if (mode === "mode67") {
+          currentQuestions = shuffle(mode67Questions);
         } else {
-          currentQuestions = shuffle(
-            mode === "mode1"
-              ? mode1Questions
-              : mode === "mode2"
-                ? mode2Questions
-                : mode3Questions,
-          );
+          currentQuestions = shuffle(mode3Questions);
         }
+
         currentIndex = 0;
         score = 0;
         answered = false;
@@ -2834,6 +3501,9 @@
         } else if (mode === "mode4") {
           modeLabel = "PATHOLOGY QUIZ";
           eyebrowText = "Select the correct answer";
+        } else if (mode === "mode67") {
+          modeLabel = "DDQ QUIZ";
+          eyebrowText = "Answer the identification questions";
         }
         document.getElementById("modeTag").textContent = modeLabel;
         document.getElementById("qEyebrow").textContent = eyebrowText;
@@ -2902,11 +3572,11 @@
           questionText = escapeHtml(q.rx);
         } else if (currentMode === "mode2") {
           questionText = boldify(q.plain);
-        } else if (currentMode === "mode3") {
-          questionText = escapeHtml(q.q);
-        } else if (currentMode === "mode4") {
+        } else {
+          // mode3, mode4, mode67 all use q.q
           questionText = escapeHtml(q.q);
         }
+
         document.getElementById("qText").innerHTML = questionText;
 
         // Render options for mode4
