@@ -743,6 +743,7 @@
         </button>
         <button class="set-btn" id="btnMisc">mod 1 and 2 pato?</button>
         <button class="set-btn" id="btnMisc2">mod 3 and 4 pato?</button>
+        <button class="set-btn" id="btnMisc3">infection control</button>
       </div>
 
       <div id="gameUI">
@@ -2150,6 +2151,7 @@
       const btnPart2 = document.getElementById("btnPart2");
       const btnMisc = document.getElementById("btnMisc");
       const btnMisc2 = document.getElementById("btnMisc2");
+      const btnMisc3 = document.getElementById("btnMisc3");
       const backBtn = document.getElementById("backBtn");
       const homeBtn = document.getElementById("homeBtn");
       const menuBtn = document.getElementById("menuBtn");
@@ -2227,10 +2229,10 @@
           startSet(miscCards);
         } catch (err) {
           alert(`Error loading data.json: ${err.message}`);
-          btnMisc.textContent = "Misc (from data.json)";
+          btnMisc.textContent = "mod 3 and 4 pato?";
           btnMisc.classList.remove("loading");
         }
-        btnMisc.textContent = "Misc (from data.json)";
+        btnMisc.textContent = "mod 3 and 4 pato?";
         btnMisc.classList.remove("loading");
       });
 
@@ -2251,11 +2253,35 @@
           startSet(miscCards);
         } catch (err) {
           alert(`Error loading data.json: ${err.message}`);
-          btnMisc2.textContent = "Misc (from data.json)";
+          btnMisc2.textContent = "mod 3 and 4 pato?";
           btnMisc2.classList.remove("loading");
         }
-        btnMisc2.textContent = "Misc (from data.json)";
+        btnMisc2.textContent = "mod 3 and 4 pato?";
         btnMisc2.classList.remove("loading");
+      });
+
+      btnMisc3.addEventListener("click", async () => {
+        btnMisc3.textContent = "Loading...";
+        btnMisc3.classList.add("loading");
+        try {
+          const resp = await fetch("data3.json");
+          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+          const json = await resp.json();
+          // Expect array of { q, a, e? }
+          const miscCards = json.map((item) => ({
+            q: item.q || "No question",
+            a: item.a || "No answer",
+            e: item.e || "",
+          }));
+          if (miscCards.length === 0) throw new Error("No cards found in JSON");
+          startSet(miscCards);
+        } catch (err) {
+          alert(`Error loading data.json: ${err.message}`);
+          btnMisc3.textContent = "mod 3 and 4 pato?";
+          btnMisc3.classList.remove("loading");
+        }
+        btnMisc3.textContent = "mod 3 and 4 pato?";
+        btnMisc3.classList.remove("loading");
       });
 
       // Back to Sets (←)
