@@ -43,5 +43,8 @@
 { "q": "Transfer of pathogenic microorganism directly to the patient (might be aerosolized)", "a": "Cross infection", "e": "" },
 { "q": "Cross contamination of a microorganism to an instrument or material", "a": "Cross contamination", "e": "" },
 { "q": "The part of the oral cavity that closes to block the nasal passage when water is involved (a reflex that blocks the pulling of water and saliva in the oral cavity)", "a": "Uvula", "e": "" },
-{ "q": "The reflex that causes the uvula to open, making the patient tend to cough or puke (release of respiratory system)", "a": "Gag reflex", "e": "" }
+{ "q": "The reflex that causes the uvula to open, making the patient tend to cough or puke (release of respiratory system)", "a": "Gag reflex", "e": "" },
+{"q": "The phenomenon in which microorganisms, particularly bacteria, acquire and express resistance to multiple antimicrobial agents through mechanisms such as horizontal gene transfer, enzymatic degradation, target modification, and efflux pump overexpression, complicating infection prevention and therapeutic management",
+  "a": "iLoveU baby (●'◡'●)",
+  "e": ""}
 ]
