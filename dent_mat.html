@@ -2284,7 +2284,7 @@
           btnMisc3.textContent = "infection control";
           btnMisc3.classList.remove("loading");
         }
-        btnMisc3.textContent = "mod 3 and 4 pato?";
+        btnMisc3.textContent = "infection control";
         btnMisc3.classList.remove("loading");
       });
 
@@ -2308,12 +2308,12 @@
           btnMisc4.textContent = "2mor & cancer";
           btnMisc4.classList.remove("loading");
         }
-        btnMisc4.textContent = "mod 3 and 4 pato?";
+        btnMisc4.textContent = "2mor & cancer";
         btnMisc4.classList.remove("loading");
       });
-      btnmisc5.addEventListener("click", async () => {
-        btnmisc5.textContent = "Loading...";
-        btnmisc5.classList.add("loading");
+      btnMisc5.addEventListener("click", async () => {
+        btnMisc5.textContent = "Loading...";
+        btnMisc5.classList.add("loading");
         try {
           const resp = await fetch("data5.json");
           if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
@@ -2328,11 +2328,11 @@
           startSet(miscCards);
         } catch (err) {
           alert(`Error loading data.json: ${err.message}`);
-          btnmisc5.textContent = "patho caries";
-          btnmisc5.classList.remove("loading");
+          btnMisc5.textContent = "caries";
+          btnMisc5.classList.remove("loading");
         }
-        btnmisc5.textContent = "mod 3 and 4 pato?";
-        btnmisc5.classList.remove("loading");
+        btnMisc5.textContent = "caries";
+        btnMisc5.classList.remove("loading");
       });
 
       // Back to Sets (←)
