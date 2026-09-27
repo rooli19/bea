@@ -1,293 +1,1487 @@
 [
-{ "q": "Pharyngeal pouches from which the thymus embryologically arises", "a": "3rd and 4th pharyngeal pouches", "e": "" },
-{ "q": "Source of mesenchymal stem cells that reach the thymus and differentiate into thymocytes", "a": "Yolk sac, fetal liver, and bone marrow", "e": "" },
-{ "q": "When the thymus reaches its maximal relative size", "a": "Just before birth", "e": "" },
-{ "q": "Age up to which the thymus continues to grow", "a": "About 12 years", "e": "" },
-{ "q": "What happens to the thymus after puberty", "a": "Spontaneous progressive involution", "e": "" },
-{ "q": "Anatomic site of the thymus", "a": "Behind the sternum", "e": "" },
-{ "q": "Outer region of the thymus, containing actively proliferating small lymphocytes", "a": "Cortex", "e": "" },
-{ "q": "Inner region of the thymus, containing epithelial cells, mature lymphocytes, and Hassall's corpuscles", "a": "Medulla", "e": "" },
-{ "q": "New surface antigens acquired by thymic lymphocytes", "a": "'Thy' antigens", "e": "" },
-{ "q": "Whether thymic lymphocyte development depends on antigenic stimulation", "a": "No, it is not dependent on antigenic stimulation", "e": "" },
-{ "q": "Term for lymphocytes before they enter the thymus (not yet immunocompetent)", "a": "Prethymic lymphocytes", "e": "" },
-{ "q": "The two central (primary) lymphoid organs", "a": "Thymus and bone marrow", "e": "" },
-{ "q": "The peripheral (secondary) lymphoid organs", "a": "Lymph nodes, spleen, and mucosa-associated lymphoid tissue (MALT)", "e": "" },
-{ "q": "Where lymphocytes are generated and mature into functional cells", "a": "Central (primary) lymphoid organs", "e": "" },
-{ "q": "Where T and B lymphocytes reside and respond to antigens", "a": "Peripheral (secondary) lymphoid organs and tissues", "e": "" },
-{ "q": "Region of the lymph node containing cortical follicles and acting as an intermediate zone/filter for lymph", "a": "Cortex", "e": "" },
-{ "q": "What lymph node enlargement due to local antigenic stimulation reflects", "a": "Proliferation of T cells and B cells", "e": "" },
-{ "q": "Largest of the lymphoid organs, described as a 'graveyard' for effete blood cells", "a": "Spleen", "e": "" },
-{ "q": "Splenic tissue containing Malpighian corpuscles, germinal centers, mantle layer, and marginal zone", "a": "White pulp", "e": "" },
-{ "q": "Lymphoid tissue found in the mucosa of the alimentary, respiratory, and genitourinary tracts, constantly exposed to antigens", "a": "Mucosa-associated lymphoid tissue (MALT)", "e": "" },
-{ "q": "Organized lymphoid nodules of MALT found in the small intestine", "a": "Peyer's patches", "e": "" },
-{ "q": "Predominant immunoglobulin produced by MALT", "a": "IgA", "e": "" },
-{ "q": "Organ responsible for hematopoiesis among the central lymphoid organs", "a": "Bone marrow", "e": "" },
-{ "q": "Structures in the lymph node cortex containing B lymphocytes that transform into plasma cells once activated by CD4 T cells", "a": "Germinal centers", "e": "" },
-{ "q": "Lymph node region containing a combination of T and B cells", "a": "Medulla", "e": "" },
-{ "q": "Cells that produce antibodies (immunoglobulins)", "a": "Plasma cells", "e": "" },
-{ "q": "The five classes of immunoglobulins", "a": "IgG, IgA, IgM, IgE, IgD", "e": "" },
-{ "q": "Why the thymus does not contain germinal centers", "a": "It is responsible for the maturation of T cells, not B cells", "e": "" },
-
-{ "q": "The two main categories of leukocytes (white blood cells)", "a": "Granulocytes and agranulocytes", "e": "" },
-{ "q": "The three types of granulocytes", "a": "Neutrophils, eosinophils, basophils", "e": "" },
-{ "q": "The two types of agranulocytes", "a": "Lymphocytes and monocytes", "e": "" },
-{ "q": "Term for a monocyte once it activates and leaves the blood vessel", "a": "Macrophage", "e": "" },
-{ "q": "Leukocyte first to respond to a bacterial or viral infection", "a": "Neutrophil", "e": "" },
-{ "q": "Leukocyte known for its role in allergy symptoms", "a": "Eosinophil", "e": "" },
-{ "q": "Leukocyte known for its role in asthma symptoms", "a": "Basophil", "e": "" },
-{ "q": "Leukocytes that fight infection by producing antibodies", "a": "Lymphocytes", "e": "" },
-{ "q": "Leukocytes that clean up dead cells", "a": "Monocytes", "e": "" },
-
-{ "q": "Immunity that provides the first line of defense with an 'immediate' mechanism", "a": "Innate (natural/native) immunity", "e": "" },
-{ "q": "Immunity that is stimulated by exposure to foreign substances and develops slowly but is more powerful", "a": "Adaptive (acquired/specific) immunity", "e": "" },
-{ "q": "Cells that initiate and regulate the adaptive immune response by capturing and presenting antigens", "a": "Dendritic cells", "e": "" },
-{ "q": "Cells that phagocytose and destroy invaders (includes Kupffer cells, histiocytes, microglial cells)", "a": "Macrophages (monocytes and neutrophils)", "e": "" },
-{ "q": "Cells that produce mediators of inflammation as part of innate immunity", "a": "Mast cells", "e": "" },
-{ "q": "System that acts against extracellular microbes and toxins as part of innate immunity", "a": "Complement system", "e": "" },
-{ "q": "Immunity mediated by antibody-antigen complexes, against extracellular microbes and toxins", "a": "Humoral immunity", "e": "" },
-{ "q": "Immunity directed against intracellular microbes and cancers", "a": "Cell-mediated immunity", "e": "" },
-{ "q": "Receptor expressed by NK cells that binds IgG and confers the ability to lyse IgG-coated cells", "a": "CD16", "e": "" },
-{ "q": "What NK cells recognize on normal cells to avoid killing them", "a": "Self class I MHC molecules", "e": "" },
-{ "q": "What NK cells kill when class I MHC molecules are absent", "a": "Tumor cells/virus-infected cells", "e": "" },
-
-{ "q": "Immunity that is primitive/broad, immediate in onset, always present, and unspecific", "a": "Innate immunity", "e": "" },
-{ "q": "Immunity that is highly specific, has an approximate 3-day lag, has memory, and shows amplification", "a": "Adaptive immunity", "e": "" },
-
-{ "q": "Function of MHC molecules", "a": "Display peptide fragments of protein antigens for recognition by antigen-specific T cells", "e": "" },
-{ "q": "Another name for MHC in humans", "a": "HLA (human leukocyte antigen)", "e": "" },
-{ "q": "Chromosome containing the gene for MHC", "a": "Chromosome 6", "e": "" },
-{ "q": "MHC class recognized by CD8 T lymphocytes, expressed on all nucleated cells and platelets", "a": "Class I MHC", "e": "" },
-{ "q": "MHC class recognized by CD4 T lymphocytes, presenting antigens from extracellular microbes after internalization into endosomes/lysosomes", "a": "Class II MHC", "e": "" },
-{ "q": "Combination of HLA alleles inherited together in each individual", "a": "HLA haplotype", "e": "" },
-{ "q": "Chance that a sibling shares the same HLA haplotype", "a": "1 in 4", "e": "" },
-{ "q": "Disease that can result from HLA-matched hematopoietic stem cell transplantation", "a": "Graft versus host disease (GVHD)", "e": "" },
-
-{ "q": "Secreted proteins that mediate communication between leukocytes and regulate immune responses", "a": "Cytokines", "e": "" },
-{ "q": "Innate immune cytokines that induce inflammation and inhibit virus replication", "a": "TNF, IL-1, IL-12, interferons (IFNs), chemokines", "e": "" },
-{ "q": "Adaptive immune cytokines produced by CD4 T cells that promote lymphocyte proliferation/differentiation", "a": "IL-2, IL-4, IL-5, IL-17, IFN-gamma", "e": "" },
-{ "q": "Cytokines that stimulate hematopoiesis by increasing leukocyte production", "a": "Colony-stimulating factors (CSFs)", "e": "" },
-
-{ "q": "Cells that capture antigens and transport them to lymph nodes to activate naïve T cells", "a": "Dendritic cells", "e": "" },
-{ "q": "T cells that differentiate into effector T cells and memory T cells after activation", "a": "Naïve T cells", "e": "" },
-{ "q": "T cell subset that activates phagocytes to kill microbes", "a": "CD4 T cells", "e": "" },
-{ "q": "T cell subset that kills infected cells directly", "a": "CD8 T cells (cytotoxic T cells)", "e": "" },
-{ "q": "B lymphocytes that recognize antigens before activation", "a": "Naïve B lymphocytes", "e": "" },
-{ "q": "Process where activated B cells change the class of antibody they produce (IgG, IgA, IgM, IgE, IgD)", "a": "Class switching", "e": "" },
-{ "q": "Process by which helper T cells stimulate antibody production with higher affinity for antigen", "a": "Affinity maturation", "e": "" },
-
-{ "q": "Th1 cells: cytokine produced and its effect", "a": "IFN-γ; activates macrophages (classical pathway)", "e": "" },
-{ "q": "Th1 cells: role in host defense and disease", "a": "Host defense against intracellular microbes; immune-mediated chronic inflammatory diseases", "e": "" },
-{ "q": "Th2 cells: cytokines produced", "a": "IL-4, IL-5, IL-13", "e": "" },
-{ "q": "Th2 cells: role", "a": "Stimulate IgE production, activate mast cells and eosinophils; defense against helminthic parasites; cause allergies", "e": "" },
-{ "q": "Th17 cells: cytokines produced", "a": "IL-17, IL-22", "e": "" },
-{ "q": "Th17 cells: role", "a": "Recruit neutrophils and monocytes; defense against extracellular bacteria and fungi; immune-mediated chronic inflammatory diseases", "e": "" },
-
-{ "q": "Injurious immune reactions responsible for the pathology of many immunologic diseases", "a": "Hypersensitivity reactions", "e": "" },
-{ "q": "Types of antigens that can elicit hypersensitivity reactions", "a": "Exogenous (microbial or nonmicrobial: dust, pollen, food, drugs, chemicals) or endogenous (self antigens)", "e": "" },
-{ "q": "What hypersensitivity usually results from, in terms of immune balance", "a": "An imbalance between effector mechanisms of immune responses and the control mechanisms that limit them", "e": "" },
-{ "q": "The four major types of hypersensitivity reactions", "a": "Type I (IgE-mediated), Type II (antibody-mediated, cytotoxic), Type III (immune-complex mediated), Type IV (T-cell mediated, delayed type)", "e": "" },
-
-{ "q": "Hypersensitivity type triggered by binding of an antigen to IgE antibody on mast cells", "a": "Type I (immediate) hypersensitivity", "e": "" },
-{ "q": "Immediate reaction events in Type I hypersensitivity", "a": "Vasodilation, vascular leakage, smooth muscle spasm or glandular secretion; seen within minutes, subsides after a few hours", "e": "" },
-{ "q": "Late-phase reaction timing and features in Type I hypersensitivity", "a": "Seen 2 to 24 hours after exposure, up to several days; inflammatory cell infiltration (eosinophils, neutrophils, basophils, monocytes, CD4 T cells) and tissue destruction", "e": "" },
-{ "q": "Mast cell mediator responsible for smooth muscle contraction, increased vascular permeability, and mucus secretion", "a": "Histamine", "e": "" },
-{ "q": "Mast cell lipid mediators that are vasoactive and spasmogenic", "a": "Leukotrienes", "e": "" },
-{ "q": "Mast cell lipid mediator responsible for bronchospasm and increased mucus secretion", "a": "Prostaglandin D2", "e": "" },
-{ "q": "The three categories of mast cell mediators", "a": "Vasoactive amines, enzymes, proteoglycans (plus lipid mediators and cytokines)", "e": "" },
-{ "q": "Mast cell granule component that stores and packages amines", "a": "Proteoglycans (heparin, chondroitin sulfate)", "e": "" },
-{ "q": "Cell surface receptor on mast cells that binds IgE", "a": "FcεRI", "e": "" },
-{ "q": "T helper subset whose activation and IgE class switching in B cells initiates Type I hypersensitivity", "a": "Th2 cells", "e": "" },
-{ "q": "Example diseases from Type I hypersensitivity", "a": "Anaphylaxis, bronchial asthma, allergic rhinitis/sinusitis (hay fever), food allergies", "e": "" },
-{ "q": "Cause of fall in blood pressure (shock) and airway obstruction in anaphylaxis", "a": "Vascular dilation and laryngeal edema", "e": "" },
-
-{ "q": "Hypersensitivity type in which antibodies react with antigens on cell surfaces or the extracellular matrix, causing cell destruction or interfering with function", "a": "Type II (antibody-mediated) hypersensitivity", "e": "" },
-{ "q": "Antibodies that may be involved in Type II hypersensitivity", "a": "Autoantibodies or antibodies against exogenous antigens bound to a cell surface/tissue matrix", "e": "" },
-{ "q": "Examples of Type II hypersensitivity reactions", "a": "Red blood cell destruction after mismatched blood transfusion; hemolytic disease of the newborn", "e": "" },
-
-{ "q": "Hypersensitivity type where antigen-antibody complexes deposit in tissues (often vessel walls) and elicit inflammation", "a": "Type III (immune complex-mediated) hypersensitivity", "e": "" },
-{ "q": "Types of antigens that may form immune complexes in Type III hypersensitivity", "a": "Exogenous (infectious microbes) or endogenous (autoimmunity)", "e": "" },
-{ "q": "Organs preferentially involved in systemic immune complex disease", "a": "Kidney (glomerulonephritis), joints (arthritis), blood vessels (vasculitis)", "e": "" },
-{ "q": "The three phases in the pathogenesis of systemic immune complex disease", "a": "Formation of immune complex, deposition of immune complexes, inflammation and tissue injury", "e": "" },
-{ "q": "Examples of Type III hypersensitivity diseases", "a": "Post-streptococcal glomerulonephritis, rheumatoid arthritis, systemic lupus erythematosus", "e": "" },
-
-{ "q": "Hypersensitivity type caused mainly by inflammation from cytokines produced by CD4+ T cells", "a": "Type IV (T cell-mediated) hypersensitivity", "e": "" },
-{ "q": "Prototype of T cell-mediated inflammation; a tissue reaction to antigen in a previously immunized individual", "a": "Delayed-type hypersensitivity (DTH)", "e": "" },
-{ "q": "Time frame for a delayed-type hypersensitivity reaction to become detectable", "a": "24 to 48 hours", "e": "" },
-{ "q": "Examples of Type IV hypersensitivity diseases", "a": "Contact dermatitis, type 1 diabetes mellitus, multiple sclerosis", "e": "" },
-
-{ "q": "Type I hypersensitivity: antibody class, antigen form, and effector mechanism", "a": "IgE; soluble antigen; allergen-specific IgE binds mast cells via Fc receptor, cross-linking on allergen binding triggers degranulation", "e": "" },
-{ "q": "Type II hypersensitivity: antibody class, antigen form, and effector mechanism", "a": "IgG or IgM; cell-bound antigen; antibody binds cellular antigen, leading to complement activation and cell lysis (also ADCC)", "e": "" },
-{ "q": "Type III hypersensitivity: antibody class, antigen form, and effector mechanism", "a": "IgG and IgM; soluble antigen; antigen-antibody complexes deposit in tissues, activate complement, and recruit neutrophils", "e": "" },
-{ "q": "Type IV hypersensitivity: mediating cells and mechanism", "a": "T cells; soluble or cell-bound antigen; TH1 cells secrete cytokines that activate macrophages and cytotoxic T cells", "e": "" },
-
-{ "q": "Immune reactions against self antigens", "a": "Autoimmune diseases / autoimmunity", "e": "" },
-{ "q": "Antibodies directed against self antigens", "a": "Autoantibodies", "e": "" },
-{ "q": "Whether the mere presence of autoantibodies indicates autoimmune disease", "a": "No; they can be present in normal individuals (especially older age groups) or as a product of tissue damage", "e": "" },
-{ "q": "The three criteria required to establish that a disease is autoimmune", "a": "Presence of an immune reaction specific for a self antigen/tissue; evidence the reaction is not secondary to tissue damage; absence of another well-defined cause", "e": "" },
-
-{ "q": "Unresponsiveness to an antigen induced by exposure of lymphocytes to that antigen", "a": "Immunologic tolerance", "e": "" },
-{ "q": "Lack of responsiveness to an individual's own antigens, maintaining harmony within cells and tissues", "a": "Self tolerance", "e": "" },
-{ "q": "The two mechanisms of self tolerance", "a": "Central tolerance and peripheral tolerance", "e": "" },
-{ "q": "Central tolerance mechanism where T cells expressing self antigens are killed by apoptosis", "a": "Negative selection", "e": "" },
-{ "q": "Mechanism where B cells expressing self antigens undergo antigen receptor gene rearrangement to acquire new, non-self-reactive receptors", "a": "Receptor editing", "e": "" },
-
-{ "q": "The three general mechanisms of autoimmunity", "a": "Defective tolerance or regulation; abnormal display of self antigens; inflammation or an initial innate immune response", "e": "" },
-{ "q": "The two main factors from which autoimmunity results", "a": "Susceptibility genes and environmental triggers", "e": "" },
-{ "q": "How susceptibility genes contribute to autoimmunity", "a": "Interfere with self tolerance", "e": "" },
-{ "q": "How environmental triggers contribute to autoimmunity", "a": "Promote lymphocyte entry into tissues, activation of self-reactive lymphocytes, and tissue damage", "e": "" },
-{ "q": "General feature of autoimmune diseases regarding their course", "a": "Tend to be chronic, sometimes with relapses and remissions, and the damage is often progressive", "e": "" },
-{ "q": "What determines the clinical and pathologic manifestations of an autoimmune disease", "a": "The nature of the underlying immune response", "e": "" },
-
-{ "q": "Autoimmune disease characterized by autoantibodies (especially antinuclear antibodies) and injury from immune complex deposition and antibody binding to tissues", "a": "Systemic lupus erythematosus (SLE)", "e": "" },
-{ "q": "Frequency of SLE in certain populations", "a": "1 in 2500", "e": "" },
-{ "q": "Female-to-male ratio of SLE in the reproductive age group (17-55 years)", "a": "9:1", "e": "" },
-{ "q": "Antibodies that are virtually diagnostic of SLE", "a": "Antibodies to double-stranded DNA and the Smith (Sm) antigen", "e": "" },
-{ "q": "Antibodies directed against nuclear antigens in SLE", "a": "Antinuclear antibodies (ANAs)", "e": "" },
-{ "q": "The four categories of ANA specificity", "a": "DNA, histones, nonhistone proteins bound to RNA, and nucleolar antigens", "e": "" },
-{ "q": "ANA immunofluorescence pattern reflecting antibodies to chromatin/histones and occasionally dsDNA", "a": "Homogeneous (diffuse) pattern", "e": "" },
-{ "q": "ANA immunofluorescence pattern most indicative of antibodies to double-stranded DNA and nuclear envelope proteins", "a": "Rim (peripheral) pattern", "e": "" },
-{ "q": "ANA immunofluorescence pattern that is most common but least specific, reflecting antibodies to non-DNA nuclear constituents (Sm antigen, RNP, SS-A/SS-B)", "a": "Speckled pattern", "e": "" },
-{ "q": "ANA immunofluorescence pattern representing antibodies to RNA, most often reported in systemic sclerosis", "a": "Nucleolar pattern", "e": "" },
-{ "q": "ANA immunofluorescence pattern from antibodies specific for centromeres, seen in systemic sclerosis", "a": "Centromeric pattern", "e": "" },
-{ "q": "Skin finding on the face in SLE, from unusual reaction to sunlight", "a": "Malar rash", "e": "" },
-{ "q": "Other characteristic skin rash of SLE besides malar rash", "a": "Discoid rash", "e": "" },
-{ "q": "Cause of Libman-Sacks endocarditis in SLE", "a": "Non-bacterial verrucous vegetations on heart valves (mitral valve) in lupus", "e": "" },
-{ "q": "The three factors in the pathogenesis of SLE", "a": "Genetic factors, immunologic factors (failure of self-tolerance), environmental factors (UV radiation, drugs, female gender)", "e": "" },
-{ "q": "Fundamental defect (pathogenesis) underlying SLE", "a": "Failure of the mechanisms that maintain self-tolerance", "e": "" },
-{ "q": "Mechanism of lupus nephritis", "a": "Deposition of immune complexes on the glomerular basement membrane and mesangium", "e": "" },
-
-{ "q": "Chronic inflammatory disease that primarily affects the joints but may also involve skin, blood vessels, lungs, and heart", "a": "Rheumatoid arthritis (RA)", "e": "" },
-{ "q": "Common clinical manifestations of RA", "a": "Symmetrical polyarthralgia, morning stiffness, and fatigue", "e": "" },
-{ "q": "Cause of morning stiffness in RA", "a": "Increases in extracellular fluid in and around the joints", "e": "" },
-{ "q": "Joints with predilection for RA involvement", "a": "Wrists and hands; MCP and PIP joints", "e": "" },
-{ "q": "Common hand deformities in RA", "a": "Ulnar deviation, swan-neck deformity, boutonniere deformity", "e": "" },
-{ "q": "Deformity involving hyperextension of the PIP joint with flexion of the DIP joint", "a": "Swan neck deformity", "e": "" },
-{ "q": "Infrequent RA manifestation appearing as firm, nontender, round to oval subcutaneous masses that microscopically resemble necrotizing granulomas", "a": "Rheumatoid nodule", "e": "" },
-{ "q": "Common sites for rheumatoid nodules", "a": "Subcutaneous tissue of the forearm, elbows, occiput, and lumbosacral area", "e": "" },
-
-{ "q": "Autoimmune disease characterized by dry eyes (keratoconjunctivitis sicca) and dry mouth (xerostomia) from immune destruction of lacrimal and salivary glands", "a": "Sjögren syndrome", "e": "" },
-{ "q": "Cells infiltrating the lacrimal and salivary glands in Sjögren syndrome", "a": "CD4+ T helper cells, B cells, and plasma cells", "e": "" },
-{ "q": "Serologic markers of Sjögren syndrome, seen in 90% of patients", "a": "SS-A (Ro) and SS-B (La) ribonucleoprotein antibodies", "e": "" },
-{ "q": "Combination of lacrimal and salivary gland enlargement (associated with sarcoidosis, lymphoma, or tumors)", "a": "Mikulicz syndrome", "e": "" },
-{ "q": "Typical demographic affected by Sjögren syndrome", "a": "Women, 50 to 60 years old", "e": "" },
-{ "q": "Difficulty swallowing solid foods, decreased taste, and cracks/fissures in the mouth in Sjögren syndrome", "a": "Xerostomia", "e": "" },
-
-{ "q": "Disease characterized by chronic inflammation from autoimmunity, widespread small blood vessel damage, and progressive fibrosis of the skin and multiple organs", "a": "Systemic sclerosis (scleroderma)", "e": "" },
-{ "q": "Type of systemic sclerosis with widespread skin involvement, rapid progression, and early visceral involvement", "a": "Diffuse scleroderma", "e": "" },
-{ "q": "Type of systemic sclerosis with skin involvement confined to fingers, forearms, and face", "a": "Limited scleroderma", "e": "" },
-{ "q": "Syndrome that develops from limited scleroderma", "a": "CREST syndrome", "e": "" },
-{ "q": "The five features of CREST syndrome", "a": "Calcinosis, Raynaud phenomenon, Esophageal dysmotility, Sclerodactyly, Telangiectasia", "e": "" },
-{ "q": "CREST: calcium deposits in the skin", "a": "Calcinosis", "e": "" },
-{ "q": "CREST: spasm of blood vessels in response to cold or stress", "a": "Raynaud phenomenon", "e": "" },
-{ "q": "CREST: acid reflux and decreased motility of the esophagus", "a": "Esophageal dysfunction", "e": "" },
-{ "q": "CREST: thickening and tightening of skin on the fingers and hands", "a": "Sclerodactyly", "e": "" },
-{ "q": "CREST: dilation of capillaries causing red marks on the skin surface", "a": "Telangiectasia", "e": "" },
-{ "q": "Female-to-male ratio and peak age of onset for systemic sclerosis", "a": "3:1; peak incidence at 50-60 years old", "e": "" },
-{ "q": "Highly specific antibody in diffuse systemic sclerosis", "a": "Anti-Scl-70 (antibodies against DNA topoisomerase I)", "e": "" },
-{ "q": "The three components of systemic sclerosis pathogenesis", "a": "Autoimmune responses, vascular damage, and collagen deposition (fibrosis)", "e": "" },
-
-{ "q": "Disease with overlapping features of SLE, systemic sclerosis, and polymyositis, with high titers of anti-U1 ribonucleoprotein antibodies", "a": "Mixed connective tissue disease", "e": "" },
-{ "q": "Clinical presentation of mixed connective tissue disease", "a": "Synovitis of fingers, Raynaud phenomenon, myositis, and renal involvement; responds well to corticosteroids", "e": "" },
-
-{ "q": "Process where T lymphocytes and antibodies against graft antigens destroy tissue grafts", "a": "Graft rejection", "e": "" },
-{ "q": "Major antigenic differences between donor and recipient that cause transplant rejection", "a": "Differences in HLA alleles", "e": "" },
-{ "q": "The three classes of graft rejection based on clinical/pathologic features", "a": "Hyperacute, acute, and chronic rejection", "e": "" },
-{ "q": "Graft transplanted from one part of the body to another (same individual)", "a": "Autograft", "e": "" },
-{ "q": "Graft exchanged between non-identical individuals of the same species", "a": "Allograft", "e": "" },
-{ "q": "Graft exchanged from one species to another", "a": "Xenograft", "e": "" },
-{ "q": "Graft between genetically identical members of the same species", "a": "Isograft", "e": "" },
-{ "q": "Rejection type mediated by preformed antibodies against graft endothelial cell antigens, causing thrombosis and rapid graft failure", "a": "Hyperacute rejection", "e": "" },
-{ "q": "Rejection type mediated by T cells and antibodies activated by alloantigen, occurring within days to weeks, the principal cause of early graft failure", "a": "Acute rejection", "e": "" },
-{ "q": "Acute rejection subtype where CD8 T cells destroy graft parenchyma by cytotoxicity and inflammation", "a": "Acute cellular rejection", "e": "" },
-{ "q": "Acute rejection subtype where antibodies damage graft vasculature", "a": "Acute antibody-mediated rejection", "e": "" },
-{ "q": "Rejection type that is an indolent form of graft damage occurring over months to years, refractory to most therapies", "a": "Chronic rejection", "e": "" },
-{ "q": "Cause of chronic rejection", "a": "T cells reacting against graft alloantigens and secreting cytokines that stimulate fibroblast and vascular smooth muscle proliferation", "e": "" },
-{ "q": "What occurs when immunologically competent cells are transplanted into immunologically compromised recipients and attack host tissues", "a": "Graft versus host disease (GVHD)", "e": "" },
-{ "q": "Strategy used to minimize GVHD in hematopoietic stem cell transplants", "a": "HLA-matching donor and recipient using precise DNA sequencing-based molecular typing", "e": "" },
-
-{ "q": "The two broad categories of immunodeficiency diseases", "a": "Primary (congenital) and secondary (acquired) immunodeficiencies", "e": "" },
-{ "q": "Another name for primary immunodeficiencies", "a": "Inborn errors of immunity", "e": "" },
-{ "q": "Causes of secondary (acquired) immunodeficiencies", "a": "Complications of cancers, infections, malnutrition, immunosuppression, irradiation, or chemotherapy", "e": "" },
-
-{ "q": "Immunodeficiency caused by mutations in the β chain of CD11/CD18 integrins", "a": "Leukocyte adhesion deficiency 1", "e": "" },
-{ "q": "Immunodeficiency caused by mutations in fucosyl transferase needed for sialylated oligosaccharide (selectin receptor) synthesis", "a": "Leukocyte adhesion deficiency 2", "e": "" },
-{ "q": "Immunodeficiency from mutations affecting a protein in lysosomal membrane traffic, causing decreased leukocyte function", "a": "Chédiak-Higashi syndrome", "e": "" },
-{ "q": "Disease with a defect in phagocyte oxidase leading to decreased oxidative burst and defective bacterial killing", "a": "Chronic granulomatous disease (CGD)", "e": "" },
-{ "q": "Inheritance patterns of chronic granulomatous disease", "a": "X-linked (phagocyte oxidase membrane component) or autosomal recessive (cytoplasmic components)", "e": "" },
-{ "q": "Enzyme defective in chronic granulomatous disease", "a": "NADPH oxidase (defect in superoxide radical production)", "e": "" },
-{ "q": "Why macrophage-rich granulomas form in chronic granulomatous disease", "a": "The initial neutrophil response is inadequate, so a macrophage-rich inflammatory reaction tries to control infection", "e": "" },
-
-{ "q": "Complement deficiency associated with reduced resistance to infection and reduced clearance of immune complexes", "a": "C2 or C4 deficiency", "e": "" },
-{ "q": "Most common complement protein deficiency", "a": "C2 deficiency", "e": "" },
-{ "q": "Complement deficiency required for both classical and alternative pathways, causing susceptibility to serious recurrent pyogenic infections", "a": "C3 deficiency", "e": "" },
-{ "q": "Complement components forming the membrane attack complex, whose deficiency causes recurrent Neisserial infections", "a": "C5, C6, C7, C8, C9", "e": "" },
-{ "q": "Result of deficiency of complement regulatory proteins", "a": "Excessive complement activation (e.g., angioedema, paroxysmal nocturnal hemoglobinuria)", "e": "" },
-
-{ "q": "Constellation of genetically distinct syndromes with defects in both humoral and cell-mediated immunity", "a": "Severe combined immunodeficiency (SCID)", "e": "" },
-{ "q": "Pathogens SCID patients are especially susceptible to", "a": "Candida albicans, Pneumocystis jirovecii, cytomegalovirus, varicella, Pseudomonas, and other bacteria", "e": "" },
-{ "q": "Outcome for SCID patients without HSC transplantation", "a": "Death within the first year of life", "e": "" },
-{ "q": "X-linked SCID defect", "a": "Defect in the gamma chain, a transducing component for IL-7 and IL-15", "e": "" },
-{ "q": "Function of IL-7 in lymphocyte development", "a": "Lymphocyte survival and proliferation", "e": "" },
-{ "q": "Function of IL-15 in lymphocyte development", "a": "NK cell maturation and proliferation", "e": "" },
-{ "q": "Autosomal recessive form of SCID caused by an enzyme deficiency", "a": "ADA (adenosine deaminase) deficiency", "e": "" },
-{ "q": "Treatment for SCID", "a": "Hematopoietic stem cell (HSC) transplant", "e": "" },
-
-{ "q": "X-linked disorder characterized by failure of pro-B and pre-B cells to develop into mature B cells", "a": "X-linked (Bruton) agammaglobulinemia", "e": "" },
-{ "q": "Enzyme mutated in X-linked agammaglobulinemia", "a": "Bruton tyrosine kinase (Btk)", "e": "" },
-{ "q": "Classic laboratory findings in X-linked agammaglobulinemia", "a": "Absent/decreased B cells and Igs, underdeveloped germinal centers, absent plasma cells, normal T cells", "e": "" },
-{ "q": "Organisms that commonly cause infection in X-linked agammaglobulinemia because they normally require antibody opsonization", "a": "Haemophilus influenzae, Streptococcus pneumoniae, Staphylococcus aureus", "e": "" },
-
-{ "q": "Immunodeficiency where B cells have IgM but are deficient in IgG, IgA, and IgE due to failure of class switching", "a": "Hyper-IgM syndrome", "e": "" },
-{ "q": "X-linked cause of Hyper-IgM syndrome", "a": "Defect in CD40 ligand on CD4 helper T cells", "e": "" },
-{ "q": "Autosomal recessive cause of Hyper-IgM syndrome", "a": "Defect in activation-induced cytidine deaminase (AID), a DNA-editing enzyme needed for class switching and affinity maturation", "e": "" },
-{ "q": "Why Hyper-IgM syndrome patients are susceptible to enteroviruses", "a": "Antibodies are important for neutralizing infectious viruses, and this ability is impaired", "e": "" },
-
-{ "q": "T-cell deficiency resulting from failure of thymus development (thymic hypoplasia)", "a": "DiGeorge syndrome", "e": "" },
-{ "q": "Structures that develop abnormally in DiGeorge syndrome, giving rise to the thymus, parathyroid glands, and thyroid C cells", "a": "3rd and 4th pharyngeal pouches", "e": "" },
-{ "q": "Clinical triad of DiGeorge syndrome", "a": "Variable T cell-mediated immunodeficiency (thymic hypoplasia), tetany (lack of parathyroids), congenital heart/great vessel defects", "e": "" },
-{ "q": "Mnemonic for DiGeorge syndrome features", "a": "CATCH-22: Cardiac malformation, Abnormal facies, Thymic hypoplasia, Cleft lip/palate, Hypocalcemia (22q11 microdeletion)", "e": "" },
-
-{ "q": "Heterogeneous group of disorders with the common feature of hypogammaglobulinemia, a diagnosis of exclusion", "a": "Common variable immunodeficiency (CVID)", "e": "" },
-{ "q": "Abnormality implicated in common variable immunodeficiency", "a": "Abnormality in BAFF receptor/ICOS (inducible costimulator)", "e": "" },
-
-{ "q": "Most common immunodeficiency, caused by impaired differentiation of naïve B lymphocytes into IgA-producing plasma cells", "a": "Isolated (selective) IgA deficiency", "e": "" },
-{ "q": "Clinical presentation of isolated IgA deficiency", "a": "Recurrent sinopulmonary infections; increased susceptibility to viral infections; allergic and autoimmune diseases", "e": "" },
-
-{ "q": "X-linked disorder characterized by an inability to eliminate EBV, leading to fulminant infectious mononucleosis and B-cell tumors", "a": "X-linked lymphoproliferative disease", "e": "" },
-{ "q": "Adapter molecule mutated in X-linked lymphoproliferative disease, needed for NK, T, and B cell activation via SLAM", "a": "SAP (SLAM-associated protein)", "e": "" },
-
-{ "q": "Rare genetic immunodeficiency from mutations in the WASP gene, impairing platelet production and immune function", "a": "Wiskott-Aldrich syndrome", "e": "" },
-{ "q": "Functions affected by WASP mutation", "a": "Cytoskeleton-dependent responses: cell migration and signal transduction in lymphocytes and platelets", "e": "" },
-{ "q": "Mnemonic for Wiskott-Aldrich syndrome features (WATER)", "a": "Wiskott-Aldrich: Thrombocytopenia, Eczema, Recurrent (pyogenic) infections, and risk of autoimmune disease/malignancy", "e": "" },
-
-{ "q": "Rare childhood disease affecting the brain and other body parts, causing uncoordinated movements and enlarged capillaries under the skin", "a": "Ataxia-telangiectasia", "e": "" },
-{ "q": "Immune findings in ataxia-telangiectasia", "a": "Reduced B- and T-cell numbers, highly variable immunodeficiency, defective DNA recombination (Ig isotype switching)", "e": "" },
-
-{ "q": "Syndrome caused by the retrovirus HIV, characterized by profound immunosuppression, opportunistic infections, secondary neoplasms, and neurologic manifestations", "a": "Acquired immunodeficiency syndrome (AIDS)", "e": "" },
-{ "q": "Group accounting for more than 50% of reported AIDS cases", "a": "Men who have sex with men", "e": "" },
-{ "q": "Retrovirus family HIV belongs to", "a": "Lentivirus family", "e": "" },
-{ "q": "HIV type most common in the United States, Europe, and Central Africa", "a": "HIV-1", "e": "" },
-{ "q": "HIV type seen principally in West Africa and India", "a": "HIV-2", "e": "" },
-{ "q": "The major HIV capsid protein", "a": "p24", "e": "" },
-{ "q": "The two viral glycoprotein spikes critical for HIV infection of cells", "a": "Gp120 and Gp41", "e": "" },
-{ "q": "Receptor that Gp120 binds to enter host cells", "a": "CD4 receptor", "e": "" },
-{ "q": "Coreceptors that HIV binds after CD4, inducing fusion via Gp41", "a": "CCR5 and CXCR4", "e": "" },
-{ "q": "Enzyme HIV uses to synthesize double-stranded DNA from its RNA genome", "a": "Reverse transcriptase", "e": "" },
-{ "q": "Cell type primarily targeted by HIV, the hallmark result being profound cell-mediated immune deficiency", "a": "CD4+ T cells", "e": "" },
-{ "q": "The three phases of HIV infection", "a": "Acute retroviral syndrome, chronic (middle) phase, and clinical AIDS", "e": "" },
-{ "q": "Timing and symptoms of the acute retroviral syndrome", "a": "Occurs 3 to 6 weeks after infection, resolves in 2 to 4 weeks; flulike symptoms (sore throat, myalgias, fever, weight loss, fatigue, sometimes rash)", "e": "" },
-{ "q": "Marker of HIV disease progression used clinically", "a": "Viral load (level of HIV-1 RNA in blood)", "e": "" },
-{ "q": "Duration of the chronic phase of HIV infection before progression to AIDS, without treatment", "a": "7 to 10 years", "e": "" },
-{ "q": "What happens to lymph nodes and spleen during the chronic phase of HIV infection", "a": "They are sites of continuous HIV replication and cell destruction", "e": "" },
-{ "q": "Cause of most deaths in untreated AIDS patients", "a": "Opportunistic infections", "e": "" },
-{ "q": "Examples of AIDS-defining opportunistic infections and neoplasms", "a": "Candida, cryptosporidiosis, coccidioidomycosis, Pneumocystis jirovecii, Kaposi sarcoma, lymphoma", "e": "" },
-{ "q": "Treatment that targets viral reverse transcriptase, protease, and integrase to control HIV", "a": "Antiretroviral therapy (ART)", "e": "" },
-{ "q": "Why ART drugs are given in combination", "a": "To reduce the emergence of drug-resistant mutants", "e": "" },
-{ "q": "Effect of ART on HIV viral load with good adherence", "a": "Reduces it below the level of detection (<50 copies RNA/mL) indefinitely", "e": "" },
-{ "q": "Does ART cure HIV?", "a": "No — it treats HIV, reduces transmission risk, prevents progression to AIDS, and prolongs life, but does not cure it", "e": "" },
-
-{ "q": "Secondary immunodeficiency mechanism caused by HIV infection", "a": "Depletion of CD4+ T cells", "e": "" },
-{ "q": "Secondary immunodeficiency mechanism caused by irradiation and chemotherapy", "a": "Decreased bone marrow precursors for all leukocytes", "e": "" },
-{ "q": "Secondary immunodeficiency mechanism caused by protein-calorie malnutrition", "a": "Metabolic derangements that inhibit immune function", "e": "" },
-{ "q": "Secondary immunodeficiency mechanism caused by splenectomy (removal of spleen)", "a": "Decreased phagocytosis of microbes", "e": "" }
+  {
+    "q": "Pharyngeal pouches from which the thymus embryologically arises",
+    "a": "3rd and 4th pharyngeal pouches",
+    "e": ""
+  },
+  {
+    "q": "Source of mesenchymal stem cells that reach the thymus and differentiate into thymocytes",
+    "a": "Yolk sac, fetal liver, and bone marrow",
+    "e": ""
+  },
+  {
+    "q": "When the thymus reaches its maximal relative size",
+    "a": "Just before birth",
+    "e": ""
+  },
+  {
+    "q": "Age up to which the thymus continues to grow",
+    "a": "About 12 years",
+    "e": ""
+  },
+  {
+    "q": "What happens to the thymus after puberty",
+    "a": "Spontaneous progressive involution",
+    "e": ""
+  },
+  {
+    "q": "Anatomic site of the thymus",
+    "a": "Behind the sternum",
+    "e": ""
+  },
+  {
+    "q": "Outer region of the thymus, containing actively proliferating small lymphocytes",
+    "a": "Cortex",
+    "e": ""
+  },
+  {
+    "q": "Inner region of the thymus, containing epithelial cells, mature lymphocytes, and Hassall's corpuscles",
+    "a": "Medulla",
+    "e": ""
+  },
+  {
+    "q": "New surface antigens acquired by thymic lymphocytes",
+    "a": "'Thy' antigens",
+    "e": ""
+  },
+  {
+    "q": "Whether thymic lymphocyte development depends on antigenic stimulation",
+    "a": "No, it is not dependent on antigenic stimulation",
+    "e": ""
+  },
+  {
+    "q": "Term for lymphocytes before they enter the thymus (not yet immunocompetent)",
+    "a": "Prethymic lymphocytes",
+    "e": ""
+  },
+  {
+    "q": "The two central (primary) lymphoid organs",
+    "a": "Thymus and bone marrow",
+    "e": ""
+  },
+  {
+    "q": "The peripheral (secondary) lymphoid organs",
+    "a": "Lymph nodes, spleen, and mucosa-associated lymphoid tissue (MALT)",
+    "e": ""
+  },
+  {
+    "q": "Where lymphocytes are generated and mature into functional cells",
+    "a": "Central (primary) lymphoid organs",
+    "e": ""
+  },
+  {
+    "q": "Where T and B lymphocytes reside and respond to antigens",
+    "a": "Peripheral (secondary) lymphoid organs and tissues",
+    "e": ""
+  },
+  {
+    "q": "Region of the lymph node containing cortical follicles and acting as an intermediate zone/filter for lymph",
+    "a": "Cortex",
+    "e": ""
+  },
+  {
+    "q": "What lymph node enlargement due to local antigenic stimulation reflects",
+    "a": "Proliferation of T cells and B cells",
+    "e": ""
+  },
+  {
+    "q": "Largest of the lymphoid organs, described as a 'graveyard' for effete blood cells",
+    "a": "Spleen",
+    "e": ""
+  },
+  {
+    "q": "Splenic tissue containing Malpighian corpuscles, germinal centers, mantle layer, and marginal zone",
+    "a": "White pulp",
+    "e": ""
+  },
+  {
+    "q": "Lymphoid tissue found in the mucosa of the alimentary, respiratory, and genitourinary tracts, constantly exposed to antigens",
+    "a": "Mucosa-associated lymphoid tissue (MALT)",
+    "e": ""
+  },
+  {
+    "q": "Organized lymphoid nodules of MALT found in the small intestine",
+    "a": "Peyer's patches",
+    "e": ""
+  },
+  {
+    "q": "Predominant immunoglobulin produced by MALT",
+    "a": "IgA",
+    "e": ""
+  },
+  {
+    "q": "Organ responsible for hematopoiesis among the central lymphoid organs",
+    "a": "Bone marrow",
+    "e": ""
+  },
+  {
+    "q": "Structures in the lymph node cortex containing B lymphocytes that transform into plasma cells once activated by CD4 T cells",
+    "a": "Germinal centers",
+    "e": ""
+  },
+  {
+    "q": "Lymph node region containing a combination of T and B cells",
+    "a": "Medulla",
+    "e": ""
+  },
+  {
+    "q": "Cells that produce antibodies (immunoglobulins)",
+    "a": "Plasma cells",
+    "e": ""
+  },
+  {
+    "q": "The five classes of immunoglobulins",
+    "a": "IgG, IgA, IgM, IgE, IgD",
+    "e": ""
+  },
+  {
+    "q": "Why the thymus does not contain germinal centers",
+    "a": "It is responsible for the maturation of T cells, not B cells",
+    "e": ""
+  },
+  {
+    "q": "The two main categories of leukocytes (white blood cells)",
+    "a": "Granulocytes and agranulocytes",
+    "e": ""
+  },
+  {
+    "q": "The three types of granulocytes",
+    "a": "Neutrophils, eosinophils, basophils",
+    "e": ""
+  },
+  {
+    "q": "The two types of agranulocytes",
+    "a": "Lymphocytes and monocytes",
+    "e": ""
+  },
+  {
+    "q": "Term for a monocyte once it activates and leaves the blood vessel",
+    "a": "Macrophage",
+    "e": ""
+  },
+  {
+    "q": "Leukocyte first to respond to a bacterial or viral infection",
+    "a": "Neutrophil",
+    "e": ""
+  },
+  {
+    "q": "Leukocyte known for its role in allergy symptoms",
+    "a": "Eosinophil",
+    "e": ""
+  },
+  {
+    "q": "Leukocyte known for its role in asthma symptoms",
+    "a": "Basophil",
+    "e": ""
+  },
+  {
+    "q": "Leukocytes that fight infection by producing antibodies",
+    "a": "Lymphocytes",
+    "e": ""
+  },
+  {
+    "q": "Leukocytes that clean up dead cells",
+    "a": "Monocytes",
+    "e": ""
+  },
+  {
+    "q": "Immunity that provides the first line of defense with an 'immediate' mechanism",
+    "a": "Innate (natural/native) immunity",
+    "e": ""
+  },
+  {
+    "q": "Immunity that is stimulated by exposure to foreign substances and develops slowly but is more powerful",
+    "a": "Adaptive (acquired/specific) immunity",
+    "e": ""
+  },
+  {
+    "q": "Cells that initiate and regulate the adaptive immune response by capturing and presenting antigens",
+    "a": "Dendritic cells",
+    "e": ""
+  },
+  {
+    "q": "Cells that phagocytose and destroy invaders (includes Kupffer cells, histiocytes, microglial cells)",
+    "a": "Macrophages (monocytes and neutrophils)",
+    "e": ""
+  },
+  {
+    "q": "Cells that produce mediators of inflammation as part of innate immunity",
+    "a": "Mast cells",
+    "e": ""
+  },
+  {
+    "q": "System that acts against extracellular microbes and toxins as part of innate immunity",
+    "a": "Complement system",
+    "e": ""
+  },
+  {
+    "q": "Immunity mediated by antibody-antigen complexes, against extracellular microbes and toxins",
+    "a": "Humoral immunity",
+    "e": ""
+  },
+  {
+    "q": "Immunity directed against intracellular microbes and cancers",
+    "a": "Cell-mediated immunity",
+    "e": ""
+  },
+  {
+    "q": "Receptor expressed by NK cells that binds IgG and confers the ability to lyse IgG-coated cells",
+    "a": "CD16",
+    "e": ""
+  },
+  {
+    "q": "What NK cells recognize on normal cells to avoid killing them",
+    "a": "Self class I MHC molecules",
+    "e": ""
+  },
+  {
+    "q": "What NK cells kill when class I MHC molecules are absent",
+    "a": "Tumor cells/virus-infected cells",
+    "e": ""
+  },
+  {
+    "q": "Immunity that is primitive/broad, immediate in onset, always present, and unspecific",
+    "a": "Innate immunity",
+    "e": ""
+  },
+  {
+    "q": "Immunity that is highly specific, has an approximate 3-day lag, has memory, and shows amplification",
+    "a": "Adaptive immunity",
+    "e": ""
+  },
+  {
+    "q": "Function of MHC molecules",
+    "a": "Display peptide fragments of protein antigens for recognition by antigen-specific T cells",
+    "e": ""
+  },
+  {
+    "q": "Another name for MHC in humans",
+    "a": "HLA (human leukocyte antigen)",
+    "e": ""
+  },
+  {
+    "q": "Chromosome containing the gene for MHC",
+    "a": "Chromosome 6",
+    "e": ""
+  },
+  {
+    "q": "MHC class recognized by CD8 T lymphocytes, expressed on all nucleated cells and platelets",
+    "a": "Class I MHC",
+    "e": ""
+  },
+  {
+    "q": "MHC class recognized by CD4 T lymphocytes, presenting antigens from extracellular microbes after internalization into endosomes/lysosomes",
+    "a": "Class II MHC",
+    "e": ""
+  },
+  {
+    "q": "Combination of HLA alleles inherited together in each individual",
+    "a": "HLA haplotype",
+    "e": ""
+  },
+  {
+    "q": "Chance that a sibling shares the same HLA haplotype",
+    "a": "1 in 4",
+    "e": ""
+  },
+  {
+    "q": "Disease that can result from HLA-matched hematopoietic stem cell transplantation",
+    "a": "Graft versus host disease (GVHD)",
+    "e": ""
+  },
+  {
+    "q": "Secreted proteins that mediate communication between leukocytes and regulate immune responses",
+    "a": "Cytokines",
+    "e": ""
+  },
+  {
+    "q": "Innate immune cytokines that induce inflammation and inhibit virus replication",
+    "a": "TNF, IL-1, IL-12, interferons (IFNs), chemokines",
+    "e": ""
+  },
+  {
+    "q": "Adaptive immune cytokines produced by CD4 T cells that promote lymphocyte proliferation/differentiation",
+    "a": "IL-2, IL-4, IL-5, IL-17, IFN-gamma",
+    "e": ""
+  },
+  {
+    "q": "Cytokines that stimulate hematopoiesis by increasing leukocyte production",
+    "a": "Colony-stimulating factors (CSFs)",
+    "e": ""
+  },
+  {
+    "q": "Cells that capture antigens and transport them to lymph nodes to activate naïve T cells",
+    "a": "Dendritic cells",
+    "e": ""
+  },
+  {
+    "q": "T cells that differentiate into effector T cells and memory T cells after activation",
+    "a": "Naïve T cells",
+    "e": ""
+  },
+  {
+    "q": "T cell subset that activates phagocytes to kill microbes",
+    "a": "CD4 T cells",
+    "e": ""
+  },
+  {
+    "q": "T cell subset that kills infected cells directly",
+    "a": "CD8 T cells (cytotoxic T cells)",
+    "e": ""
+  },
+  {
+    "q": "B lymphocytes that recognize antigens before activation",
+    "a": "Naïve B lymphocytes",
+    "e": ""
+  },
+  {
+    "q": "Process where activated B cells change the class of antibody they produce (IgG, IgA, IgM, IgE, IgD)",
+    "a": "Class switching",
+    "e": ""
+  },
+  {
+    "q": "Process by which helper T cells stimulate antibody production with higher affinity for antigen",
+    "a": "Affinity maturation",
+    "e": ""
+  },
+  {
+    "q": "Th1 cells: cytokine produced and its effect",
+    "a": "IFN-γ; activates macrophages (classical pathway)",
+    "e": ""
+  },
+  {
+    "q": "Th1 cells: role in host defense and disease",
+    "a": "Host defense against intracellular microbes; immune-mediated chronic inflammatory diseases",
+    "e": ""
+  },
+  {
+    "q": "Th2 cells: cytokines produced",
+    "a": "IL-4, IL-5, IL-13",
+    "e": ""
+  },
+  {
+    "q": "Th2 cells: role",
+    "a": "Stimulate IgE production, activate mast cells and eosinophils; defense against helminthic parasites; cause allergies",
+    "e": ""
+  },
+  {
+    "q": "Th17 cells: cytokines produced",
+    "a": "IL-17, IL-22",
+    "e": ""
+  },
+  {
+    "q": "Th17 cells: role",
+    "a": "Recruit neutrophils and monocytes; defense against extracellular bacteria and fungi; immune-mediated chronic inflammatory diseases",
+    "e": ""
+  },
+  {
+    "q": "Injurious immune reactions responsible for the pathology of many immunologic diseases",
+    "a": "Hypersensitivity reactions",
+    "e": ""
+  },
+  {
+    "q": "Types of antigens that can elicit hypersensitivity reactions",
+    "a": "Exogenous (microbial or nonmicrobial: dust, pollen, food, drugs, chemicals) or endogenous (self antigens)",
+    "e": ""
+  },
+  {
+    "q": "What hypersensitivity usually results from, in terms of immune balance",
+    "a": "An imbalance between effector mechanisms of immune responses and the control mechanisms that limit them",
+    "e": ""
+  },
+  {
+    "q": "The four major types of hypersensitivity reactions",
+    "a": "Type I (IgE-mediated), Type II (antibody-mediated, cytotoxic), Type III (immune-complex mediated), Type IV (T-cell mediated, delayed type)",
+    "e": ""
+  },
+  {
+    "q": "Hypersensitivity type triggered by binding of an antigen to IgE antibody on mast cells",
+    "a": "Type I (immediate) hypersensitivity",
+    "e": ""
+  },
+  {
+    "q": "Immediate reaction events in Type I hypersensitivity",
+    "a": "Vasodilation, vascular leakage, smooth muscle spasm or glandular secretion; seen within minutes, subsides after a few hours",
+    "e": ""
+  },
+  {
+    "q": "Late-phase reaction timing and features in Type I hypersensitivity",
+    "a": "Seen 2 to 24 hours after exposure, up to several days; inflammatory cell infiltration (eosinophils, neutrophils, basophils, monocytes, CD4 T cells) and tissue destruction",
+    "e": ""
+  },
+  {
+    "q": "Mast cell mediator responsible for smooth muscle contraction, increased vascular permeability, and mucus secretion",
+    "a": "Histamine",
+    "e": ""
+  },
+  {
+    "q": "Mast cell lipid mediators that are vasoactive and spasmogenic",
+    "a": "Leukotrienes",
+    "e": ""
+  },
+  {
+    "q": "Mast cell lipid mediator responsible for bronchospasm and increased mucus secretion",
+    "a": "Prostaglandin D2",
+    "e": ""
+  },
+  {
+    "q": "The three categories of mast cell mediators",
+    "a": "Vasoactive amines, enzymes, proteoglycans (plus lipid mediators and cytokines)",
+    "e": ""
+  },
+  {
+    "q": "Mast cell granule component that stores and packages amines",
+    "a": "Proteoglycans (heparin, chondroitin sulfate)",
+    "e": ""
+  },
+  {
+    "q": "Cell surface receptor on mast cells that binds IgE",
+    "a": "FcεRI",
+    "e": ""
+  },
+  {
+    "q": "T helper subset whose activation and IgE class switching in B cells initiates Type I hypersensitivity",
+    "a": "Th2 cells",
+    "e": ""
+  },
+  {
+    "q": "Example diseases from Type I hypersensitivity",
+    "a": "Anaphylaxis, bronchial asthma, allergic rhinitis/sinusitis (hay fever), food allergies",
+    "e": ""
+  },
+  {
+    "q": "Cause of fall in blood pressure (shock) and airway obstruction in anaphylaxis",
+    "a": "Vascular dilation and laryngeal edema",
+    "e": ""
+  },
+  {
+    "q": "Hypersensitivity type in which antibodies react with antigens on cell surfaces or the extracellular matrix, causing cell destruction or interfering with function",
+    "a": "Type II (antibody-mediated) hypersensitivity",
+    "e": ""
+  },
+  {
+    "q": "Antibodies that may be involved in Type II hypersensitivity",
+    "a": "Autoantibodies or antibodies against exogenous antigens bound to a cell surface/tissue matrix",
+    "e": ""
+  },
+  {
+    "q": "Examples of Type II hypersensitivity reactions",
+    "a": "Red blood cell destruction after mismatched blood transfusion; hemolytic disease of the newborn",
+    "e": ""
+  },
+  {
+    "q": "Hypersensitivity type where antigen-antibody complexes deposit in tissues (often vessel walls) and elicit inflammation",
+    "a": "Type III (immune complex-mediated) hypersensitivity",
+    "e": ""
+  },
+  {
+    "q": "Types of antigens that may form immune complexes in Type III hypersensitivity",
+    "a": "Exogenous (infectious microbes) or endogenous (autoimmunity)",
+    "e": ""
+  },
+  {
+    "q": "Organs preferentially involved in systemic immune complex disease",
+    "a": "Kidney (glomerulonephritis), joints (arthritis), blood vessels (vasculitis)",
+    "e": ""
+  },
+  {
+    "q": "The three phases in the pathogenesis of systemic immune complex disease",
+    "a": "Formation of immune complex, deposition of immune complexes, inflammation and tissue injury",
+    "e": ""
+  },
+  {
+    "q": "Examples of Type III hypersensitivity diseases",
+    "a": "Post-streptococcal glomerulonephritis, rheumatoid arthritis, systemic lupus erythematosus",
+    "e": ""
+  },
+  {
+    "q": "Hypersensitivity type caused mainly by inflammation from cytokines produced by CD4+ T cells",
+    "a": "Type IV (T cell-mediated) hypersensitivity",
+    "e": ""
+  },
+  {
+    "q": "Prototype of T cell-mediated inflammation; a tissue reaction to antigen in a previously immunized individual",
+    "a": "Delayed-type hypersensitivity (DTH)",
+    "e": ""
+  },
+  {
+    "q": "Time frame for a delayed-type hypersensitivity reaction to become detectable",
+    "a": "24 to 48 hours",
+    "e": ""
+  },
+  {
+    "q": "Examples of Type IV hypersensitivity diseases",
+    "a": "Contact dermatitis, type 1 diabetes mellitus, multiple sclerosis",
+    "e": ""
+  },
+  {
+    "q": "Type I hypersensitivity: antibody class, antigen form, and effector mechanism",
+    "a": "IgE; soluble antigen; allergen-specific IgE binds mast cells via Fc receptor, cross-linking on allergen binding triggers degranulation",
+    "e": ""
+  },
+  {
+    "q": "Type II hypersensitivity: antibody class, antigen form, and effector mechanism",
+    "a": "IgG or IgM; cell-bound antigen; antibody binds cellular antigen, leading to complement activation and cell lysis (also ADCC)",
+    "e": ""
+  },
+  {
+    "q": "Type III hypersensitivity: antibody class, antigen form, and effector mechanism",
+    "a": "IgG and IgM; soluble antigen; antigen-antibody complexes deposit in tissues, activate complement, and recruit neutrophils",
+    "e": ""
+  },
+  {
+    "q": "Type IV hypersensitivity: mediating cells and mechanism",
+    "a": "T cells; soluble or cell-bound antigen; TH1 cells secrete cytokines that activate macrophages and cytotoxic T cells",
+    "e": ""
+  },
+  {
+    "q": "Immune reactions against self antigens",
+    "a": "Autoimmune diseases / autoimmunity",
+    "e": ""
+  },
+  {
+    "q": "Antibodies directed against self antigens",
+    "a": "Autoantibodies",
+    "e": ""
+  },
+  {
+    "q": "Whether the mere presence of autoantibodies indicates autoimmune disease",
+    "a": "No; they can be present in normal individuals (especially older age groups) or as a product of tissue damage",
+    "e": ""
+  },
+  {
+    "q": "The three criteria required to establish that a disease is autoimmune",
+    "a": "Presence of an immune reaction specific for a self antigen/tissue; evidence the reaction is not secondary to tissue damage; absence of another well-defined cause",
+    "e": ""
+  },
+  {
+    "q": "Unresponsiveness to an antigen induced by exposure of lymphocytes to that antigen",
+    "a": "Immunologic tolerance",
+    "e": ""
+  },
+  {
+    "q": "Lack of responsiveness to an individual's own antigens, maintaining harmony within cells and tissues",
+    "a": "Self tolerance",
+    "e": ""
+  },
+  {
+    "q": "The two mechanisms of self tolerance",
+    "a": "Central tolerance and peripheral tolerance",
+    "e": ""
+  },
+  {
+    "q": "Central tolerance mechanism where T cells expressing self antigens are killed by apoptosis",
+    "a": "Negative selection",
+    "e": ""
+  },
+  {
+    "q": "Mechanism where B cells expressing self antigens undergo antigen receptor gene rearrangement to acquire new, non-self-reactive receptors",
+    "a": "Receptor editing",
+    "e": ""
+  },
+  {
+    "q": "The three general mechanisms of autoimmunity",
+    "a": "Defective tolerance or regulation; abnormal display of self antigens; inflammation or an initial innate immune response",
+    "e": ""
+  },
+  {
+    "q": "The two main factors from which autoimmunity results",
+    "a": "Susceptibility genes and environmental triggers",
+    "e": ""
+  },
+  {
+    "q": "How susceptibility genes contribute to autoimmunity",
+    "a": "Interfere with self tolerance",
+    "e": ""
+  },
+  {
+    "q": "How environmental triggers contribute to autoimmunity",
+    "a": "Promote lymphocyte entry into tissues, activation of self-reactive lymphocytes, and tissue damage",
+    "e": ""
+  },
+  {
+    "q": "General feature of autoimmune diseases regarding their course",
+    "a": "Tend to be chronic, sometimes with relapses and remissions, and the damage is often progressive",
+    "e": ""
+  },
+  {
+    "q": "What determines the clinical and pathologic manifestations of an autoimmune disease",
+    "a": "The nature of the underlying immune response",
+    "e": ""
+  },
+  {
+    "q": "Autoimmune disease characterized by autoantibodies (especially antinuclear antibodies) and injury from immune complex deposition and antibody binding to tissues",
+    "a": "Systemic lupus erythematosus (SLE)",
+    "e": ""
+  },
+  {
+    "q": "Frequency of SLE in certain populations",
+    "a": "1 in 2500",
+    "e": ""
+  },
+  {
+    "q": "Female-to-male ratio of SLE in the reproductive age group (17-55 years)",
+    "a": "9:1",
+    "e": ""
+  },
+  {
+    "q": "Antibodies that are virtually diagnostic of SLE",
+    "a": "Antibodies to double-stranded DNA and the Smith (Sm) antigen",
+    "e": ""
+  },
+  {
+    "q": "Antibodies directed against nuclear antigens in SLE",
+    "a": "Antinuclear antibodies (ANAs)",
+    "e": ""
+  },
+  {
+    "q": "The four categories of ANA specificity",
+    "a": "DNA, histones, nonhistone proteins bound to RNA, and nucleolar antigens",
+    "e": ""
+  },
+  {
+    "q": "ANA immunofluorescence pattern reflecting antibodies to chromatin/histones and occasionally dsDNA",
+    "a": "Homogeneous (diffuse) pattern",
+    "e": ""
+  },
+  {
+    "q": "ANA immunofluorescence pattern most indicative of antibodies to double-stranded DNA and nuclear envelope proteins",
+    "a": "Rim (peripheral) pattern",
+    "e": ""
+  },
+  {
+    "q": "ANA immunofluorescence pattern that is most common but least specific, reflecting antibodies to non-DNA nuclear constituents (Sm antigen, RNP, SS-A/SS-B)",
+    "a": "Speckled pattern",
+    "e": ""
+  },
+  {
+    "q": "ANA immunofluorescence pattern representing antibodies to RNA, most often reported in systemic sclerosis",
+    "a": "Nucleolar pattern",
+    "e": ""
+  },
+  {
+    "q": "ANA immunofluorescence pattern from antibodies specific for centromeres, seen in systemic sclerosis",
+    "a": "Centromeric pattern",
+    "e": ""
+  },
+  {
+    "q": "Skin finding on the face in SLE, from unusual reaction to sunlight",
+    "a": "Malar rash",
+    "e": ""
+  },
+  {
+    "q": "Other characteristic skin rash of SLE besides malar rash",
+    "a": "Discoid rash",
+    "e": ""
+  },
+  {
+    "q": "Cause of Libman-Sacks endocarditis in SLE",
+    "a": "Non-bacterial verrucous vegetations on heart valves (mitral valve) in lupus",
+    "e": ""
+  },
+  {
+    "q": "The three factors in the pathogenesis of SLE",
+    "a": "Genetic factors, immunologic factors (failure of self-tolerance), environmental factors (UV radiation, drugs, female gender)",
+    "e": ""
+  },
+  {
+    "q": "Fundamental defect (pathogenesis) underlying SLE",
+    "a": "Failure of the mechanisms that maintain self-tolerance",
+    "e": ""
+  },
+  {
+    "q": "Mechanism of lupus nephritis",
+    "a": "Deposition of immune complexes on the glomerular basement membrane and mesangium",
+    "e": ""
+  },
+  {
+    "q": "Chronic inflammatory disease that primarily affects the joints but may also involve skin, blood vessels, lungs, and heart",
+    "a": "Rheumatoid arthritis (RA)",
+    "e": ""
+  },
+  {
+    "q": "Common clinical manifestations of RA",
+    "a": "Symmetrical polyarthralgia, morning stiffness, and fatigue",
+    "e": ""
+  },
+  {
+    "q": "Cause of morning stiffness in RA",
+    "a": "Increases in extracellular fluid in and around the joints",
+    "e": ""
+  },
+  {
+    "q": "Joints with predilection for RA involvement",
+    "a": "Wrists and hands; MCP and PIP joints",
+    "e": ""
+  },
+  {
+    "q": "Common hand deformities in RA",
+    "a": "Ulnar deviation, swan-neck deformity, boutonniere deformity",
+    "e": ""
+  },
+  {
+    "q": "Deformity involving hyperextension of the PIP joint with flexion of the DIP joint",
+    "a": "Swan neck deformity",
+    "e": ""
+  },
+  {
+    "q": "Infrequent RA manifestation appearing as firm, nontender, round to oval subcutaneous masses that microscopically resemble necrotizing granulomas",
+    "a": "Rheumatoid nodule",
+    "e": ""
+  },
+  {
+    "q": "Common sites for rheumatoid nodules",
+    "a": "Subcutaneous tissue of the forearm, elbows, occiput, and lumbosacral area",
+    "e": ""
+  },
+  {
+    "q": "Autoimmune disease characterized by dry eyes (keratoconjunctivitis sicca) and dry mouth (xerostomia) from immune destruction of lacrimal and salivary glands",
+    "a": "Sjögren syndrome",
+    "e": ""
+  },
+  {
+    "q": "Cells infiltrating the lacrimal and salivary glands in Sjögren syndrome",
+    "a": "CD4+ T helper cells, B cells, and plasma cells",
+    "e": ""
+  },
+  {
+    "q": "Serologic markers of Sjögren syndrome, seen in 90% of patients",
+    "a": "SS-A (Ro) and SS-B (La) ribonucleoprotein antibodies",
+    "e": ""
+  },
+  {
+    "q": "Combination of lacrimal and salivary gland enlargement (associated with sarcoidosis, lymphoma, or tumors)",
+    "a": "Mikulicz syndrome",
+    "e": ""
+  },
+  {
+    "q": "Typical demographic affected by Sjögren syndrome",
+    "a": "Women, 50 to 60 years old",
+    "e": ""
+  },
+  {
+    "q": "Difficulty swallowing solid foods, decreased taste, and cracks/fissures in the mouth in Sjögren syndrome",
+    "a": "Xerostomia",
+    "e": ""
+  },
+  {
+    "q": "Disease characterized by chronic inflammation from autoimmunity, widespread small blood vessel damage, and progressive fibrosis of the skin and multiple organs",
+    "a": "Systemic sclerosis (scleroderma)",
+    "e": ""
+  },
+  {
+    "q": "Type of systemic sclerosis with widespread skin involvement, rapid progression, and early visceral involvement",
+    "a": "Diffuse scleroderma",
+    "e": ""
+  },
+  {
+    "q": "Type of systemic sclerosis with skin involvement confined to fingers, forearms, and face",
+    "a": "Limited scleroderma",
+    "e": ""
+  },
+  {
+    "q": "Syndrome that develops from limited scleroderma",
+    "a": "CREST syndrome",
+    "e": ""
+  },
+  {
+    "q": "The five features of CREST syndrome",
+    "a": "Calcinosis, Raynaud phenomenon, Esophageal dysmotility, Sclerodactyly, Telangiectasia",
+    "e": ""
+  },
+  {
+    "q": "CREST: calcium deposits in the skin",
+    "a": "Calcinosis",
+    "e": ""
+  },
+  {
+    "q": "CREST: spasm of blood vessels in response to cold or stress",
+    "a": "Raynaud phenomenon",
+    "e": ""
+  },
+  {
+    "q": "CREST: acid reflux and decreased motility of the esophagus",
+    "a": "Esophageal dysfunction",
+    "e": ""
+  },
+  {
+    "q": "CREST: thickening and tightening of skin on the fingers and hands",
+    "a": "Sclerodactyly",
+    "e": ""
+  },
+  {
+    "q": "CREST: dilation of capillaries causing red marks on the skin surface",
+    "a": "Telangiectasia",
+    "e": ""
+  },
+  {
+    "q": "Female-to-male ratio and peak age of onset for systemic sclerosis",
+    "a": "3:1; peak incidence at 50-60 years old",
+    "e": ""
+  },
+  {
+    "q": "Highly specific antibody in diffuse systemic sclerosis",
+    "a": "Anti-Scl-70 (antibodies against DNA topoisomerase I)",
+    "e": ""
+  },
+  {
+    "q": "The three components of systemic sclerosis pathogenesis",
+    "a": "Autoimmune responses, vascular damage, and collagen deposition (fibrosis)",
+    "e": ""
+  },
+  {
+    "q": "Disease with overlapping features of SLE, systemic sclerosis, and polymyositis, with high titers of anti-U1 ribonucleoprotein antibodies",
+    "a": "Mixed connective tissue disease",
+    "e": ""
+  },
+  {
+    "q": "Clinical presentation of mixed connective tissue disease",
+    "a": "Synovitis of fingers, Raynaud phenomenon, myositis, and renal involvement; responds well to corticosteroids",
+    "e": ""
+  },
+  {
+    "q": "Process where T lymphocytes and antibodies against graft antigens destroy tissue grafts",
+    "a": "Graft rejection",
+    "e": ""
+  },
+  {
+    "q": "Major antigenic differences between donor and recipient that cause transplant rejection",
+    "a": "Differences in HLA alleles",
+    "e": ""
+  },
+  {
+    "q": "The three classes of graft rejection based on clinical/pathologic features",
+    "a": "Hyperacute, acute, and chronic rejection",
+    "e": ""
+  },
+  {
+    "q": "Graft transplanted from one part of the body to another (same individual)",
+    "a": "Autograft",
+    "e": ""
+  },
+  {
+    "q": "Graft exchanged between non-identical individuals of the same species",
+    "a": "Allograft",
+    "e": ""
+  },
+  {
+    "q": "Graft exchanged from one species to another",
+    "a": "Xenograft",
+    "e": ""
+  },
+  {
+    "q": "Graft between genetically identical members of the same species",
+    "a": "Isograft",
+    "e": ""
+  },
+  {
+    "q": "Rejection type mediated by preformed antibodies against graft endothelial cell antigens, causing thrombosis and rapid graft failure",
+    "a": "Hyperacute rejection",
+    "e": ""
+  },
+  {
+    "q": "Rejection type mediated by T cells and antibodies activated by alloantigen, occurring within days to weeks, the principal cause of early graft failure",
+    "a": "Acute rejection",
+    "e": ""
+  },
+  {
+    "q": "Acute rejection subtype where CD8 T cells destroy graft parenchyma by cytotoxicity and inflammation",
+    "a": "Acute cellular rejection",
+    "e": ""
+  },
+  {
+    "q": "Acute rejection subtype where antibodies damage graft vasculature",
+    "a": "Acute antibody-mediated rejection",
+    "e": ""
+  },
+  {
+    "q": "Rejection type that is an indolent form of graft damage occurring over months to years, refractory to most therapies",
+    "a": "Chronic rejection",
+    "e": ""
+  },
+  {
+    "q": "Cause of chronic rejection",
+    "a": "T cells reacting against graft alloantigens and secreting cytokines that stimulate fibroblast and vascular smooth muscle proliferation",
+    "e": ""
+  },
+  {
+    "q": "What occurs when immunologically competent cells are transplanted into immunologically compromised recipients and attack host tissues",
+    "a": "Graft versus host disease (GVHD)",
+    "e": ""
+  },
+  {
+    "q": "Strategy used to minimize GVHD in hematopoietic stem cell transplants",
+    "a": "HLA-matching donor and recipient using precise DNA sequencing-based molecular typing",
+    "e": ""
+  },
+  {
+    "q": "The two broad categories of immunodeficiency diseases",
+    "a": "Primary (congenital) and secondary (acquired) immunodeficiencies",
+    "e": ""
+  },
+  {
+    "q": "Another name for primary immunodeficiencies",
+    "a": "Inborn errors of immunity",
+    "e": ""
+  },
+  {
+    "q": "Causes of secondary (acquired) immunodeficiencies",
+    "a": "Complications of cancers, infections, malnutrition, immunosuppression, irradiation, or chemotherapy",
+    "e": ""
+  },
+  {
+    "q": "Immunodeficiency caused by mutations in the β chain of CD11/CD18 integrins",
+    "a": "Leukocyte adhesion deficiency 1",
+    "e": ""
+  },
+  {
+    "q": "Immunodeficiency caused by mutations in fucosyl transferase needed for sialylated oligosaccharide (selectin receptor) synthesis",
+    "a": "Leukocyte adhesion deficiency 2",
+    "e": ""
+  },
+  {
+    "q": "Immunodeficiency from mutations affecting a protein in lysosomal membrane traffic, causing decreased leukocyte function",
+    "a": "Chédiak-Higashi syndrome",
+    "e": ""
+  },
+  {
+    "q": "Disease with a defect in phagocyte oxidase leading to decreased oxidative burst and defective bacterial killing",
+    "a": "Chronic granulomatous disease (CGD)",
+    "e": ""
+  },
+  {
+    "q": "Inheritance patterns of chronic granulomatous disease",
+    "a": "X-linked (phagocyte oxidase membrane component) or autosomal recessive (cytoplasmic components)",
+    "e": ""
+  },
+  {
+    "q": "Enzyme defective in chronic granulomatous disease",
+    "a": "NADPH oxidase (defect in superoxide radical production)",
+    "e": ""
+  },
+  {
+    "q": "Why macrophage-rich granulomas form in chronic granulomatous disease",
+    "a": "The initial neutrophil response is inadequate, so a macrophage-rich inflammatory reaction tries to control infection",
+    "e": ""
+  },
+  {
+    "q": "Complement deficiency associated with reduced resistance to infection and reduced clearance of immune complexes",
+    "a": "C2 or C4 deficiency",
+    "e": ""
+  },
+  {
+    "q": "Most common complement protein deficiency",
+    "a": "C2 deficiency",
+    "e": ""
+  },
+  {
+    "q": "Complement deficiency required for both classical and alternative pathways, causing susceptibility to serious recurrent pyogenic infections",
+    "a": "C3 deficiency",
+    "e": ""
+  },
+  {
+    "q": "Complement components forming the membrane attack complex, whose deficiency causes recurrent Neisserial infections",
+    "a": "C5, C6, C7, C8, C9",
+    "e": ""
+  },
+  {
+    "q": "Result of deficiency of complement regulatory proteins",
+    "a": "Excessive complement activation (e.g., angioedema, paroxysmal nocturnal hemoglobinuria)",
+    "e": ""
+  },
+  {
+    "q": "Constellation of genetically distinct syndromes with defects in both humoral and cell-mediated immunity",
+    "a": "Severe combined immunodeficiency (SCID)",
+    "e": ""
+  },
+  {
+    "q": "Pathogens SCID patients are especially susceptible to",
+    "a": "Candida albicans, Pneumocystis jirovecii, cytomegalovirus, varicella, Pseudomonas, and other bacteria",
+    "e": ""
+  },
+  {
+    "q": "Outcome for SCID patients without HSC transplantation",
+    "a": "Death within the first year of life",
+    "e": ""
+  },
+  {
+    "q": "X-linked SCID defect",
+    "a": "Defect in the gamma chain, a transducing component for IL-7 and IL-15",
+    "e": ""
+  },
+  {
+    "q": "Function of IL-7 in lymphocyte development",
+    "a": "Lymphocyte survival and proliferation",
+    "e": ""
+  },
+  {
+    "q": "Function of IL-15 in lymphocyte development",
+    "a": "NK cell maturation and proliferation",
+    "e": ""
+  },
+  {
+    "q": "Autosomal recessive form of SCID caused by an enzyme deficiency",
+    "a": "ADA (adenosine deaminase) deficiency",
+    "e": ""
+  },
+  {
+    "q": "Treatment for SCID",
+    "a": "Hematopoietic stem cell (HSC) transplant",
+    "e": ""
+  },
+  {
+    "q": "X-linked disorder characterized by failure of pro-B and pre-B cells to develop into mature B cells",
+    "a": "X-linked (Bruton) agammaglobulinemia",
+    "e": ""
+  },
+  {
+    "q": "Enzyme mutated in X-linked agammaglobulinemia",
+    "a": "Bruton tyrosine kinase (Btk)",
+    "e": ""
+  },
+  {
+    "q": "Classic laboratory findings in X-linked agammaglobulinemia",
+    "a": "Absent/decreased B cells and Igs, underdeveloped germinal centers, absent plasma cells, normal T cells",
+    "e": ""
+  },
+  {
+    "q": "Organisms that commonly cause infection in X-linked agammaglobulinemia because they normally require antibody opsonization",
+    "a": "Haemophilus influenzae, Streptococcus pneumoniae, Staphylococcus aureus",
+    "e": ""
+  },
+  {
+    "q": "Immunodeficiency where B cells have IgM but are deficient in IgG, IgA, and IgE due to failure of class switching",
+    "a": "Hyper-IgM syndrome",
+    "e": ""
+  },
+  {
+    "q": "X-linked cause of Hyper-IgM syndrome",
+    "a": "Defect in CD40 ligand on CD4 helper T cells",
+    "e": ""
+  },
+  {
+    "q": "Autosomal recessive cause of Hyper-IgM syndrome",
+    "a": "Defect in activation-induced cytidine deaminase (AID), a DNA-editing enzyme needed for class switching and affinity maturation",
+    "e": ""
+  },
+  {
+    "q": "Why Hyper-IgM syndrome patients are susceptible to enteroviruses",
+    "a": "Antibodies are important for neutralizing infectious viruses, and this ability is impaired",
+    "e": ""
+  },
+  {
+    "q": "T-cell deficiency resulting from failure of thymus development (thymic hypoplasia)",
+    "a": "DiGeorge syndrome",
+    "e": ""
+  },
+  {
+    "q": "Structures that develop abnormally in DiGeorge syndrome, giving rise to the thymus, parathyroid glands, and thyroid C cells",
+    "a": "3rd and 4th pharyngeal pouches",
+    "e": ""
+  },
+  {
+    "q": "Clinical triad of DiGeorge syndrome",
+    "a": "Variable T cell-mediated immunodeficiency (thymic hypoplasia), tetany (lack of parathyroids), congenital heart/great vessel defects",
+    "e": ""
+  },
+  {
+    "q": "Mnemonic for DiGeorge syndrome features",
+    "a": "CATCH-22: Cardiac malformation, Abnormal facies, Thymic hypoplasia, Cleft lip/palate, Hypocalcemia (22q11 microdeletion)",
+    "e": ""
+  },
+  {
+    "q": "Heterogeneous group of disorders with the common feature of hypogammaglobulinemia, a diagnosis of exclusion",
+    "a": "Common variable immunodeficiency (CVID)",
+    "e": ""
+  },
+  {
+    "q": "Abnormality implicated in common variable immunodeficiency",
+    "a": "Abnormality in BAFF receptor/ICOS (inducible costimulator)",
+    "e": ""
+  },
+  {
+    "q": "Most common immunodeficiency, caused by impaired differentiation of naïve B lymphocytes into IgA-producing plasma cells",
+    "a": "Isolated (selective) IgA deficiency",
+    "e": ""
+  },
+  {
+    "q": "Clinical presentation of isolated IgA deficiency",
+    "a": "Recurrent sinopulmonary infections; increased susceptibility to viral infections; allergic and autoimmune diseases",
+    "e": ""
+  },
+  {
+    "q": "X-linked disorder characterized by an inability to eliminate EBV, leading to fulminant infectious mononucleosis and B-cell tumors",
+    "a": "X-linked lymphoproliferative disease",
+    "e": ""
+  },
+  {
+    "q": "Adapter molecule mutated in X-linked lymphoproliferative disease, needed for NK, T, and B cell activation via SLAM",
+    "a": "SAP (SLAM-associated protein)",
+    "e": ""
+  },
+  {
+    "q": "Rare genetic immunodeficiency from mutations in the WASP gene, impairing platelet production and immune function",
+    "a": "Wiskott-Aldrich syndrome",
+    "e": ""
+  },
+  {
+    "q": "Functions affected by WASP mutation",
+    "a": "Cytoskeleton-dependent responses: cell migration and signal transduction in lymphocytes and platelets",
+    "e": ""
+  },
+  {
+    "q": "Mnemonic for Wiskott-Aldrich syndrome features (WATER)",
+    "a": "Wiskott-Aldrich: Thrombocytopenia, Eczema, Recurrent (pyogenic) infections, and risk of autoimmune disease/malignancy",
+    "e": ""
+  },
+  {
+    "q": "Rare childhood disease affecting the brain and other body parts, causing uncoordinated movements and enlarged capillaries under the skin",
+    "a": "Ataxia-telangiectasia",
+    "e": ""
+  },
+  {
+    "q": "Immune findings in ataxia-telangiectasia",
+    "a": "Reduced B- and T-cell numbers, highly variable immunodeficiency, defective DNA recombination (Ig isotype switching)",
+    "e": ""
+  },
+  {
+    "q": "Syndrome caused by the retrovirus HIV, characterized by profound immunosuppression, opportunistic infections, secondary neoplasms, and neurologic manifestations",
+    "a": "Acquired immunodeficiency syndrome (AIDS)",
+    "e": ""
+  },
+  {
+    "q": "Group accounting for more than 50% of reported AIDS cases",
+    "a": "Men who have sex with men",
+    "e": ""
+  },
+  {
+    "q": "Retrovirus family HIV belongs to",
+    "a": "Lentivirus family",
+    "e": ""
+  },
+  {
+    "q": "HIV type most common in the United States, Europe, and Central Africa",
+    "a": "HIV-1",
+    "e": ""
+  },
+  {
+    "q": "HIV type seen principally in West Africa and India",
+    "a": "HIV-2",
+    "e": ""
+  },
+  {
+    "q": "The major HIV capsid protein",
+    "a": "p24",
+    "e": ""
+  },
+  {
+    "q": "The two viral glycoprotein spikes critical for HIV infection of cells",
+    "a": "Gp120 and Gp41",
+    "e": ""
+  },
+  {
+    "q": "Receptor that Gp120 binds to enter host cells",
+    "a": "CD4 receptor",
+    "e": ""
+  },
+  {
+    "q": "Coreceptors that HIV binds after CD4, inducing fusion via Gp41",
+    "a": "CCR5 and CXCR4",
+    "e": ""
+  },
+  {
+    "q": "Enzyme HIV uses to synthesize double-stranded DNA from its RNA genome",
+    "a": "Reverse transcriptase",
+    "e": ""
+  },
+  {
+    "q": "Cell type primarily targeted by HIV, the hallmark result being profound cell-mediated immune deficiency",
+    "a": "CD4+ T cells",
+    "e": ""
+  },
+  {
+    "q": "The three phases of HIV infection",
+    "a": "Acute retroviral syndrome, chronic (middle) phase, and clinical AIDS",
+    "e": ""
+  },
+  {
+    "q": "Timing and symptoms of the acute retroviral syndrome",
+    "a": "Occurs 3 to 6 weeks after infection, resolves in 2 to 4 weeks; flulike symptoms (sore throat, myalgias, fever, weight loss, fatigue, sometimes rash)",
+    "e": ""
+  },
+  {
+    "q": "Marker of HIV disease progression used clinically",
+    "a": "Viral load (level of HIV-1 RNA in blood)",
+    "e": ""
+  },
+  {
+    "q": "Duration of the chronic phase of HIV infection before progression to AIDS, without treatment",
+    "a": "7 to 10 years",
+    "e": ""
+  },
+  {
+    "q": "What happens to lymph nodes and spleen during the chronic phase of HIV infection",
+    "a": "They are sites of continuous HIV replication and cell destruction",
+    "e": ""
+  },
+  {
+    "q": "Cause of most deaths in untreated AIDS patients",
+    "a": "Opportunistic infections",
+    "e": ""
+  },
+  {
+    "q": "Examples of AIDS-defining opportunistic infections and neoplasms",
+    "a": "Candida, cryptosporidiosis, coccidioidomycosis, Pneumocystis jirovecii, Kaposi sarcoma, lymphoma",
+    "e": ""
+  },
+  {
+    "q": "Treatment that targets viral reverse transcriptase, protease, and integrase to control HIV",
+    "a": "Antiretroviral therapy (ART)",
+    "e": ""
+  },
+  {
+    "q": "Why ART drugs are given in combination",
+    "a": "To reduce the emergence of drug-resistant mutants",
+    "e": ""
+  },
+  {
+    "q": "Effect of ART on HIV viral load with good adherence",
+    "a": "Reduces it below the level of detection (<50 copies RNA/mL) indefinitely",
+    "e": ""
+  },
+  {
+    "q": "Does ART cure HIV?",
+    "a": "No — it treats HIV, reduces transmission risk, prevents progression to AIDS, and prolongs life, but does not cure it",
+    "e": ""
+  },
+  {
+    "q": "Secondary immunodeficiency mechanism caused by HIV infection",
+    "a": "Depletion of CD4+ T cells",
+    "e": ""
+  },
+  {
+    "q": "Secondary immunodeficiency mechanism caused by irradiation and chemotherapy",
+    "a": "Decreased bone marrow precursors for all leukocytes",
+    "e": ""
+  },
+  {
+    "q": "Secondary immunodeficiency mechanism caused by protein-calorie malnutrition",
+    "a": "Metabolic derangements that inhibit immune function",
+    "e": ""
+  },
+  {
+    "q": "Secondary immunodeficiency mechanism caused by splenectomy (removal of spleen)",
+    "a": "Decreased phagocytosis of microbes",
+    "e": ""
+  },
+  {
+    "q": "Type II hypersensitivity: target antigen and mechanism in autoimmune hemolytic anemia",
+    "a": "Erythrocyte membrane proteins (e.g., Rh blood group antigens); opsonization and phagocytosis of erythrocytes",
+    "e": ""
+  },
+  {
+    "q": "Type II hypersensitivity: target antigen and mechanism in autoimmune thrombocytopenic purpura",
+    "a": "Platelet membrane proteins (e.g., GpIIb:IIIa integrin); opsonization and phagocytosis of platelets",
+    "e": ""
+  },
+  {
+    "q": "Type II hypersensitivity disease: antibodies attack proteins in intercellular junctions of epidermal cells (desmoglein 3), disrupting adhesion and causing skin bullae",
+    "a": "Pemphigus vulgaris",
+    "e": ""
+  },
+  {
+    "q": "Type II hypersensitivity disease: antibodies target a protein in the basement membranes of kidney glomeruli and lung alveoli, causing nephritis and lung hemorrhage",
+    "a": "Goodpasture syndrome",
+    "e": ""
+  },
+  {
+    "q": "Type II hypersensitivity disease: antibody against streptococcal cell wall antigen cross-reacts with myocardial antigen, causing myocarditis and arthritis",
+    "a": "Acute rheumatic fever",
+    "e": ""
+  },
+  {
+    "q": "Type II hypersensitivity disease: antibody inhibits acetylcholine binding and down-modulates its receptor, causing muscle weakness/paralysis",
+    "a": "Myasthenia gravis",
+    "e": ""
+  },
+  {
+    "q": "Type II hypersensitivity disease: antibody stimulates the TSH receptor, causing hyperthyroidism",
+    "a": "Graves disease",
+    "e": ""
+  },
+  {
+    "q": "Type II hypersensitivity disease: antibody neutralizes intrinsic factor of gastric parietal cells, decreasing vitamin B12 absorption",
+    "a": "Pernicious anemia",
+    "e": ""
+  },
+  {
+    "q": "Type III hypersensitivity disease: immune complexes of nuclear antigens cause nephritis, skin lesions, and arthritis",
+    "a": "Systemic lupus erythematosus (SLE)",
+    "e": ""
+  },
+  {
+    "q": "Type III hypersensitivity disease: streptococcal cell wall antigens 'planted' in the glomerular basement membrane cause nephritis",
+    "a": "Poststreptococcal glomerulonephritis",
+    "e": ""
+  },
+  {
+    "q": "Type III hypersensitivity disease sometimes caused by hepatitis B virus antigens, causing vasculitis",
+    "a": "Polyarteritis nodosa (PAN)",
+    "e": ""
+  },
+  {
+    "q": "Type III hypersensitivity disease caused by bacterial antigens (e.g., Yersinia), causing acute arthritis",
+    "a": "Reactive arthritis",
+    "e": ""
+  },
+  {
+    "q": "Type III hypersensitivity reaction caused by various foreign proteins (e.g., foreign serum protein such as horse antitetanus globulin), causing arthritis, vasculitis, and nephritis",
+    "a": "Serum sickness",
+    "e": ""
+  },
+  {
+    "q": "Experimental Type III hypersensitivity reaction to foreign proteins, causing localized cutaneous vasculitis",
+    "a": "Arthus reaction",
+    "e": ""
+  },
+  {
+    "q": "Type IV hypersensitivity: T cell specificity, injury mechanism, and result in type 1 diabetes mellitus",
+    "a": "Antigens of pancreatic islet β cells (insulin, glutamic acid decarboxylase); T cell-mediated inflammation and destruction of islet cells by CTLs; insulitis leading to beta cell destruction and diabetes",
+    "e": ""
+  },
+  {
+    "q": "Type IV hypersensitivity: injury mechanism and result in rheumatoid arthritis",
+    "a": "Inflammation mediated by TH17 (and TH1) cytokines, with a possible role for antibodies and immune complexes; chronic arthritis with destruction of articular cartilage",
+    "e": ""
+  },
+  {
+    "q": "Type IV hypersensitivity: T cell specificity, mechanism, and result in multiple sclerosis",
+    "a": "Protein antigens in myelin (e.g., myelin basic protein); inflammation via TH1 and TH17 cytokines with myelin destruction by activated macrophages; demyelination in the CNS with perivascular inflammation and paralysis",
+    "e": ""
+  },
+  {
+    "q": "Type IV hypersensitivity disease affecting peripheral nerve myelin, causing neuritis and paralysis",
+    "a": "Guillain-Barré syndrome (peripheral neuropathy)",
+    "e": ""
+  },
+  {
+    "q": "Type IV hypersensitivity disease of unknown antigen, mediated mainly by TH17 cells, causing destructive skin plaques",
+    "a": "Psoriasis",
+    "e": ""
+  },
+  {
+    "q": "Type IV hypersensitivity reaction to environmental chemicals modifying self proteins (e.g., poison ivy, poison oak), causing epidermal necrosis and dermal inflammation",
+    "a": "Contact sensitivity (contact dermatitis)",
+    "e": ""
+  },
+  {
+    "q": "Classification system with 11 criteria used to diagnose SLE (4 or more needed)",
+    "a": "1987 Revised (ACR) Criteria for Classification of SLE",
+    "e": ""
+  },
+  {
+    "q": "SLE classification criterion: fixed erythema, flat or raised, over the malar eminences",
+    "a": "Malar rash",
+    "e": ""
+  },
+  {
+    "q": "SLE classification criterion: erythematous raised patches with adherent keratotic scaling and follicular plugging",
+    "a": "Discoid rash",
+    "e": ""
+  },
+  {
+    "q": "SLE classification criterion: skin rash from an unusual reaction to sunlight",
+    "a": "Photosensitivity",
+    "e": ""
+  },
+  {
+    "q": "SLE classification criterion: oral or nasopharyngeal ulceration, usually painless",
+    "a": "Oral ulcers",
+    "e": ""
+  },
+  {
+    "q": "SLE classification criterion: nonerosive arthritis of two or more peripheral joints",
+    "a": "Arthritis",
+    "e": ""
+  },
+  {
+    "q": "SLE classification criterion: pleuritis or pericarditis",
+    "a": "Serositis",
+    "e": ""
+  },
+  {
+    "q": "SLE classification criterion: persistent proteinuria or cellular casts",
+    "a": "Renal disorder",
+    "e": ""
+  },
+  {
+    "q": "SLE classification criterion: seizures or psychosis without other cause",
+    "a": "Neurologic disorder",
+    "e": ""
+  },
+  {
+    "q": "SLE classification criterion: hemolytic anemia, leukopenia, lymphopenia, or thrombocytopenia",
+    "a": "Hematologic disorder",
+    "e": ""
+  },
+  {
+    "q": "SLE classification criterion: presence of anti-dsDNA, anti-Sm, or antiphospholipid antibodies",
+    "a": "Immunologic disorder",
+    "e": ""
+  },
+  {
+    "q": "SLE classification criterion: an abnormal titer of antinuclear antibody by immunofluorescence",
+    "a": "Antinuclear antibody (ANA)",
+    "e": ""
+  },
+  {
+    "q": "Autoantibody target: core proteins of small nuclear ribonucleoprotein (snRNP) particles, virtually diagnostic of SLE",
+    "a": "Anti-Smith (Sm) antibody",
+    "e": ""
+  },
+  {
+    "q": "Autoantibody most specific for SLE, targets nuclear DNA and correlates with nephritis",
+    "a": "Anti-double-stranded DNA (anti-dsDNA) antibody",
+    "e": ""
+  },
+  {
+    "q": "Autoantibody against a ribonucleoprotein antigen, associated with congenital heart block and neonatal lupus",
+    "a": "Anti-Ro (SS-A) antibody",
+    "e": ""
+  },
+  {
+    "q": "Autoantibody against a ribonucleoprotein antigen, found together with anti-Ro, characteristic of Sjögren syndrome",
+    "a": "Anti-La (SS-B) antibody",
+    "e": ""
+  },
+  {
+    "q": "Autoantibody against DNA topoisomerase I, highly specific for diffuse systemic sclerosis with lung disease",
+    "a": "Anti-Scl-70 antibody",
+    "e": ""
+  },
+  {
+    "q": "Autoantibody against centromere proteins, associated with CREST syndrome/limited scleroderma",
+    "a": "Anticentromere antibody",
+    "e": ""
+  },
+  {
+    "q": "Autoantibody against histidyl-tRNA synthetase, associated with dermatomyositis/polymyositis and interstitial lung disease",
+    "a": "Anti-Jo-1 antibody",
+    "e": ""
+  },
+  {
+    "q": "Autoantibody against a helicase, associated with dermatomyositis with a characteristic skin rash",
+    "a": "Anti-Mi-2 antibody",
+    "e": ""
+  },
+  {
+    "q": "Autoantibody against histones, associated with drug-induced lupus",
+    "a": "Antihistone antibody",
+    "e": ""
+  },
+  {
+    "q": "Autoantibody against U1 ribonucleoprotein, characteristic of mixed connective tissue disease",
+    "a": "Anti-U1 RNP antibody",
+    "e": ""
+  }
 ]
