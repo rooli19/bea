@@ -853,12 +853,13 @@
       const CARIO_SLIDE_OVERRIDES = {
         2: "Immunohistochemistry B Cells",
         5: "Immunohistochemistry T Cells",
+        32: "ILOVEUBEBB U GOT DIZZ",
       };
       // Build the deck: sequential image numbers, answers by range.
       const carioCards = [];
       (function buildDeck() {
         let n = 1;
-        const skipped = new Set([7, 10, 13, 28, 32]);
+        const skipped = new Set([7, 10, 13, 28]);
 
         CARIO_RANGES.forEach((range) => {
           for (let slide = range.from; slide <= range.to; slide++) {
