@@ -384,6 +384,12 @@
         font-weight: 800;
         z-index: 2;
       }
+      .card.transitioning .slide-img,
+      .card.transitioning .img-fallback,
+      .card.transitioning .a-text,
+      .card.transitioning .explain-text {
+        visibility: hidden;
+      }
 
       /* Image front */
       .img-wrap {
@@ -841,6 +847,7 @@
         { from: 21, to: 23, a: "Lipoma" },
         { from: 24, to: 27, a: "Leiomyoma" },
         { from: 28, to: 31, a: "Squamous papilloma" },
+        { from: 32, to: 32, a: "Squamous papilloma" },
         { from: 33, to: 35, a: "Liposarcoma" },
         { from: 36, to: 36, a: "Chondrosarcoma, likely" },
         { from: 37, to: 39, a: "Squamous cell carcinoma" },
@@ -855,27 +862,23 @@
         5: "Immunohistochemistry T Cells",
         32: "ILOVEUBEBB U GOT DIZZ",
       };
-      // Build the deck: sequential image numbers, answers by range.
+
+      // Build the deck: image number matches original slide number.
       const carioCards = [];
+
       (function buildDeck() {
-        let n = 1;
-        const skipped = new Set([7, 10, 13, 28]);
+        const skippedSlides = new Set([7, 10, 13, 28]);
 
         CARIO_RANGES.forEach((range) => {
           for (let slide = range.from; slide <= range.to; slide++) {
-            if (skipped.has(n)) {
-              n++;
-              continue;
-            }
+            if (skippedSlides.has(slide)) continue;
 
             carioCards.push({
-              img: `cario/cario-page (${n}).jpg`, // cario-1.jpg, cario-2.jpg, ...
-              slide: slide, // original slide number
-              a: CARIO_SLIDE_OVERRIDES[slide] ?? range.a, // override wins if present
+              img: `cario/cario-page (${slide}).jpg`,
+              slide: slide,
+              a: CARIO_SLIDE_OVERRIDES[slide] ?? range.a,
               e: `(●'◡'●)`,
             });
-
-            n++;
           }
         });
       })();
@@ -996,31 +999,41 @@
       });
 
       // -------- LOAD CARD --------
+      // Generation counter — lets us ignore stale image onload/onerror events
+      let renderGen = 0;
+      let revealTimer = null;
+
       function renderCard() {
+        const myGen = ++renderGen;
         const idx = deck[pos];
         const c = cards[idx];
-
-        // --- Front: image ---
-        imgFallback.style.display = "none";
-        slideImg.style.display = "block";
-        slideImg.onerror = () => {
-          slideImg.style.display = "none";
-          imgFallback.style.display = "flex";
-          imgFallbackText.textContent = `${c.img} not found`;
-        };
-        slideImg.onload = () => {
-          imgFallback.style.display = "none";
-          slideImg.style.display = "block";
-        };
-        slideImg.src = c.img;
-        slideImg.alt = `Slide ${c.slide}`;
 
         // --- Back: answer ---
         answerText.textContent = c.a;
         explainText.textContent = c.e || "";
-
         cardNumFront.textContent = `${pos + 1} / ${deck.length}`;
         cardNumBack.textContent = `${pos + 1} / ${deck.length}`;
+
+        // --- Front: image ---
+        // Hide until the *current* image has actually loaded, so rapid skipping
+        // never flashes a previously-loaded (wrong) picture.
+        const expectedSrc = c.img;
+        slideImg.style.display = "none";
+        imgFallback.style.display = "none";
+        slideImg.alt = `Slide ${c.slide}`;
+
+        slideImg.onload = () => {
+          if (myGen !== renderGen) return; // stale load — a newer card took over
+          slideImg.style.display = "block";
+          imgFallback.style.display = "none";
+        };
+        slideImg.onerror = () => {
+          if (myGen !== renderGen) return; // stale error
+          slideImg.style.display = "none";
+          imgFallback.style.display = "flex";
+          imgFallbackText.textContent = `${expectedSrc} not found`;
+        };
+        slideImg.src = expectedSrc;
 
         updateScoreboard();
         prevBtn.disabled = pos === 0;
@@ -1031,22 +1044,22 @@
         assessRow.classList.remove("show");
         tapHint.style.display = "block";
 
-        const wasFlipped = cardEl.classList.contains("flipped");
-
-        if (wasFlipped) {
-          // Hide card content, start unflip, then render new content once the
-          // flip-back animation is finished (prevents a flash of the new answer).
+        // If the card is currently face-up (answer showing), start a flip-back.
+        // Content is hidden while the rotation is in progress, then revealed.
+        const needsFlipBack = cardEl.classList.contains("flipped");
+        if (needsFlipBack) {
           cardEl.classList.add("transitioning");
           cardEl.classList.remove("flipped");
-
-          setTimeout(() => {
-            renderCard();
+          clearTimeout(revealTimer);
+          revealTimer = setTimeout(() => {
             cardEl.classList.remove("transitioning");
-          }, 360); // slightly longer than the 0.65s flip transition
-        } else {
-          cardEl.classList.remove("flipped");
-          renderCard();
+          }, 660); // slightly longer than the 0.65s flip transition
         }
+
+        // Always render the new content immediately. It's either visible already
+        // (front-facing card) or masked by the `transitioning` class during the
+        // flip-back, so no flash of the next answer ever shows.
+        renderCard();
       }
       function updateScoreboard() {
         correctCountEl.textContent = correctCount;
