@@ -1,0 +1,547 @@
+[
+ {
+  "q": "Leading cause of illness and primary contributor to premature death in the Philippines",
+  "a": "Hypertension",
+  "e": ""
+ },
+ {
+  "q": "Number of adults aged 30–79 years with hypertension (worldwide figure in the lecture)",
+  "a": "1.28 billion",
+  "e": ""
+ },
+ {
+  "q": "Percentage of adults with hypertension who are unaware they have the condition",
+  "a": "46%",
+  "e": ""
+ },
+ {
+  "q": "Percentage of hypertensive adults who are diagnosed and treated",
+  "a": "42%",
+  "e": ""
+ },
+ {
+  "q": "Proportion of hypertensive adults whose blood pressure is controlled",
+  "a": "1 in 5 (21%)",
+  "e": ""
+ },
+ {
+  "q": "Pressure exerted by the blood upon the walls of blood vessels, especially arteries",
+  "a": "Blood pressure",
+  "e": ""
+ },
+ {
+  "q": "The five factors that blood pressure varies with",
+  "a": "Muscular efficiency of the heart, blood volume, blood viscosity, age and health of the individual, state of the vascular wall",
+  "e": ""
+ },
+ {
+  "q": "Hormonal system of the kidney involved in blood pressure control (abbreviated RAAS)",
+  "a": "Renin–angiotensin–aldosterone system",
+  "e": ""
+ },
+ {
+  "q": "Sustained SBP above 140 mm Hg or sustained DBP above 90 mm Hg",
+  "a": "Hypertension",
+  "e": ""
+ },
+ {
+  "q": "Guideline used for the blood pressure classification in the lecture",
+  "a": "JNC 8 (Eighth Joint National Committee)",
+  "e": ""
+ },
+ {
+  "q": "JNC 8 category: SBP <120 AND DBP <80 mmHg",
+  "a": "Normal",
+  "e": ""
+ },
+ {
+  "q": "JNC 8 category: SBP 120–139 OR DBP 80–89 mmHg",
+  "a": "Prehypertension",
+  "e": ""
+ },
+ {
+  "q": "JNC 8 category: SBP 140–159 OR DBP 90–99 mmHg",
+  "a": "Hypertension, Stage 1",
+  "e": ""
+ },
+ {
+  "q": "JNC 8 category: SBP >160 OR DBP >100 mmHg",
+  "a": "Hypertension, Stage 2",
+  "e": ""
+ },
+ {
+  "q": "SBP range of Hypertension Stage 1",
+  "a": "140–159 mmHg",
+  "e": ""
+ },
+ {
+  "q": "DBP range of Hypertension Stage 1",
+  "a": "90–99 mmHg",
+  "e": ""
+ },
+ {
+  "q": "The eight conditions for which hypertension is a risk factor (lecture list)",
+  "a": "CKD, CVA, AMI, heart failure, cardiomyopathies, hepatic failure, retinopathy, neuropathy",
+  "e": ""
+ },
+ {
+  "q": "The five main target organ pathologies of hypertension",
+  "a": "Retinopathies, neuropathies, cardiomyopathies, nephropathies, vasculopathies",
+  "e": ""
+ },
+ {
+  "q": "SBP >220 mmHg or DBP >120 mmHg without target organ damage",
+  "a": "Hypertensive urgency",
+  "e": ""
+ },
+ {
+  "q": "SBP >180 mmHg or DBP >120 mmHg with evidence of target organ damage",
+  "a": "Hypertensive emergency",
+  "e": ""
+ },
+ {
+  "q": "Hypertensive crisis defined by the presence of target organ damage",
+  "a": "Hypertensive emergency",
+  "e": ""
+ },
+ {
+  "q": "The four benefits of early recognition and treatment of hypertension",
+  "a": "Reduced mortality and morbidity, prevention of target organ damage, prevention of bleeding during dental procedures, reduced risk of dying during any surgery (medical or dental)",
+  "e": ""
+ },
+ {
+  "q": "Benefit of controlling BP that is specifically relevant to dental procedures",
+  "a": "Prevention of bleeding during dental procedures",
+  "e": ""
+ },
+ {
+  "q": "Target blood pressure in the goals of therapy",
+  "a": "<130/80 mmHg",
+  "e": ""
+ },
+ {
+  "q": "The four goals of therapy in hypertension",
+  "a": "Target BP <130/80 mmHg; prevent complications of chronically elevated BP; improve quality of life; prevent mortality associated with hypertension",
+  "e": ""
+ },
+ {
+  "q": "Two parts of the work-up used to prevent complications of chronic hypertension",
+  "a": "History and physical examination; laboratory examinations monitoring target organ damage",
+  "e": ""
+ },
+ {
+  "q": "The six drug groups in the treatment strategies for hypertension",
+  "a": "Diuretics, β-blockers, ACE inhibitors, ARBs, vasodilators, centrally acting adrenergics",
+  "e": ""
+ },
+ {
+  "q": "JNC 8 initial drugs for hypertension (A, B, C, D)",
+  "a": "ACE inhibitors (A), Beta blockers (B), Calcium channel blockers (C), Thiazide diuretics (D)",
+  "e": ""
+ },
+ {
+  "q": "JNC 8 initial drug class labeled 'A'",
+  "a": "ACE inhibitors",
+  "e": ""
+ },
+ {
+  "q": "JNC 8 initial drug class labeled 'B'",
+  "a": "Beta adrenergic receptor blockers",
+  "e": ""
+ },
+ {
+  "q": "JNC 8 initial drug class labeled 'C'",
+  "a": "Calcium channel blockers",
+  "e": ""
+ },
+ {
+  "q": "JNC 8 initial drug class labeled 'D'",
+  "a": "Thiazide diuretics",
+  "e": ""
+ },
+ {
+  "q": "Drug class that is an alternative to ACE inhibitors in concomitant disease",
+  "a": "ARBs",
+  "e": ""
+ },
+ {
+  "q": "Non-therapeutic interventions for hypertension",
+  "a": "Lifestyle changes",
+  "e": ""
+ },
+ {
+  "q": "Diet recommended in lifestyle changes for hypertension",
+  "a": "DASH diet",
+  "e": ""
+ },
+ {
+  "q": "Maximum daily sodium intake recommended in hypertension",
+  "a": "No more than 2,400 mg/day",
+  "e": ""
+ },
+ {
+  "q": "Recommended physical activity for hypertension",
+  "a": "Moderate-to-vigorous activity 3–4 days a week, averaging 40 min per session",
+  "e": ""
+ },
+ {
+  "q": "Four lifestyle changes for hypertension (besides physical activity)",
+  "a": "Smoking cessation, control of blood glucose and lipids, healthy diet (DASH), moderate alcohol consumption and sodium reduction",
+  "e": ""
+ },
+ {
+  "q": "Class of vasodilators whose prototype is enalapril",
+  "a": "ACE inhibitors",
+  "e": ""
+ },
+ {
+  "q": "Prototype ACE inhibitor",
+  "a": "Enalapril",
+  "e": ""
+ },
+ {
+  "q": "Other ACE inhibitors named in the lecture",
+  "a": "Ramipril, lisinopril, captopril, enalaprilat, fosinopril",
+  "e": ""
+ },
+ {
+  "q": "ACE inhibitor MOA: enzyme that is inhibited",
+  "a": "Angiotensin-converting enzyme (ACE)",
+  "e": ""
+ },
+ {
+  "q": "ACE inhibitor effect on total peripheral resistance",
+  "a": "Decreased TPR",
+  "e": ""
+ },
+ {
+  "q": "ACE inhibitors: decreased angiotensin II leads to vasodilation and decreased this",
+  "a": "Afterload",
+  "e": ""
+ },
+ {
+  "q": "ACE inhibitors: decreased aldosterone reduces Na and water retention and decreases this",
+  "a": "Preload",
+  "e": ""
+ },
+ {
+  "q": "Conditions in which ACE inhibitors are first line (compelling indications)",
+  "a": "CAD risk, heart failure, CKD",
+  "e": ""
+ },
+ {
+  "q": "Compelling indication in which ACE inhibitors are the standard drug",
+  "a": "Myocardial infarction",
+  "e": ""
+ },
+ {
+  "q": "Compelling indications for ACE inhibitors (six)",
+  "a": "CAD risk, diabetes mellitus (especially DM nephropathy), stroke, heart failure, myocardial infarction, CKD",
+  "e": ""
+ },
+ {
+  "q": "Diabetic complication for which ACE inhibitors are especially useful",
+  "a": "DM nephropathy",
+  "e": ""
+ },
+ {
+  "q": "Adverse effects of ACE inhibitors",
+  "a": "Cough, angioedema, hyperkalemia",
+  "e": ""
+ },
+ {
+  "q": "Representative ARB",
+  "a": "Losartan (Lifezar)",
+  "e": ""
+ },
+ {
+  "q": "Other ARBs named in the lecture",
+  "a": "Irbesartan, telmisartan (Micardis), valsartan, candesartan, olmesartan (Olmetec)",
+  "e": ""
+ },
+ {
+  "q": "Brand name of losartan in the lecture",
+  "a": "Lifezar",
+  "e": ""
+ },
+ {
+  "q": "Brand name of telmisartan in the lecture",
+  "a": "Micardis",
+  "e": ""
+ },
+ {
+  "q": "Brand name of olmesartan in the lecture",
+  "a": "Olmetec",
+  "e": ""
+ },
+ {
+  "q": "Receptor blocked by ARBs",
+  "a": "AT1 (angiotensin II receptor subtype 1)",
+  "e": ""
+ },
+ {
+  "q": "Drug class that serves as an alternative to ACE inhibitors and blocks AT1 receptors",
+  "a": "ARBs (angiotensin II receptor blockers)",
+  "e": ""
+ },
+ {
+  "q": "ARB effect on arterioles and veins leading to decreased afterload",
+  "a": "Arteriolar and venous dilation (decreased TPR)",
+  "e": ""
+ },
+ {
+  "q": "ARB effect on aldosterone leading to decreased preload",
+  "a": "Decreased aldosterone secretion (less Na and water retention)",
+  "e": ""
+ },
+ {
+  "q": "Condition in which ARBs are contraindicated",
+  "a": "Pregnancy",
+  "e": ""
+ },
+ {
+  "q": "Antihypertensive drugs that deplete Na+ stores and reduce blood volume and cardiac output",
+  "a": "Diuretics",
+  "e": ""
+ },
+ {
+  "q": "Two ways diuretics decrease blood pressure",
+  "a": "Depleting Na+ stores; reducing blood volume and cardiac output",
+  "e": ""
+ },
+ {
+  "q": "The three types of diuretics used for hypertension",
+  "a": "Thiazide, loop, and potassium-sparing diuretics",
+  "e": ""
+ },
+ {
+  "q": "Representative thiazide diuretic",
+  "a": "Hydrochlorothiazide",
+  "e": ""
+ },
+ {
+  "q": "Another thiazide-type diuretic named in the lecture",
+  "a": "Chlorthalidone",
+  "e": ""
+ },
+ {
+  "q": "Thiazide MOA: transporter inhibited in the luminal membrane of the DCT",
+  "a": "Na+–Cl– transporter",
+  "e": ""
+ },
+ {
+  "q": "Nephron site where thiazide diuretics act",
+  "a": "Distal convoluted tubule (DCT)",
+  "e": ""
+ },
+ {
+  "q": "Diuretic class useful in mild to moderate hypertension",
+  "a": "Thiazide diuretics",
+  "e": ""
+ },
+ {
+  "q": "GFR below which thiazides are not useful due to inadequate renal function",
+  "a": "<30 mL/min/m²",
+  "e": ""
+ },
+ {
+  "q": "Adverse effects of thiazide diuretics",
+  "a": "Hypokalemia, hyperuricemia, hyperglycemia, hypercalcemia, hyperlipidemia",
+  "e": ""
+ },
+ {
+  "q": "Representative loop diuretic",
+  "a": "Furosemide",
+  "e": ""
+ },
+ {
+  "q": "Other loop diuretics named in the lecture",
+  "a": "Torsemide, bumetanide, ethacrynic acid",
+  "e": ""
+ },
+ {
+  "q": "Loop diuretic MOA: transporter inhibited in the thick ascending limb",
+  "a": "Na+/K+/2Cl– transporter",
+  "e": ""
+ },
+ {
+  "q": "Nephron site where loop diuretics act",
+  "a": "Thick ascending limb (TAL)",
+  "e": ""
+ },
+ {
+  "q": "Loop diuretic uses (lecture list)",
+  "a": "Severe hypertension where many Na+-retaining agents are used; renal insufficiency; cardiac failure or cirrhosis; symptoms of heart failure and edema",
+  "e": ""
+ },
+ {
+  "q": "Diuretic class used in renal insufficiency and cardiac failure or cirrhosis",
+  "a": "Loop diuretics",
+  "e": ""
+ },
+ {
+  "q": "Adverse effects of loop diuretics",
+  "a": "Hypokalemia and hypotension",
+  "e": ""
+ },
+ {
+  "q": "Potassium-sparing diuretics named in the lecture",
+  "a": "Spironolactone, eplerenone, amiloride, triamterene",
+  "e": ""
+ },
+ {
+  "q": "Potassium-sparing diuretics that are aldosterone receptor blockers",
+  "a": "Spironolactone and eplerenone",
+  "e": ""
+ },
+ {
+  "q": "Potassium-sparing diuretics: MOA",
+  "a": "Aldosterone receptor blockade and inhibition of Na+ transport at the DCT and collecting ducts",
+  "e": ""
+ },
+ {
+  "q": "Clinical role of potassium-sparing diuretics",
+  "a": "Adjunct to K+-wasting diuretics",
+  "e": ""
+ },
+ {
+  "q": "Adverse effect of potassium-sparing diuretics",
+  "a": "Hyperkalemia",
+  "e": ""
+ },
+ {
+  "q": "Antihypertensive class that inhibits β receptors",
+  "a": "β-blockers",
+  "e": ""
+ },
+ {
+  "q": "β-blocker effect on HR and cardiac output",
+  "a": "Decreased HR → decreased cardiac output",
+  "e": ""
+ },
+ {
+  "q": "β-blocker effect on the CNS",
+  "a": "Decreased sympathetic outflow from the CNS",
+  "e": ""
+ },
+ {
+  "q": "β-blocker effect on the kidneys",
+  "a": "Inhibits renin release (decreased aldosterone)",
+  "e": ""
+ },
+ {
+  "q": "Three MOAs of β-blockers",
+  "a": "Decreased HR/cardiac output; decreased CNS sympathetic outflow; inhibited renin release from kidneys",
+  "e": ""
+ },
+ {
+  "q": "Prototype β-blocker (non-cardioselective)",
+  "a": "Propranolol",
+  "e": ""
+ },
+ {
+  "q": "Cardioselective β-blockers named in the lecture",
+  "a": "Metoprolol, atenolol, nebivolol, esmolol",
+  "e": ""
+ },
+ {
+  "q": "Cardioselective β-blocker that produces nitric oxide, a vasodilator",
+  "a": "Nebivolol",
+  "e": ""
+ },
+ {
+  "q": "Ultrashort-acting cardioselective β-blocker, available IV only",
+  "a": "Esmolol",
+  "e": ""
+ },
+ {
+  "q": "Therapeutic uses of β-blockers",
+  "a": "Hypertension with concomitant heart disease, history of MI, angina pectoris, chronic heart failure",
+  "e": ""
+ },
+ {
+  "q": "Contraindications of β-blockers",
+  "a": "Bronchial asthma, heart blocks, peripheral vascular disease",
+  "e": ""
+ },
+ {
+  "q": "Adverse effects of β-blockers",
+  "a": "Bradycardia, hypotension, fatigue, insomnia, sexual dysfunction",
+  "e": ""
+ },
+ {
+  "q": "Antihypertensive class contraindicated in bronchial asthma",
+  "a": "β-blockers",
+  "e": ""
+ },
+ {
+  "q": "Direct-acting smooth muscle relaxants named in the lecture",
+  "a": "Hydralazine and minoxidil",
+  "e": ""
+ },
+ {
+  "q": "Class of direct-acting smooth muscle relaxants that the lecture says are NOT used primarily for hypertension",
+  "a": "Vasodilators (hydralazine and minoxidil)",
+  "e": ""
+ },
+ {
+  "q": "Representative dihydropyridine calcium channel blocker",
+  "a": "Nifedipine",
+  "e": ""
+ },
+ {
+  "q": "Other dihydropyridine calcium channel blockers named in the lecture",
+  "a": "Amlodipine, felodipine",
+  "e": ""
+ },
+ {
+  "q": "Non-dihydropyridine calcium channel blockers",
+  "a": "Verapamil and diltiazem",
+  "e": ""
+ },
+ {
+  "q": "Description of calcium channel blockers as antihypertensives",
+  "a": "Moderately efficacious, orally active, well tolerated",
+  "e": ""
+ },
+ {
+  "q": "Selective α2 agonist prototype among centrally acting antihypertensives",
+  "a": "Clonidine",
+  "e": ""
+ },
+ {
+  "q": "Other centrally acting adrenergic agonist named in the lecture",
+  "a": "Methyldopa",
+  "e": ""
+ },
+ {
+  "q": "Centrally acting adrenergic agonist MOA",
+  "a": "Inhibition of sympathetic vasomotor centers → decreased sympathetic outflow to the periphery",
+  "e": ""
+ },
+ {
+  "q": "Clinical use of clonidine (and methyldopa)",
+  "a": "Hypertension not responsive to one or two agents (NOT first line)",
+  "e": ""
+ },
+ {
+  "q": "Adverse phenomenon of clonidine if withdrawn abruptly",
+  "a": "Rebound hypertension",
+  "e": ""
+ },
+ {
+  "q": "Ultimate goal of controlling or regulating blood pressure",
+  "a": "Prevention of complications, mainly cardiovascular",
+  "e": ""
+ },
+ {
+  "q": "Two types of interventions to achieve BP control",
+  "a": "Pharmacologic and non-pharmacologic",
+  "e": ""
+ },
+ {
+  "q": "How the regimen of treatment of hypertension should be tailored",
+  "a": "Individualized, focused on specific areas of BP physiology to achieve maximum drug efficacy",
+  "e": ""
+ }
+]
