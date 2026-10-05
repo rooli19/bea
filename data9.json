@@ -1,0 +1,1257 @@
+[
+ {
+  "q": "Activator of heat-cured denture base resin",
+  "a": "Heat",
+  "e": ""
+ },
+ {
+  "q": "Activator of self-cured denture base resin",
+  "a": "p-toluidine",
+  "e": ""
+ },
+ {
+  "q": "Denture base resin that is less dimensionally stable, has higher strength and is more color stable",
+  "a": "Heat-cured resin",
+  "e": ""
+ },
+ {
+  "q": "Denture base resin that is more dimensionally stable, has lower strength and is less color stable",
+  "a": "Self-cured resin",
+  "e": ""
+ },
+ {
+  "q": "Knoop hardness (KHN) of heat-cured resin",
+  "a": "20",
+  "e": ""
+ },
+ {
+  "q": "Knoop hardness (KHN) of self-cured resin",
+  "a": "16-18",
+  "e": ""
+ },
+ {
+  "q": "Residual monomer content of heat-cured resin",
+  "a": "0.2-0.57%",
+  "e": ""
+ },
+ {
+  "q": "Residual monomer content of self-cured resin",
+  "a": "3-5%",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that abrades easily; used when the opposing arch still has natural teeth",
+  "a": "Resin",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that can abrade opposing natural teeth and even metal crowns",
+  "a": "Porcelain",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that is tougher",
+  "a": "Resin",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that is brittle",
+  "a": "Porcelain",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that is not dimensionally stable; shrinks when the denture is left exposed to air",
+  "a": "Resin",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that is dimensionally stable",
+  "a": "Porcelain",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that is silent on contact",
+  "a": "Resin",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that provides a clicking sound",
+  "a": "Porcelain",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that gives an unstable vertical dimension and significant wear over time",
+  "a": "Resin",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that gives a stable vertical dimension with no significant wear over time",
+  "a": "Porcelain",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that is easier to polish and grind (softer); premature contact does not cause pain",
+  "a": "Resin",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that is hard to grind (grinding removes the luster); premature contact can cause TMJ inflammation",
+  "a": "Porcelain",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that is chemically bonded to the denture base",
+  "a": "Resin",
+  "e": ""
+ },
+ {
+  "q": "Pontic material that is mechanically retained with the use of pins",
+  "a": "Porcelain",
+  "e": ""
+ },
+ {
+  "q": "Pontic material used for patients with short interarch distance",
+  "a": "Resin",
+  "e": ""
+ },
+ {
+  "q": "Pontic material NOT used for patients with short interarch distance",
+  "a": "Porcelain",
+  "e": ""
+ },
+ {
+  "q": "Highly cross-linked polymeric materials reinforced by a dispersion of glass, crystalline, or resin filler particles and/or short fibers bound to the matrix by silane coupling agents",
+  "a": "Dental composites",
+  "e": ""
+ },
+ {
+  "q": "The three structural components of dental resin-based composites",
+  "a": "Matrix, filler, coupling agent",
+  "e": ""
+ },
+ {
+  "q": "Plastic resin material that forms a continuous phase and binds the filler particles",
+  "a": "Matrix",
+  "e": ""
+ },
+ {
+  "q": "Reinforcing particles and/or fibers dispersed in the matrix of a composite",
+  "a": "Filler",
+  "e": ""
+ },
+ {
+  "q": "Bonding agent that promotes adhesion between the filler and the resin matrix",
+  "a": "Coupling agent",
+  "e": ""
+ },
+ {
+  "q": "Dispensing forms of composite resin",
+  "a": "Powder-liquid form and paste-liquid form (single paste, cured by UV light/halogen light; dual cure for cementing medium)",
+  "e": ""
+ },
+ {
+  "q": "Single-paste composites polymerize through this",
+  "a": "UV light / halogen light",
+  "e": ""
+ },
+ {
+  "q": "Light source preferred for curing composites (deep penetration; cures a layer up to a maximum of 2 mm)",
+  "a": "Halogen light",
+  "e": ""
+ },
+ {
+  "q": "Maximum thickness of composite layer that halogen light can cure",
+  "a": "2 mm",
+  "e": ""
+ },
+ {
+  "q": "Composite dispensing form used as a cementing medium",
+  "a": "Dual cure",
+  "e": ""
+ },
+ {
+  "q": "The six components of composite composition",
+  "a": "Resin matrix, inorganic filler particles, coupling agent, activator-initiator system, polymerization inhibitors, pigments (plus UV absorbers/additives)",
+  "e": ""
+ },
+ {
+  "q": "Common filler particles in composites",
+  "a": "Quartz, glasses, submicron silica particles",
+  "e": ""
+ },
+ {
+  "q": "Composite made up of just the resin matrix, without fillers",
+  "a": "Unfilled resin",
+  "e": ""
+ },
+ {
+  "q": "Composite made up of resin matrix AND fillers (a.k.a. composite)",
+  "a": "Filled resin",
+  "e": ""
+ },
+ {
+  "q": "Resin matrix monomer: bisphenol-A glycidyl methacrylate",
+  "a": "Bis-GMA",
+  "e": ""
+ },
+ {
+  "q": "Resin matrix monomer: urethane dimethacrylate",
+  "a": "UDMA",
+  "e": ""
+ },
+ {
+  "q": "Resin matrix monomer: triethylene glycol dimethacrylate",
+  "a": "TEGDMA",
+  "e": ""
+ },
+ {
+  "q": "Abbreviation for bisphenol-A glycidyl methacrylate",
+  "a": "Bis-GMA",
+  "e": ""
+ },
+ {
+  "q": "Abbreviation for urethane dimethacrylate",
+  "a": "UDMA",
+  "e": ""
+ },
+ {
+  "q": "Abbreviation for triethylene glycol dimethacrylate",
+  "a": "TEGDMA",
+  "e": ""
+ },
+ {
+  "q": "Occurs as monomers are converted to polymers; leads to gap formation between tooth and restoration",
+  "a": "Polymerization shrinkage",
+  "e": ""
+ },
+ {
+  "q": "Effect of filler particles on the matrix resin",
+  "a": "Reinforcement of the matrix resin",
+  "e": ""
+ },
+ {
+  "q": "Effect of filler particles on hardness, strength and wear",
+  "a": "Increased hardness and strength, decreased wear",
+  "e": ""
+ },
+ {
+  "q": "Effect of filler particles on polymerization shrinkage",
+  "a": "Reduction in polymerization shrinkage",
+  "e": ""
+ },
+ {
+  "q": "Effect of filler particles on thermal expansion and contraction",
+  "a": "Reduction in thermal expansion and contraction",
+  "e": ""
+ },
+ {
+  "q": "How filler particles improve workability",
+  "a": "Increase viscosity (liquid monomer plus filler yields a paste consistency)",
+  "e": ""
+ },
+ {
+  "q": "Effect of filler particles on water sorption, softening and staining",
+  "a": "Reduction in water sorption, softening and staining",
+  "e": ""
+ },
+ {
+  "q": "Fillers/glasses that increase radiopacity and diagnostic sensitivity of composites",
+  "a": "Strontium (Sr) and barium (Ba) glass and other heavy metal compounds that absorb x-rays",
+  "e": ""
+ },
+ {
+  "q": "Curing shrinkage of composite is offset in proportion to this",
+  "a": "The loading (amount) of filler",
+  "e": ""
+ },
+ {
+  "q": "Activator of the composite activator-initiator system",
+  "a": "Visible blue light",
+  "e": ""
+ },
+ {
+  "q": "Photosensitizer in the free radical initiating system of composites",
+  "a": "Camphorquinone (CQ)",
+  "e": ""
+ },
+ {
+  "q": "Amine initiator in the composite free radical initiating system",
+  "a": "Dimethylaminoethyl methacrylate (DMAEMA)",
+  "e": ""
+ },
+ {
+  "q": "Abbreviation for dimethylaminoethyl methacrylate",
+  "a": "DMAEMA",
+  "e": ""
+ },
+ {
+  "q": "Mechanism of light-cured composite polymerization",
+  "a": "CQ → (photo-excitation) → excited CQ + DMAEMA → free radical → polymerization",
+  "e": ""
+ },
+ {
+  "q": "Class of coupling agents used in composites",
+  "a": "Organosilanes",
+  "e": ""
+ },
+ {
+  "q": "Example of a coupling agent in composites",
+  "a": "γ-methacryloxypropyltrimethoxysilane",
+  "e": ""
+ },
+ {
+  "q": "Coupling agent function: prevents water from penetrating along the resin-filler interface",
+  "a": "Inhibits leaching",
+  "e": ""
+ },
+ {
+  "q": "Coupling agent function: allows filler particles to bond to the resin matrix",
+  "a": "Bonds filler to matrix (improves physical and mechanical properties)",
+  "e": ""
+ },
+ {
+  "q": "Minimizes or prevents spontaneous or accidental polymerization of monomers; extends storage life; ensures sufficient working time",
+  "a": "Polymerization inhibitors",
+  "e": ""
+ },
+ {
+  "q": "Common polymerization inhibitor and its amount",
+  "a": "Butylated hydroxytoluene (BHT), 0.01 wt%",
+  "e": ""
+ },
+ {
+  "q": "Provide the opacity or translucency that makes composites similar to natural tooth tissue",
+  "a": "Optical modifiers / pigments",
+  "e": ""
+ },
+ {
+  "q": "Metal oxide particles used as pigments in composites and their amount",
+  "a": "Titanium dioxide and aluminum oxide, 0.001-0.007 wt%",
+  "e": ""
+ },
+ {
+  "q": "Alternate exuding or imbibing of fluids by the resin because of thermal change in a filled resin",
+  "a": "Percolation",
+  "e": ""
+ },
+ {
+  "q": "Composite advantage: radiopaque due to this component",
+  "a": "Barium glass",
+  "e": ""
+ },
+ {
+  "q": "Compressive strength of composite resin",
+  "a": "24,000 psi / 235 MPa",
+  "e": ""
+ },
+ {
+  "q": "Polymerization shrinkage of composite resin",
+  "a": "1.4-7%",
+  "e": ""
+ },
+ {
+  "q": "Composite resin is insoluble to oral fluids, but must never contact this before polymerization",
+  "a": "Oral fluids",
+  "e": ""
+ },
+ {
+  "q": "Advantages of composite resin (listed)",
+  "a": "Superior strength, less polymerization shrinkage, less coefficient of thermal expansion, insoluble to oral fluids, excellent esthetics, abrasion/fracture resistance, high bond strength, radiopaque, easy to manipulate, easy to polish and finish",
+  "e": ""
+ },
+ {
+  "q": "Disadvantages of composite resin",
+  "a": "Polymerization shrinkage (may result in recurrent lesion), discoloration, surface roughness",
+  "e": ""
+ },
+ {
+  "q": "Bond strength of composite resin to enamel",
+  "a": "3,500 psi / 24 MPa",
+  "e": ""
+ },
+ {
+  "q": "Bond strength of composite resin to dentin",
+  "a": "700 psi / 5 MPa",
+  "e": ""
+ },
+ {
+  "q": "Composite classification: small/fine particles; used for posterior teeth",
+  "a": "Small particle / fine particle composite",
+  "e": ""
+ },
+ {
+  "q": "Composite most commonly used for posterior and also anterior teeth; greater strength and opaque",
+  "a": "Hybrid / blended composite",
+  "e": ""
+ },
+ {
+  "q": "Composite for posterior teeth that is difficult to polish because of the bigger filler size",
+  "a": "Conventional / traditional / macrofilled composite",
+  "e": ""
+ },
+ {
+  "q": "Composite most commonly used for class III and V anterior teeth (esthetic, permanent smoothness, easy to polish, excellent color stability)",
+  "a": "Microfilled / polishable composite",
+  "e": ""
+ },
+ {
+  "q": "Etchant used for composite on enamel",
+  "a": "37% phosphoric acid solution",
+  "e": ""
+ },
+ {
+  "q": "Etching time and area of application on enamel",
+  "a": "15 seconds, placed 1-2 mm from the cavosurface margin of the enamel",
+  "e": ""
+ },
+ {
+  "q": "Appearance of properly etched enamel",
+  "a": "Frosty (opaque)",
+  "e": ""
+ },
+ {
+  "q": "What to do if etched enamel shows no frosty change",
+  "a": "Reapply the etchant",
+  "e": ""
+ },
+ {
+  "q": "Inlay cemented back using resin to compensate for polymerization shrinkage of resin",
+  "a": "Direct inlay",
+  "e": ""
+ },
+ {
+  "q": "Inlay made by taking an impression of the prepared cavity, casting, building composite on the cast, polishing, then cementing",
+  "a": "Indirect inlay",
+  "e": ""
+ },
+ {
+  "q": "Restoration packed in the cavity and polished",
+  "a": "Direct restoration",
+  "e": ""
+ },
+ {
+  "q": "Restoration removed from the cavity then cemented back",
+  "a": "Indirect restoration",
+  "e": ""
+ },
+ {
+  "q": "Greek word 'keramikos' meaning 'burnt stuff'",
+  "a": "Ceramics",
+  "e": ""
+ },
+ {
+  "q": "Compounds of one or more metals with a nonmetallic element, usually O2",
+  "a": "Ceramics",
+  "e": ""
+ },
+ {
+  "q": "Ceramics equation",
+  "a": "Ceramics = metals + nonmetallic element",
+  "e": ""
+ },
+ {
+  "q": "Properties of ceramics (chemical stability and mechanics)",
+  "a": "Strong, hard, brittle, inert nonconductors of thermal and electrical energy",
+  "e": ""
+ },
+ {
+  "q": "Metals found in dental ceramics",
+  "a": "Aluminum, calcium, lithium, magnesium, potassium, silicon, sodium, tin, titanium, zirconium",
+  "e": ""
+ },
+ {
+  "q": "Introduced porcelain jacket crowns around the 1900s",
+  "a": "Charles Land",
+  "e": ""
+ },
+ {
+  "q": "Developed ceramics that could bond to metal in the late 1950s to early 1960s",
+  "a": "McLean",
+  "e": ""
+ },
+ {
+  "q": "Ceramic type developed by McLean (late 1950s-early 1960s)",
+  "a": "Porcelain fused to metal",
+  "e": ""
+ },
+ {
+  "q": "Emergence of this type of crown in the 1990s",
+  "a": "All-ceramic crowns",
+  "e": ""
+ },
+ {
+  "q": "Examples of 1990s all-ceramic developments",
+  "a": "Castable glass ceramics, shrink-free core ceramics, CAD-CAM",
+  "e": ""
+ },
+ {
+  "q": "Abbreviation CAD-CAM",
+  "a": "Computer-aided design / computer-aided machining",
+  "e": ""
+ },
+ {
+  "q": "The six classifications of dental porcelain",
+  "a": "By firing temperature, type, function within the restoration, microstructure, processing method, and use",
+  "e": ""
+ },
+ {
+  "q": "Porcelain firing temperature: 1300°C or above",
+  "a": "High fusing",
+  "e": ""
+ },
+ {
+  "q": "Porcelain firing temperature: 1101 to 1300°C",
+  "a": "Medium fusing",
+  "e": ""
+ },
+ {
+  "q": "Porcelain firing temperature: 850 to 1100°C",
+  "a": "Low fusing",
+  "e": ""
+ },
+ {
+  "q": "Porcelain firing temperature: less than 850°C",
+  "a": "Ultralow fusing",
+  "e": ""
+ },
+ {
+  "q": "Porcelains used for manufacturing denture porcelain teeth",
+  "a": "High and medium fusing",
+  "e": ""
+ },
+ {
+  "q": "Porcelains used for manufacturing crowns and bridges",
+  "a": "Low and ultralow fusing",
+  "e": ""
+ },
+ {
+  "q": "Dental porcelain classification according to function within the restoration",
+  "a": "Core ceramics, opaquer ceramics, veneering ceramics",
+  "e": ""
+ },
+ {
+  "q": "Layer order of a ceramic crown, outer to inner",
+  "a": "Incisal porcelain → dentin porcelain → Procera core → 360° shoulder or deep chamfer",
+  "e": ""
+ },
+ {
+  "q": "Dental porcelain types (by type classification)",
+  "a": "Feldspathic, leucite-reinforced glass ceramics, tetrasilicic fluormica-based glass ceramics, lithia disilicate-based ceramics, alumina-reinforced, spinel-reinforced, zirconia-reinforced ceramics",
+  "e": ""
+ },
+ {
+  "q": "Dental porcelain classification by microstructure",
+  "a": "Crystalline ceramics, crystal-containing glasses, glass ceramics",
+  "e": ""
+ },
+ {
+  "q": "Process of heating closely packed particles to achieve interparticle bonding and sufficient diffusion, decreasing surface area or increasing density",
+  "a": "Sintering",
+  "e": ""
+ },
+ {
+  "q": "Ceramic processing where ceramic is placed into an investment mold and the lost wax process is used",
+  "a": "Casting",
+  "e": ""
+ },
+ {
+  "q": "Ceramic processing using CAD/CAM; sold in a partially sintered, machinable state that is fired again after machining to form a hard ceramic",
+  "a": "Machining",
+  "e": ""
+ },
+ {
+  "q": "Uses of dental ceramics",
+  "a": "Complete denture, fixed bridges, metal-ceramics, veneers, inlays/onlays, crowns",
+  "e": ""
+ },
+ {
+  "q": "Porcelain component: basic glass former",
+  "a": "Feldspar",
+  "e": ""
+ },
+ {
+  "q": "Porcelain component: binder; gives opacity",
+  "a": "Kaolin",
+  "e": ""
+ },
+ {
+  "q": "Porcelain component: filler",
+  "a": "Quartz",
+  "e": ""
+ },
+ {
+  "q": "Porcelain component: glass modifiers",
+  "a": "Alkalies",
+  "e": ""
+ },
+ {
+  "q": "Porcelain component: modifies color",
+  "a": "Color pigments",
+  "e": ""
+ },
+ {
+  "q": "Flexure strength of porcelain",
+  "a": "65 MPa (feldspathic porcelain) to 200 MPa (machined zirconia)",
+  "e": ""
+ },
+ {
+  "q": "Compressive strength of porcelain",
+  "a": "350-550 MPa",
+  "e": ""
+ },
+ {
+  "q": "Tensile strength of porcelain",
+  "a": "20-60 MPa",
+  "e": ""
+ },
+ {
+  "q": "Shear strength of porcelain; reason",
+  "a": "Low; due to lack of ductility caused by the complex structure",
+  "e": ""
+ },
+ {
+  "q": "Modulus of elasticity of porcelain",
+  "a": "69-210 GPa (high stiffness)",
+  "e": ""
+ },
+ {
+  "q": "Surface hardness of porcelain",
+  "a": "370 to 400 VHN",
+  "e": ""
+ },
+ {
+  "q": "Thermal conductivity of porcelain",
+  "a": "Low",
+  "e": ""
+ },
+ {
+  "q": "Specific gravity of porcelain",
+  "a": "2.242",
+  "e": ""
+ },
+ {
+  "q": "Chemical stability of porcelain",
+  "a": "Insoluble and impermeable to oral fluids",
+  "e": ""
+ },
+ {
+  "q": "Factors affecting strength of porcelain",
+  "a": "Composition, surface integrity (imperfections reduce strength), improper condensation, firing procedures",
+  "e": ""
+ },
+ {
+  "q": "Advantages of porcelain",
+  "a": "Esthetics, no galvanic reactions, no corrosion, chemically inert, good electrical and thermal insulator",
+  "e": ""
+ },
+ {
+  "q": "Disadvantages of porcelain",
+  "a": "Brittle (easily fractures), can abrade natural dentition, more chair time, more expensive, more technique sensitive",
+  "e": ""
+ },
+ {
+  "q": "Requirements of a good cement",
+  "a": "Easy to manipulate, biocompatible, durable, low coefficient of thermal expansion, dimensionally stable, esthetic suitability, sufficient adhesive strength",
+  "e": ""
+ },
+ {
+  "q": "The nine dental cements listed",
+  "a": "Zinc phosphate, zinc oxide eugenol, polycarboxylate, calcium hydroxide, silicate, glass ionomer cement, composite, cavity varnish, amalgam",
+  "e": ""
+ },
+ {
+  "q": "Cement used for permanent restoration",
+  "a": "Glass ionomer cement",
+  "e": ""
+ },
+ {
+  "q": "Cements for provisional/intermediate restoration (emergencies; tooth symptomatic or carious defect large)",
+  "a": "Reinforced ZOE, polycarboxylate, zinc phosphate",
+  "e": ""
+ },
+ {
+  "q": "Low-strength liner used when pulp exposure is suspected",
+  "a": "Calcium hydroxide Ca(OH)2",
+  "e": ""
+ },
+ {
+  "q": "High-strength base/liner (insulation and support; deep cavity with 2 mm of dentin left; thick, putty-like)",
+  "a": "GIC liner, cavity varnish, ZOE",
+  "e": ""
+ },
+ {
+  "q": "Cement that provides mechanical support for a restorative material when an excessive amount of tooth structure is removed",
+  "a": "Core build-up",
+  "e": ""
+ },
+ {
+  "q": "Core build-up materials",
+  "a": "Resin-modified GIC, metal-modified GIC, resins/composites, alloy plus zinc phosphate cements",
+  "e": ""
+ },
+ {
+  "q": "Viscous material placed between the restoration and the tooth surface to attach the two surfaces together",
+  "a": "Luting agent / cementing medium",
+  "e": ""
+ },
+ {
+  "q": "Luting agents",
+  "a": "Zinc phosphate, zinc polycarboxylate, resin ionomer, resin cement",
+  "e": ""
+ },
+ {
+  "q": "Covers the pits and fissures of young permanent molars to prevent onset of caries",
+  "a": "Pit and fissure sealant",
+  "e": ""
+ },
+ {
+  "q": "Pit and fissure sealant materials",
+  "a": "GIC, resin sealants",
+  "e": ""
+ },
+ {
+  "q": "First choice root canal sealer",
+  "a": "ZOE cement",
+  "e": ""
+ },
+ {
+  "q": "Root canal sealer for pediatric cases",
+  "a": "Calcium hydroxide Ca(OH)2",
+  "e": ""
+ },
+ {
+  "q": "Guides in choosing a cement base",
+  "a": "Extent of cavity design; proximity of the pulp to the wall of the prepared cavity; type of permanent restoration used",
+  "e": ""
+ },
+ {
+  "q": "Zinc phosphate powder: basic material; 90%; opaque",
+  "a": "Zinc oxide (ZnO)",
+  "e": ""
+ },
+ {
+  "q": "Zinc phosphate powder: 10% modifier",
+  "a": "Magnesium oxide (MgO)",
+  "e": ""
+ },
+ {
+  "q": "Zinc phosphate cement liquid",
+  "a": "Phosphoric acid (H3PO4)",
+  "e": ""
+ },
+ {
+  "q": "pH of zinc phosphate liquid",
+  "a": "3.5 (very acidic)",
+  "e": ""
+ },
+ {
+  "q": "Component of zinc phosphate liquid that controls ionization of the acid and alters setting time",
+  "a": "Water",
+  "e": ""
+ },
+ {
+  "q": "Compounds in zinc phosphate liquid that act as buffers",
+  "a": "Aluminum phosphate, magnesium phosphate, zinc phosphate",
+  "e": ""
+ },
+ {
+  "q": "Zinc phosphate ADA Type I",
+  "a": "Cementing / luting agent",
+  "e": ""
+ },
+ {
+  "q": "Zinc phosphate ADA Type II",
+  "a": "Base or temporary restoration",
+  "e": ""
+ },
+ {
+  "q": "Other names of polycarboxylate cement",
+  "a": "Polyacrylate cement / zinc polycarboxylate",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate uses",
+  "a": "Luting agent, base (thick and doughy consistency), temporary restoration",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate liquid",
+  "a": "Aqueous solution of polyacrylic acid",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate powder components",
+  "a": "Zinc oxide, magnesium oxide, calcium hydroxide (acts as modifier)",
+  "e": ""
+ },
+ {
+  "q": "Component responsible for chemical bonding of polycarboxylate to tooth tissue (free carboxyl group of the PA acid liquid and Ca of enamel and dentin)",
+  "a": "Polyacrylic acid",
+  "e": ""
+ },
+ {
+  "q": "Why polycarboxylate cannot reach the pulp tissue",
+  "a": "Polyacrylic acid is big in molecular size",
+  "e": ""
+ },
+ {
+  "q": "Dentin thickness above which no pulp protector is needed before applying polycarboxylate",
+  "a": "Greater than 1 mm of dentin left",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate liquid additive that decreases viscosity and gelation",
+  "a": "Itaconic acid",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate liquid additive that increases manipulation time",
+  "a": "Tartaric acid",
+  "e": ""
+ },
+ {
+  "q": "Cement whose advantage over ZnPO4 is chemical bonding to tooth structure via polyacrylic acid binding calcium ions on enamel or dentin, with minimal pulp irritation",
+  "a": "Polycarboxylate cement",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate compressive strength",
+  "a": "8,000 psi",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate tensile strength",
+  "a": "1,030-2,250 psi",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate pH",
+  "a": "1.7",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate mixing time",
+  "a": "45-60 sec",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate setting time",
+  "a": "6-9 min",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate instruments for mixing",
+  "a": "Glass slab and plastic cement spatula",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate powder/liquid division",
+  "a": "Powder divided into 2 + 1 portions; liquid as 1 (L)",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate mixing motion",
+  "a": "Rotatory, then folding motion",
+  "e": ""
+ },
+ {
+  "q": "Polycarboxylate consistency",
+  "a": "Thick and creamy (1/2 to 3/4 inch string); cement surface appears glossy",
+  "e": ""
+ },
+ {
+  "q": "Time within which polycarboxylate must be seated",
+  "a": "2 minutes",
+  "e": ""
+ },
+ {
+  "q": "Cement that is a combination of silicate and ZnPO4",
+  "a": "Zinc silicophosphate cement",
+  "e": ""
+ },
+ {
+  "q": "Zinc silicophosphate powder (90%): responsible for translucency",
+  "a": "Silicate = silica and alumina glasses",
+  "e": ""
+ },
+ {
+  "q": "Zinc silicophosphate powder: 10%",
+  "a": "ZnO",
+  "e": ""
+ },
+ {
+  "q": "Zinc silicophosphate liquid",
+  "a": "Phosphoric acid, with AlPO4, ZnPO4, MgPO4 and water",
+  "e": ""
+ },
+ {
+  "q": "A white powder with a slightly bitter alkaline taste, produced by the action of calcium oxide with water",
+  "a": "Calcium hydroxide Ca(OH)2",
+  "e": ""
+ },
+ {
+  "q": "Most alkaline cement; pH 11.5-13",
+  "a": "Calcium hydroxide",
+  "e": ""
+ },
+ {
+  "q": "pH of calcium hydroxide",
+  "a": "11.5-13",
+  "e": ""
+ },
+ {
+  "q": "Uses of calcium hydroxide",
+  "a": "Liner, root canal sealer, pulp-capping agent",
+  "e": ""
+ },
+ {
+  "q": "Calcium hydroxide compressive strength",
+  "a": "< 1200 psi",
+  "e": ""
+ },
+ {
+  "q": "Calcium hydroxide solubility rate",
+  "a": "High",
+  "e": ""
+ },
+ {
+  "q": "Properties of calcium hydroxide (biologic)",
+  "a": "Biocompatible to the pulp; can neutralize acid; can form reparative dentin; can remineralize dentin",
+  "e": ""
+ },
+ {
+  "q": "Calcium hydroxide dispensing forms",
+  "a": "Powder form (mixed with distilled water into a paste), single paste (light-cured, stronger than 2-paste, controllable setting time), two paste form",
+  "e": ""
+ },
+ {
+  "q": "Calcium hydroxide: single paste form advantage over two-paste",
+  "a": "Light-cured; higher compressive strength; setting time is controllable",
+  "e": ""
+ },
+ {
+  "q": "Instruments for manipulating 2-paste calcium hydroxide",
+  "a": "Mixing pad and ball-tip end applicator",
+  "e": ""
+ },
+ {
+  "q": "Division of 2-paste calcium hydroxide",
+  "a": "Equal small dots of base and catalyst paste",
+  "e": ""
+ },
+ {
+  "q": "Mixing motion of 2-paste calcium hydroxide",
+  "a": "Rotatory",
+  "e": ""
+ },
+ {
+  "q": "Mixing time of 2-paste calcium hydroxide",
+  "a": "3-5 sec",
+  "e": ""
+ },
+ {
+  "q": "Consistency endpoint of 2-paste calcium hydroxide",
+  "a": "Homogeneous color",
+  "e": ""
+ },
+ {
+  "q": "Seating time of 2-paste calcium hydroxide",
+  "a": "Within 30 sec",
+  "e": ""
+ },
+ {
+  "q": "Natural gums such as copal, rosin or synthetic resin dissolved in an organic solvent like acetone, ether or chloroform",
+  "a": "Cavity varnish",
+  "e": ""
+ },
+ {
+  "q": "Dispensing form of cavity varnish",
+  "a": "Liquid (like colorless nail polish)",
+  "e": ""
+ },
+ {
+  "q": "Cavity varnish application tools",
+  "a": "Small enamel hair brush or small cotton pellet with cotton pliers",
+  "e": ""
+ },
+ {
+  "q": "Why a second layer of cavity varnish is applied",
+  "a": "To cover the bubbles trapped in the first application",
+  "e": ""
+ },
+ {
+  "q": "Importance of cavity varnish (what it prevents)",
+  "a": "Chemical irritation from acidic cement, galvanic action, discoloration under amalgam (in absence of base), marginal leakage under amalgam; gives better adaptation of amalgam",
+  "e": ""
+ },
+ {
+  "q": "Modified zinc phosphate with copper salts/copper oxide",
+  "a": "Copper cement",
+  "e": ""
+ },
+ {
+  "q": "Why copper salts/oxide are added to copper cement",
+  "a": "To give antibacterial property",
+  "e": ""
+ },
+ {
+  "q": "Effect of copper on zinc phosphate cement acidity",
+  "a": "Makes it more acidic",
+  "e": ""
+ },
+ {
+  "q": "Copper cement Type I composition",
+  "a": "25% CuO, 65% ZnO, 10% MgO; pH = 0.8",
+  "e": ""
+ },
+ {
+  "q": "Copper cement Type II composition",
+  "a": "2-5% CuO, 85-88% ZnO, 10% MgO; pH = 2.5",
+  "e": ""
+ },
+ {
+  "q": "Tooth-colored cement with silica-alumina glass powder",
+  "a": "Silicate cement",
+  "e": ""
+ },
+ {
+  "q": "Silicate cement fluoride content in powder",
+  "a": "15% fluoride (Na and CaF)",
+  "e": ""
+ },
+ {
+  "q": "Silicate powder components that act as modifiers",
+  "a": "Lime and cryolite",
+  "e": ""
+ },
+ {
+  "q": "Silicate cement liquid",
+  "a": "H3PO4 (orthophosphoric acid), AlPO4, ZnPO4, MgPO4, H2O; can pass through dentinal tubules",
+  "e": ""
+ },
+ {
+  "q": "Apparatus for silicate cement",
+  "a": "Plastic spatula and glass slab / oil-impervious paper",
+  "e": ""
+ },
+ {
+  "q": "Number of equal parts the silicate powder is divided into",
+  "a": "6 equal parts",
+  "e": ""
+ },
+ {
+  "q": "Silicate mixing motion",
+  "a": "Rotatory and folding",
+  "e": ""
+ },
+ {
+  "q": "Silicate consistency",
+  "a": "Heavy putty; surface of the mix should be moist and shiny",
+  "e": ""
+ },
+ {
+  "q": "Why work on a narrow working area when mixing silicate",
+  "a": "To prevent air-trapped bubbles (weaken the set) and get the correct consistency",
+  "e": ""
+ },
+ {
+  "q": "Never use this spatula for silicate (removes sulfide ions → discoloration)",
+  "a": "Stainless spatula",
+  "e": ""
+ },
+ {
+  "q": "Bonding of silicate cement to tooth",
+  "a": "No chemical bonding",
+  "e": ""
+ },
+ {
+  "q": "Wait time before polishing silicate",
+  "a": "24-48 hours",
+  "e": ""
+ },
+ {
+  "q": "Setting time of silicate",
+  "a": "3-8 minutes",
+  "e": ""
+ },
+ {
+  "q": "Silicate property: releases fluoride",
+  "a": "Anticariogenic",
+  "e": ""
+ },
+ {
+  "q": "Most soluble among the tooth-colored restorative materials",
+  "a": "Silicate cement",
+  "e": ""
+ },
+ {
+  "q": "pH of silicate cement at insertion",
+  "a": "2.8 (very acidic)",
+  "e": ""
+ },
+ {
+  "q": "Silicate uses",
+  "a": "Final restorative material for surfaces without direct masticatory force: class III, V, lingual and buccal pits",
+  "e": ""
+ },
+ {
+  "q": "Pulp protection before silicate in ideal-depth cavities",
+  "a": "Paint varnish into the prepared cavity before silicate",
+  "e": ""
+ },
+ {
+  "q": "Pulp protection before silicate in deep-seated cavities",
+  "a": "Apply a liner to prevent chemical irritation",
+  "e": ""
+ },
+ {
+  "q": "When silicate must never be used",
+  "a": "When the cavity touches the gum (very soluble to oral fluids)",
+  "e": ""
+ },
+ {
+  "q": "Factors that control the setting time of silicate",
+  "a": "P:L ratio, temperature of mixing apparatus, humidity of room, rate of mixing the powder, particle size of the powder",
+  "e": ""
+ },
+ {
+  "q": "Silicate solubility rate",
+  "a": "0.7%",
+  "e": ""
+ },
+ {
+  "q": "Silicate compressive strength",
+  "a": "26,000 psi",
+  "e": ""
+ },
+ {
+  "q": "Silicate tensile strength",
+  "a": "500 psi",
+  "e": ""
+ },
+ {
+  "q": "Silicate hardness",
+  "a": "70 KHN",
+  "e": ""
+ },
+ {
+  "q": "Introduced GIC and year",
+  "a": "Wilson & Kent, 1972",
+  "e": ""
+ },
+ {
+  "q": "2nd most versatile cement, less soluble than silicate",
+  "a": "Glass ionomer cement (GIC)",
+  "e": ""
+ },
+ {
+  "q": "GIC Type I",
+  "a": "Cementing / luting agent",
+  "e": ""
+ },
+ {
+  "q": "GIC Type IIa",
+  "a": "Esthetic restorative cement",
+  "e": ""
+ },
+ {
+  "q": "GIC Type IIb",
+  "a": "Reinforced restorative cement",
+  "e": ""
+ },
+ {
+  "q": "GIC Type III",
+  "a": "Liners, pit & fissure sealant",
+  "e": ""
+ },
+ {
+  "q": "GIC used as base under composite restoration is called",
+  "a": "Intermediary base",
+  "e": ""
+ },
+ {
+  "q": "GIC powder",
+  "a": "Fluoro-silica alumina glass (anticariogenic; makes cement translucent)",
+  "e": ""
+ },
+ {
+  "q": "GIC liquid",
+  "a": "Aqueous solution of polyacrylic acid and copolymer of tartaric acid; maleic acid",
+  "e": ""
+ },
+ {
+  "q": "GIC liquid additive that increases working time and shortens setting time",
+  "a": "Tartaric acid / maleic acid copolymer",
+  "e": ""
+ },
+ {
+  "q": "GIC liquid additive that decreases viscosity and reduces setting time",
+  "a": "Itaconic acid",
+  "e": ""
+ },
+ {
+  "q": "Water with citric/maleic acid in GIC",
+  "a": "Removes smear layer for better adhesion",
+  "e": ""
+ },
+ {
+  "q": "GIC as luting agent: powder particle size",
+  "a": "Less than 20 μm (thinner mix, better cementing action)",
+  "e": ""
+ },
+ {
+  "q": "GIC as luting agent: setting time",
+  "a": "7 minutes",
+  "e": ""
+ },
+ {
+  "q": "GIC as restorative: powder particle size",
+  "a": "20-50 μm",
+  "e": ""
+ },
+ {
+  "q": "GIC as esthetic restorative: consistency",
+  "a": "Somewhat doughy (thicker)",
+  "e": ""
+ },
+ {
+  "q": "GIC as restorative: mixing time",
+  "a": "45 seconds to 1 minute",
+  "e": ""
+ },
+ {
+  "q": "GIC as restorative: setting time",
+  "a": "4-5 minutes",
+  "e": ""
+ },
+ {
+  "q": "GIC restorative indications",
+  "a": "Class III & V cavities, microcavities under direct masticatory forces, core buildup",
+  "e": ""
+ },
+ {
+  "q": "GIC as sealant: use and caveat",
+  "a": "Used when there are deep grooves on pits and fissures; weaker, since resin sealants are stronger than GIC",
+  "e": ""
+ },
+ {
+  "q": "GIC with composite: why acid etch the enamel",
+  "a": "To make the enamel surface porous so resin tags form for retention of the composite",
+  "e": ""
+ },
+ {
+  "q": "GIC compressive strength",
+  "a": "22,000 psi",
+  "e": ""
+ },
+ {
+  "q": "GIC tensile strength",
+  "a": "960 psi",
+  "e": ""
+ },
+ {
+  "q": "GIC hardness",
+  "a": "48 KHN",
+  "e": ""
+ }
+]
