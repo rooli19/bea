@@ -1,0 +1,1787 @@
+[
+ {
+  "q": "Prevents or stops the spread of infections in healthcare settings",
+  "a": "Infection control",
+  "e": ""
+ },
+ {
+  "q": "Disease-producing agents that infection control aims to keep from spreading",
+  "a": "Bacteria, viruses, and fungi",
+  "e": ""
+ },
+ {
+  "q": "The three directions of transmission infection control aims to prevent",
+  "a": "One patient to another; dental practitioners/staff to patients; patients to dental practitioners/staff",
+  "e": ""
+ },
+ {
+  "q": "Spread of infection from a person's own body that infection control also limits",
+  "a": "Endogenous spread of infection",
+  "e": ""
+ },
+ {
+  "q": "Transmission of infectious agents from person to person or from inanimate objects in the clinical environment, resulting in infection",
+  "a": "Cross-infection",
+  "e": ""
+ },
+ {
+  "q": "Aim of infection control protocols in dentistry",
+  "a": "Reduce the risk of cross-infection and produce a safe environment for patients and dental personnel",
+  "e": ""
+ },
+ {
+  "q": "The four modes of transmission of dental infections",
+  "a": "Infected air droplets, blood, saliva, instruments contaminated with secretions",
+  "e": ""
+ },
+ {
+  "q": "Phase in which a dental patient may unknowingly be infectious before symptoms appear",
+  "a": "Prodromal phase",
+  "e": ""
+ },
+ {
+  "q": "Persons who have a certain infectious disease without knowing about it and can transmit it",
+  "a": "Carriers",
+  "e": ""
+ },
+ {
+  "q": "Post-infection period during which antibodies cannot be detected",
+  "a": "Window period",
+  "e": ""
+ },
+ {
+  "q": "Feature of some infectious diseases that makes it hard to know a patient is infected (lasts a long time before symptoms)",
+  "a": "Prolonged incubation period",
+  "e": ""
+ },
+ {
+  "q": "Body sites where many pathogenic organisms involved in dental cross-infection are found",
+  "a": "Oral cavity and respiratory tract",
+  "e": ""
+ },
+ {
+  "q": "Basis of infection control protocols (the guiding statement)",
+  "a": "All patients should be treated as if they were reservoirs of pathogens",
+  "e": ""
+ },
+ {
+  "q": "Infection control procedures in patient treatment designed to reduce transmission risk from recognized and unrecognized sources of infection",
+  "a": "Standard Precautions",
+  "e": ""
+ },
+ {
+  "q": "The four things Standard Precautions apply to contact with",
+  "a": "Blood; all body fluids, secretions, and excretions (except sweat); non-intact skin; mucous membranes",
+  "e": ""
+ },
+ {
+  "q": "Body fluid excluded from Standard Precautions",
+  "a": "Sweat",
+  "e": ""
+ },
+ {
+  "q": "Set of recommendations done at all clinical procedures performed on any patient",
+  "a": "Standard Infection Control Protocols",
+  "e": ""
+ },
+ {
+  "q": "Additional precautions used where a known infection with high transmission potential is suspected or encountered",
+  "a": "Transmission-Based Precautions",
+  "e": ""
+ },
+ {
+  "q": "Two groups of pathogens covered by Transmission-Based Precautions, by route",
+  "a": "Air or droplets (TB, influenza, chickenpox, mumps); indirect or direct contact with contaminated sources (MRSA)",
+  "e": ""
+ },
+ {
+  "q": "Three types of Transmission-Based Precautions",
+  "a": "Airborne, Droplet, and Contact Precautions",
+  "e": ""
+ },
+ {
+  "q": "Organization whose source is cited for Standard and Transmission-Based Precautions",
+  "a": "CDC",
+  "e": ""
+ },
+ {
+  "q": "Proper way of wearing and removing PPE (gloves, disposable apron gowns, eye/face protection, headwear, footwear)",
+  "a": "Donning and doffing",
+  "e": ""
+ },
+ {
+  "q": "Safe management of care equipment: objective",
+  "a": "Prevent microorganisms from being transferred through shared equipment during care delivery",
+  "e": ""
+ },
+ {
+  "q": "Safe management of care equipment: links in the chain it breaks",
+  "a": "Reservoir and mode of transmission",
+  "e": ""
+ },
+ {
+  "q": "Examples of safe management of care equipment",
+  "a": "Disinfecting dental chairs, sterilization techniques, processing of used instruments",
+  "e": ""
+ },
+ {
+  "q": "Contaminated equipment or object that can carry infection",
+  "a": "Fomite",
+  "e": ""
+ },
+ {
+  "q": "Safe management of the care environment: objective",
+  "a": "Keep the environment visibly and physically clean to prevent microorganisms from spreading",
+  "e": ""
+ },
+ {
+  "q": "Safe management of the care environment: links it breaks",
+  "a": "Reservoir and mode of transmission",
+  "e": ""
+ },
+ {
+  "q": "Safe management of linen: links it breaks",
+  "a": "Infectious agent, mode of transmission, and susceptible host",
+  "e": ""
+ },
+ {
+  "q": "Reason dental clinics have no linens (e.g., cloth towels)",
+  "a": "Linen is a fomite with a higher rate of becoming a reservoir of infection",
+  "e": ""
+ },
+ {
+  "q": "What dental practice uses instead of linen",
+  "a": "Disposable bibs and surface barriers like plastic",
+  "e": ""
+ },
+ {
+  "q": "Safe management of blood and body fluid spillages: link it breaks",
+  "a": "Portal of entry",
+  "e": ""
+ },
+ {
+  "q": "Safe management of blood and body fluid spillages: objective",
+  "a": "Protect against microorganisms in spillages from entering your body",
+  "e": ""
+ },
+ {
+  "q": "Why handpiece use calls for proper cleaning and management",
+  "a": "Contact with bone or blood droplets produces droplet-type spread of blood pathogens",
+  "e": ""
+ },
+ {
+  "q": "Safe disposal of waste: links it breaks",
+  "a": "Portal of entry, mode of transmission, and infectious agent",
+  "e": ""
+ },
+ {
+  "q": "Examples of infectious waste in dentistry that must be thrown immediately",
+  "a": "Tissue specimens like extracted teeth, disposable bibs and gowns",
+  "e": ""
+ },
+ {
+  "q": "Examples of sharps in dentistry",
+  "a": "Burs, explorers, excavators, and other sharp instruments",
+  "e": ""
+ },
+ {
+  "q": "First aid treatment following accidental exposure to blood or body fluids (safe management area)",
+  "a": "Occupational safety: prevention and exposure management",
+  "e": ""
+ },
+ {
+  "q": "Occupational safety: link it breaks",
+  "a": "Portal of entry",
+  "e": ""
+ },
+ {
+  "q": "Unintentional break in the skin and mucous membranes through which a microorganism may infect",
+  "a": "Percutaneous exposure",
+  "e": ""
+ },
+ {
+  "q": "Subjective changes in body function not apparent to an observer (e.g., pain, malaise)",
+  "a": "Symptoms",
+  "e": ""
+ },
+ {
+  "q": "Generalized symptom that is only perceived by the brain; can be sharp, throbbing, intermittent, or blunt",
+  "a": "Pain",
+  "e": ""
+ },
+ {
+  "q": "Unexplainable muscle or joint pain; the person cannot trace where it occurred",
+  "a": "Malaise",
+  "e": ""
+ },
+ {
+  "q": "Symptoms of dental caries",
+  "a": "Hypersensitivity (pangingilo), toothache, pain when chewing food, throbbing pain when lying down, loss of appetite in kids",
+  "e": ""
+ },
+ {
+  "q": "Objective changes a dentist or physician can observe and measure (e.g., lesions, swelling, fever, paralysis)",
+  "a": "Signs",
+  "e": ""
+ },
+ {
+  "q": "Signs of dental caries",
+  "a": "Halitosis, holes in the teeth, discoloration, swelling, bleeding gums",
+  "e": ""
+ },
+ {
+  "q": "Caries holes are easier to see in this arch than in the other",
+  "a": "Mandibular (hard to see in maxilla)",
+  "e": ""
+ },
+ {
+  "q": "A specific group of symptoms or signs that may always accompany a particular disease",
+  "a": "Syndrome",
+  "e": ""
+ },
+ {
+  "q": "Syndrome: collection of symptoms linked to bone and joint disease; hyperflexibility of joints",
+  "a": "Marfan syndrome",
+  "e": ""
+ },
+ {
+  "q": "Disease that spreads directly or indirectly from one host to another",
+  "a": "Communicable disease",
+  "e": ""
+ },
+ {
+  "q": "Highly communicable disease easily spread from one person to another",
+  "a": "Contagious disease",
+  "e": ""
+ },
+ {
+  "q": "Epidemiologic term for an unidentified strain or species of an infectious disease (like COVID-19 when first unidentified)",
+  "a": "Contagion",
+  "e": ""
+ },
+ {
+  "q": "Disease not spread from one host to another; caused by microorganisms that normally inhabit the body or that cause disease only when introduced into the body",
+  "a": "Non-communicable disease",
+  "e": ""
+ },
+ {
+  "q": "Examples of non-communicable disease",
+  "a": "Allergy (allergic rhinitis), contact dermatitis, heart problems, asthma",
+  "e": ""
+ },
+ {
+  "q": "Non-communicable disease that develops from the body itself rather than from a person-to-person source",
+  "a": "Developed by the body itself",
+  "e": ""
+ },
+ {
+  "q": "Yeast that is a prevailing oral inhabitant; can develop into a highly communicable infection",
+  "a": "Candida albicans",
+  "e": ""
+ },
+ {
+  "q": "Disease from Candida albicans that can be transmitted through oral sex (oral cavity to partner's genitalia)",
+  "a": "Oral candidiasis",
+  "e": ""
+ },
+ {
+  "q": "Disease that occurs only occasionally (example: flu every cold/rainy season)",
+  "a": "Sporadic disease",
+  "e": ""
+ },
+ {
+  "q": "Disease that is constantly present in a population (example: dengue)",
+  "a": "Endemic disease",
+  "e": ""
+ },
+ {
+  "q": "Many people in a given area acquire a disease in a relatively short period (example: COVID spreading in weeks or months)",
+  "a": "Epidemic disease",
+  "e": ""
+ },
+ {
+  "q": "Epidemic disease that occurs worldwide (example: COVID from Wuhan to all over the world)",
+  "a": "Pandemic disease",
+  "e": ""
+ },
+ {
+  "q": "Flu is an example of this occurrence of disease",
+  "a": "Sporadic disease",
+  "e": ""
+ },
+ {
+  "q": "Dengue is an example of this occurrence of disease",
+  "a": "Endemic disease",
+  "e": ""
+ },
+ {
+  "q": "Disease that develops rapidly but lasts only a short time (example: cellulitis)",
+  "a": "Acute disease",
+  "e": ""
+ },
+ {
+  "q": "Disease that develops more slowly, with a less severe body reaction, but continues or recurs for long periods",
+  "a": "Chronic disease",
+  "e": ""
+ },
+ {
+  "q": "Examples of chronic disease",
+  "a": "Heart disease (angina pectoris), kidney problems, diabetes",
+  "e": ""
+ },
+ {
+  "q": "Disease that is intermediate between acute and chronic",
+  "a": "Subacute disease",
+  "e": ""
+ },
+ {
+  "q": "Disease in which the causative agent remains inactive and does not produce symptoms (example: shingles, with virus in the ganglion of nerves)",
+  "a": "Latent disease",
+  "e": ""
+ },
+ {
+  "q": "Acute disease can lead to this type of disease",
+  "a": "Chronic disease",
+  "e": ""
+ },
+ {
+  "q": "Invading microorganisms limited to a relatively small area of the body (example: local gingivitis, incisor to incisor)",
+  "a": "Local infection",
+  "e": ""
+ },
+ {
+  "q": "Microorganisms or their products spread throughout the body by blood or lymph (example: generalized gingivitis)",
+  "a": "Systemic (generalized) infection",
+  "e": ""
+ },
+ {
+  "q": "Consequence of S. mutans entering the bloodstream after failed oral prophylaxis in extraction",
+  "a": "Systemic bacterial endocarditis at the tricuspid valve",
+  "e": ""
+ },
+ {
+  "q": "Agents of a local infection enter a blood or lymphatic vessel and spread to other specific body parts where they are confined",
+  "a": "Focal infection",
+  "e": ""
+ },
+ {
+  "q": "Toxic inflammatory condition arising from spread of microbes (bacteria and their toxins) from a focus of infection",
+  "a": "Sepsis",
+  "e": ""
+ },
+ {
+  "q": "Systemic infection arising from multiplication of pathogens in the blood (blood poisoning); can cause multi-organ failure and shock",
+  "a": "Septicemia",
+  "e": ""
+ },
+ {
+  "q": "Examples of organisms in septicemia",
+  "a": "Streptococcus, Staphylococcus aureus",
+  "e": ""
+ },
+ {
+  "q": "Presence of bacteria in the blood",
+  "a": "Bacteremia",
+  "e": ""
+ },
+ {
+  "q": "Presence of toxins in the blood",
+  "a": "Toxemia",
+  "e": ""
+ },
+ {
+  "q": "Presence of viruses in the blood",
+  "a": "Viremia",
+  "e": ""
+ },
+ {
+  "q": "Acute infection that causes initial illness; where the host was first exposed",
+  "a": "Primary infection",
+  "e": ""
+ },
+ {
+  "q": "Infection caused by an opportunistic pathogen after the primary infection has weakened the body's defenses",
+  "a": "Secondary infection",
+  "e": ""
+ },
+ {
+  "q": "Infection with no obvious clinical manifestations; no prevailing signs or symptoms but other studies can identify it",
+  "a": "Subclinical (inapparent) infection",
+  "e": ""
+ },
+ {
+  "q": "Patient who acts as a source of infection in an outbreak situation",
+  "a": "Index case",
+  "e": ""
+ },
+ {
+  "q": "Four stages in which a dental patient can act as a source of infection",
+  "a": "Acute infectious disease, prodromal stage, convalescent/latent stage, asymptomatic carrier",
+  "e": ""
+ },
+ {
+  "q": "Source-of-infection stage with examples influenza, measles, tuberculosis",
+  "a": "Patient with acute infectious disease",
+  "e": ""
+ },
+ {
+  "q": "Stage where patient is infectious but not showing clinical symptoms (mumps, measles)",
+  "a": "Prodromal stage",
+  "e": ""
+ },
+ {
+  "q": "Stage where patient continues to shed viruses in secretions (HSV, Ebola virus)",
+  "a": "Convalescent or latent stage",
+  "e": ""
+ },
+ {
+  "q": "Asymptomatic carrier examples: sore throat, MRSA, meningitis, bronchitis",
+  "a": "Streptococcus pyogenes, Staphylococcus aureus, Neisseria meningitidis, Haemophilus influenzae",
+  "e": ""
+ },
+ {
+  "q": "Four routes of infection in dentistry",
+  "a": "Direct/indirect contact, percutaneous (parenteral), air-borne, common vehicle spread",
+  "e": ""
+ },
+ {
+  "q": "Percutaneous (parenteral) transmission in dentistry",
+  "a": "Sharps injuries",
+  "e": ""
+ },
+ {
+  "q": "Air-borne transmission in dentistry",
+  "a": "Aerosols generated by high-speed handpieces and respiratory secretions",
+  "e": ""
+ },
+ {
+  "q": "Common vehicle spread in dentistry",
+  "a": "Dental unit waterlines and plumbing",
+  "e": ""
+ },
+ {
+  "q": "Viruses spread by direct and indirect contact",
+  "a": "HSV, VZV, EBV, HBV, common cold and flu viruses",
+  "e": ""
+ },
+ {
+  "q": "Two routes of blood-borne virus (BBV) transmission",
+  "a": "Percutaneous (sharps) and mucocutaneous (mucous membrane/broken skin)",
+  "e": ""
+ },
+ {
+  "q": "Virus in the Hepadnaviridae DNA family, with types A to E",
+  "a": "Hepatitis B virus (HBV)",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis types that are blood-borne viruses (focus in dentistry)",
+  "a": "Hepatitis B and C",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis types that are food-borne pathogens (fecal-oral route)",
+  "a": "Hepatitis A and E",
+  "e": ""
+ },
+ {
+  "q": "Organ inflamed in hepatitis B",
+  "a": "Liver",
+  "e": ""
+ },
+ {
+  "q": "HBV incubation period",
+  "a": "45-160 days (average 120 days)",
+  "e": ""
+ },
+ {
+  "q": "HBV transmission routes",
+  "a": "Perinatal/childhood horizontal transmission from household contacts; sexual intercourse with an infected partner; intravenous drug misuse",
+  "e": ""
+ },
+ {
+  "q": "HBV symptoms",
+  "a": "Fatigue, fever, loss of appetite with nausea, vomiting, abdominal discomfort, joint pain, jaundice",
+  "e": ""
+ },
+ {
+  "q": "Chronic HBV outcomes",
+  "a": "Cirrhosis, liver failure, liver cancer",
+  "e": ""
+ },
+ {
+  "q": "Prevention of HBV",
+  "a": "Vaccination",
+  "e": ""
+ },
+ {
+  "q": "Virus that causes acute and chronic liver infection, with acute infection being asymptomatic",
+  "a": "Hepatitis C virus (HCV)",
+  "e": ""
+ },
+ {
+  "q": "HCV transmission",
+  "a": "Needle sharing; unsafe medical and dental injection practices",
+  "e": ""
+ },
+ {
+  "q": "HIV modes of transmission",
+  "a": "Unprotected oral and penetrative sexual intercourse; sharing needles and syringes when injecting drugs",
+  "e": ""
+ },
+ {
+  "q": "Medication used for HIV in the notes",
+  "a": "Anti-retroviral drugs",
+  "e": ""
+ },
+ {
+  "q": "Cause often behind blood-borne virus transmission from patient to dentist",
+  "a": "Negligence in infection control",
+  "e": ""
+ },
+ {
+  "q": "Cross contamination of a microorganism to an instrument or material",
+  "a": "Cross contamination",
+  "e": ""
+ },
+ {
+  "q": "Transfer of a pathogenic microorganism directly to the patient (may be aerosolized)",
+  "a": "Cross infection",
+  "e": ""
+ },
+ {
+  "q": "Reflex part of the oral cavity that blocks the nasal passage to prevent pulling of water and saliva",
+  "a": "Uvula",
+  "e": ""
+ },
+ {
+  "q": "Event that opens the uvula, releasing respiratory secretions",
+  "a": "Gag reflex (coughing, puking)",
+  "e": ""
+ },
+ {
+  "q": "Particles less than 50 micrometers in diameter that stay airborne",
+  "a": "Aerosol",
+  "e": ""
+ },
+ {
+  "q": "Why aerosols matter: particles small enough to do this for an extended period",
+  "a": "Stay airborne before settling on surfaces or entering the respiratory tract",
+  "e": ""
+ },
+ {
+  "q": "Aerosol particle size with greatest potential for transmitting infection (lodge in small lung passages)",
+  "a": "0.5 to 10 micrometers",
+  "e": ""
+ },
+ {
+  "q": "Airborne particles larger than 50 micrometers in diameter (white portion in the pic)",
+  "a": "Droplets/splatter",
+  "e": ""
+ },
+ {
+  "q": "Behavior in which particles are ejected forcibly from the operating site and arc like a bullet until they contact a surface or fall",
+  "a": "Ballistic behavior",
+  "e": ""
+ },
+ {
+  "q": "Reason splatter is more evident in the eyes",
+  "a": "It is heavier",
+  "e": ""
+ },
+ {
+  "q": "Mixture of air, water, and handpiece-generated particles suspended in the air in the clinic",
+  "a": "Aerosol",
+  "e": ""
+ },
+ {
+  "q": "Ventilation type using an exhaust",
+  "a": "Active ventilation",
+  "e": ""
+ },
+ {
+  "q": "Ventilation type using open windows (bintana)",
+  "a": "Passive ventilation",
+  "e": ""
+ },
+ {
+  "q": "Social factors behind the high prevalence of tuberculosis",
+  "a": "Urban homelessness, history of imprisonment, intravenous drug or alcohol abuse",
+  "e": ""
+ },
+ {
+  "q": "Where most TB cases occur (the lecture notes the Philippines is among them)",
+  "a": "Resource-poor / third world countries",
+  "e": ""
+ },
+ {
+  "q": "TB DOTS stands for",
+  "a": "Directly Observed Treatment, Short-course",
+  "e": ""
+ },
+ {
+  "q": "Disease whose signs and symptoms are highly correlated to COVID-19",
+  "a": "Influenza",
+  "e": ""
+ },
+ {
+  "q": "Symptoms of influenza",
+  "a": "Headache, fever, coryza, cough, sore throat, aching muscles and joints, possible GIT discomfort",
+  "e": ""
+ },
+ {
+  "q": "Influenza incubation period",
+  "a": "1-4 days (average 2-3 days)",
+  "e": ""
+ },
+ {
+  "q": "Period of communicability of influenza in adults",
+  "a": "Up to 5 days after symptom onset",
+  "e": ""
+ },
+ {
+  "q": "Period of communicability of influenza in children",
+  "a": "7 days after symptom onset",
+  "e": ""
+ },
+ {
+  "q": "Influenza type that causes more severe symptoms",
+  "a": "Influenza A",
+  "e": ""
+ },
+ {
+  "q": "Influenza prevention measures",
+  "a": "Annual vaccination, hand hygiene, respiratory etiquette",
+  "e": ""
+ },
+ {
+  "q": "Influenza mode of transmission",
+  "a": "Respiratory secretions from coughing or sneezing; direct contact on hands and indirect contact via droplets on surfaces",
+  "e": ""
+ },
+ {
+  "q": "How long influenza viruses survive on glass or plastic surfaces",
+  "a": "Up to 24 hours",
+  "e": ""
+ },
+ {
+  "q": "How long influenza viruses survive on porous materials (clothing, magazines, tissues)",
+  "a": "2-4 hours",
+  "e": ""
+ },
+ {
+  "q": "What easily deactivates influenza viruses",
+  "a": "Soap and water, alcohol-based hand sanitizers, household detergents on surfaces",
+  "e": ""
+ },
+ {
+  "q": "Advice for dental professionals with flu-like symptoms or fever",
+  "a": "Should not work with patients and colleagues",
+  "e": ""
+ },
+ {
+  "q": "New kind of infectious disease that infected certain individuals in a locality or country and then worldwide",
+  "a": "Emerging disease",
+  "e": ""
+ },
+ {
+  "q": "Infectious disease that was once part of society, was eradicated, and came back due to environmental changes",
+  "a": "Re-emerging disease",
+  "e": ""
+ },
+ {
+  "q": "Emerging pathogens arising from genetic mutation or evolution (pandemic influenza, vCJD, MERS)",
+  "a": "Novel pathogens arising de novo",
+  "e": ""
+ },
+ {
+  "q": "Disease caused by a prion",
+  "a": "vCJD",
+  "e": ""
+ },
+ {
+  "q": "Known infections spreading to new areas (West Nile in USA, Ebola in West Africa, Zika in Central/South America)",
+  "a": "Known infections spreading to new geographic areas or populations",
+  "e": ""
+ },
+ {
+  "q": "Disease reaching the USA through travel, named after the river from Egypt to Africa",
+  "a": "West Nile virus",
+  "e": ""
+ },
+ {
+  "q": "Previously unreported infections appearing in areas undergoing climate change",
+  "a": "Chikungunya and dengue",
+  "e": ""
+ },
+ {
+  "q": "Causes of old infections re-emerging",
+  "a": "Changes in host immunity, antimicrobial selection and resistance, breakdown in public health measures",
+  "e": ""
+ },
+ {
+  "q": "Public health measures whose breakdown allows re-emergence",
+  "a": "National vaccination campaigns (polio, syphilis, diphtheria, MDR-TB)",
+  "e": ""
+ },
+ {
+  "q": "TB that results from non-compliance with the 6-month treatment (incomplete doses)",
+  "a": "MDR-TB (multi-drug resistant tuberculosis)",
+  "e": ""
+ },
+ {
+  "q": "Why measles cases will rise again",
+  "a": "Children kept inside too long missed their measles vaccine",
+  "e": ""
+ },
+ {
+  "q": "Reasons infections emerge",
+  "a": "Rapid globalization, climate change and global warming, agricultural practices, urbanization, antibiotic selection, health status of the population (immunosuppression, famine), mosquitoes and insect vectors, increased travel and migration",
+  "e": ""
+ },
+ {
+  "q": "Vectors that constitute major transmission of blood-borne viral infections (dengue, chikungunya, Zika, West Nile)",
+  "a": "Mosquitoes and insect vectors",
+  "e": ""
+ },
+ {
+  "q": "Why travel history is important in patient evaluation",
+  "a": "Patient may have contracted the infection abroad and only develop symptoms upon returning home",
+  "e": ""
+ },
+ {
+  "q": "Reasons emerging pathogens matter in dentistry",
+  "a": "They challenge infection control protocols, and novel infections can shake public and dental team confidence",
+  "e": ""
+ },
+ {
+  "q": "One of the most important preventive measures for infection control in emerging infection (COVID-19)",
+  "a": "Face shield",
+  "e": ""
+ },
+ {
+  "q": "Infections spread from animals to humans",
+  "a": "Zoonotic infections",
+  "e": ""
+ },
+ {
+  "q": "Ways zoonoses are transmitted",
+  "a": "Direct contact with the living animal; meat and secretions; vector transmission via insect bites",
+  "e": ""
+ },
+ {
+  "q": "Examples of zoonotic pathogens",
+  "a": "Influenza virus, Rabies virus, Ebola virus, MERS, Salmonella",
+  "e": ""
+ },
+ {
+  "q": "Role of humans in zoonosis, where animals are the primary host",
+  "a": "Incidental host",
+  "e": ""
+ },
+ {
+  "q": "Impact of zoonoses on dentistry",
+  "a": "Operative dentistry may offer a secondary route for person-to-person transmission",
+  "e": ""
+ },
+ {
+  "q": "Five processes of infection control in the dental practice",
+  "a": "Render used instruments safe for reuse; control cross-contamination; increase resistance to infectious diseases; effective waste management; management of infected healthcare providers",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis B vaccine: organism",
+  "a": "Surface antigen of HBV (HBsAg), made in yeasts by genetic recombination, absorbed onto aluminum salt",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis B vaccine: indicated for",
+  "a": "All HCWs at special risk: dentists, dental hygienists, dental surgery assistants, medical laboratory workers, those handling blood products",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis B vaccine: number of doses",
+  "a": "3 doses",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis B vaccine: dosing interval",
+  "a": "2 doses one month apart, third dose 6 months later",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis B vaccine: site and route",
+  "a": "Intramuscular, deltoid",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis B vaccine: response rate",
+  "a": "About 95%",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis B vaccine: what is given if antibody levels are suboptimal",
+  "a": "A fourth (booster) dose",
+  "e": ""
+ },
+ {
+  "q": "Tests needed with the initial hepatitis B vaccine course",
+  "a": "Pre- and post-immunization tests",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis B vaccine schedule for unvaccinated individual",
+  "a": "0, 1, 6 months",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis B vaccine history: first step",
+  "a": "Anti-HBs screening test or titer",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis B vaccine history: low anti-HBs result",
+  "a": "One dose",
+  "e": ""
+ },
+ {
+  "q": "Hepatitis B vaccine history: \"Non-Reactive\" result",
+  "a": "Full 0, 1, 6 months schedule",
+  "e": ""
+ },
+ {
+  "q": "Influenza vaccine: organism",
+  "a": "Usually two influenza A strains plus one influenza B strain",
+  "e": ""
+ },
+ {
+  "q": "Why the influenza vaccine composition changes every year",
+  "a": "Antigenic drift and shift",
+  "e": ""
+ },
+ {
+  "q": "Surface antigens in influenza vaccine",
+  "a": "Haemagglutinin and neuraminidase",
+  "e": ""
+ },
+ {
+  "q": "Influenza vaccine: indicated for",
+  "a": "Elderly with respiratory diseases; those in residential facilities or long-stay hospitals",
+  "e": ""
+ },
+ {
+  "q": "Influenza vaccine: duration of protection",
+  "a": "Relatively short, about 1 year",
+  "e": ""
+ },
+ {
+  "q": "Influenza vaccine: administration",
+  "a": "Annually",
+  "e": ""
+ },
+ {
+  "q": "Tetanus toxoid: organism",
+  "a": "Formol-treated toxin of C. tetani",
+  "e": ""
+ },
+ {
+  "q": "Tetanus toxoid: given in infancy as part of",
+  "a": "Triple vaccine DPT/DTP (Diphtheria-Pertussis-Tetanus), 3 spaced injections",
+  "e": ""
+ },
+ {
+  "q": "Tetanus toxoid booster timing",
+  "a": "Every five years and in the event of injury",
+  "e": ""
+ },
+ {
+  "q": "Tetanus toxoid: protection",
+  "a": "Excellent",
+  "e": ""
+ },
+ {
+  "q": "Tetanus toxoid option 1",
+  "a": "Tetavax, 0.5 mL IM",
+  "e": ""
+ },
+ {
+  "q": "Tetanus toxoid option 2",
+  "a": "Booster Tdap (Adacel/Boostrix)",
+  "e": ""
+ },
+ {
+  "q": "Growth curve phase the dentist aims to reach in microbial control (if not, then the stationary phase)",
+  "a": "Death phase",
+  "e": ""
+ },
+ {
+  "q": "Phases of the growth curve",
+  "a": "Lag, log (exponential), stationary, death (decline)",
+  "e": ""
+ },
+ {
+  "q": "Why patients must be regarded as highly infectious during procedures (lag and log phase)",
+  "a": "They release infectious specimens (blood, saliva, respiratory secretions) even with no symptoms",
+  "e": ""
+ },
+ {
+  "q": "Terms in the lecture on control of microbial growth",
+  "a": "Sterilization, disinfection, antisepsis, germicide, bacteriostasis, asepsis, degerming, sanitation",
+  "e": ""
+ },
+ {
+  "q": "Order of resistance of microorganisms to disinfection and sterilization, most to least resistant",
+  "a": "Prions, bacterial endospores, mycobacteria, protozoan cyst, vegetative protozoa, Gram (-) bacteria, fungi, non-lipid viruses, Gram (+) bacteria, lipid viruses",
+  "e": ""
+ },
+ {
+  "q": "Most resistant microorganism to disinfection and sterilization",
+  "a": "Prions",
+  "e": ""
+ },
+ {
+  "q": "Least resistant microorganism group to disinfection and sterilization",
+  "a": "Lipid viruses",
+  "e": ""
+ },
+ {
+  "q": "Level of microbial control: prions",
+  "a": "Prion processing",
+  "e": ""
+ },
+ {
+  "q": "Level of microbial control for bacterial endospores",
+  "a": "High/sterilization",
+  "e": ""
+ },
+ {
+  "q": "Level of microbial control for mycobacteria",
+  "a": "Intermediate",
+  "e": ""
+ },
+ {
+  "q": "Level of microbial control for vegetative bacteria, fungi, and viruses",
+  "a": "Low",
+  "e": ""
+ },
+ {
+  "q": "Fine line separating high-level from intermediate and low-level disinfection",
+  "a": "Ability to kill endospore-forming bacteria",
+  "e": ""
+ },
+ {
+  "q": "Disinfection level that kills vegetative microorganisms and inactivates viruses but not necessarily large numbers of spores",
+  "a": "High-level disinfection",
+  "e": ""
+ },
+ {
+  "q": "Germicide classification of high-level: liquid sterilants and ___",
+  "a": "Sporicides",
+  "e": ""
+ },
+ {
+  "q": "Disinfection level that kills Mycobacterium tuberculosis, all fungi, and inactivates most viruses",
+  "a": "Intermediate-level disinfection",
+  "e": ""
+ },
+ {
+  "q": "Germicide classification for intermediate-level disinfection",
+  "a": "Tuberculocidal, detergent germicides",
+  "e": ""
+ },
+ {
+  "q": "Disinfection level that kills most vegetative bacteria except M. tuberculosis, some fungi, and inactivates some viruses",
+  "a": "Low-level disinfection",
+  "e": ""
+ },
+ {
+  "q": "Germicide classification for low-level disinfection",
+  "a": "Hospital disinfectants, sanitizers",
+  "e": ""
+ },
+ {
+  "q": "Exposure time for high-level chemical disinfectant to kill endospore-forming microorganisms",
+  "a": "6-10 hours",
+  "e": ""
+ },
+ {
+  "q": "Result of the 10-30 minute exposure of high-level disinfectant",
+  "a": "Does not kill endospore-forming bacteria",
+  "e": ""
+ },
+ {
+  "q": "Disinfection level mostly used to kill acid-fast cell walls",
+  "a": "Intermediate-level disinfection",
+  "e": ""
+ },
+ {
+  "q": "Detergent germicides work by this",
+  "a": "Scrubbing (e.g., bar soaps with foamy, slippery consistency)",
+  "e": ""
+ },
+ {
+  "q": "Low-level disinfection comes in this form",
+  "a": "Enzymes (liquid in dispensing preparations)",
+  "e": ""
+ },
+ {
+  "q": "Process of destroying ALL forms of microbial life, including endospores",
+  "a": "Sterilization",
+  "e": ""
+ },
+ {
+  "q": "Sterilization has this many degrees",
+  "a": "None; it is absolute",
+  "e": ""
+ },
+ {
+  "q": "Genera of endospore-forming bacteria that a sterilizing agent must destroy",
+  "a": "Bacillus and Clostridium",
+  "e": ""
+ },
+ {
+  "q": "Typical temperature and time for moist heat sterilization",
+  "a": "121°C for 15 minutes",
+  "e": ""
+ },
+ {
+  "q": "Typical temperature and time for dry heat sterilization",
+  "a": "170°C for 120 minutes",
+  "e": ""
+ },
+ {
+  "q": "Physical sterilization methods",
+  "a": "Moist heat, dry heat, ionizing radiation",
+  "e": ""
+ },
+ {
+  "q": "Chemical sterilization gas",
+  "a": "Ethylene oxide",
+  "e": ""
+ },
+ {
+  "q": "Process of destroying vegetative pathogens but not necessarily endospores; used for non-living objects",
+  "a": "Disinfection",
+  "e": ""
+ },
+ {
+  "q": "Term used for liquid chemical solutions or surfaces, or elimination of pathogens in water by chlorination",
+  "a": "Disinfection",
+  "e": ""
+ },
+ {
+  "q": "Chemical disinfection of skin, mucous membranes, or other living tissues",
+  "a": "Antisepsis",
+  "e": ""
+ },
+ {
+  "q": "Antisepsis term applied to treatment of wounds",
+  "a": "Antisepsis",
+  "e": ""
+ },
+ {
+  "q": "Chemical agent that rapidly kills microbes but not necessarily their endospores (-cide, \"to kill\")",
+  "a": "Germicide",
+  "e": ""
+ },
+ {
+  "q": "Agent that kills bacteria",
+  "a": "Bactericide",
+  "e": ""
+ },
+ {
+  "q": "Agent that kills spores",
+  "a": "Sporicide",
+  "e": ""
+ },
+ {
+  "q": "Agent that kills fungi",
+  "a": "Fungicide",
+  "e": ""
+ },
+ {
+  "q": "Agent that kills viruses",
+  "a": "Virucide",
+  "e": ""
+ },
+ {
+  "q": "Agent that kills amoebas",
+  "a": "Amoebicide",
+  "e": ""
+ },
+ {
+  "q": "Condition in which bacterial growth is inhibited but bacteria are not killed (-stasis, \"halt\")",
+  "a": "Bacteriostasis",
+  "e": ""
+ },
+ {
+  "q": "If bacteriostasis is removed, this resumes",
+  "a": "Bacterial growth and multiplication",
+  "e": ""
+ },
+ {
+  "q": "Physical example of bacteriostasis",
+  "a": "Refrigeration",
+  "e": ""
+ },
+ {
+  "q": "Absence of pathogens from an object or area (without infection)",
+  "a": "Asepsis",
+  "e": ""
+ },
+ {
+  "q": "Factors in achieving asepsis",
+  "a": "Air filtration, ultraviolet lights, personnel masks, gloves, gowns, instrument sterilization",
+  "e": ""
+ },
+ {
+  "q": "Aseptic technique designed to prevent entry of pathogens into the body",
+  "a": "Aseptic technique",
+  "e": ""
+ },
+ {
+  "q": "Chemical aseptic technique example",
+  "a": "Betadine",
+  "e": ""
+ },
+ {
+  "q": "Physical aseptic technique examples",
+  "a": "Face mask, gloves, hand washing",
+  "e": ""
+ },
+ {
+  "q": "Aseptic approach designed to exclude all microbes",
+  "a": "Surgical asepsis",
+  "e": ""
+ },
+ {
+  "q": "Aseptic approach designed to exclude microbes associated with communicable diseases",
+  "a": "Medical asepsis",
+  "e": ""
+ },
+ {
+  "q": "Surgical asepsis example",
+  "a": "Draping and swabbing povidone iodine at the surgical site",
+  "e": ""
+ },
+ {
+  "q": "Removal of transient microbes from the skin by mechanical cleansing or antiseptic use",
+  "a": "Degerming",
+  "e": ""
+ },
+ {
+  "q": "Most perfect example of degerming",
+  "a": "Handwashing",
+  "e": ""
+ },
+ {
+  "q": "Degerming antiseptics example",
+  "a": "Soaps",
+  "e": ""
+ },
+ {
+  "q": "Reduction of pathogens on eating utensils to safe public health levels by mechanical cleansing",
+  "a": "Sanitation",
+  "e": ""
+ },
+ {
+  "q": "Term used only for cleaning comfort rooms, hallways, walls, tables",
+  "a": "Sanitation",
+  "e": ""
+ },
+ {
+  "q": "Terms used for the operatory and instruments instead of sanitation",
+  "a": "Disinfection, sterilization, bacteriostatic, aseptic agents",
+  "e": ""
+ },
+ {
+  "q": "Perfect example of an antiseptic solution",
+  "a": "Mouthwash",
+  "e": ""
+ },
+ {
+  "q": "Example of asepsis before mouth examination",
+  "a": "Pre-procedural mouthwash",
+  "e": ""
+ },
+ {
+  "q": "Number of factors affecting effectiveness of controlling microorganisms",
+  "a": "Five",
+  "e": ""
+ },
+ {
+  "q": "Factor 1 affecting microbial control",
+  "a": "Microorganisms show different degrees of resistance",
+  "e": ""
+ },
+ {
+  "q": "Factor 2 affecting microbial control",
+  "a": "Higher microbial populations require longer time to eliminate; actively metabolizing microbes are more susceptible than mature ones",
+  "e": ""
+ },
+ {
+  "q": "Factor 3 affecting microbial control",
+  "a": "Presence of organic materials retards the action of the agent",
+  "e": ""
+ },
+ {
+  "q": "Factor 4 affecting microbial control",
+  "a": "Most chemicals are more effective at low pH and higher temperatures",
+  "e": ""
+ },
+ {
+  "q": "Factor 5 affecting microbial control",
+  "a": "Heat irreversibly inactivates microbial enzymes; cold retards microbial growth",
+  "e": ""
+ },
+ {
+  "q": "Community structure in which microorganisms become highly resistant to chemical agents",
+  "a": "Biofilm",
+  "e": ""
+ },
+ {
+  "q": "Why a mouthwash must stay in the oral cavity for a certain time",
+  "a": "Biofilm resists chemical agents",
+  "e": ""
+ },
+ {
+  "q": "Why toothbrushing is followed by mouthwash",
+  "a": "Brushing mechanically removes biofilm but microorganisms can reattach",
+  "e": ""
+ },
+ {
+  "q": "Peak of metabolism where chemical agents attack bonds/linkages",
+  "a": "Binary fission",
+  "e": ""
+ },
+ {
+  "q": "Layer of endospore that resists heat and chemical agents",
+  "a": "Spore coat",
+  "e": ""
+ },
+ {
+  "q": "Organic materials commonly found on instruments",
+  "a": "Blood and saliva",
+  "e": ""
+ },
+ {
+  "q": "What must be done to instruments with blood before sterilization or disinfection",
+  "a": "Remove surface contamination first",
+  "e": ""
+ },
+ {
+  "q": "Chemicals that are effective at low pH are this, and can burn soft tissue",
+  "a": "Acidic and highly caustic",
+  "e": ""
+ },
+ {
+  "q": "Refrigerator effect on microorganisms",
+  "a": "Retardation of growth; does not kill",
+  "e": ""
+ },
+ {
+  "q": "Temperature beyond which microbial killing begins",
+  "a": "45 degrees",
+  "e": ""
+ },
+ {
+  "q": "How microorganisms are killed when exposed to a lethal agent",
+  "a": "Not instantly; the population decreases by constant fraction at constant intervals (exponential killing)",
+  "e": ""
+ },
+ {
+  "q": "Microorganism considered dead when",
+  "a": "It is unable to grow in conditions that would normally support its growth and reproduction",
+  "e": ""
+ },
+ {
+  "q": "Minimum swish time for mouthwash",
+  "a": "30 seconds",
+  "e": ""
+ },
+ {
+  "q": "The two forms of chemical agents",
+  "a": "Liquids and gases",
+  "e": ""
+ },
+ {
+  "q": "Glutaraldehyde: other name",
+  "a": "Saturated dialdehyde",
+  "e": ""
+ },
+ {
+  "q": "Brand of glutaraldehyde mentioned",
+  "a": "Cidex",
+  "e": ""
+ },
+ {
+  "q": "Glutaraldehyde solution type before activation",
+  "a": "Aqueous, acidic and non-sporicidal",
+  "e": ""
+ },
+ {
+  "q": "Glutaraldehyde becomes sporicidal in this form",
+  "a": "Activated form (made alkaline by alkalinating agents to pH 7.5-8.5)",
+  "e": ""
+ },
+ {
+  "q": "Glutaraldehyde shelf life",
+  "a": "14 days",
+  "e": ""
+ },
+ {
+  "q": "Time needed for glutaraldehyde to kill endospore formers",
+  "a": "At least 8 hours",
+  "e": ""
+ },
+ {
+  "q": "Glutaraldehyde mode of action",
+  "a": "Alkylation of sulfhydryl, hydroxyl, carboxyl, and amino groups, altering RNA, DNA, and protein synthesis",
+  "e": ""
+ },
+ {
+  "q": "Widely accepted high-level disinfectant and chemical sterilant, noncorrosive to endoscopic equipment, thermometers, rubber, plastic",
+  "a": "Glutaraldehyde",
+  "e": ""
+ },
+ {
+  "q": "Where most human pathogens grow, in contrast to S. mutans in the oral cavity",
+  "a": "Alkaline (alkalinophiles); oral cavity is acidophilic",
+  "e": ""
+ },
+ {
+  "q": "Phenolics: level of microbial control",
+  "a": "Intermediate",
+  "e": ""
+ },
+ {
+  "q": "Phenolic examples",
+  "a": "Ortho-phenylphenol, ortho-benzyl-para-chlorophenol",
+  "e": ""
+ },
+ {
+  "q": "Phenolics activity against",
+  "a": "Bacteria, fungi, viruses, tuberculosis",
+  "e": ""
+ },
+ {
+  "q": "Phenolics mechanism of action",
+  "a": "Disruption of plasma membrane, denaturation, inactivation of enzymes, leakage of essential metabolites from the cell wall",
+  "e": ""
+ },
+ {
+  "q": "Phenolics preferred use",
+  "a": "Environmental surfaces, instruments, skin surfaces, mucous membranes",
+  "e": ""
+ },
+ {
+  "q": "Phenolic note before use on skin or mucous membranes",
+  "a": "Check the label says \"antiseptic solution\"",
+  "e": ""
+ },
+ {
+  "q": "Agent used on clinical chairs in school",
+  "a": "Phenolics",
+  "e": ""
+ },
+ {
+  "q": "Formaldehyde concentration as aqueous solution",
+  "a": "37%",
+  "e": ""
+ },
+ {
+  "q": "Formaldehyde activity against",
+  "a": "Bacteria, tuberculosis, fungi, viruses, spores",
+  "e": ""
+ },
+ {
+  "q": "Formaldehyde mode of action",
+  "a": "Alkylates sulfhydryl groups of amino acids/proteins and ring nitrogen atoms of purine bases",
+  "e": ""
+ },
+ {
+  "q": "Formaldehyde hazards",
+  "a": "Carcinogenic; fatal if ingested; causes asthma-like respiratory problems and dermatitis",
+  "e": ""
+ },
+ {
+  "q": "Formaldehyde used as disinfectant and sterilant in these states",
+  "a": "Liquid and gaseous",
+  "e": ""
+ },
+ {
+  "q": "Formocresol used in pediatric dentistry for",
+  "a": "Pulpotomy",
+  "e": ""
+ },
+ {
+  "q": "Hydrogen peroxide activity",
+  "a": "Bactericidal, virucidal, sporicidal, fungicidal",
+  "e": ""
+ },
+ {
+  "q": "Hydrogen peroxide mode of action",
+  "a": "Produces hydroxyl free radicals that attack membrane lipids, DNA, and essential cell components",
+  "e": ""
+ },
+ {
+  "q": "0.5% accelerated hydrogen peroxide: bactericidal and virucidal in",
+  "a": "1 minute",
+  "e": ""
+ },
+ {
+  "q": "0.5% accelerated hydrogen peroxide: mycobactericidal and fungicidal in",
+  "a": "5 minutes",
+  "e": ""
+ },
+ {
+  "q": "Commercial hydrogen peroxide concentration, stable and effective on inanimate surfaces",
+  "a": "3%",
+  "e": ""
+ },
+ {
+  "q": "Hydrogen peroxide effective against these in deep wounds",
+  "a": "Oxygen-sensitive anaerobes",
+  "e": ""
+ },
+ {
+  "q": "Iodine-based halogens: oldest and most effective antiseptics",
+  "a": "Iodophors",
+  "e": ""
+ },
+ {
+  "q": "Iodine solutions/tincture used as",
+  "a": "Antiseptics on skin or tissue",
+  "e": ""
+ },
+ {
+  "q": "Iodophors used as",
+  "a": "Both antiseptics and disinfectants",
+  "e": ""
+ },
+ {
+  "q": "Iodophors mechanism",
+  "a": "Penetrate the cell wall; disrupt protein and nucleic acid structure and synthesis",
+  "e": ""
+ },
+ {
+  "q": "Formulation of iodophor; povidone improves wetting and is a reservoir of free iodine",
+  "a": "Povidone-iodine",
+  "e": ""
+ },
+ {
+  "q": "Broad-spectrum agent that destroys the cell membrane of Gram (+) and Gram (-) bacteria; effective against enveloped viruses",
+  "a": "Chlorhexidine bisbiguanide",
+  "e": ""
+ },
+ {
+  "q": "Chlorhexidine uses",
+  "a": "Skin and mucous membranes; surgical hand scrubs, pre-op skin prep with detergent or alcohol",
+  "e": ""
+ },
+ {
+  "q": "Concentration of chlorhexidine gluconate used as root canal irrigant",
+  "a": "2%",
+  "e": ""
+ },
+ {
+  "q": "Sodium hypochlorite is the liquid form; this is the solid form",
+  "a": "Calcium hypochlorite",
+  "e": ""
+ },
+ {
+  "q": "Active chlorine species responsible for antimicrobial activity",
+  "a": "Undissociated hypochlorous acid (HOCl)",
+  "e": ""
+ },
+ {
+  "q": "Chlorine mode of action",
+  "a": "Oxidation of sulfhydryl enzymes and amino acids, ring chlorination, decreased oxygen uptake, oxidation of respiratory components, decreased ATP, DNA breaks, depressed DNA synthesis",
+  "e": ""
+ },
+ {
+  "q": "Concentration of NaOCl used as root canal irrigant",
+  "a": "5.25%",
+  "e": ""
+ },
+ {
+  "q": "Chlorine: removes dried or fixed organisms and biofilms; corrodes metals at high concentration; this hazard",
+  "a": "Carcinogenic",
+  "e": ""
+ },
+ {
+  "q": "Chlorine compound forms",
+  "a": "Chlorine dioxide, sodium dichloroisocyanurate, chloramine-T",
+  "e": ""
+ },
+ {
+  "q": "Advantage of chlorine compounds over hypochlorites",
+  "a": "Retain chlorine longer, prolonged bactericidal effect",
+  "e": ""
+ },
+ {
+  "q": "Alcohols: mode of action",
+  "a": "Denaturation and lipid dissolution, resulting in cavitation of microorganisms",
+  "e": ""
+ },
+ {
+  "q": "Commonly used alcohols",
+  "a": "Ethanol and isopropanol",
+  "e": ""
+ },
+ {
+  "q": "Alcohols not effective against",
+  "a": "Endospores and non-enveloped viruses",
+  "e": ""
+ },
+ {
+  "q": "Alcohol uses",
+  "a": "Thermometers and instruments; quick skin swabbing before injection",
+  "e": ""
+ },
+ {
+  "q": "Alcohol disinfecting action comes mostly from",
+  "a": "Simple wiping away of dirt and some microbes",
+  "e": ""
+ },
+ {
+  "q": "Heavy metals mode of action",
+  "a": "Denature enzymes and essential proteins",
+  "e": ""
+ },
+ {
+  "q": "Heavy metal agent that prevents gonococcal eye infection",
+  "a": "Silver nitrate",
+  "e": ""
+ },
+ {
+  "q": "Heavy metal agents that disinfect skin and mucous membranes",
+  "a": "Mercurochrome and merthiolate",
+  "e": ""
+ },
+ {
+  "q": "Heavy metal used as algicide",
+  "a": "Copper sulfate",
+  "e": ""
+ },
+ {
+  "q": "Soaps and acid-anionic detergents: mechanism",
+  "a": "Mechanical removal of microbes through scrubbing",
+  "e": ""
+ },
+ {
+  "q": "Soap ion carrying negative charge",
+  "a": "Hydrophobic ion",
+  "e": ""
+ },
+ {
+  "q": "Soaps are ineffective against",
+  "a": "Tubercle bacillus and hepatitis B",
+  "e": ""
+ },
+ {
+  "q": "Antimicrobial in many deodorant soaps",
+  "a": "Triclosan",
+  "e": ""
+ },
+ {
+  "q": "Cationic detergents (quaternary ammonium compounds)",
+  "a": "Produce positively charged hydrophobic ion; are very poisonous",
+  "e": ""
+ },
+ {
+  "q": "Quaternary ammonium compound examples",
+  "a": "Cetylpyridinium chloride and benzalkonium chloride",
+  "e": ""
+ },
+ {
+  "q": "Quaternary ammonium compounds: use",
+  "a": "Environmental sanitation of noncritical surfaces such as floors, furniture, walls",
+  "e": ""
+ },
+ {
+  "q": "Quaternary ammonium compounds spectrum",
+  "a": "Bacteriocidal, bacteriostatic, fungicidal, virucidal against enveloped viruses; not sporicidal",
+  "e": ""
+ },
+ {
+  "q": "Quaternary ammonium compounds mechanism",
+  "a": "Enzyme inhibition, denaturation of cell proteins, disruption of plasma membrane",
+  "e": ""
+ },
+ {
+  "q": "Gas sterilant that works by denaturation, excellent for heat-sensitive objects",
+  "a": "Ethylene oxide",
+  "e": ""
+ },
+ {
+  "q": "Sterilizing agent that works by oxidation on contaminated surfaces",
+  "a": "Vaporized hydrogen peroxide (VHP)",
+  "e": ""
+ },
+ {
+  "q": "Gold standard of physical methods for controlling microbial growth",
+  "a": "Moist heat",
+  "e": ""
+ },
+ {
+  "q": "Two moist heat methods",
+  "a": "Boiling and autoclaving",
+  "e": ""
+ },
+ {
+  "q": "Boiling of flowing steam: mechanism",
+  "a": "Denaturation",
+  "e": ""
+ },
+ {
+  "q": "Boiling of flowing steam: kills vegetative bacteria and fungal pathogens and many viruses within",
+  "a": "10 minutes",
+  "e": ""
+ },
+ {
+  "q": "Boiling of flowing steam uses",
+  "a": "Dishes, basins, pitchers, various equipment",
+  "e": ""
+ },
+ {
+  "q": "Moist heat method, very effective, killing all vegetative cells and endospores at 121°C for 15 min",
+  "a": "Autoclaving",
+  "e": ""
+ },
+ {
+  "q": "Autoclaving uses",
+  "a": "Microbiological media, solutions, linens, utensils, dressings, equipment",
+  "e": ""
+ },
+ {
+  "q": "Shortest time necessary to kill all microorganisms in a suspension at a specific temperature",
+  "a": "Thermal Death Time (TDT)",
+  "e": ""
+ },
+ {
+  "q": "Time or radiation dose to inactivate 90% (1 log) of a population at a specific temperature",
+  "a": "Decimal Reduction Time (D-value)",
+  "e": ""
+ },
+ {
+  "q": "Z-value formula",
+  "a": "z = (T2 - T1) / (log D1 - log D2)",
+  "e": ""
+ },
+ {
+  "q": "Three steam sterilization parameters",
+  "a": "Time, temperature, steam under pressure",
+  "e": ""
+ },
+ {
+  "q": "Moist heat sterilization works on these properties of water",
+  "a": "Thermodynamic properties",
+  "e": ""
+ },
+ {
+  "q": "Moist heat sterilization uses this to transmit thermal energy",
+  "a": "Pressurized saturated vapor",
+  "e": ""
+ },
+ {
+  "q": "What happens to water's boiling temperature when autoclave pressure is higher than atmospheric",
+  "a": "It is elevated",
+  "e": ""
+ },
+ {
+  "q": "Stages of steam sterilization",
+  "a": "Heating, holding, cooling",
+  "e": ""
+ },
+ {
+  "q": "Sterilization at 134°C: time and pressure",
+  "a": "3 minutes at 2 bar",
+  "e": ""
+ },
+ {
+  "q": "Sterilization at 115°C: time and pressure",
+  "a": "30 minutes at 1 bar",
+  "e": ""
+ },
+ {
+  "q": "Sterilization at 121°C: time and pressure",
+  "a": "15 minutes at 1 bar",
+  "e": ""
+ },
+ {
+  "q": "Three types of steam sterilization monitoring",
+  "a": "Mechanical, chemical, biological",
+  "e": ""
+ },
+ {
+  "q": "Autoclave gauges or readouts of cycle time, temperature, pressure, with printouts",
+  "a": "Mechanical indicators",
+  "e": ""
+ },
+ {
+  "q": "Devices with color changes showing exposure to sterilization parameters",
+  "a": "Chemical indicators",
+  "e": ""
+ },
+ {
+  "q": "Only indicator that measures microbial killing power of sterilization",
+  "a": "Biological indicator (BI)",
+  "e": ""
+ },
+ {
+  "q": "CDC recommended frequency of BI monitoring",
+  "a": "At least weekly and with every load of implantable devices",
+  "e": ""
+ },
+ {
+  "q": "Bacterium used in biological indicators",
+  "a": "Geobacillus stearothermophilus",
+  "e": ""
+ },
+ {
+  "q": "Expected result for BI if the autoclave works",
+  "a": "No growth after incubation",
+  "e": ""
+ },
+ {
+  "q": "CDC 2003 recommendation on chemical indicators",
+  "a": "Use both an internal indicator (reached the item) and external indicator (item processed)",
+  "e": ""
+ },
+ {
+  "q": "Storage of chemical indicators",
+  "a": "Room temperature, away from heat, steam, moisture",
+  "e": ""
+ },
+ {
+  "q": "Chemical indicator Type 1",
+  "a": "Process indicator (monitor tapes, strips, pouches)",
+  "e": ""
+ },
+ {
+  "q": "Chemical indicator Type 2",
+  "a": "Specific test indicator (Bowie-Dick test)",
+  "e": ""
+ },
+ {
+  "q": "Chemical indicator Type 3",
+  "a": "Single critical process variable indicator (rarely used in dental)",
+  "e": ""
+ },
+ {
+  "q": "Chemical indicator Type 4",
+  "a": "Multi-critical process variable indicator (indicator strips)",
+  "e": ""
+ },
+ {
+  "q": "Chemical indicator Type 5",
+  "a": "Integrating indicator (comparable to BI in saturated steam; pack and load control)",
+  "e": ""
+ },
+ {
+  "q": "Chemical indicator Type 6",
+  "a": "Emulating indicator (cycle verification for specific cycles)",
+  "e": ""
+ }
+]
