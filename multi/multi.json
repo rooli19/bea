@@ -1,0 +1,1002 @@
+[
+  {
+    "q": "A dental clinic disinfects chairs and sterilizes used instruments between patients. Which two links in the chain of infection does this safe management of care equipment break?",
+    "a": "C. Reservoir and mode of transmission",
+    "choices": [
+      "A. Susceptible host and infectious agent",
+      "B. Infectious agent and portal of exit",
+      "C. Reservoir and mode of transmission",
+      "D. Portal of entry and susceptible host"
+    ]
+  },
+  {
+    "q": "Why do dental clinics use disposable bibs and plastic surface barriers instead of cloth towels?",
+    "a": "C. Cloth linens are fomites with a higher chance of becoming reservoirs of infection",
+    "choices": [
+      "A. Cloth linens are critical items that require autoclave sterilization",
+      "B. Cloth linens cannot be disinfected with chemical agents after use",
+      "C. Cloth linens are fomites with a higher chance of becoming reservoirs of infection",
+      "D. Cloth linens protect against aerosols but not against splatter"
+    ]
+  },
+  {
+    "q": "Which finding is a sign, rather than a symptom, of dental caries?",
+    "a": "B. Discoloration of the tooth",
+    "choices": [
+      "A. Throbbing pain when the patient lies down",
+      "B. Discoloration of the tooth",
+      "C. Loss of appetite in a child",
+      "D. Hypersensitivity (pangingilo) to stimuli"
+    ]
+  },
+  {
+    "q": "A patient reports an unexplainable muscle or joint pain whose origin he cannot trace. This is best described as",
+    "a": "B. Malaise",
+    "choices": [
+      "A. Intermittent pain",
+      "B. Malaise",
+      "C. Throbbing pain",
+      "D. A clinical sign"
+    ]
+  },
+  {
+    "q": "Diseases that are easily spread from one person to another, such as influenza, measles, and chickenpox, are called",
+    "a": "C. Contagious diseases",
+    "choices": [
+      "A. Non-communicable diseases",
+      "B. Endemic diseases",
+      "C. Contagious diseases",
+      "D. Sporadic diseases"
+    ]
+  },
+  {
+    "q": "Which condition is considered non-communicable because it is developed by the body itself?",
+    "a": "C. Contact dermatitis",
+    "choices": [
+      "A. Measles",
+      "B. Influenza",
+      "C. Contact dermatitis",
+      "D. Chickenpox"
+    ]
+  },
+  {
+    "q": "Which condition arises from yeast that normally inhabits the oral cavity yet can be transmitted to a partner through oral sex?",
+    "a": "A. Oral candidiasis",
+    "choices": [
+      "A. Oral candidiasis",
+      "B. Contact dermatitis",
+      "C. Shingles",
+      "D. Allergic rhinitis"
+    ]
+  },
+  {
+    "q": "Influenza that appears only every cold or rainy season is an example of a(n)",
+    "a": "B. Sporadic disease",
+    "choices": [
+      "A. Endemic disease",
+      "B. Sporadic disease",
+      "C. Pandemic disease",
+      "D. Epidemic disease"
+    ]
+  },
+  {
+    "q": "A disease that is constantly present in a population, like the lecture's example of dengue, is",
+    "a": "A. Endemic disease",
+    "choices": [
+      "A. Endemic disease",
+      "B. Latent disease",
+      "C. Sporadic disease",
+      "D. Epidemic disease"
+    ]
+  },
+  {
+    "q": "Many people in one area acquire the same disease within weeks or months, as in the early spread of COVID-19. This is a(n)",
+    "a": "D. Epidemic disease",
+    "choices": [
+      "A. Endemic disease",
+      "B. Latent disease",
+      "C. Sporadic disease",
+      "D. Epidemic disease"
+    ]
+  },
+  {
+    "q": "An epidemic that spreads from Wuhan to the rest of the world becomes a(n)",
+    "a": "B. Pandemic disease",
+    "choices": [
+      "A. Chronic disease",
+      "B. Pandemic disease",
+      "C. Endemic disease",
+      "D. Sporadic disease"
+    ]
+  },
+  {
+    "q": "Cellulitis develops rapidly, lasts a short time, and can be treated immediately. By duration, it is a(n)",
+    "a": "A. Acute disease",
+    "choices": [
+      "A. Acute disease",
+      "B. Chronic disease",
+      "C. Latent disease",
+      "D. Subacute disease"
+    ]
+  },
+  {
+    "q": "Diabetes and heart disease develop slowly, cause a less severe reaction, and must be maintained. They are",
+    "a": "C. Chronic diseases",
+    "choices": [
+      "A. Latent diseases",
+      "B. Acute diseases",
+      "C. Chronic diseases",
+      "D. Subacute diseases"
+    ]
+  },
+  {
+    "q": "The shingles virus rests inactive in a nerve ganglion and may later appear as a cold sore on the lips. This is a(n)",
+    "a": "A. Latent disease",
+    "choices": [
+      "A. Latent disease",
+      "B. Chronic disease",
+      "C. Sporadic disease",
+      "D. Acute disease"
+    ]
+  },
+  {
+    "q": "Gingivitis limited from incisor to incisor is a local infection. Gingivitis extending from the incisor to the most posterior tooth would be a",
+    "a": "D. Systemic (generalized) infection",
+    "choices": [
+      "A. Subclinical infection",
+      "B. Primary infection",
+      "C. Focal infection",
+      "D. Systemic (generalized) infection"
+    ]
+  },
+  {
+    "q": "If oral prophylaxis is neglected during extraction, S. mutans may enter the bloodstream and cause",
+    "a": "B. Systemic bacterial endocarditis at the tricuspid valve",
+    "choices": [
+      "A. Systemic bacterial endocarditis at the mitral valve",
+      "B. Systemic bacterial endocarditis at the tricuspid valve",
+      "C. A focal infection confined to the oral cavity",
+      "D. Generalized gingivitis involving all the teeth"
+    ]
+  },
+  {
+    "q": "Agents of a local infection enter a blood or lymphatic vessel and become confined to another specific body part. This is",
+    "a": "D. Focal infection",
+    "choices": [
+      "A. Septicemia",
+      "B. Bacteremia",
+      "C. Sepsis",
+      "D. Focal infection"
+    ]
+  },
+  {
+    "q": "A toxic inflammatory condition arising from the spread of microbes and their toxins from a focus of infection is",
+    "a": "D. Sepsis",
+    "choices": [
+      "A. Bacteremia",
+      "B. Toxemia",
+      "C. Subclinical infection",
+      "D. Sepsis"
+    ]
+  },
+  {
+    "q": "Multiplication of pathogens in the blood that circulates virulence and may lead to multi-organ failure and shock is",
+    "a": "C. Septicemia",
+    "choices": [
+      "A. Viremia",
+      "B. Toxemia",
+      "C. Septicemia",
+      "D. Bacteremia"
+    ]
+  },
+  {
+    "q": "Which term refers only to the presence of bacteria in the blood?",
+    "a": "D. Bacteremia",
+    "choices": [
+      "A. Toxemia",
+      "B. Viremia",
+      "C. Septicemia",
+      "D. Bacteremia"
+    ]
+  },
+  {
+    "q": "A host that is first exposed and develops an acute initial illness has which type of infection?",
+    "a": "D. Primary infection",
+    "choices": [
+      "A. Latent infection",
+      "B. Subclinical infection",
+      "C. Secondary infection",
+      "D. Primary infection"
+    ]
+  },
+  {
+    "q": "An opportunistic pathogen infects a host whose defenses were weakened by an earlier infection. This is a",
+    "a": "C. Secondary infection",
+    "choices": [
+      "A. Subclinical infection",
+      "B. Primary infection",
+      "C. Secondary infection",
+      "D. Focal infection"
+    ]
+  },
+  {
+    "q": "A patient has no prevailing signs or symptoms, yet other studies reveal an existing infection. This is a",
+    "a": "C. Subclinical (inapparent) infection",
+    "choices": [
+      "A. Focal infection",
+      "B. Secondary infection",
+      "C. Subclinical (inapparent) infection",
+      "D. Acute infection"
+    ]
+  },
+  {
+    "q": "A patient with mumps is infectious but not yet showing clinical symptoms. Which stage is this?",
+    "a": "A. Prodromal stage",
+    "choices": [
+      "A. Prodromal stage",
+      "B. Acute stage",
+      "C. Asymptomatic carrier state",
+      "D. Convalescent stage"
+    ]
+  },
+  {
+    "q": "A recovering patient continues to shed a virus such as HSV in his secretions. Which stage is this?",
+    "a": "A. Convalescent or latent stage",
+    "choices": [
+      "A. Convalescent or latent stage",
+      "B. Acute stage",
+      "C. Prodromal stage",
+      "D. Asymptomatic carrier state"
+    ]
+  },
+  {
+    "q": "Per the lecture, which is an example of a potential pathogen harbored by an asymptomatic carrier?",
+    "a": "D. Neisseria meningitidis",
+    "choices": [
+      "A. Mycobacterium tuberculosis",
+      "B. Candida albicans",
+      "C. Hepatitis B virus",
+      "D. Neisseria meningitidis"
+    ]
+  },
+  {
+    "q": "Dental unit waterlines and plumbing spread infection by which route?",
+    "a": "D. Common vehicle spread",
+    "choices": [
+      "A. Percutaneous transmission",
+      "B. Air-borne transmission",
+      "C. Direct contact transmission",
+      "D. Common vehicle spread"
+    ]
+  },
+  {
+    "q": "A sharps injury in the clinic is an example of which route of transmission?",
+    "a": "D. Percutaneous (parenteral) transmission",
+    "choices": [
+      "A. Air-borne transmission",
+      "B. Indirect contact transmission",
+      "C. Common vehicle spread",
+      "D. Percutaneous (parenteral) transmission"
+    ]
+  },
+  {
+    "q": "Of hepatitis A to E, which pair is the focus in dentistry as blood-borne viruses?",
+    "a": "D. B and C",
+    "choices": [
+      "A. A and E",
+      "B. D and E",
+      "C. A and B",
+      "D. B and C"
+    ]
+  },
+  {
+    "q": "Hepatitis A and E, being food-borne pathogens, can spread through which route?",
+    "a": "A. Fecal-oral route",
+    "choices": [
+      "A. Fecal-oral route",
+      "B. Perinatal route",
+      "C. Percutaneous route",
+      "D. Sexual route"
+    ]
+  },
+  {
+    "q": "The average incubation period of hepatitis B virus is",
+    "a": "B. 120 days",
+    "choices": [
+      "A. 90 days",
+      "B. 120 days",
+      "C. 45 days",
+      "D. 160 days"
+    ]
+  },
+  {
+    "q": "Horizontal transmission of HBV in childhood occurs mainly through",
+    "a": "D. Close household contacts",
+    "choices": [
+      "A. Fecal-oral spread",
+      "B. Aerosols from high-speed handpieces",
+      "C. Common vehicle spread",
+      "D. Close household contacts"
+    ]
+  },
+  {
+    "q": "Acute hepatitis C infection usually presents as",
+    "a": "A. Asymptomatic infection",
+    "choices": [
+      "A. Asymptomatic infection",
+      "B. Fatigue with jaundice",
+      "C. Fever with abdominal discomfort",
+      "D. Cirrhosis"
+    ]
+  },
+  {
+    "q": "Transfer of a microorganism to an instrument or material is called",
+    "a": "A. Cross-contamination",
+    "choices": [
+      "A. Cross-contamination",
+      "B. Secondary infection",
+      "C. Endogenous spread",
+      "D. Cross-infection"
+    ]
+  },
+  {
+    "q": "By particle size, aerosols are those smaller than",
+    "a": "B. 50 micrometers",
+    "choices": [
+      "A. 100 micrometers",
+      "B. 50 micrometers",
+      "C. 5 micrometers",
+      "D. 500 micrometers"
+    ]
+  },
+  {
+    "q": "Particles larger than 50 micrometers that are ejected forcibly and arc like a bullet until they land on a surface are",
+    "a": "B. Droplets (splatter)",
+    "choices": [
+      "A. Droplet nuclei",
+      "B. Droplets (splatter)",
+      "C. Fomites",
+      "D. Aerosols"
+    ]
+  },
+  {
+    "q": "Which combination produces aerosolized respiratory secretions during a dental procedure?",
+    "a": "A. Patient secretions mixing with handpiece air and water",
+    "choices": [
+      "A. Patient secretions mixing with handpiece air and water",
+      "B. Saliva mixing with disinfectant from surface sprays",
+      "C. Blood contacting plastic barriers on the unit",
+      "D. Steam released while unloading the autoclave"
+    ]
+  },
+  {
+    "q": "MDR-TB mainly develops because patients",
+    "a": "D. Do not complete the full 6-month treatment",
+    "choices": [
+      "A. Share needles and syringes",
+      "B. Are exposed to zoonotic animals",
+      "C. Skip their annual influenza vaccine",
+      "D. Do not complete the full 6-month treatment"
+    ]
+  },
+  {
+    "q": "The incubation period of influenza is",
+    "a": "B. 1-4 days",
+    "choices": [
+      "A. 1-2 weeks",
+      "B. 1-4 days",
+      "C. 5-7 days",
+      "D. 45-160 days"
+    ]
+  },
+  {
+    "q": "Communicability of influenza after symptom onset in children is typically up to",
+    "a": "D. 7 days",
+    "choices": [
+      "A. 14 days",
+      "B. 3 days",
+      "C. 5 days",
+      "D. 7 days"
+    ]
+  },
+  {
+    "q": "Influenza virus can survive for up to 24 hours on",
+    "a": "D. Glass or plastic surfaces",
+    "choices": [
+      "A. Tissues",
+      "B. Magazines",
+      "C. Clothing",
+      "D. Glass or plastic surfaces"
+    ]
+  },
+  {
+    "q": "A dental professional has flu-like symptoms and fever. What does the lecture advise?",
+    "a": "C. Do not work with patients and colleagues",
+    "choices": [
+      "A. Treat only emergency patients under airborne precautions",
+      "B. Work if vaccinated within the year",
+      "C. Do not work with patients and colleagues",
+      "D. Work only with a face shield and double gloves"
+    ]
+  },
+  {
+    "q": "A disease once eradicated returns because of environmental changes. This is a(n)",
+    "a": "B. Re-emerging disease",
+    "choices": [
+      "A. Emerging disease",
+      "B. Re-emerging disease",
+      "C. Latent disease",
+      "D. Endemic disease"
+    ]
+  },
+  {
+    "q": "Variant CJD, an example of a novel pathogen arising de novo, is caused by",
+    "a": "B. A prion",
+    "choices": [
+      "A. A protozoan",
+      "B. A prion",
+      "C. A fungus",
+      "D. A virus"
+    ]
+  },
+  {
+    "q": "Which is a known infection spreading to new geographic areas or populations?",
+    "a": "B. Zika virus into Central and South America",
+    "choices": [
+      "A. Variant CJD",
+      "B. Zika virus into Central and South America",
+      "C. MDR-TB",
+      "D. Measles from missed vaccination"
+    ]
+  },
+  {
+    "q": "In the context of emerging infections, which is called one of the most important preventive measures for infection control?",
+    "a": "D. Face shield",
+    "choices": [
+      "A. Disposable bib",
+      "B. Footwear",
+      "C. Surface barrier",
+      "D. Face shield"
+    ]
+  },
+  {
+    "q": "In zoonotic infections such as rabies, humans are",
+    "a": "C. Incidental hosts",
+    "choices": [
+      "A. Primary hosts",
+      "B. Asymptomatic carriers",
+      "C. Incidental hosts",
+      "D. Vectors"
+    ]
+  },
+  {
+    "q": "Transmission of infectious agents from person to person or from inanimate objects in the clinic that results in infection is",
+    "a": "D. Cross-infection",
+    "choices": [
+      "A. Secondary infection",
+      "B. Endogenous spread",
+      "C. Cross-contamination",
+      "D. Cross-infection"
+    ]
+  },
+  {
+    "q": "What principle underlies infection control protocols?",
+    "a": "D. All patients are treated as potential reservoirs of pathogens",
+    "choices": [
+      "A. Only high-risk procedures require protocols",
+      "B. Only patients with disclosed infections need precautions",
+      "C. Precautions depend on the medical history alone",
+      "D. All patients are treated as potential reservoirs of pathogens"
+    ]
+  },
+  {
+    "q": "Standard precautions apply to all body fluids, secretions, and excretions except",
+    "a": "B. Sweat",
+    "choices": [
+      "A. Blood",
+      "B. Sweat",
+      "C. Urine",
+      "D. Saliva"
+    ]
+  },
+  {
+    "q": "Transmission-based precautions are added when",
+    "a": "B. A known infection with high transmission potential is suspected",
+    "choices": [
+      "A. Any patient undergoes a dental procedure",
+      "B. A known infection with high transmission potential is suspected",
+      "C. A patient declines a pre-procedural mouthwash",
+      "D. Instruments are visibly contaminated"
+    ]
+  },
+  {
+    "q": "A patient with MRSA, spread by indirect or direct contact, requires which transmission-based precaution?",
+    "a": "D. Contact precautions",
+    "choices": [
+      "A. Sharps precautions",
+      "B. Airborne precautions",
+      "C. Droplet precautions",
+      "D. Contact precautions"
+    ]
+  },
+  {
+    "q": "The hepatitis B vaccine is made of",
+    "a": "B. HBsAg produced in yeast by genetic recombination",
+    "choices": [
+      "A. Disrupted virus particles with hemagglutinin",
+      "B. HBsAg produced in yeast by genetic recombination",
+      "C. Formol-treated toxin produced in yeast cultures",
+      "D. Live attenuated HBV grown in serum"
+    ]
+  },
+  {
+    "q": "If a healthcare worker never received the hepatitis B vaccine, the schedule is",
+    "a": "C. 0, 1, and 6 months",
+    "choices": [
+      "A. 0, 1, and 12 months",
+      "B. 0, 3, and 6 months",
+      "C. 0, 1, and 6 months",
+      "D. 0, 6, and 12 months"
+    ]
+  },
+  {
+    "q": "If antibody levels after hepatitis B vaccination are suboptimal, what may be given?",
+    "a": "A. A fourth (booster) dose",
+    "choices": [
+      "A. A fourth (booster) dose",
+      "B. A single dose of Tdap",
+      "C. No further vaccination",
+      "D. A repeat of the full series"
+    ]
+  },
+  {
+    "q": "A previously vaccinated worker's Anti-HBs result is Non-Reactive. What is the next step?",
+    "a": "B. Proceed with the 0, 1, 6 months schedule",
+    "choices": [
+      "A. No further vaccination",
+      "B. Proceed with the 0, 1, 6 months schedule",
+      "C. Give a single booster dose",
+      "D. Give a fourth dose after one year"
+    ]
+  },
+  {
+    "q": "Why must influenza vaccine composition be revised each year?",
+    "a": "A. Antigenic drift and shift of the virus",
+    "choices": [
+      "A. Antigenic drift and shift of the virus",
+      "B. Formol treatment of the antigen",
+      "C. Booster doses at five years",
+      "D. Genetic recombination in yeast"
+    ]
+  },
+  {
+    "q": "Tetanus toxoid is prepared from",
+    "a": "C. Formol-treated toxin of C. tetani",
+    "choices": [
+      "A. Disrupted C. tetani particles",
+      "B. Killed whole C. tetani cells",
+      "C. Formol-treated toxin of C. tetani",
+      "D. Surface antigen of C. tetani"
+    ]
+  },
+  {
+    "q": "Tetanus toxoid boosters are given at",
+    "a": "B. Five years and after injury",
+    "choices": [
+      "A. Every year for life",
+      "B. Five years and after injury",
+      "C. One year and after injury",
+      "D. Ten years only"
+    ]
+  },
+  {
+    "q": "Why is sterilization described as an absolute method?",
+    "a": "A. It destroys all forms of microbial life, so it has no degrees",
+    "choices": [
+      "A. It destroys all forms of microbial life, so it has no degrees",
+      "B. It destroys pathogens but spares endospores",
+      "C. It halts growth without killing the cells",
+      "D. It reduces growth of vegetative bacteria only"
+    ]
+  },
+  {
+    "q": "Dry heat sterilization uses which typical combination?",
+    "a": "C. 170 C for 120 minutes",
+    "choices": [
+      "A. 134 C for 3 minutes",
+      "B. 121 C for 15 minutes",
+      "C. 170 C for 120 minutes",
+      "D. 115 C for 30 minutes"
+    ]
+  },
+  {
+    "q": "Which genera must a sterilizing agent be able to destroy?",
+    "a": "C. Bacillus and Clostridium",
+    "choices": [
+      "A. Mycobacterium and Neisseria",
+      "B. Haemophilus and Candida",
+      "C. Bacillus and Clostridium",
+      "D. Streptococcus and Staphylococcus"
+    ]
+  },
+  {
+    "q": "A chemical applied to living tissues such as skin and mucous membranes is used for",
+    "a": "D. Antisepsis",
+    "choices": [
+      "A. Disinfection",
+      "B. Sanitation",
+      "C. Sterilization",
+      "D. Antisepsis"
+    ]
+  },
+  {
+    "q": "An agent that rapidly kills microbes but not necessarily their endospores is",
+    "a": "D. A germicide",
+    "choices": [
+      "A. A sporicide",
+      "B. An antiseptic",
+      "C. A bacteriostatic agent",
+      "D. A germicide"
+    ]
+  },
+  {
+    "q": "A condition in which growth is inhibited but bacteria are not killed, and growth resumes once the agent is removed, is",
+    "a": "D. Bacteriostasis",
+    "choices": [
+      "A. Degerming",
+      "B. Sterilization",
+      "C. Germicidal action",
+      "D. Bacteriostasis"
+    ]
+  },
+  {
+    "q": "Storing cultures in a refrigerator works by",
+    "a": "B. Retarding microbial growth without killing",
+    "choices": [
+      "A. Destroying endospores",
+      "B. Retarding microbial growth without killing",
+      "C. Irreversibly inactivating microbial enzymes",
+      "D. Killing vegetative bacteria"
+    ]
+  },
+  {
+    "q": "Draping and swabbing the surgical site with povidone iodine is an example of",
+    "a": "A. Surgical asepsis",
+    "choices": [
+      "A. Surgical asepsis",
+      "B. Bacteriostasis",
+      "C. Degerming",
+      "D. Sanitation"
+    ]
+  },
+  {
+    "q": "The most perfect example of degerming, the removal of transient microbes from skin, is",
+    "a": "A. Handwashing",
+    "choices": [
+      "A. Handwashing",
+      "B. Wearing gloves",
+      "C. Wearing a face mask",
+      "D. Mouthwashing"
+    ]
+  },
+  {
+    "q": "In dental practice, the word sanitation is used for cleaning",
+    "a": "B. Comfort rooms, hallways, walls, and tables",
+    "choices": [
+      "A. Operatory instruments and handpieces",
+      "B. Comfort rooms, hallways, walls, and tables",
+      "C. Surgical sites and mucous membranes",
+      "D. The operatory and its aseptic agents"
+    ]
+  },
+  {
+    "q": "A pre-procedural mouthwash before an oral examination is an example of",
+    "a": "A. Asepsis",
+    "choices": [
+      "A. Asepsis",
+      "B. Sterilization",
+      "C. Disinfection",
+      "D. Sanitation"
+    ]
+  },
+  {
+    "q": "Which is the most resistant to disinfection and sterilization?",
+    "a": "A. Prions",
+    "choices": [
+      "A. Prions",
+      "B. Protozoan cysts",
+      "C. Mycobacteria",
+      "D. Bacterial endospores"
+    ]
+  },
+  {
+    "q": "What serves as the fine line or demarcation level between sterilization and disinfection?",
+    "a": "C. Bacterial endospores",
+    "choices": [
+      "A. Prions",
+      "B. Mycobacteria",
+      "C. Bacterial endospores",
+      "D. Lipid viruses"
+    ]
+  },
+  {
+    "q": "For a high-level chemical disinfectant to kill endospore-forming microorganisms, the exposure time is",
+    "a": "C. 6-10 hours",
+    "choices": [
+      "A. 30-60 seconds",
+      "B. 10-30 minutes",
+      "C. 6-10 hours",
+      "D. 1-2 hours"
+    ]
+  },
+  {
+    "q": "Which level of disinfection mostly kills acid-fast cell walls like M. tuberculosis but not endospores?",
+    "a": "C. Intermediate-level disinfection",
+    "choices": [
+      "A. High-level disinfection",
+      "B. Low-level disinfection",
+      "C. Intermediate-level disinfection",
+      "D. Sterilization"
+    ]
+  },
+  {
+    "q": "What separates high-level disinfection from intermediate and low-level disinfection?",
+    "a": "C. Ability to kill endospore-forming bacteria",
+    "choices": [
+      "A. Ability to kill fungi",
+      "B. Ability to kill Gram-negative bacteria",
+      "C. Ability to kill endospore-forming bacteria",
+      "D. Ability to kill lipid viruses"
+    ]
+  },
+  {
+    "q": "Why must blood be removed from instruments before disinfection?",
+    "a": "B. Organic matter blocks the agent from the surface",
+    "choices": [
+      "A. Blood lowers the temperature of the solution",
+      "B. Organic matter blocks the agent from the surface",
+      "C. Blood increases the agent's corrosiveness",
+      "D. Blood converts endospores to vegetative cells"
+    ]
+  },
+  {
+    "q": "Within a biofilm, microorganisms become",
+    "a": "B. Highly resistant to chemical agents",
+    "choices": [
+      "A. Immune to mechanical removal",
+      "B. Highly resistant to chemical agents",
+      "C. Dependent on heat for survival",
+      "D. Easier to kill with shorter exposure"
+    ]
+  },
+  {
+    "q": "According to the lecture, microbial killing by heat begins beyond",
+    "a": "A. 45 degrees Celsius",
+    "choices": [
+      "A. 45 degrees Celsius",
+      "B. 37 degrees Celsius",
+      "C. 60 degrees Celsius",
+      "D. 100 degrees Celsius"
+    ]
+  },
+  {
+    "q": "When exposed to a lethal agent, a microbial population decreases by",
+    "a": "A. A constant fraction at constant intervals",
+    "choices": [
+      "A. A constant fraction at constant intervals",
+      "B. Half the cells at random times",
+      "C. A fixed number of cells each minute",
+      "D. All cells at once"
+    ]
+  },
+  {
+    "q": "A microorganism is usually considered dead when it",
+    "a": "C. Cannot grow under conditions that support growth",
+    "choices": [
+      "A. Enters the stationary phase",
+      "B. Loses its spore coat",
+      "C. Cannot grow under conditions that support growth",
+      "D. Stops metabolizing for 30 seconds"
+    ]
+  },
+  {
+    "q": "Glutaraldehyde becomes sporicidal when",
+    "a": "C. Alkalinated to pH 7.5-8.5 (activated form)",
+    "choices": [
+      "A. Diluted to 0.5% with water",
+      "B. Heated above 45 C before use",
+      "C. Alkalinated to pH 7.5-8.5 (activated form)",
+      "D. Acidified to pH 3.0-4.0"
+    ]
+  },
+  {
+    "q": "Phenolics, used to disinfect clinical chairs in school, provide which level of microbial control?",
+    "a": "C. Intermediate level",
+    "choices": [
+      "A. Low level",
+      "B. High level",
+      "C. Intermediate level",
+      "D. Sterilization"
+    ]
+  },
+  {
+    "q": "Formo cresol is used in pediatric dentistry for",
+    "a": "A. Pulpotomy procedures",
+    "choices": [
+      "A. Pulpotomy procedures",
+      "B. Pre-operative skin preparation",
+      "C. Surgical hand scrubs",
+      "D. Root canal irrigation"
+    ]
+  },
+  {
+    "q": "Hydrogen peroxide kills microbes by producing",
+    "a": "C. Hydroxyl free radicals",
+    "choices": [
+      "A. Alkyl groups",
+      "B. Hypochlorous acid",
+      "C. Hydroxyl free radicals",
+      "D. Cationic ions"
+    ]
+  },
+  {
+    "q": "At 0.5% accelerated hydrogen peroxide, bactericidal and virucidal activity occurs in",
+    "a": "A. 1 minute",
+    "choices": [
+      "A. 1 minute",
+      "B. 30 seconds",
+      "C. 5 minutes",
+      "D. 10 minutes"
+    ]
+  },
+  {
+    "q": "In povidone-iodine, what is the role of povidone?",
+    "a": "D. Improves wetting action and reservoir of free iodine",
+    "choices": [
+      "A. Provides sporicidal activity",
+      "B. Neutralizes the caustic iodine",
+      "C. Raises the pH of the solution",
+      "D. Improves wetting action and reservoir of free iodine"
+    ]
+  },
+  {
+    "q": "Which agent, as 2% gluconate, is used as a root canal irrigating solution?",
+    "a": "C. Chlorhexidine",
+    "choices": [
+      "A. Sodium hypochlorite",
+      "B. Povidone-iodine",
+      "C. Chlorhexidine",
+      "D. Hydrogen peroxide"
+    ]
+  },
+  {
+    "q": "Which agent, at 5.25%, is used as a root canal irrigant?",
+    "a": "C. Sodium hypochlorite",
+    "choices": [
+      "A. Glutaraldehyde",
+      "B. Formaldehyde",
+      "C. Sodium hypochlorite",
+      "D. Chlorhexidine gluconate"
+    ]
+  },
+  {
+    "q": "Alcohols such as ethanol and isopropanol are NOT effective against",
+    "a": "B. Endospores and nonenveloped viruses",
+    "choices": [
+      "A. Lipid viruses and fungi",
+      "B. Endospores and nonenveloped viruses",
+      "C. Vegetative bacteria and enveloped viruses",
+      "D. Fungi and Gram-positive bacteria"
+    ]
+  },
+  {
+    "q": "Soaps, which act by mechanical removal of microbes through scrubbing, are ineffective against",
+    "a": "B. Tubercle bacillus and hepatitis B virus",
+    "choices": [
+      "A. Enveloped viruses and fungi",
+      "B. Tubercle bacillus and hepatitis B virus",
+      "C. Lipid viruses and yeasts",
+      "D. Gram-positive bacteria and fungi"
+    ]
+  },
+  {
+    "q": "Quaternary ammonium compounds like benzalkonium chloride are used for",
+    "a": "D. Sanitation of noncritical surfaces like floors and walls",
+    "choices": [
+      "A. Root canal irrigation",
+      "B. Sterilizing heat-sensitive instruments",
+      "C. Surgical hand scrubs",
+      "D. Sanitation of noncritical surfaces like floors and walls"
+    ]
+  },
+  {
+    "q": "Which agent is an excellent sterilant for objects that would be damaged by heat?",
+    "a": "D. Ethylene oxide",
+    "choices": [
+      "A. Alcohols",
+      "B. Chlorhexidine",
+      "C. Phenolics",
+      "D. Ethylene oxide"
+    ]
+  },
+  {
+    "q": "Which physical method is the gold standard for microbial control?",
+    "a": "A. Moist heat",
+    "choices": [
+      "A. Moist heat",
+      "B. Ionizing radiation",
+      "C. Dry heat",
+      "D. Refrigeration"
+    ]
+  },
+  {
+    "q": "Which is a recommended steam sterilization combination?",
+    "a": "A. 121 C, 15 minutes, 1 bar",
+    "choices": [
+      "A. 121 C, 15 minutes, 1 bar",
+      "B. 121 C, 30 minutes, 2 bar",
+      "C. 134 C, 15 minutes, 1 bar",
+      "D. 115 C, 3 minutes, 2 bar"
+    ]
+  },
+  {
+    "q": "The decimal reduction time (D-value) is the time to inactivate what portion of a test population at a set temperature?",
+    "a": "B. 90% (1 log)",
+    "choices": [
+      "A. 100%",
+      "B. 90% (1 log)",
+      "C. 50%",
+      "D. 99%"
+    ]
+  },
+  {
+    "q": "Why does raising the pressure in an autoclave improve sterilization?",
+    "a": "C. It elevates the temperature at which water boils",
+    "choices": [
+      "A. It lowers the boiling point of water",
+      "B. It makes the spore coat more permeable",
+      "C. It elevates the temperature at which water boils",
+      "D. It converts steam into dry heat"
+    ]
+  },
+  {
+    "q": "Which organism is used in biological indicators for autoclave monitoring?",
+    "a": "B. Geobacillus stearothermophilus",
+    "choices": [
+      "A. Streptococcus mutans",
+      "B. Geobacillus stearothermophilus",
+      "C. Staphylococcus aureus",
+      "D. Clostridium tetani"
+    ]
+  },
+  {
+    "q": "The CDC recommends monitoring sterilizers with biological indicators",
+    "a": "A. At least weekly and with every load of implants",
+    "choices": [
+      "A. At least weekly and with every load of implants",
+      "B. Once yearly and with every load of burs",
+      "C. Daily and with every load of instruments",
+      "D. At least monthly and with every new autoclave"
+    ]
+  },
+  {
+    "q": "Which indicator alone can measure the microbial killing power of a sterilization process?",
+    "a": "A. A biological indicator with bacterial spores",
+    "choices": [
+      "A. A biological indicator with bacterial spores",
+      "B. A Type 1 process indicator",
+      "C. A mechanical gauge readout",
+      "D. A chemical indicator with a color change"
+    ]
+  },
+  {
+    "q": "In sterilization monitoring, the external indicator shows",
+    "a": "D. Whether the item was processed",
+    "choices": [
+      "A. Whether steam reached the item",
+      "B. Whether the cycle pressure was reached",
+      "C. Whether spores were killed",
+      "D. Whether the item was processed"
+    ]
+  }
+]
