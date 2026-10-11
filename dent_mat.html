@@ -750,6 +750,7 @@
         <button class="set-btn" id="btnMisc7">dentmat midt</button>
         <button class="set-btn" id="btnMisc8">pharma hyperT</button>
         <button class="set-btn" id="btnMisc9">dentmat</button>
+        <button class="set-btn" id="btnMisc10">infec midt</button>
       </div>
 
       <div id="gameUI">
@@ -2164,6 +2165,7 @@
       const btnMisc7 = document.getElementById("btnMisc7");
       const btnMisc8 = document.getElementById("btnMisc8");
       const btnMisc9 = document.getElementById("btnMisc9");
+      const btnMisc10 = document.getElementById("btnMisc10");
 
       const backBtn = document.getElementById("backBtn");
       const homeBtn = document.getElementById("homeBtn");
@@ -2437,6 +2439,29 @@
         }
         btnMisc9.textContent = "dentamat";
         btnMisc9.classList.remove("loading");
+      });
+      btnMisc10.addEventListener("click", async () => {
+        btnMisc10.textContent = "Loading...";
+        btnMisc10.classList.add("loading");
+        try {
+          const resp = await fetch("data10.json");
+          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+          const json = await resp.json();
+          // Expect array of { q, a, e? }
+          const miscCards = json.map((item) => ({
+            q: item.q || "No question",
+            a: item.a || "No answer",
+            e: item.e || "",
+          }));
+          if (miscCards.length === 0) throw new Error("No cards found in JSON");
+          startSet(miscCards);
+        } catch (err) {
+          alert(`Error loading data.json: ${err.message}`);
+          btnMisc10.textContent = "infec mid";
+          btnMisc10.classList.remove("loading");
+        }
+        btnMisc10.textContent = "infec mid";
+        btnMisc10.classList.remove("loading");
       });
 
       // Back to Sets (←)
