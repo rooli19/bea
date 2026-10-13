@@ -1,0 +1,542 @@
+[
+  {
+    "q": "What activates polymerization of heat-cured denture base resin?",
+    "a": "D. Heat",
+    "choices": [
+      "A. Benzoyl peroxide",
+      "B. p-toluidine",
+      "C. Hydroquinone",
+      "D. Heat"
+    ]
+  },
+  {
+    "q": "What is the activator of self-cured denture base resin?",
+    "a": "C. p-toluidine",
+    "choices": [
+      "A. Benzoyl peroxide",
+      "B. Heat",
+      "C. p-toluidine",
+      "D. Hydroquinone"
+    ]
+  },
+  {
+    "q": "Which denture base resin has higher strength and is more color stable?",
+    "a": "A. Heat-cured resin",
+    "choices": [
+      "A. Heat-cured resin",
+      "B. Self-cured resin",
+      "C. Filled resin",
+      "D. Unfilled resin"
+    ]
+  },
+  {
+    "q": "Which denture base resin is more dimensionally stable but less color stable?",
+    "a": "D. Self-cured resin",
+    "choices": [
+      "A. Heat-cured resin",
+      "B. Filled resin",
+      "C. Unfilled resin",
+      "D. Self-cured resin"
+    ]
+  },
+  {
+    "q": "The Knoop hardness number (KHN) of heat-cured resin is about",
+    "a": "B. 20",
+    "choices": [
+      "A. 16-18",
+      "B. 20",
+      "C. 10-12",
+      "D. 25-30"
+    ]
+  },
+  {
+    "q": "Which residual monomer content is expected in self-cured resin?",
+    "a": "C. 3-5%",
+    "choices": [
+      "A. 0.2-0.57%",
+      "B. 1-2%",
+      "C. 3-5%",
+      "D. 10-15%"
+    ]
+  },
+  {
+    "q": "Which residual monomer content is expected in heat-cured resin?",
+    "a": "C. 0.2-0.57%",
+    "choices": [
+      "A. 10-15%",
+      "B. 1-2%",
+      "C. 0.2-0.57%",
+      "D. 3-5%"
+    ]
+  },
+  {
+    "q": "A resin pontic is preferred over porcelain when",
+    "a": "C. The opposing arch still has natural teeth",
+    "choices": [
+      "A. Dimensional stability in air is the priority",
+      "B. A clicking sound is desired",
+      "C. The opposing arch still has natural teeth",
+      "D. The pontic must show no wear over time"
+    ]
+  },
+  {
+    "q": "Which pontic material can abrade opposing natural teeth and even metal crowns?",
+    "a": "C. Porcelain",
+    "choices": [
+      "A. Unfilled acrylic",
+      "B. Filled composite",
+      "C. Porcelain",
+      "D. Resin"
+    ]
+  },
+  {
+    "q": "Which pontic material is tougher but abrades easily?",
+    "a": "D. Resin",
+    "choices": [
+      "A. Porcelain",
+      "B. Both equally",
+      "C. Neither material",
+      "D. Resin"
+    ]
+  },
+  {
+    "q": "Which pontic material shrinks when the denture is left exposed to air?",
+    "a": "B. Resin",
+    "choices": [
+      "A. Porcelain",
+      "B. Resin",
+      "C. Neither material",
+      "D. Both equally"
+    ]
+  },
+  {
+    "q": "Which pontic material produces a clicking sound on contact?",
+    "a": "A. Porcelain",
+    "choices": [
+      "A. Porcelain",
+      "B. Neither material",
+      "C. Resin",
+      "D. Both equally"
+    ]
+  },
+  {
+    "q": "Which pontic is silent on contact, shows significant wear, and has an unstable vertical dimension?",
+    "a": "D. Resin",
+    "choices": [
+      "A. Neither material",
+      "B. Both equally",
+      "C. Porcelain",
+      "D. Resin"
+    ]
+  },
+  {
+    "q": "Acrylic resins are classified as",
+    "a": "A. Thermoplastic resins",
+    "choices": [
+      "A. Thermoplastic resins",
+      "B. Ceramic materials",
+      "C. Elastomeric materials",
+      "D. Thermosetting resins"
+    ]
+  },
+  {
+    "q": "Resins that contain fillers, also known as composites, are called",
+    "a": "A. Filled resins",
+    "choices": [
+      "A. Filled resins",
+      "B. Heat-cured resins",
+      "C. Self-cured resins",
+      "D. Unfilled resins"
+    ]
+  },
+  {
+    "q": "The part of the denture that rests on the soft tissues and holds the artificial teeth is the",
+    "a": "C. Denture base",
+    "choices": [
+      "A. Individual tray",
+      "B. Pontic",
+      "C. Denture base",
+      "D. Obturator"
+    ]
+  },
+  {
+    "q": "Which resin appliance blocks the opening between the nose and mouth in cleft palate patients?",
+    "a": "A. Obturator",
+    "choices": [
+      "A. Obturator",
+      "B. Bite plate",
+      "C. Retainer",
+      "D. Mouth guard"
+    ]
+  },
+  {
+    "q": "Which material protects the pits and fissures of young molars from premature caries?",
+    "a": "A. Sealant",
+    "choices": [
+      "A. Sealant",
+      "B. Obturator",
+      "C. Jacket crown",
+      "D. Relining material"
+    ]
+  },
+  {
+    "q": "Which is a requirement of a good dental resin?",
+    "a": "B. Softening temperature higher than any food taken in the mouth",
+    "choices": [
+      "A. Opaque enough to mask underlying tissues",
+      "B. Softening temperature higher than any food taken in the mouth",
+      "C. High specific gravity for stability",
+      "D. Slight water absorption to improve fit"
+    ]
+  },
+  {
+    "q": "What is the main component of the acrylic resin powder?",
+    "a": "B. Polymethyl methacrylate beads",
+    "choices": [
+      "A. Methyl methacrylate",
+      "B. Polymethyl methacrylate beads",
+      "C. Benzoyl peroxide",
+      "D. Dibutyl phthalate"
+    ]
+  },
+  {
+    "q": "What is the role of benzoyl peroxide in the powder?",
+    "a": "B. Initiator",
+    "choices": [
+      "A. Plasticizer",
+      "B. Initiator",
+      "C. Inhibitor",
+      "D. Cross-linking agent"
+    ]
+  },
+  {
+    "q": "What is the role of dibutyl phthalate in the powder?",
+    "a": "D. Plasticizer that improves workability",
+    "choices": [
+      "A. Inhibitor of polymerization",
+      "B. Cross-linking agent",
+      "C. Initiator of polymerization",
+      "D. Plasticizer that improves workability"
+    ]
+  },
+  {
+    "q": "Talc or gelatin is added to the powder to",
+    "a": "A. Prevent cohesion of the beads during storage",
+    "choices": [
+      "A. Prevent cohesion of the beads during storage",
+      "B. Improve the workability of the dough",
+      "C. Produce a blood vessel appearance",
+      "D. Initiate polymerization"
+    ]
+  },
+  {
+    "q": "Dyed synthetic fibers in the powder improve esthetics by producing",
+    "a": "A. The look of small blood vessels",
+    "choices": [
+      "A. The look of small blood vessels",
+      "B. A translucent base",
+      "C. A hardened surface",
+      "D. A cross-linked structure"
+    ]
+  },
+  {
+    "q": "What is the main component of the acrylic liquid?",
+    "a": "A. Methyl methacrylate",
+    "choices": [
+      "A. Methyl methacrylate",
+      "B. Glycol dimethacrylate",
+      "C. Hydroquinone",
+      "D. Polymethyl methacrylate"
+    ]
+  },
+  {
+    "q": "What is the role of hydroquinone in the liquid?",
+    "a": "B. Prevents premature polymerization during storage",
+    "choices": [
+      "A. Starts polymerization of the monomer",
+      "B. Prevents premature polymerization during storage",
+      "C. Bridges two polymerized chains",
+      "D. Improves the workability of the powder"
+    ]
+  },
+  {
+    "q": "What is the role of glycol dimethacrylate in the liquid?",
+    "a": "C. Cross-linking agent that bridges polymerized chains",
+    "choices": [
+      "A. Inhibitor that prevents premature setting",
+      "B. Plasticizer that softens the beads",
+      "C. Cross-linking agent that bridges polymerized chains",
+      "D. Initiator that starts polymerization"
+    ]
+  },
+  {
+    "q": "In the acrylic resin system, where is the initiator found?",
+    "a": "A. In the powder with the polymer",
+    "choices": [
+      "A. In the powder with the polymer",
+      "B. In the liquid with the monomer",
+      "C. In the separating medium",
+      "D. In the investing plaster"
+    ]
+  },
+  {
+    "q": "The working cast for a denture base is made of",
+    "a": "B. Dental stone",
+    "choices": [
+      "A. Pink wax",
+      "B. Dental stone",
+      "C. Modeling compound",
+      "D. Plaster of paris"
+    ]
+  },
+  {
+    "q": "Which technique is used when constructing the working cast?",
+    "a": "D. Boxing method",
+    "choices": [
+      "A. Flasking method",
+      "B. Burnout method",
+      "C. Dough method",
+      "D. Boxing method"
+    ]
+  },
+  {
+    "q": "Over-soaking the cast in water during investing will cause",
+    "a": "C. Etching of the cast",
+    "choices": [
+      "A. Rapid setting of the plaster",
+      "B. Melting of the wax pattern",
+      "C. Etching of the cast",
+      "D. Shrinkage of the denture base"
+    ]
+  },
+  {
+    "q": "What is the purpose of the wax elimination or burnout procedure?",
+    "a": "D. To create a mold space",
+    "choices": [
+      "A. To coat the flask with a separating medium",
+      "B. To cure the resin",
+      "C. To separate the flask halves",
+      "D. To create a mold space"
+    ]
+  },
+  {
+    "q": "How long are the flasks soaked in boiling water to soften the wax?",
+    "a": "D. 4-5 minutes",
+    "choices": [
+      "A. 30 minutes",
+      "B. 10-15 minutes",
+      "C. 1-2 minutes",
+      "D. 4-5 minutes"
+    ]
+  },
+  {
+    "q": "Why is separating medium painted again during mold space preparation?",
+    "a": "C. For easy deflasking",
+    "choices": [
+      "A. To speed up polymerization",
+      "B. To prevent monomer evaporation",
+      "C. For easy deflasking",
+      "D. To soften the remaining wax"
+    ]
+  },
+  {
+    "q": "What is the polymer to monomer ratio by volume?",
+    "a": "D. 3:1",
+    "choices": [
+      "A. 2:1",
+      "B. 4:1",
+      "C. 1:1",
+      "D. 3:1"
+    ]
+  },
+  {
+    "q": "What is the polymer to monomer ratio by weight?",
+    "a": "D. 2:1",
+    "choices": [
+      "A. 1:2",
+      "B. 3:1",
+      "C. 1:1",
+      "D. 2:1"
+    ]
+  },
+  {
+    "q": "Why should the mixture not be stirred vigorously when adding the polymer?",
+    "a": "A. It may introduce air into the mixture",
+    "choices": [
+      "A. It may introduce air into the mixture",
+      "B. It may dissolve the plasticizer",
+      "C. It may evaporate the monomer",
+      "D. It may cause premature setting"
+    ]
+  },
+  {
+    "q": "In which stage of mixing has no reaction yet occurred between powder and liquid?",
+    "a": "C. Sandy stage",
+    "choices": [
+      "A. Stringy stage",
+      "B. Rubbery stage",
+      "C. Sandy stage",
+      "D. Dough stage"
+    ]
+  },
+  {
+    "q": "In which stage does the monomer attack the polymer surface, making the mix sticky with threadlike projections?",
+    "a": "D. Stringy stage",
+    "choices": [
+      "A. Stiff stage",
+      "B. Dough stage",
+      "C. Sandy stage",
+      "D. Stringy stage"
+    ]
+  },
+  {
+    "q": "Which stage is ideal for compression molding and packing?",
+    "a": "B. Dough stage",
+    "choices": [
+      "A. Sandy stage",
+      "B. Dough stage",
+      "C. Stringy stage",
+      "D. Rubbery stage"
+    ]
+  },
+  {
+    "q": "In which stage does the mixture act rubber-like and can no longer be molded?",
+    "a": "C. Rubbery stage",
+    "choices": [
+      "A. Dough stage",
+      "B. Stringy stage",
+      "C. Rubbery stage",
+      "D. Stiff stage"
+    ]
+  },
+  {
+    "q": "Which stage is dry and resistant to mechanical deformation?",
+    "a": "B. Stiff stage",
+    "choices": [
+      "A. Rubbery stage",
+      "B. Stiff stage",
+      "C. Sandy stage",
+      "D. Dough stage"
+    ]
+  },
+  {
+    "q": "Which describes rapid curing of denture resin?",
+    "a": "A. 74 C water bath for 2 hours, then 100 C for 1 hour",
+    "choices": [
+      "A. 74 C water bath for 2 hours, then 100 C for 1 hour",
+      "B. 100 C water bath for 2 hours only",
+      "C. 74 C water bath for 8-9 hours",
+      "D. 65-70 C water bath for 8-9 hours"
+    ]
+  },
+  {
+    "q": "Which describes slow curing of denture resin?",
+    "a": "B. 65-70 C water bath for 8-9 hours",
+    "choices": [
+      "A. 100 C water bath for 1 hour",
+      "B. 65-70 C water bath for 8-9 hours",
+      "C. 74 C water bath for 4-5 hours",
+      "D. 74 C water bath for 2 hours, then 100 C for 1 hour"
+    ]
+  },
+  {
+    "q": "Which dimensional change refers to polymerization shrinkage of the resin?",
+    "a": "B. Contraction",
+    "choices": [
+      "A. Thermal contraction",
+      "B. Contraction",
+      "C. Water sorption",
+      "D. Thermal expansion"
+    ]
+  },
+  {
+    "q": "Which dimensional change occurs as the flask cools from the water bath to room temperature?",
+    "a": "D. Thermal contraction",
+    "choices": [
+      "A. Polymerization shrinkage",
+      "B. Thermal expansion",
+      "C. Water sorption",
+      "D. Thermal contraction"
+    ]
+  },
+  {
+    "q": "Which dimensional change occurs when going from room temperature to the water bath temperature?",
+    "a": "C. Thermal expansion",
+    "choices": [
+      "A. Water sorption",
+      "B. Polymerization shrinkage",
+      "C. Thermal expansion",
+      "D. Thermal contraction"
+    ]
+  },
+  {
+    "q": "Which tools may be used for deflasking?",
+    "a": "C. Flask ejector or mallet",
+    "choices": [
+      "A. Mixing jar or stirring rod",
+      "B. Carver or spatula",
+      "C. Flask ejector or mallet",
+      "D. Boxing wax or flask cap"
+    ]
+  },
+  {
+    "q": "External porosities on the denture surface are caused by",
+    "a": "A. Improper manipulation of the investing medium",
+    "choices": [
+      "A. Improper manipulation of the investing medium",
+      "B. Too rapid a curing process",
+      "C. Accidental dropping during deflasking",
+      "D. Too much pressure during packing"
+    ]
+  },
+  {
+    "q": "Internal porosities, seen when the denture is held against light, are caused by",
+    "a": "D. Too rapid curing and premature monomer evaporation",
+    "choices": [
+      "A. Too much pressure during packing",
+      "B. Accidental dropping during deflasking",
+      "C. Improper manipulation of the investing medium",
+      "D. Too rapid curing and premature monomer evaporation"
+    ]
+  },
+  {
+    "q": "Linear cracks on the denture base are called",
+    "a": "B. Crazing",
+    "choices": [
+      "A. Porosity",
+      "B. Crazing",
+      "C. Contraction",
+      "D. Fracture"
+    ]
+  },
+  {
+    "q": "Crazing and fracture of the denture base are caused by",
+    "a": "B. Too much packing pressure and dropping during deflasking",
+    "choices": [
+      "A. Too rapid a curing process",
+      "B. Too much packing pressure and dropping during deflasking",
+      "C. Improper manipulation of the investing medium",
+      "D. Premature evaporation of monomer"
+    ]
+  },
+  {
+    "q": "Which step comes right after investing the wax pattern?",
+    "a": "B. Wax elimination or burnout",
+    "choices": [
+      "A. Curing",
+      "B. Wax elimination or burnout",
+      "C. Deflasking",
+      "D. Packing of resin dough"
+    ]
+  },
+  {
+    "q": "Which step comes right before curing?",
+    "a": "A. Packing of resin dough",
+    "choices": [
+      "A. Packing of resin dough",
+      "B. Mold space preparation",
+      "C. Deflasking",
+      "D. Wax elimination"
+    ]
+  }
+]

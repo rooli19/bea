@@ -63,7 +63,6 @@
         position: relative;
       }
 
-      /* ---- Two back buttons: fixed top-left & top-right ---- */
       .back-btn {
         position: fixed;
         top: 18px;
@@ -204,7 +203,6 @@
         letter-spacing: 0.3px;
       }
 
-      /* SELECTION SCREEN */
       .selection-screen {
         display: flex;
         flex-direction: column;
@@ -251,7 +249,6 @@
         pointer-events: none;
       }
 
-      /* GAME UI WRAPPERS */
       #gameUI {
         display: none;
         width: 100%;
@@ -704,7 +701,6 @@
     </style>
   </head>
   <body>
-    <!-- Back to Sets (←) -->
     <button
       class="back-btn"
       id="backBtn"
@@ -714,7 +710,6 @@
       ←
     </button>
 
-    <!-- Back to index.html (🏠) -->
     <button
       class="home-btn"
       id="homeBtn"
@@ -735,22 +730,43 @@
 
       <div class="selection-screen" id="selectionScreen">
         <h2>Choose a Flashcard Set</h2>
+
+        <!-- Inline-data sets (defined in JS below) -->
         <button class="set-btn" id="btnPart1">
           DENT MAT: Impression Materials
         </button>
         <button class="set-btn" id="btnPart2">
           DENT MAT: Dental Materials Intro
         </button>
-        <button class="set-btn" id="btnMisc">mod 1 and 2 pato?</button>
-        <button class="set-btn" id="btnMisc2">mod 3 and 4 pato?</button>
-        <button class="set-btn" id="btnMisc3">infection control</button>
-        <button class="set-btn" id="btnMisc4">2mor & c4ncer</button>
-        <button class="set-btn" id="btnMisc5">caries</button>
-        <button class="set-btn" id="btnMisc6">diseases</button>
-        <button class="set-btn" id="btnMisc7">dentmat midt</button>
-        <button class="set-btn" id="btnMisc8">pharma hyperT</button>
-        <button class="set-btn" id="btnMisc9">dentmat</button>
-        <button class="set-btn" id="btnMisc10">infec midt</button>
+
+        <!--
+          ✏️  ADD A NEW SET:
+            1. Drop the JSON file somewhere next to this HTML.
+            2. Copy ONE line below and change:
+                 • data-file → path to your JSON
+                 • button text → your label
+            3. Done. No JS edits needed.
+
+          JSON format (array of cards):
+            [ { "q": "question", "a": "answer", "e": "optional explanation" } ]
+        -->
+        <button class="set-btn" data-file="data.json">mod 1 and 2 pato?</button>
+        <button class="set-btn" data-file="data2.json">
+          mod 3 and 4 pato?
+        </button>
+        <button class="set-btn" data-file="data3.json">
+          infection control
+        </button>
+        <button class="set-btn" data-file="data4.json">
+          2mor &amp; c4ncer
+        </button>
+        <button class="set-btn" data-file="data5.json">caries</button>
+        <button class="set-btn" data-file="data6.json">diseases</button>
+        <button class="set-btn" data-file="data7.json">dentmat midt</button>
+        <button class="set-btn" data-file="data8.json">pharma hyperT</button>
+        <button class="set-btn" data-file="data9.json">dentmat</button>
+        <button class="set-btn" data-file="data10.json">infec midt</button>
+         <button class="set-btn" data-file="data10.json">infec midt</button>
       </div>
 
       <div id="gameUI">
@@ -866,7 +882,9 @@
     </div>
 
     <script>
-      // -------- DATA --------
+      // ============================================================================
+      // ---- DATA (inline decks) ----
+      // ============================================================================
       const part1Cards = [
         {
           q: "What is the definition of Impression?",
@@ -1106,7 +1124,7 @@
         {
           q: "As a root canal sealer (endo), ZOE is used to gutta ercha sticks inserted into the canal. What is ZOE described as?",
           a: "A sealer or obtundant material",
-          e: "Root canal sealer (endo): Used to gutta ercha sticks inserted into the canal. ZOE is a sealer or obtundant material.",
+          e: "Root canal sealer (endo): Used to gutta ercha sticks inserted into the canal. ZOE is a sealer or obundant material.",
         },
         {
           q: "As a cementing medium, what are the two varieties of ZOE cement?",
@@ -2156,16 +2174,6 @@
       const gameUI = document.getElementById("gameUI");
       const btnPart1 = document.getElementById("btnPart1");
       const btnPart2 = document.getElementById("btnPart2");
-      const btnMisc = document.getElementById("btnMisc");
-      const btnMisc2 = document.getElementById("btnMisc2");
-      const btnMisc3 = document.getElementById("btnMisc3");
-      const btnMisc4 = document.getElementById("btnMisc4");
-      const btnMisc5 = document.getElementById("btnMisc5");
-      const btnMisc6 = document.getElementById("btnMisc6");
-      const btnMisc7 = document.getElementById("btnMisc7");
-      const btnMisc8 = document.getElementById("btnMisc8");
-      const btnMisc9 = document.getElementById("btnMisc9");
-      const btnMisc10 = document.getElementById("btnMisc10");
 
       const backBtn = document.getElementById("backBtn");
       const homeBtn = document.getElementById("homeBtn");
@@ -2226,243 +2234,45 @@
       btnPart1.addEventListener("click", () => startSet(part1Cards));
       btnPart2.addEventListener("click", () => startSet(part2Cards));
 
-      // Misc: load from data.json
-      btnMisc.addEventListener("click", async () => {
-        btnMisc.textContent = "Loading...";
-        btnMisc.classList.add("loading");
-        try {
-          const resp = await fetch("data.json");
-          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-          const json = await resp.json();
-          // Expect array of { q, a, e? }
-          const miscCards = json.map((item) => ({
-            q: item.q || "No question",
-            a: item.a || "No answer",
-            e: item.e || "",
-          }));
-          if (miscCards.length === 0) throw new Error("No cards found in JSON");
-          startSet(miscCards);
-        } catch (err) {
-          alert(`Error loading data.json: ${err.message}`);
-          btnMisc.textContent = "mod 3 and 4 pato?";
-          btnMisc.classList.remove("loading");
-        }
-        btnMisc.textContent = "mod 3 and 4 pato?";
-        btnMisc.classList.remove("loading");
-      });
+      // -------- GENERIC QUIZ LOADER --------
+      // One handler for every <button class="set-btn" data-file="...">
+      async function startQuizFromFile(file, btn) {
+        const originalLabel = btn.textContent;
+        btn.classList.add("loading");
+        btn.textContent = "Loading...";
 
-      btnMisc2.addEventListener("click", async () => {
-        btnMisc2.textContent = "Loading...";
-        btnMisc2.classList.add("loading");
         try {
-          const resp = await fetch("data2.json");
+          const resp = await fetch(file);
           if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
           const json = await resp.json();
-          // Expect array of { q, a, e? }
-          const miscCards = json.map((item) => ({
-            q: item.q || "No question",
-            a: item.a || "No answer",
-            e: item.e || "",
-          }));
-          if (miscCards.length === 0) throw new Error("No cards found in JSON");
-          startSet(miscCards);
-        } catch (err) {
-          alert(`Error loading data.json: ${err.message}`);
-          btnMisc2.textContent = "mod 3 and 4 pato?";
-          btnMisc2.classList.remove("loading");
-        }
-        btnMisc2.textContent = "mod 3 and 4 pato?";
-        btnMisc2.classList.remove("loading");
-      });
+          const arr = Array.isArray(json) ? json : json.questions;
+          if (!Array.isArray(arr)) throw new Error("JSON must be an array");
 
-      btnMisc3.addEventListener("click", async () => {
-        btnMisc3.textContent = "Loading...";
-        btnMisc3.classList.add("loading");
-        try {
-          const resp = await fetch("data3.json");
-          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-          const json = await resp.json();
-          // Expect array of { q, a, e? }
-          const miscCards = json.map((item) => ({
+          const miscCards = arr.map((item) => ({
             q: item.q || "No question",
             a: item.a || "No answer",
             e: item.e || "",
           }));
-          if (miscCards.length === 0) throw new Error("No cards found in JSON");
-          startSet(miscCards);
-        } catch (err) {
-          alert(`Error loading data.json: ${err.message}`);
-          btnMisc3.textContent = "infection control";
-          btnMisc3.classList.remove("loading");
-        }
-        btnMisc3.textContent = "infection control";
-        btnMisc3.classList.remove("loading");
-      });
 
-      btnMisc4.addEventListener("click", async () => {
-        btnMisc4.textContent = "Loading...";
-        btnMisc4.classList.add("loading");
-        try {
-          const resp = await fetch("data4.json");
-          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-          const json = await resp.json();
-          // Expect array of { q, a, e? }
-          const miscCards = json.map((item) => ({
-            q: item.q || "No question",
-            a: item.a || "No answer",
-            e: item.e || "",
-          }));
           if (miscCards.length === 0) throw new Error("No cards found in JSON");
           startSet(miscCards);
         } catch (err) {
-          alert(`Error loading data.json: ${err.message}`);
-          btnMisc4.textContent = "2mor & cancer";
-          btnMisc4.classList.remove("loading");
+          alert(`Error loading ${file}: ${err.message}`);
+        } finally {
+          btn.classList.remove("loading");
+          btn.textContent = originalLabel;
         }
-        btnMisc4.textContent = "2mor & cancer";
-        btnMisc4.classList.remove("loading");
-      });
-      btnMisc5.addEventListener("click", async () => {
-        btnMisc5.textContent = "Loading...";
-        btnMisc5.classList.add("loading");
-        try {
-          const resp = await fetch("data5.json");
-          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-          const json = await resp.json();
-          // Expect array of { q, a, e? }
-          const miscCards = json.map((item) => ({
-            q: item.q || "No question",
-            a: item.a || "No answer",
-            e: item.e || "",
-          }));
-          if (miscCards.length === 0) throw new Error("No cards found in JSON");
-          startSet(miscCards);
-        } catch (err) {
-          alert(`Error loading data.json: ${err.message}`);
-          btnMisc5.textContent = "caries";
-          btnMisc5.classList.remove("loading");
-        }
-        btnMisc5.textContent = "caries";
-        btnMisc5.classList.remove("loading");
-      });
-      btnMisc6.addEventListener("click", async () => {
-        btnMisc6.textContent = "Loading...";
-        btnMisc6.classList.add("loading");
-        try {
-          const resp = await fetch("data6.json");
-          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-          const json = await resp.json();
-          // Expect array of { q, a, e? }
-          const miscCards = json.map((item) => ({
-            q: item.q || "No question",
-            a: item.a || "No answer",
-            e: item.e || "",
-          }));
-          if (miscCards.length === 0) throw new Error("No cards found in JSON");
-          startSet(miscCards);
-        } catch (err) {
-          alert(`Error loading data.json: ${err.message}`);
-          btnMisc6.textContent = "diseases";
-          btnMisc6.classList.remove("loading");
-        }
-        btnMisc6.textContent = "diseases";
-        btnMisc6.classList.remove("loading");
-      });
+      }
 
-      btnMisc7.addEventListener("click", async () => {
-        btnMisc7.textContent = "Loading...";
-        btnMisc7.classList.add("loading");
-        try {
-          const resp = await fetch("data7.json");
-          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-          const json = await resp.json();
-          // Expect array of { q, a, e? }
-          const miscCards = json.map((item) => ({
-            q: item.q || "No question",
-            a: item.a || "No answer",
-            e: item.e || "",
-          }));
-          if (miscCards.length === 0) throw new Error("No cards found in JSON");
-          startSet(miscCards);
-        } catch (err) {
-          alert(`Error loading data.json: ${err.message}`);
-          btnMisc7.textContent = "dentmat midt";
-          btnMisc7.classList.remove("loading");
-        }
-        btnMisc7.textContent = "dentmat midt";
-        btnMisc7.classList.remove("loading");
-      });
-
-      btnMisc8.addEventListener("click", async () => {
-        btnMisc8.textContent = "Loading...";
-        btnMisc8.classList.add("loading");
-        try {
-          const resp = await fetch("data8.json");
-          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-          const json = await resp.json();
-          // Expect array of { q, a, e? }
-          const miscCards = json.map((item) => ({
-            q: item.q || "No question",
-            a: item.a || "No answer",
-            e: item.e || "",
-          }));
-          if (miscCards.length === 0) throw new Error("No cards found in JSON");
-          startSet(miscCards);
-        } catch (err) {
-          alert(`Error loading data.json: ${err.message}`);
-          btnMisc8.textContent = "pharma hyperT";
-          btnMisc8.classList.remove("loading");
-        }
-        btnMisc8.textContent = "pharma hyperT";
-        btnMisc8.classList.remove("loading");
-      });
-
-      btnMisc9.addEventListener("click", async () => {
-        btnMisc9.textContent = "Loading...";
-        btnMisc9.classList.add("loading");
-        try {
-          const resp = await fetch("data9.json");
-          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-          const json = await resp.json();
-          // Expect array of { q, a, e? }
-          const miscCards = json.map((item) => ({
-            q: item.q || "No question",
-            a: item.a || "No answer",
-            e: item.e || "",
-          }));
-          if (miscCards.length === 0) throw new Error("No cards found in JSON");
-          startSet(miscCards);
-        } catch (err) {
-          alert(`Error loading data.json: ${err.message}`);
-          btnMisc9.textContent = "dentmat";
-          btnMisc9.classList.remove("loading");
-        }
-        btnMisc9.textContent = "dentamat";
-        btnMisc9.classList.remove("loading");
-      });
-      btnMisc10.addEventListener("click", async () => {
-        btnMisc10.textContent = "Loading...";
-        btnMisc10.classList.add("loading");
-        try {
-          const resp = await fetch("data10.json");
-          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-          const json = await resp.json();
-          // Expect array of { q, a, e? }
-          const miscCards = json.map((item) => ({
-            q: item.q || "No question",
-            a: item.a || "No answer",
-            e: item.e || "",
-          }));
-          if (miscCards.length === 0) throw new Error("No cards found in JSON");
-          startSet(miscCards);
-        } catch (err) {
-          alert(`Error loading data.json: ${err.message}`);
-          btnMisc10.textContent = "infec mid";
-          btnMisc10.classList.remove("loading");
-        }
-        btnMisc10.textContent = "infec mid";
-        btnMisc10.classList.remove("loading");
-      });
+      function bindQuizButtons() {
+        document
+          .querySelectorAll(".selection-screen .set-btn[data-file]")
+          .forEach((btn) => {
+            btn.addEventListener("click", () => {
+              startQuizFromFile(btn.dataset.file, btn);
+            });
+          });
+      }
 
       // Back to Sets (←)
       backBtn.addEventListener("click", (e) => {
@@ -2473,24 +2283,6 @@
       // Back to index.html (🏠)
       homeBtn.addEventListener("click", (e) => {
         e.preventDefault();
-        // Navigate to index.html (or root if index.html isn't served)
-        window.location.href = "index.html";
-      });
-
-      menuBtn.addEventListener("click", () => {
-        showMenu();
-      });
-
-      // Back to Sets (←)
-      backBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        showMenu();
-      });
-
-      // Back to index.html (🏠)
-      homeBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        // Navigate to index.html (or root if index.html isn't served)
         window.location.href = "index.html";
       });
 
@@ -2907,6 +2699,9 @@
           resizeFitTimer = setTimeout(fitCardFaces, 150);
         }
       });
+
+      // -------- BIND ALL data-file BUTTONS --------
+      bindQuizButtons();
     </script>
   </body>
 </html>
