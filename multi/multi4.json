@@ -1,0 +1,502 @@
+[
+  {
+    "q": "Which chemical agent is described as a saturated dialdehyde that is sporicidal only in its alkaline “activated” form?",
+    "a": "B. Glutaraldehyde",
+    "choices": [
+      "A. Ethylene oxide",
+      "B. Glutaraldehyde",
+      "C. Formaldehyde",
+      "D. Hydrogen peroxide"
+    ]
+  },
+  {
+    "q": "At which pH range is glutaraldehyde “activated” and therefore sporicidal?",
+    "a": "C. pH 7.5–8.5",
+    "choices": [
+      "A. pH 5.5–6.5",
+      "B. pH 4.5–5.5",
+      "C. pH 7.5–8.5",
+      "D. pH 9.5–10.5"
+    ]
+  },
+  {
+    "q": "What is the minimal shelf life listed for activated glutaraldehyde?",
+    "a": "B. 14 days",
+    "choices": [
+      "A. 21 days",
+      "B. 14 days",
+      "C. 7 days",
+      "D. 30 days"
+    ]
+  },
+  {
+    "q": "The biocidal activity of glutaraldehyde is attributed to alkylation of which groups of microorganisms?",
+    "a": "C. Sulfhydryl, hydroxyl, carboxyl, and amino groups",
+    "choices": [
+      "A. Hydroxyl, carboxyl, phosphate, and methyl groups",
+      "B. Sulfhydryl, phosphate, carbonyl, and methyl groups",
+      "C. Sulfhydryl, hydroxyl, carboxyl, and amino groups",
+      "D. Amino, carbonyl, phosphate, and methyl groups"
+    ]
+  },
+  {
+    "q": "Which level of microbial control is assigned to phenolics?",
+    "a": "A. Intermediate-level",
+    "choices": [
+      "A. Intermediate-level",
+      "B. High-level",
+      "C. Sterilant-level",
+      "D. Low-level"
+    ]
+  },
+  {
+    "q": "Which pair consists of phenol derivatives?",
+    "a": "D. Ortho-phenylphenol and ortho-benzyl-para-chlorophenol",
+    "choices": [
+      "A. Benzalkonium chloride and cetylpyridinium chloride",
+      "B. Silver nitrate and merthiolate",
+      "C. Sodium dichloroisocyanurate and chloramine-T",
+      "D. Ortho-phenylphenol and ortho-benzyl-para-chlorophenol"
+    ]
+  },
+  {
+    "q": "Which agent’s mechanism of action includes leakage of essential metabolites from the cell wall?",
+    "a": "A. Phenolics",
+    "choices": [
+      "A. Phenolics",
+      "B. Chlorine",
+      "C. Iodophors",
+      "D. Hydrogen peroxide"
+    ]
+  },
+  {
+    "q": "Formaldehyde inactivates microorganisms by alkylating which targets?",
+    "a": "B. Sulfhydryl groups of proteins and ring nitrogen atoms of purine bases",
+    "choices": [
+      "A. Hydroxyl groups of lipids and ring nitrogen atoms of pyrimidine bases",
+      "B. Sulfhydryl groups of proteins and ring nitrogen atoms of purine bases",
+      "C. Amino groups of lipids and ring carbon atoms of purine bases",
+      "D. Carboxyl groups of proteins and phosphate groups of nucleic acids"
+    ]
+  },
+  {
+    "q": "Formocresol, used in pediatric pulpotomy, is classified under which chemical agent?",
+    "a": "C. Formaldehyde",
+    "choices": [
+      "A. Iodophors",
+      "B. Chlorhexidine",
+      "C. Formaldehyde",
+      "D. Glutaraldehyde"
+    ]
+  },
+  {
+    "q": "Which pair of chemical agents is listed as carcinogenic?",
+    "a": "C. Formaldehyde and chlorine",
+    "choices": [
+      "A. Phenolics and iodophors",
+      "B. Glutaraldehyde and alcohols",
+      "C. Formaldehyde and chlorine",
+      "D. Chlorhexidine and hydrogen peroxide"
+    ]
+  },
+  {
+    "q": "Which agent produces hydroxyl free radicals that attack membrane lipids, DNA, and other essential cell components?",
+    "a": "D. Hydrogen peroxide",
+    "choices": [
+      "A. Ethylene oxide",
+      "B. Iodophors",
+      "C. Chlorine",
+      "D. Hydrogen peroxide"
+    ]
+  },
+  {
+    "q": "At 0.5% accelerated hydrogen peroxide, mycobactericidal and fungicidal activity is achieved in how long?",
+    "a": "D. 5 minutes",
+    "choices": [
+      "A. 1 minute",
+      "B. 10 minutes",
+      "C. 30 minutes",
+      "D. 5 minutes"
+    ]
+  },
+  {
+    "q": "Commercially available hydrogen peroxide at what concentration is a stable and effective disinfectant for inanimate surfaces?",
+    "a": "C. 3%",
+    "choices": [
+      "A. 0.5%",
+      "B. 5.25%",
+      "C. 3%",
+      "D. 2%"
+    ]
+  },
+  {
+    "q": "Which iodine-based preparation is used both as an antiseptic and as a disinfectant?",
+    "a": "A. Iodophors",
+    "choices": [
+      "A. Iodophors",
+      "B. Merthiolate",
+      "C. Iodine tincture",
+      "D. Iodine solutions"
+    ]
+  },
+  {
+    "q": "In povidone-iodine, what is the role of povidone?",
+    "a": "A. A surface-active carrier that improves wetting and serves as a reservoir of free iodine",
+    "choices": [
+      "A. A surface-active carrier that improves wetting and serves as a reservoir of free iodine",
+      "B. A buffer that raises pH to activate the iodine for sporicidal action",
+      "C. A solvent that converts iodine into hypochlorous acid for oxidation",
+      "D. A stabilizer that neutralizes free iodine and limits its release at the site"
+    ]
+  },
+  {
+    "q": "Chlorhexidine belongs to which chemical class?",
+    "a": "D. Bisbiguanide",
+    "choices": [
+      "A. Halogen",
+      "B. Phenol derivative",
+      "C. Quaternary ammonium",
+      "D. Bisbiguanide"
+    ]
+  },
+  {
+    "q": "For surgical hand scrubs and pre-operative skin preparation, chlorhexidine is combined with which?",
+    "a": "B. A detergent or alcohol",
+    "choices": [
+      "A. Phenol or chlorine",
+      "B. A detergent or alcohol",
+      "C. A heavy metal or glutaraldehyde",
+      "D. Hydrogen peroxide or formaldehyde"
+    ]
+  },
+  {
+    "q": "Which pairing of root canal irrigant and concentration is correct?",
+    "a": "A. Sodium hypochlorite – 5.25%",
+    "choices": [
+      "A. Sodium hypochlorite – 5.25%",
+      "B. Hydrogen peroxide – 5.25%",
+      "C. Sodium hypochlorite – 2%",
+      "D. Chlorhexidine gluconate – 5.25%"
+    ]
+  },
+  {
+    "q": "The antimicrobial activity of chlorine is attributed to which species?",
+    "a": "B. Undissociated hypochlorous acid (HOCl)",
+    "choices": [
+      "A. Free iodine released from a carrier",
+      "B. Undissociated hypochlorous acid (HOCl)",
+      "C. Dissociated hypochlorite ion (OCl⁻)",
+      "D. Hydroxyl free radicals"
+    ]
+  },
+  {
+    "q": "How do chlorine compounds such as chloramine-T differ from hypochlorites?",
+    "a": "D. They retain chlorine longer for a prolonged bactericidal effect",
+    "choices": [
+      "A. They generate hydroxyl radicals for a faster microbial kill",
+      "B. They act by alkylation instead of oxidation of enzymes",
+      "C. They are effective only against enveloped viruses",
+      "D. They retain chlorine longer for a prolonged bactericidal effect"
+    ]
+  },
+  {
+    "q": "Which agent is noted to corrode metals at high concentrations?",
+    "a": "D. Chlorine",
+    "choices": [
+      "A. Glutaraldehyde",
+      "B. Chlorhexidine",
+      "C. Alcohols",
+      "D. Chlorine"
+    ]
+  },
+  {
+    "q": "Alcohols are NOT effective against which of the following?",
+    "a": "B. Endospores and non-enveloped viruses",
+    "choices": [
+      "A. Bacteria and fungi",
+      "B. Endospores and non-enveloped viruses",
+      "C. Enveloped viruses and fungi",
+      "D. Gram-positive and Gram-negative bacteria"
+    ]
+  },
+  {
+    "q": "What is the mechanism of action of alcohols?",
+    "a": "D. Denaturation and lipid dissolution",
+    "choices": [
+      "A. Alkylation of sulfhydryl groups",
+      "B. Oxidation of respiratory components",
+      "C. Enzyme inhibition by positively charged ions",
+      "D. Denaturation and lipid dissolution"
+    ]
+  },
+  {
+    "q": "Which heavy metal compound–use pairing is correct?",
+    "a": "A. Copper sulfate – algicide",
+    "choices": [
+      "A. Copper sulfate – algicide",
+      "B. Mercurochrome – prevention of gonococcal eye infection",
+      "C. Merthiolate – algicide",
+      "D. Silver nitrate – skin disinfectant"
+    ]
+  },
+  {
+    "q": "Which detergent type yields a positively charged hydrophobic ion when dissociated?",
+    "a": "D. Cationic detergents",
+    "choices": [
+      "A. Acid-anionic detergents",
+      "B. Iodophors",
+      "C. Heavy metal compounds",
+      "D. Cationic detergents"
+    ]
+  },
+  {
+    "q": "What is the primary function of soaps?",
+    "a": "B. Mechanical removal of grease, soil, and microbes through scrubbing",
+    "choices": [
+      "A. Disruption of the plasma membrane by a cationic ion",
+      "B. Mechanical removal of grease, soil, and microbes through scrubbing",
+      "C. Oxidation of sulfhydryl enzymes and amino acids",
+      "D. Penetration of the cell wall to disrupt nucleic acids"
+    ]
+  },
+  {
+    "q": "Which statement about quaternary ammonium compounds is correct?",
+    "a": "C. They are fungicidal and virucidal only against enveloped viruses",
+    "choices": [
+      "A. They are bactericidal only and ineffective against fungi",
+      "B. They are tuberculocidal and sporicidal against all bacteria",
+      "C. They are fungicidal and virucidal only against enveloped viruses",
+      "D. They are sporicidal and virucidal against non-enveloped viruses"
+    ]
+  },
+  {
+    "q": "What are the mechanisms of action of ethylene oxide and vaporized hydrogen peroxide (VHP), respectively?",
+    "a": "A. Denaturation; oxidation",
+    "choices": [
+      "A. Denaturation; oxidation",
+      "B. Oxidation; denaturation",
+      "C. Alkylation; oxidation",
+      "D. Denaturation; alkylation"
+    ]
+  },
+  {
+    "q": "Which microorganism group is the most resistant to disinfection and sterilization?",
+    "a": "D. Prions",
+    "choices": [
+      "A. Bacterial endospores",
+      "B. Protozoan cysts",
+      "C. Mycobacteria",
+      "D. Prions"
+    ]
+  },
+  {
+    "q": "Which endospore-forming genera mark the demarcation between sterilization and disinfection?",
+    "a": "B. Bacillus and Clostridium",
+    "choices": [
+      "A. Staphylococcus and Streptococcus",
+      "B. Bacillus and Clostridium",
+      "C. Mycobacterium and Nocardia",
+      "D. Pseudomonas and Escherichia"
+    ]
+  },
+  {
+    "q": "Which term refers to the use of chemical agents on living tissues?",
+    "a": "C. Antisepsis",
+    "choices": [
+      "A. Sterilization",
+      "B. Sanitation",
+      "C. Antisepsis",
+      "D. Disinfection"
+    ]
+  },
+  {
+    "q": "Which term is reserved for cleaning comfort rooms, hallways, walls, and tables?",
+    "a": "B. Sanitation",
+    "choices": [
+      "A. Bacteriostasis",
+      "B. Sanitation",
+      "C. Degerming",
+      "D. Asepsis"
+    ]
+  },
+  {
+    "q": "Which physical method is cited as a bacteriostatic means of controlling growth?",
+    "a": "D. Refrigeration",
+    "choices": [
+      "A. Autoclaving",
+      "B. Boiling",
+      "C. Ionizing radiation",
+      "D. Refrigeration"
+    ]
+  },
+  {
+    "q": "Under which conditions are most chemical agents more effective?",
+    "a": "C. Low pH and high temperature",
+    "choices": [
+      "A. High pH and low temperature",
+      "B. High pH and high temperature",
+      "C. Low pH and high temperature",
+      "D. Low pH and low temperature"
+    ]
+  },
+  {
+    "q": "What does “exponential killing” mean in the pattern of microbial death?",
+    "a": "C. The population decreases by a constant fraction at constant intervals",
+    "choices": [
+      "A. The population stops growing but is not reduced",
+      "B. The population decreases by a fixed number at constant intervals",
+      "C. The population decreases by a constant fraction at constant intervals",
+      "D. The entire population is killed instantly upon exposure"
+    ]
+  },
+  {
+    "q": "Thermal Death Time (TDT) is defined as which of the following?",
+    "a": "A. The shortest time necessary to kill all microorganisms in a suspension at a specific temperature",
+    "choices": [
+      "A. The shortest time necessary to kill all microorganisms in a suspension at a specific temperature",
+      "B. The shortest time needed to inhibit growth of a population at a specific temperature",
+      "C. The longest time a population survives at a specific temperature",
+      "D. The time required to inactivate 90% of a population at a specific temperature"
+    ]
+  },
+  {
+    "q": "The Decimal Reduction Time (D-value) is the time or radiation dose required to inactivate what portion of a population?",
+    "a": "A. 90% (1 log)",
+    "choices": [
+      "A. 90% (1 log)",
+      "B. 50% (0.3 log)",
+      "C. 100% (complete kill)",
+      "D. 99% (2 log)"
+    ]
+  },
+  {
+    "q": "Which temperature, time, and pressure combination is listed for steam sterilization?",
+    "a": "B. 134 °C, 3 minutes, 2 bar",
+    "choices": [
+      "A. 115 °C, 15 minutes, 1 bar",
+      "B. 134 °C, 3 minutes, 2 bar",
+      "C. 134 °C, 15 minutes, 1 bar",
+      "D. 121 °C, 3 minutes, 2 bar"
+    ]
+  },
+  {
+    "q": "Which heat-resistant bacterium is used in biological indicators for autoclave monitoring?",
+    "a": "C. Geobacillus stearothermophilus",
+    "choices": [
+      "A. Clostridium perfringens",
+      "B. Clostridium tetani",
+      "C. Geobacillus stearothermophilus",
+      "D. Bacillus anthracis"
+    ]
+  },
+  {
+    "q": "Which statement about internal and external chemical indicators is correct?",
+    "a": "D. Internal shows if steam or chemical reached the item; external shows if it was processed",
+    "choices": [
+      "A. Internal shows if the item was processed; external shows if steam reached it",
+      "B. Internal logs cycle time; external logs cycle temperature",
+      "C. Internal measures bacterial kill; external measures cycle pressure",
+      "D. Internal shows if steam or chemical reached the item; external shows if it was processed"
+    ]
+  },
+  {
+    "q": "The hepatitis B vaccine consists of which antigen?",
+    "a": "C. HBsAg produced in yeasts by genetic recombination",
+    "choices": [
+      "A. Hemagglutinin and neuraminidase surface antigens",
+      "B. Formol-treated toxin of a bacterial pathogen",
+      "C. HBsAg produced in yeasts by genetic recombination",
+      "D. HBcAg produced in bacteria by genetic recombination"
+    ]
+  },
+  {
+    "q": "What is the standard immunization schedule for the hepatitis B vaccine?",
+    "a": "B. 0, 1, and 6 months",
+    "choices": [
+      "A. 0, 3, and 6 months",
+      "B. 0, 1, and 6 months",
+      "C. 0, 1, and 12 months",
+      "D. 0, 2, and 12 months"
+    ]
+  },
+  {
+    "q": "Tetanus toxoid is prepared from which material?",
+    "a": "A. Formol-treated toxin of C. tetani",
+    "choices": [
+      "A. Formol-treated toxin of C. tetani",
+      "B. Heat-killed whole cells of C. tetani",
+      "C. Live attenuated C. tetani spores",
+      "D. Purified surface antigens of C. tetani"
+    ]
+  },
+  {
+    "q": "Which are the three types of transmission-based precautions?",
+    "a": "C. Airborne, droplet, and contact",
+    "choices": [
+      "A. Airborne, droplet, and percutaneous",
+      "B. Airborne, contact, and standard",
+      "C. Airborne, droplet, and contact",
+      "D. Contact, bloodborne, and droplet"
+    ]
+  },
+  {
+    "q": "Standard precautions apply to all body fluids, secretions, and excretions except which?",
+    "a": "A. Sweat",
+    "choices": [
+      "A. Sweat",
+      "B. Tears",
+      "C. Nasal secretions",
+      "D. Saliva"
+    ]
+  },
+  {
+    "q": "Aerosol particles are defined by which diameter, in contrast to splatter?",
+    "a": "A. Aerosol less than 50 µm; splatter greater than 50 µm",
+    "choices": [
+      "A. Aerosol less than 50 µm; splatter greater than 50 µm",
+      "B. Aerosol less than 10 µm; splatter greater than 10 µm",
+      "C. Aerosol less than 100 µm; splatter greater than 100 µm",
+      "D. Aerosol greater than 50 µm; splatter less than 50 µm"
+    ]
+  },
+  {
+    "q": "Which hepatitis viruses are food-borne pathogens spread through the fecal-oral route?",
+    "a": "D. Hepatitis A and E",
+    "choices": [
+      "A. Hepatitis B and D",
+      "B. Hepatitis C and E",
+      "C. Hepatitis B and C",
+      "D. Hepatitis A and E"
+    ]
+  },
+  {
+    "q": "Which term refers to the presence of bacteria in the blood?",
+    "a": "C. Bacteremia",
+    "choices": [
+      "A. Toxemia",
+      "B. Septicemia",
+      "C. Bacteremia",
+      "D. Viremia"
+    ]
+  },
+  {
+    "q": "Which term describes a disease that is constantly present in a population?",
+    "a": "A. Endemic",
+    "choices": [
+      "A. Endemic",
+      "B. Pandemic",
+      "C. Epidemic",
+      "D. Sporadic"
+    ]
+  },
+  {
+    "q": "For how long can influenza viruses survive on environmental surfaces such as glass or plastic and be transferred to hands?",
+    "a": "B. Up to 24 hours",
+    "choices": [
+      "A. Up to 7 days",
+      "B. Up to 24 hours",
+      "C. Up to 2–4 hours",
+      "D. Up to 48 hours"
+    ]
+  }
+]
