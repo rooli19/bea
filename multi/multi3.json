@@ -1,0 +1,502 @@
+[
+  {
+    "q": "Which connective tissue layer wraps each individual muscle cell within a fascicle?",
+    "a": "B. Endomysium",
+    "choices": [
+      "A. Perimysium",
+      "B. Endomysium",
+      "C. Epimysium",
+      "D. Fascia"
+    ]
+  },
+  {
+    "q": "A distance runner must sustain contractions for many hours with very little fatigue. Which fibers, dark red from abundant myoglobin and capillaries and generating ATP mainly by aerobic respiration, best suit this task?",
+    "a": "A. Slow oxidative fibers",
+    "choices": [
+      "A. Slow oxidative fibers",
+      "B. Fast oxidative-glycolytic fibers",
+      "C. Fast glycolytic fibers",
+      "D. White muscle fibers"
+    ]
+  },
+  {
+    "q": "If all jaw-supporting muscles relaxed completely, gravity would lower the mandible and separate the TMJ surfaces. Which mechanism, occurring without specific cortical response, keeps the elevators in mild contraction to prevent this?",
+    "a": "D. Myotatic (stretch) reflex",
+    "choices": [
+      "A. Nociceptive (flexor) reflex",
+      "B. Reciprocal innervation",
+      "C. Central pattern generator",
+      "D. Myotatic (stretch) reflex"
+    ]
+  },
+  {
+    "q": "Which fiber type is largest in diameter and contains the most myofibrils, has few mitochondria and capillaries, relies mainly on glycolysis, and fatigues quickly?",
+    "a": "C. Fast glycolytic fibers",
+    "choices": [
+      "A. Slow oxidative fibers",
+      "B. Fast oxidative-glycolytic fibers",
+      "C. Fast glycolytic fibers",
+      "D. Red muscle fibers"
+    ]
+  },
+  {
+    "q": "Which pairing of TMJ cavity and movement is correct?",
+    "a": "C. Lower cavity: rotation; upper cavity: translation",
+    "choices": [
+      "A. Lower cavity: translation; upper cavity: rotation",
+      "B. Both cavities: rotation only",
+      "C. Lower cavity: rotation; upper cavity: translation",
+      "D. Both cavities: translation only"
+    ]
+  },
+  {
+    "q": "A patient protrudes the mandible forward. Between which surfaces does the translational sliding occur?",
+    "a": "D. Superior disc surface and articular fossa",
+    "choices": [
+      "A. Condyle and inferior disc surface",
+      "B. Retrodiscal lamina and tympanic plate",
+      "C. Capsule and condylar neck",
+      "D. Superior disc surface and articular fossa"
+    ]
+  },
+  {
+    "q": "A muscle responsible for very fine, precise movements is most likely to have motor units made up of which of the following?",
+    "a": "A. Few muscle fibers per motor neuron",
+    "choices": [
+      "A. Few muscle fibers per motor neuron",
+      "B. Many muscle fibers per motor neuron",
+      "C. Several motor neurons per fiber",
+      "D. One motor neuron per whole muscle"
+    ]
+  },
+  {
+    "q": "Which muscle inserts into the neck of the condyle and the front margin of the articular disc, and stabilizes the condylar head and disc against the articular eminence during closing?",
+    "a": "B. Superior lateral pterygoid",
+    "choices": [
+      "A. Inferior lateral pterygoid",
+      "B. Superior lateral pterygoid",
+      "C. Medial pterygoid",
+      "D. Temporalis"
+    ]
+  },
+  {
+    "q": "During early mouth opening the condyle rotates, but opening wider forces it to translate down the articular eminence. Tightening of which structure brings about this change?",
+    "a": "A. Outer oblique portion of the TM ligament",
+    "choices": [
+      "A. Outer oblique portion of the TM ligament",
+      "B. Inner horizontal portion of the TM ligament",
+      "C. Stylomandibular ligament",
+      "D. Sphenomandibular ligament"
+    ]
+  },
+  {
+    "q": "Which feature distinguishes the articular disc from a true meniscus?",
+    "a": "C. Division of the joint into two cavities",
+    "choices": [
+      "A. Wedge shape with a crescent outline",
+      "B. Attachment to the capsule on one side only",
+      "C. Division of the joint into two cavities",
+      "D. A purely passive role in movement"
+    ]
+  },
+  {
+    "q": "A patient rubs a painful area and the pain decreases. Which fibers, when activated, close the spinal gate according to the gate control theory?",
+    "a": "B. Large-diameter A-beta fibers",
+    "choices": [
+      "A. Small-diameter A-delta fibers",
+      "B. Large-diameter A-beta fibers",
+      "C. Unmyelinated C fibers",
+      "D. Descending PAG fibers"
+    ]
+  },
+  {
+    "q": "Which ascending tract carries A-delta nociceptive input directly to the lateral thalamus and mediates the sensory-discriminative aspect of pain (location, intensity, duration)?",
+    "a": "D. Neospinothalamic tract",
+    "choices": [
+      "A. Paleospinothalamic tract",
+      "B. Spinoreticular tract",
+      "C. Spinomesencephalic tract",
+      "D. Neospinothalamic tract"
+    ]
+  },
+  {
+    "q": "A patient reports shock-like tooth pain lasting 5 to 10 seconds, triggered by touching the lip, with no pain between episodes. A local anesthetic injection at the trigger zone abolishes the episodes. What is the most likely diagnosis?",
+    "a": "B. Trigeminal neuralgia",
+    "choices": [
+      "A. Glossopharyngeal neuralgia",
+      "B. Trigeminal neuralgia",
+      "C. Cluster headache",
+      "D. Continuous dentoalveolar pain"
+    ]
+  },
+  {
+    "q": "Which sarcomere region lies at the center of the A band and contains only thick filaments?",
+    "a": "A. H zone",
+    "choices": [
+      "A. H zone",
+      "B. I band",
+      "C. Z disc",
+      "D. Entire A band"
+    ]
+  },
+  {
+    "q": "A patient tilts the head back about 45 degrees while drinking and then closes the jaw. Where do tooth contacts tend to occur?",
+    "a": "C. Posterior to the ICP because the mandible is retruded",
+    "choices": [
+      "A. Anterior to the ICP with heavy anterior contacts",
+      "B. Directly in the ICP with equal contacts",
+      "C. Posterior to the ICP because the mandible is retruded",
+      "D. Lateral to the ICP on the working side"
+    ]
+  },
+  {
+    "q": "From centric relation, the mandible can rotate around the horizontal axis to what interincisal opening before translation begins?",
+    "a": "C. 20 to 25 mm",
+    "choices": [
+      "A. 8 to 12 mm",
+      "B. 12 to 18 mm",
+      "C. 20 to 25 mm",
+      "D. 30 to 35 mm"
+    ]
+  },
+  {
+    "q": "A patient moves the mandible to the left lateral border from the centric relation position. Which combination is correct?",
+    "a": "D. Right ILP contracts; right condyle orbits",
+    "choices": [
+      "A. Left ILP contracts; left condyle orbits",
+      "B. Left ILP contracts; right condyle orbits",
+      "C. Right ILP contracts; left condyle orbits",
+      "D. Right ILP contracts; right condyle orbits"
+    ]
+  },
+  {
+    "q": "Which pathway conveys most tactile, thermal, and pain sensations from the face, nasal cavity, oral cavity, and teeth, with second-order neurons crossing to the opposite thalamus?",
+    "a": "A. Trigeminothalamic pathway",
+    "choices": [
+      "A. Trigeminothalamic pathway",
+      "B. Anterolateral (spinothalamic) pathway",
+      "C. Posterior column-medial lemniscus pathway",
+      "D. Spinocerebellar tract"
+    ]
+  },
+  {
+    "q": "A person holds a heavy object in a fixed position. The tension developed does not exceed the resistance of the object and the muscle does not change length. Which type of contraction is this?",
+    "a": "C. Isometric contraction",
+    "choices": [
+      "A. Concentric isotonic contraction",
+      "B. Eccentric isotonic contraction",
+      "C. Isometric contraction",
+      "D. Reflex (myotatic) contraction"
+    ]
+  },
+  {
+    "q": "Which structure becomes tight when force displaces the condyle posteriorly, protecting the retrodiscal tissues and preventing overlengthening of the lateral pterygoid muscle?",
+    "a": "B. Inner horizontal portion of the TM ligament",
+    "choices": [
+      "A. Outer oblique portion of the TM ligament",
+      "B. Inner horizontal portion of the TM ligament",
+      "C. Capsular ligament",
+      "D. Medial discal ligament"
+    ]
+  },
+  {
+    "q": "A patient wakes at night with intense one-sided retro-orbital pain lasting about an hour, occurring several times a day, with lacrimation and nasal stuffiness on the painful side and pain felt in a maxillary canine. What is the most likely diagnosis?",
+    "a": "D. Cluster headache",
+    "choices": [
+      "A. Migraine",
+      "B. Tension-type headache",
+      "C. Trigeminal neuralgia",
+      "D. Cluster headache"
+    ]
+  },
+  {
+    "q": "The buccinator inserts into the pterygomandibular raphe, where its fibers intermingle with fibers of which muscle?",
+    "a": "D. Superior constrictor",
+    "choices": [
+      "A. Orbicularis oris",
+      "B. Medial pterygoid",
+      "C. Masseter",
+      "D. Superior constrictor"
+    ]
+  },
+  {
+    "q": "While eating, the mouth opens as the supra- and infrahyoid muscles contract at the exact moment the elevators relax. Which structure controls this timing between antagonistic muscles?",
+    "a": "A. Brainstem central pattern generator",
+    "choices": [
+      "A. Brainstem central pattern generator",
+      "B. Cerebral motor cortex",
+      "C. Cerebellar neurons",
+      "D. Basal nuclei neurons"
+    ]
+  },
+  {
+    "q": "A Gothic arch tracer records mandibular movement in which plane, and what pattern does it produce?",
+    "a": "B. Horizontal plane, rhomboid pattern",
+    "choices": [
+      "A. Sagittal plane, side-view pattern",
+      "B. Horizontal plane, rhomboid pattern",
+      "C. Frontal plane, shield pattern",
+      "D. Horizontal plane, shield pattern"
+    ]
+  },
+  {
+    "q": "After a lesion, a patient has impaired precise movements of the hands and feet. Which direct descending tract controlling distal limb muscles is most likely involved?",
+    "a": "B. Lateral corticospinal tract",
+    "choices": [
+      "A. Anterior corticospinal tract",
+      "B. Lateral corticospinal tract",
+      "C. Corticobulbar tract",
+      "D. Medial reticulospinal tract"
+    ]
+  },
+  {
+    "q": "Through which opening does the maxillary nerve (V2) exit the cranium?",
+    "a": "A. Foramen rotundum",
+    "choices": [
+      "A. Foramen rotundum",
+      "B. Foramen ovale",
+      "C. Superior orbital fissure",
+      "D. Infraorbital foramen"
+    ]
+  },
+  {
+    "q": "A patient feels facial pain from a light touch carried by A-beta fibers, a stimulus that was previously not painful. Which term describes this?",
+    "a": "C. Allodynia",
+    "choices": [
+      "A. Primary hyperalgesia",
+      "B. Hyperalgesia",
+      "C. Allodynia",
+      "D. Temporal summation"
+    ]
+  },
+  {
+    "q": "Which elevator of the mandible also contributes to retrusion?",
+    "a": "D. Temporalis",
+    "choices": [
+      "A. Masseter",
+      "B. Medial pterygoid",
+      "C. Superior lateral pterygoid",
+      "D. Temporalis"
+    ]
+  },
+  {
+    "q": "An occlusion was adjusted with the patient reclined in the dental chair. When he sits upright and eats with his face directed downward about 30 degrees, what is the likely finding?",
+    "a": "A. Heavy anterior tooth contacts",
+    "choices": [
+      "A. Heavy anterior tooth contacts",
+      "B. Contacts posterior to the ICP",
+      "C. Heavier posterior contacts than anterior",
+      "D. Occlusion identical to the reclined position"
+    ]
+  },
+  {
+    "q": "Which ligament limits excessive protrusive movement of the mandible, becoming taut on protrusion and most relaxed when the mandible is opened?",
+    "a": "C. Stylomandibular ligament",
+    "choices": [
+      "A. Sphenomandibular ligament",
+      "B. Lateral discal ligament",
+      "C. Stylomandibular ligament",
+      "D. Capsular ligament"
+    ]
+  },
+  {
+    "q": "A patient has maxillary posterior toothache. Anesthetizing the tooth does not change it, but palpating a masseter trigger point increases it and anesthetic injected into the muscle reduces it. What is the source?",
+    "a": "B. Masseter myofascial pain",
+    "choices": [
+      "A. Pulpal pain",
+      "B. Masseter myofascial pain",
+      "C. Paranasal sinus pain",
+      "D. Retrodiscal pain"
+    ]
+  },
+  {
+    "q": "Which statement about referred pain is supported by the material?",
+    "a": "D. It most often passes between branches of one nerve root",
+    "choices": [
+      "A. It usually spreads caudally",
+      "B. It commonly crosses the trigeminal midline",
+      "C. It stays in the nerve responsible",
+      "D. It most often passes between branches of one nerve root"
+    ]
+  },
+  {
+    "q": "During speech and swallowing, which muscle group fixes the hyoid bone and prevents it from rising when the mouth opens?",
+    "a": "C. Infrahyoid muscles",
+    "choices": [
+      "A. Suprahyoid muscles",
+      "B. Perioral muscles",
+      "C. Infrahyoid muscles",
+      "D. Masticatory muscles"
+    ]
+  },
+  {
+    "q": "Which statement correctly describes the slide from centric relation to the intercuspal position?",
+    "a": "A. About 1 to 1.25 mm in about 90% of people",
+    "choices": [
+      "A. About 1 to 1.25 mm in about 90% of people",
+      "B. About 1 to 1.25 mm in about 50% of people",
+      "C. About 2 to 4 mm in about 90% of people",
+      "D. About 2 to 4 mm in about 50% of people"
+    ]
+  },
+  {
+    "q": "Shortly after an action potential begins, no stimulus of any strength can trigger another because Na+ channels are inactivated and cannot reopen. Which period is this?",
+    "a": "B. Absolute refractory period",
+    "choices": [
+      "A. Relative refractory period",
+      "B. Absolute refractory period",
+      "C. After-hyperpolarizing phase",
+      "D. Depolarizing phase"
+    ]
+  },
+  {
+    "q": "Which contacts are non-working (balancing, mediotrusive) contacts during lateral movement?",
+    "a": "D. Inner inclines of maxillary lingual cusps with inner inclines of mandibular buccal cusps",
+    "choices": [
+      "A. Inner inclines of maxillary buccal cusps with outer inclines of mandibular buccal cusps",
+      "B. Outer inclines of maxillary lingual cusps with inner inclines of mandibular lingual cusps",
+      "C. Distal inclines of maxillary lingual cusps with mesial inclines of opposing fossae",
+      "D. Inner inclines of maxillary lingual cusps with inner inclines of mandibular buccal cusps"
+    ]
+  },
+  {
+    "q": "A patient has pressure below the eye and tooth pain that worsens when lowering the head or stepping hard on the heel. The tooth is sensitive to percussion and local anesthesia only partly reduces the pain. What is the most likely source?",
+    "a": "C. Paranasal sinus",
+    "choices": [
+      "A. Pulp",
+      "B. Periodontium",
+      "C. Paranasal sinus",
+      "D. Masticatory muscle"
+    ]
+  },
+  {
+    "q": "Which branch of the mandibular nerve turns backward just below the skull base to supply pain and proprioceptive fibers to the TMJ and skin of the outer ear?",
+    "a": "B. Auriculotemporal nerve",
+    "choices": [
+      "A. Masseteric nerve",
+      "B. Auriculotemporal nerve",
+      "C. Long buccal nerve",
+      "D. Lingual nerve"
+    ]
+  },
+  {
+    "q": "A patient unexpectedly bites on a hard seed, and a polysynaptic protective reflex shields the teeth and supporting structures from the sudden heavy force. Which reflex is this?",
+    "a": "A. Nociceptive (flexor) reflex",
+    "choices": [
+      "A. Nociceptive (flexor) reflex",
+      "B. Myotatic (stretch) reflex",
+      "C. Reciprocal innervation",
+      "D. Central pattern generation"
+    ]
+  },
+  {
+    "q": "At a presynaptic axon end bulb, influx of which ion triggers exocytosis of synaptic vesicles?",
+    "a": "C. Ca2+",
+    "choices": [
+      "A. Na+",
+      "B. K+",
+      "C. Ca2+",
+      "D. Cl-"
+    ]
+  },
+  {
+    "q": "A patient has sudden, continuous loss of full jaw opening and pain on wide opening, with a prior history of clicking that has now stopped. Which condition fits?",
+    "a": "D. Disc displacement without reduction",
+    "choices": [
+      "A. Disc displacement with reduction",
+      "B. Retrodiscal pain",
+      "C. Local TMJ arthritis",
+      "D. Disc displacement without reduction"
+    ]
+  },
+  {
+    "q": "Which direct pathway conducts impulses for head skeletal muscles by terminating in cranial nerve motor nuclei such as V, VII, and XII?",
+    "a": "B. Corticobulbar pathway",
+    "choices": [
+      "A. Corticospinal pathway",
+      "B. Corticobulbar pathway",
+      "C. Tectospinal tract",
+      "D. Rubrospinal tract"
+    ]
+  },
+  {
+    "q": "A patient slides the mandible 1 to 2 mm posteriorly from the intercuspal position. Which contacts occur?",
+    "a": "A. Distal inclines of mandibular buccal cusps with mesial inclines of fossae and marginal ridges",
+    "choices": [
+      "A. Distal inclines of mandibular buccal cusps with mesial inclines of fossae and marginal ridges",
+      "B. Mesial inclines of mandibular buccal cusps with distal inclines of fossae and marginal ridges",
+      "C. Distal inclines of maxillary lingual cusps with mesial inclines of fossae and marginal ridges",
+      "D. Inner inclines of maxillary lingual cusps with inner inclines of mandibular buccal cusps"
+    ]
+  },
+  {
+    "q": "Which subnucleus caudalis neurons respond to both noxious stimuli and non-noxious tactile stimuli over a wide range of intensities?",
+    "a": "C. Wide dynamic range neurons",
+    "choices": [
+      "A. Nociceptive-specific neurons",
+      "B. Low-threshold mechanoreceptors",
+      "C. Wide dynamic range neurons",
+      "D. Trigeminal main sensory neurons"
+    ]
+  },
+  {
+    "q": "After an inferior alveolar nerve injury, a patient has numbness of the lower lip and chin up to the midline and of the facial gingiva of the incisors, canines, and premolars. Which branch is involved?",
+    "a": "D. Mental nerve",
+    "choices": [
+      "A. Lingual nerve",
+      "B. Long buccal nerve",
+      "C. Incisive nerve",
+      "D. Mental nerve"
+    ]
+  },
+  {
+    "q": "Which region sends signals down to the spinal cord dorsal horn to reduce transmission of the primary pain signal to the second-order neuron?",
+    "a": "A. Periaqueductal gray region",
+    "choices": [
+      "A. Periaqueductal gray region",
+      "B. Subnucleus oralis",
+      "C. Posterior parietal cortex",
+      "D. Lateral thalamus"
+    ]
+  },
+  {
+    "q": "A masseter muscle is suddenly stretched. Which proprioceptor, located between muscle fibers, signals muscle length and drives the myotatic reflex?",
+    "a": "B. Muscle spindle",
+    "choices": [
+      "A. Golgi tendon organ",
+      "B. Muscle spindle",
+      "C. Pacinian corpuscle",
+      "D. Ruffini corpuscle"
+    ]
+  },
+  {
+    "q": "Which factor determines the superior contact border movements of the mandible?",
+    "a": "C. Occlusal and incisal tooth surfaces",
+    "choices": [
+      "A. TMJ ligaments",
+      "B. TMJ morphology",
+      "C. Occlusal and incisal tooth surfaces",
+      "D. Conditional neuromuscular responses"
+    ]
+  },
+  {
+    "q": "A patient has constant tooth pain for months with no local pathology. Hot, cold, and loading stimuli do not reliably affect it, and repeated dental therapies have failed. Which condition fits?",
+    "a": "D. Continuous dentoalveolar pain",
+    "choices": [
+      "A. Occlusal dysesthesia",
+      "B. Burning mouth disorder",
+      "C. Post-herpetic neuralgia",
+      "D. Continuous dentoalveolar pain"
+    ]
+  },
+  {
+    "q": "Which description fits deep somatic pain?",
+    "a": "A. Dull, depressing quality with variable, diffuse localization",
+    "choices": [
+      "A. Dull, depressing quality with variable, diffuse localization",
+      "B. Bright, stimulating quality with excellent localization",
+      "C. Temporarily arrested by topical anesthetic at the site",
+      "D. Provocation response faithful in location at the site"
+    ]
+  }
+]
