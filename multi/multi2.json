@@ -1,0 +1,302 @@
+[
+  {
+    "q": "Why can a second action potential occur during the relative refractory period only with a stronger-than-normal stimulus?",
+    "a": "A. Voltage-gated K+ channels are still open",
+    "choices": [
+      "A. Voltage-gated K+ channels are still open",
+      "B. The Na/K ATPase has stopped working",
+      "C. Na+ channels are still inactivated",
+      "D. Ca2+ channels are blocked"
+    ]
+  },
+  {
+    "q": "After an inferior alveolar nerve block, a patient reports numbness of the lower lip and chin up to the midline. Which branch accounts for this?",
+    "a": "A. Mental nerve",
+    "choices": [
+      "A. Mental nerve",
+      "B. Mylohyoid nerve",
+      "C. Long buccal nerve",
+      "D. Lingual nerve"
+    ]
+  },
+  {
+    "q": "Which is the largest cranial nerve and the major sensory nerve of the face and scalp?",
+    "a": "C. Trigeminal nerve (CN V)",
+    "choices": [
+      "A. Vagus nerve (CN X)",
+      "B. Glossopharyngeal nerve (CN IX)",
+      "C. Trigeminal nerve (CN V)",
+      "D. Facial nerve (CN VII)"
+    ]
+  },
+  {
+    "q": "Which neuron conveys impulses from receptor organs to the CNS and is a first-order neuron?",
+    "a": "D. Afferent neuron",
+    "choices": [
+      "A. Motor neuron",
+      "B. Efferent neuron",
+      "C. Interneuron",
+      "D. Afferent neuron"
+    ]
+  },
+  {
+    "q": "Which corticospinal tract controls trunk and proximal limb muscles?",
+    "a": "B. Anterior corticospinal tract",
+    "choices": [
+      "A. Lateral corticospinal tract",
+      "B. Anterior corticospinal tract",
+      "C. Rubrospinal tract",
+      "D. Corticobulbar tract"
+    ]
+  },
+  {
+    "q": "What proportion of corticospinal axons decussate in the medulla?",
+    "a": "B. 90%",
+    "choices": [
+      "A. 100%",
+      "B. 90%",
+      "C. 50%",
+      "D. 10%"
+    ]
+  },
+  {
+    "q": "A dentist must numb the mucosa and gingiva of the posterior hard palate for an extraction. Which nerve is targeted?",
+    "a": "D. Greater palatine nerve",
+    "choices": [
+      "A. Nasopalatine nerve",
+      "B. Posterior superior alveolar nerve",
+      "C. Middle palatine nerve",
+      "D. Greater palatine nerve"
+    ]
+  },
+  {
+    "q": "A pinprick is applied to a patient's right hand. To which thalamus is the information relayed?",
+    "a": "C. The left thalamus, after decussation",
+    "choices": [
+      "A. The right thalamus, on the same side",
+      "B. The cerebellum only",
+      "C. The left thalamus, after decussation",
+      "D. Both thalami equally"
+    ]
+  },
+  {
+    "q": "Which tract arises from the superior colliculus and mediates reflex head, eye, and trunk movements to visual and auditory stimuli?",
+    "a": "C. Tectospinal tract",
+    "choices": [
+      "A. Reticulospinal tract",
+      "B. Vestibulospinal tract",
+      "C. Tectospinal tract",
+      "D. Rubrospinal tract"
+    ]
+  },
+  {
+    "q": "Through which opening does the mandibular nerve exit the neurocranium?",
+    "a": "A. Foramen ovale",
+    "choices": [
+      "A. Foramen ovale",
+      "B. Superior orbital fissure",
+      "C. Foramen rotundum",
+      "D. Mental foramen"
+    ]
+  },
+  {
+    "q": "A maxillary first molar's mesiobuccal root stays sensitive after posterior superior alveolar anesthesia. Which nerve supplies that root?",
+    "a": "D. Middle superior alveolar nerve",
+    "choices": [
+      "A. Nasopalatine nerve",
+      "B. Greater palatine nerve",
+      "C. Anterior superior alveolar nerve",
+      "D. Middle superior alveolar nerve"
+    ]
+  },
+  {
+    "q": "Which receptors are the tactile receptors of the tongue and oral mucosa?",
+    "a": "D. Merkel endings",
+    "choices": [
+      "A. Ruffini corpuscles",
+      "B. Krause corpuscles",
+      "C. Meissner corpuscles",
+      "D. Merkel endings"
+    ]
+  },
+  {
+    "q": "Which division of CN V is the largest and carries both afferent and efferent fibers?",
+    "a": "A. Mandibular nerve (V3)",
+    "choices": [
+      "A. Mandibular nerve (V3)",
+      "B. Lingual nerve",
+      "C. Ophthalmic nerve (V1)",
+      "D. Maxillary nerve (V2)"
+    ]
+  },
+  {
+    "q": "The posterior superior alveolar nerve supplies the maxillary molars except",
+    "a": "C. The mesiobuccal root of the first molar",
+    "choices": [
+      "A. The distobuccal root of the first molar",
+      "B. The palatal root of the second molar",
+      "C. The mesiobuccal root of the first molar",
+      "D. The third molar"
+    ]
+  },
+  {
+    "q": "A neuron has just begun an action potential, and a strong second stimulus arrives immediately but fails to trigger another. What explains this?",
+    "a": "B. Na+ channels are inactivated and cannot reopen yet",
+    "choices": [
+      "A. Voltage-gated K+ channels are still open",
+      "B. Na+ channels are inactivated and cannot reopen yet",
+      "C. The resting potential has become more positive",
+      "D. Ca2+ channels are depleted"
+    ]
+  },
+  {
+    "q": "Which factor contributes to the resting membrane potential?",
+    "a": "B. Electrogenic nature of the Na/K ATPases",
+    "choices": [
+      "A. Free exit of most anions from the cell",
+      "B. Electrogenic nature of the Na/K ATPases",
+      "C. Equal distribution of ions in the ECF and cytosol",
+      "D. Constant opening of voltage-gated Na+ channels"
+    ]
+  },
+  {
+    "q": "What triggers exocytosis of synaptic vesicles at the synaptic end bulb?",
+    "a": "B. Increased intracellular Ca2+",
+    "choices": [
+      "A. Repolarization of the axon",
+      "B. Increased intracellular Ca2+",
+      "C. Opening of ligand-gated Cl- channels",
+      "D. Binding of transmitter to postsynaptic receptors"
+    ]
+  },
+  {
+    "q": "Which nerve layer is a connective tissue sheath enclosing bundles (fasciculi) of nerve fibers?",
+    "a": "C. Epineurium",
+    "choices": [
+      "A. Endoneurium",
+      "B. Perineurium",
+      "C. Epineurium",
+      "D. Neurolemma"
+    ]
+  },
+  {
+    "q": "Second-order somatic sensory neurons conduct impulses from the brain stem and spinal cord to the",
+    "a": "D. Thalamus",
+    "choices": [
+      "A. Primary somatosensory cortex",
+      "B. Cerebellum",
+      "C. Basal nuclei",
+      "D. Thalamus"
+    ]
+  },
+  {
+    "q": "Which division of CN V is the smallest and purely sensory?",
+    "a": "A. Ophthalmic nerve (V1)",
+    "choices": [
+      "A. Ophthalmic nerve (V1)",
+      "B. Mandibular nerve (V3)",
+      "C. Zygomatic nerve",
+      "D. Maxillary nerve (V2)"
+    ]
+  },
+  {
+    "q": "Which function of the nervous system involves analyzing sensory information and deciding on an appropriate response?",
+    "a": "B. Integrative function",
+    "choices": [
+      "A. Sensory function",
+      "B. Integrative function",
+      "C. Reflex function",
+      "D. Motor function"
+    ]
+  },
+  {
+    "q": "Through which opening does the maxillary nerve exit the skull?",
+    "a": "D. Foramen rotundum",
+    "choices": [
+      "A. Foramen ovale",
+      "B. Superior orbital fissure",
+      "C. Infraorbital foramen",
+      "D. Foramen rotundum"
+    ]
+  },
+  {
+    "q": "Besides the muscles of mastication, which structures receive motor fibers from V3?",
+    "a": "C. Mylohyoid and anterior belly of the digastric",
+    "choices": [
+      "A. Stylohyoid and posterior belly of the digastric",
+      "B. Mylohyoid and posterior belly of the digastric",
+      "C. Mylohyoid and anterior belly of the digastric",
+      "D. Buccinator and platysma"
+    ]
+  },
+  {
+    "q": "A patient loses sensation in the lingual gingiva of the whole mandible and the anterior two-thirds of the tongue after a procedure. Which nerve is involved?",
+    "a": "A. Lingual nerve",
+    "choices": [
+      "A. Lingual nerve",
+      "B. Mental nerve",
+      "C. Inferior alveolar nerve",
+      "D. Long buccal nerve"
+    ]
+  },
+  {
+    "q": "After a spinal cord lesion, a patient loses pain, temperature, and itch sensation from the trunk. Which pathway is affected?",
+    "a": "D. Anterolateral (spinothalamic) pathway",
+    "choices": [
+      "A. Posterior column-medial lemniscus pathway",
+      "B. Spinocerebellar tract",
+      "C. Lateral corticospinal tract",
+      "D. Anterolateral (spinothalamic) pathway"
+    ]
+  },
+  {
+    "q": "A patient loses precise, skilled movements of the hands and feet after a lesion affecting distal limb control. Which tract is damaged?",
+    "a": "A. Lateral corticospinal tract",
+    "choices": [
+      "A. Lateral corticospinal tract",
+      "B. Tectospinal tract",
+      "C. Anterior corticospinal tract",
+      "D. Vestibulospinal tract"
+    ]
+  },
+  {
+    "q": "Which tract arises from the red nucleus and controls precise movements of the distal upper limbs?",
+    "a": "C. Rubrospinal tract",
+    "choices": [
+      "A. Reticulospinal tract",
+      "B. Tectospinal tract",
+      "C. Rubrospinal tract",
+      "D. Vestibulospinal tract"
+    ]
+  },
+  {
+    "q": "A patient loses touch, temperature, and pain sensation from the teeth and oral cavity. Which pathway is involved?",
+    "a": "B. Trigeminothalamic pathway",
+    "choices": [
+      "A. Spinocerebellar tract",
+      "B. Trigeminothalamic pathway",
+      "C. Posterior column-medial lemniscus pathway",
+      "D. Anterolateral pathway"
+    ]
+  },
+  {
+    "q": "Which are the direct (pyramidal) pathways?",
+    "a": "A. Corticospinal and corticobulbar pathways",
+    "choices": [
+      "A. Corticospinal and corticobulbar pathways",
+      "B. Rubrospinal and tectospinal pathways",
+      "C. Vestibulospinal and reticulospinal pathways",
+      "D. Corticospinal and rubrospinal pathways"
+    ]
+  },
+  {
+    "q": "The inferior alveolar nerve supplies which teeth directly?",
+    "a": "B. All mandibular molars and premolars",
+    "choices": [
+      "A. All mandibular teeth except premolars",
+      "B. All mandibular molars and premolars",
+      "C. Mandibular molars only",
+      "D. Mandibular incisors and canines only"
+    ]
+  }
+]
