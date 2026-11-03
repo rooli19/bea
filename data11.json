@@ -1,0 +1,252 @@
+[
+ {
+  "q": "Enzyme inhibited by NSAIDs and aspirin, reducing prostaglandins, thromboxane and prostacyclin",
+  "a": "Cyclooxygenase (COX)",
+  "e": ""
+ },
+ {
+  "q": "Enzyme blocked by corticosteroids, the very first step of the arachidonic acid cascade",
+  "a": "Phospholipase",
+  "e": ""
+ },
+ {
+  "q": "Enzyme of the other road of arachidonic acid metabolism that produces leukotrienes",
+  "a": "Lipoxygenase",
+  "e": ""
+ },
+ {
+  "q": "Leukotriene responsible for phagocyte attraction and activation (inhibited by colchicine)",
+  "a": "LTB4",
+  "e": ""
+ },
+ {
+  "q": "Leukotrienes that alter vascular permeability and cause bronchial constriction and increased secretion",
+  "a": "LTC4 / LTD4 / LTE4",
+  "e": ""
+ },
+ {
+  "q": "Mechanism of NSAID analgesia",
+  "a": "Blocks the synergistic effect of prostaglandin and bradykinin",
+  "e": ""
+ },
+ {
+  "q": "Mechanism of NSAID antipyresis (fever reduction)",
+  "a": "Inhibition of prostaglandin synthesis in the hypothalamus",
+  "e": ""
+ },
+ {
+  "q": "Hypothalamic area linked to body temperature",
+  "a": "Anterior hypothalamic area",
+  "e": ""
+ },
+ {
+  "q": "Ultimate answer to inflammatory conditions such as OA, RA, AS, acute gout, tendinitis and MS pain",
+  "a": "Glucocorticoids (steroids)",
+  "e": ""
+ },
+ {
+  "q": "Oldest NSAID with the greatest clinical experience and good coverage for pain of dental origin",
+  "a": "Ibuprofen",
+  "e": ""
+ },
+ {
+  "q": "Usual analgesic dose of ibuprofen",
+  "a": "200-400 mg every 4-6 hours",
+  "e": ""
+ },
+ {
+  "q": "Onset and duration of action of ibuprofen",
+  "a": "Onset 1/2 hour; duration 4-6 hours",
+  "e": ""
+ },
+ {
+  "q": "Pediatric dose of ibuprofen",
+  "a": "5-10 mg/kg/dose, up to QID",
+  "e": ""
+ },
+ {
+  "q": "Effect of food on ibuprofen absorption",
+  "a": "Decreases the absorption rate",
+  "e": ""
+ },
+ {
+  "q": "NSAID that delays onset of postoperative pain after third molar extraction when given before the procedure",
+  "a": "Ibuprofen",
+  "e": ""
+ },
+ {
+  "q": "NSAID group consisting of ibuprofen, ketoprofen and naproxen",
+  "a": "Propionates",
+  "e": ""
+ },
+ {
+  "q": "Prototype of the fenamates (phenylanthranilic acid derivatives)",
+  "a": "Mefenamic acid",
+  "e": ""
+ },
+ {
+  "q": "Most common adverse reaction of the fenamates",
+  "a": "GI distress",
+  "e": ""
+ },
+ {
+  "q": "Severe but rare adverse reaction of the fenamates",
+  "a": "Hemolytic anemia",
+  "e": ""
+ },
+ {
+  "q": "Usual dental prescription of mefenamic acid",
+  "a": "500 mg capsule, BID to TID, PRN for pain",
+  "e": ""
+ },
+ {
+  "q": "Pediatric dose of mefenamic acid",
+  "a": "3-5 mg/kg/dose",
+  "e": ""
+ },
+ {
+  "q": "NSAID with a very long half-life of 50-65 hours that is very toxic",
+  "a": "Phenylbutazone",
+  "e": ""
+ },
+ {
+  "q": "Pyrazolone NSAID that should NOT be used for dental patients",
+  "a": "Phenylbutazone",
+  "e": ""
+ },
+ {
+  "q": "NSAID group consisting of piroxicam and meloxicam",
+  "a": "Oxicams / enolic acids",
+  "e": ""
+ },
+ {
+  "q": "NSAID usually given as 20 mg once daily (OD) for dental pain, with significant GI adverse reactions",
+  "a": "Piroxicam",
+  "e": ""
+ },
+ {
+  "q": "NSAID group consisting of indomethacin, sulindac, etodolac and ketorolac",
+  "a": "Indoleacetic acids",
+  "e": ""
+ },
+ {
+  "q": "NSAID mainly used in neonates for closure of a persistently patent ductus arteriosus",
+  "a": "Indomethacin",
+  "e": ""
+ },
+ {
+  "q": "NSAID that does not alter the uricosuric effect of probenecid and is effective in acute gouty arthritis",
+  "a": "Indomethacin",
+  "e": ""
+ },
+ {
+  "q": "Indoleacetic acid NSAID with anti-inflammatory action stronger than ASA but NOT routinely used for dental analgesia",
+  "a": "Indomethacin",
+  "e": ""
+ },
+ {
+  "q": "NSAID with effects about half those of indomethacin and less GI distress",
+  "a": "Sulindac",
+  "e": ""
+ },
+ {
+  "q": "NSAID that may decrease the incidence of familial intestinal polyposis (colon, breast, prostate CA)",
+  "a": "Sulindac",
+  "e": ""
+ },
+ {
+  "q": "NSAID that impairs platelet function and is not for pre-op or post-op dental patients",
+  "a": "Sulindac",
+  "e": ""
+ },
+ {
+  "q": "Most common adverse reaction of sulindac",
+  "a": "Abdominal pain and nausea",
+  "e": ""
+ },
+ {
+  "q": "NSAID used successfully to replace morphine for postsurgical pain",
+  "a": "Ketorolac",
+  "e": ""
+ },
+ {
+  "q": "Routes of administration of ketorolac",
+  "a": "PO, IM, IV",
+  "e": ""
+ },
+ {
+  "q": "Main toxicity of ketorolac with chronic use (besides GI problems)",
+  "a": "Renal toxicity",
+  "e": ""
+ },
+ {
+  "q": "Brand name of ketorolac tromethamine 30 mg/mL ampoule",
+  "a": "Toradol",
+  "e": ""
+ },
+ {
+  "q": "Reason selective COX-2 inhibitors were developed",
+  "a": "To decrease the GI distress associated with COX-1 inhibition",
+  "e": ""
+ },
+ {
+  "q": "Sites where COX-1 is found",
+  "a": "GIT, kidney and platelets",
+  "e": ""
+ },
+ {
+  "q": "Selective COX-2 inhibitors (coxibs) listed in the lecture",
+  "a": "Celecoxib, etoricoxib, parecoxib",
+  "e": ""
+ },
+ {
+  "q": "FDA black box warning for COX-2 inhibitors",
+  "a": "Increased cardiothrombotic events",
+  "e": ""
+ },
+ {
+  "q": "Reason celecoxib has no cardioprotective mechanism",
+  "a": "It blocks prostacyclin synthesis",
+  "e": ""
+ },
+ {
+  "q": "Two highly selective COX-2 inhibitors withdrawn from the market due to cardiothrombotic events",
+  "a": "Valdecoxib and rofecoxib",
+  "e": ""
+ },
+ {
+  "q": "Rational drug for control of pain in patients with a history of gastrointestinal bleeding",
+  "a": "Selective COX-2 inhibitor",
+  "e": ""
+ },
+ {
+  "q": "Preparation of parecoxib (Dynastat)",
+  "a": "40 mg/5 mL vial, lyophilized powder for IM/IV injection",
+  "e": ""
+ },
+ {
+  "q": "NSAID with high accumulation in synovial fluid, good for OA, RA, AS, MS pain and postoperative pain",
+  "a": "Diclofenac",
+  "e": ""
+ },
+ {
+  "q": "NSAID that is NOT for acute gout (the exception among the gout-listed NSAIDs)",
+  "a": "Diclofenac",
+  "e": ""
+ },
+ {
+  "q": "NSAID to avoid in children, nursing and pregnant women",
+  "a": "Diclofenac",
+  "e": ""
+ },
+ {
+  "q": "Adverse effects of diclofenac",
+  "a": "GI bleeding, ulceration, perforation",
+  "e": ""
+ },
+ {
+  "q": "Naphthylacetic acid prodrug NSAID shown in the chemical structure slide",
+  "a": "Nabumetone",
+  "e": ""
+ }
+]
