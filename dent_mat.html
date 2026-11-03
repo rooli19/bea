@@ -363,6 +363,10 @@
       .card.flipped {
         transform: rotateY(180deg);
       }
+      /* FIX: instant reset to the front face without animating the back into view */
+      .card.no-transition {
+        transition: none !important;
+      }
       .card.shake {
         animation: shakeAnim 0.5s ease;
       }
@@ -2355,7 +2359,16 @@
       // -------- LOAD CARD --------
       function loadCard() {
         answeredThisCard = false;
-        cardEl.classList.remove("flipped");
+
+        // FIX: reset the card to the FRONT instantly, with no flip-back
+        // animation, so the back (answer) face is never exposed when moving
+        // to the next/prev/skipped card.
+        cardEl.classList.add("no-transition");
+        cardEl.classList.remove("flipped", "shake", "pop");
+        cardEl.style.removeProperty("--rot");
+        void cardEl.offsetWidth; // force reflow to commit the un-flipped state
+        cardEl.classList.remove("no-transition");
+
         assessRow.classList.remove("show");
         tapHint.style.display = "block";
         const idx = deck[pos];
