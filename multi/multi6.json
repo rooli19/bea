@@ -1,0 +1,502 @@
+[
+  {
+    "q": "A 24-year-old man has a single, painless, firm penile ulcer with a clean base 3 weeks after exposure. A biopsy shows dense plasma cells and proliferative endarteritis, but no organisms on Gram stain. Why were no organisms seen?",
+    "a": "C. The spirochete is too slender for Gram stain and needs silver stain or immunofluorescence",
+    "choices": [
+      "A. The organism is gram-positive and stains poorly in ulcers",
+      "B. The organism is obligate intracellular and needs Giemsa to be seen",
+      "C. The spirochete is too slender for Gram stain and needs silver stain or immunofluorescence",
+      "D. The organism cannot be seen in primary lesions because it is not yet present"
+    ]
+  },
+  {
+    "q": "A woman has a rash on her palms and soles, silvery-gray erosions on the oral mucosa, and broad-based raised plaques in both axillae. The plaques are best called:",
+    "a": "A. Condylomata lata",
+    "choices": [
+      "A. Condylomata lata",
+      "B. Condylomata acuminata",
+      "C. Gummas",
+      "D. Chancres"
+    ]
+  },
+  {
+    "q": "After treatment for syphilis, a patient's RPR titer falls steadily, but the FTA-ABS remains reactive. The best interpretation is:",
+    "a": "B. Successful treatment; treponemal tests stay positive after cure",
+    "choices": [
+      "A. Treatment failure, because FTA-ABS should become negative",
+      "B. Successful treatment; treponemal tests stay positive after cure",
+      "C. A false-positive RPR from an autoimmune disease",
+      "D. Reinfection, because both tests should fall together"
+    ]
+  },
+  {
+    "q": "An asymptomatic pregnant woman has a reactive RPR on routine screening. The most appropriate next step is:",
+    "a": "D. Confirm with a treponemal test (FTA-ABS or TP-EIA)",
+    "choices": [
+      "A. Repeat the RPR only, since pregnancy always causes false positives",
+      "B. Order PCR of blood as the confirmatory test",
+      "C. Reassure her; nontreponemal tests are too nonspecific to act on",
+      "D. Confirm with a treponemal test (FTA-ABS or TP-EIA)"
+    ]
+  },
+  {
+    "q": "Autopsy of a 62-year-old shows dilated aortic root with aortic valve insufficiency. Histology: obliterative endarteritis of the vasa vasorum with adventitial lymphoplasmacytic inflammation. Which complication is LEAST expected in this disease?",
+    "a": "C. Aortic dissection",
+    "choices": [
+      "A. Proximal aortic aneurysm",
+      "B. Narrowing of the coronary ostia",
+      "C. Aortic dissection",
+      "D. Aortic valve insufficiency"
+    ]
+  },
+  {
+    "q": "A man has lightning pains in the legs, wide-based ataxia, absent knee jerks, and a painless swollen knee joint. The primary site of damage is the:",
+    "a": "D. Dorsal roots and dorsal columns",
+    "choices": [
+      "A. Anterior horn cells",
+      "B. Frontal cortex",
+      "C. Lateral corticospinal tracts",
+      "D. Dorsal roots and dorsal columns"
+    ]
+  },
+  {
+    "q": "A 50-year-old with untreated syphilis shows progressive dementia, delusions of grandeur, and frontal lobe atrophy. Brain sections show neuronal loss, gliosis, and iron deposits (Prussian blue). This is:",
+    "a": "D. Paretie neurosyphilis",
+    "choices": [
+      "A. Tabes dorsalis",
+      "B. Meningovascular neurosyphilis (Heubner arteritis)",
+      "C. Cerebral gumma",
+      "D. Paretie neurosyphilis"
+    ]
+  },
+  {
+    "q": "A 6-week-old infant has persistent nasal discharge, a desquamating rash of the palms and soles, hepatomegaly, and periostitis of the long bones. The mother received no prenatal care. The most likely diagnosis is:",
+    "a": "C. Early (infantile) congenital syphilis",
+    "choices": [
+      "A. Late (tardive) congenital syphilis",
+      "B. Neonatal gonococcal infection",
+      "C. Early (infantile) congenital syphilis",
+      "D. Congenital chlamydial infection"
+    ]
+  },
+  {
+    "q": "A 12-year-old with an untreated congenital infection has notched, peg-shaped incisors. Which finding completes the classic triad?",
+    "a": "A. Interstitial keratitis and eighth-nerve deafness",
+    "choices": [
+      "A. Interstitial keratitis and eighth-nerve deafness",
+      "B. Saddle nose and saber shin",
+      "C. Snuffles and pneumonia alba",
+      "D. Anterior uveitis and arthritis"
+    ]
+  },
+  {
+    "q": "A rubbery white-gray liver mass in a man with long untreated syphilis shows central coagulative necrosis, palisading macrophages, and many plasma cells. Treponemes are scant. This lesion is thought to arise from:",
+    "a": "D. Delayed hypersensitivity to the bacteria",
+    "choices": [
+      "A. Overwhelming bacterial multiplication",
+      "B. Antigen-antibody (type III) deposition only",
+      "C. Direct toxin-mediated hepatocyte necrosis",
+      "D. Delayed hypersensitivity to the bacteria"
+    ]
+  },
+  {
+    "q": "A sexually active 20-year-old woman has lower abdominal pain, cervical motion tenderness, and new right upper quadrant pleuritic pain. AST and ALT are normal. The RUQ pain is most likely:",
+    "a": "C. Perihepatitis (Fitz-Hugh-Curtis syndrome)",
+    "choices": [
+      "A. Acute viral hepatitis",
+      "B. Acute cholecystitis",
+      "C. Perihepatitis (Fitz-Hugh-Curtis syndrome)",
+      "D. Right-sided pyelonephritis"
+    ]
+  },
+  {
+    "q": "During infection, N. gonorrhoeae first attaches to epithelial cells through:",
+    "a": "B. Pili binding CD46",
+    "choices": [
+      "A. Pili binding CEACAM",
+      "B. Pili binding CD46",
+      "C. Opa proteins binding CD46",
+      "D. LOS binding CEACAM"
+    ]
+  },
+  {
+    "q": "A man with purulent urethral discharge has gonorrhea confirmed by NAAT. The preferred treatment per the report is:",
+    "a": "A. Ceftriaxone (injection)",
+    "choices": [
+      "A. Ceftriaxone (injection)",
+      "B. Cefixime alone, with no test of cure",
+      "C. Azithromycin alone",
+      "D. Doxycycline alone"
+    ]
+  },
+  {
+    "q": "A woman's gonorrhea symptoms persist after completing treatment. She denies new partners. Which test is most useful to evaluate this?",
+    "a": "B. Culture of a swab from the site",
+    "choices": [
+      "A. Gram stain of the cervical discharge",
+      "B. Culture of a swab from the site",
+      "C. Repeat of the RPR",
+      "D. Urine pregnancy test"
+    ]
+  },
+  {
+    "q": "A woman with gonococcal PID has several symptoms. Which is the MOST consistent symptom?",
+    "a": "D. Lower abdominal pain",
+    "choices": [
+      "A. Fever and chills",
+      "B. Mucopurulent urethral discharge",
+      "C. Intermenstrual bleeding",
+      "D. Lower abdominal pain"
+    ]
+  },
+  {
+    "q": "A man has a painful ulcer with ragged, undermined edges and a tender, fluctuant inguinal node. The cultured organism requires hemin (X factor) but not NAD (V factor). The organism is:",
+    "a": "C. Haemophilus ducreyi",
+    "choices": [
+      "A. Haemophilus influenzae",
+      "B. Klebsiella granulomatis",
+      "C. Haemophilus ducreyi",
+      "D. Treponema pallidum"
+    ]
+  },
+  {
+    "q": "A smear from a genital ulcer shows short gram-negative rods in parallel chains resembling a school of fish. Which statement is correct?",
+    "a": "D. Suggestive of chancroid but not diagnostic on its own",
+    "choices": [
+      "A. Diagnostic of nonovasion",
+      "B. Confirms primary syphilis",
+      "C. Excludes herpes as a co-cause",
+      "D. Suggestive of chancroid but not diagnostic on its own"
+    ]
+  },
+  {
+    "q": "A patient has a painful genital ulcer with compatible appearance. Which result would EXCLUDE a CDC 'probable chancroid' diagnosis?",
+    "a": "A. Positive HSV NAAT on ulcer material",
+    "choices": [
+      "A. Positive HSV NAAT on ulcer material",
+      "B. Negative syphilis serology 10 days after ulcer onset",
+      "C. Tender regional lymphadenopathy",
+      "D. Negative dark-field exam for T. pallidum"
+    ]
+  },
+  {
+    "q": "Which of the following chancroid regimens is NOT correct?",
+    "a": "D. Erythromycin base 500 mg twice daily for 7 days",
+    "choices": [
+      "A. Azithromycin 1 g orally once",
+      "B. Ceftriaxone 250 mg IM once",
+      "C. Ciprofloxacin 500 mg twice daily for 3 days",
+      "D. Erythromycin base 500 mg twice daily for 7 days"
+    ]
+  },
+  {
+    "q": "Seven days after starting azithromycin for chancroid, the ulcer is clearly improving, but a large fluctuant inguinal bubo persists. The best management is:",
+    "a": "B. Needle aspiration or incision and drainage, with continued care",
+    "choices": [
+      "A. Stop antibiotics and observe",
+      "B. Needle aspiration or incision and drainage, with continued care",
+      "C. Switch to penicillin for presumed syphilis",
+      "D. Biopsy the node for nonovasion"
+    ]
+  },
+  {
+    "q": "In the chlamydial developmental cycle, the form that is infectious but metabolically inactive is the:",
+    "a": "B. Elementary body",
+    "choices": [
+      "A. Reticulate body",
+      "B. Elementary body",
+      "C. Aberrant body",
+      "D. Inclusion body"
+    ]
+  },
+  {
+    "q": "A chronic chlamydial infection resists antibiotics and immune clearance. Which mechanism best explains the persistence?",
+    "a": "A. IFN-y starves the bacteria of tryptophan, producing aberrant bodies",
+    "choices": [
+      "A. IFN-y starves the bacteria of tryptophan, producing aberrant bodies",
+      "B. Elementary bodies fuse with lysosomes and survive",
+      "C. RBs replicate extracellularly in mucus",
+      "D. Antibodies to MOMP block bacterial replication"
+    ]
+  },
+  {
+    "q": "A 6-week-old afebrile infant has nasal congestion, tachypnea, and a paroxysmal staccato cough with little wheeze. The most useful serologic test is:",
+    "a": "A. IgM antibody (gold standard for infant pneumonia)",
+    "choices": [
+      "A. IgM antibody (gold standard for infant pneumonia)",
+      "B. IgG antibody",
+      "C. RPR",
+      "D. Complement fixation is the only valid method"
+    ]
+  },
+  {
+    "q": "A young man has urethritis with pyuria but no organisms on Gram stain or routine culture. Two weeks later he develops arthritis and uveitis. The syndrome is:",
+    "a": "C. Reactive arthritis (arthritis + urethritis + uveitis)",
+    "choices": [
+      "A. Disseminated gonococcal infection",
+      "B. Fitz-Hugh-Curtis syndrome",
+      "C. Reactive arthritis (arthritis + urethritis + uveitis)",
+      "D. Secondary syphilis"
+    ]
+  },
+  {
+    "q": "An MSM patient has a small painless stellate genital ulcer that healed, followed by painful inguinal adenopathy and proctitis. The responsible serovars are:",
+    "a": "B. L1-L3",
+    "choices": [
+      "A. D-K",
+      "B. L1-L3",
+      "C. A,B, Ba,C",
+      "D. Da and la"
+    ]
+  },
+  {
+    "q": "A child from an endemic area has recurrent follicular conjunctivitis and now lashes rubbing the cornea. The sequence leading to blindness is:",
+    "a": "A. Recurrent infection → conjunctival scarring → entropion → trichiasis → corneal damage",
+    "choices": [
+      "A. Recurrent infection → conjunctival scarring → entropion → trichiasis → corneal damage",
+      "B. Single infection → pannus → direct corneal invasion by EBs → blindness",
+      "C. Papillary hyperplasia → lacrimal duct obstruction → blindness",
+      "D. Follicles → corneal perforation → entropion → trichiasis"
+    ]
+  },
+  {
+    "q": "A 5-week-old with chlamydial pneumonia requires treatment. The drug of choice is:",
+    "a": "A. Erythromycin",
+    "choices": [
+      "A. Erythromycin",
+      "B. Doxycycline",
+      "C. Ceftriaxone",
+      "D. Ciprofloxacin"
+    ]
+  },
+  {
+    "q": "A traveler back from Papua New Guinea has a painless, beefy-red, easily bleeding ulcer with a snake-like border and a mirror-image lesion on the opposite skin fold. There is no true lymphadenopathy. The best test is:",
+    "a": "D. Giemsa or Wright stain of a crushed tissue smear",
+    "choices": [
+      "A. Tzanck smear",
+      "B. Dark-field microscopy",
+      "C. Gram stain of exudate",
+      "D. Giemsa or Wright stain of a crushed tissue smear"
+    ]
+  },
+  {
+    "q": "Which regimen is first-line for donovasion per the report?",
+    "a": "A. Azithromycin for at least 3 weeks until complete healing",
+    "choices": [
+      "A. Azithromycin for at least 3 weeks until complete healing",
+      "B. Ceftriaxone 250 mg IM once",
+      "C. Penicillin G single dose",
+      "D. Azithromycin 1 g once"
+    ]
+  },
+  {
+    "q": "A pregnant woman is diagnosed with donovasion. Which alternative drug is preferred in pregnancy?",
+    "a": "C. Erythromycin",
+    "choices": [
+      "A. Doxycycline",
+      "B. Ciprofloxacin",
+      "C. Erythromycin",
+      "D. Trimethoprim-sulfamethoxazole"
+    ]
+  },
+  {
+    "q": "A man passes motile segments. After India ink injection of a gravid proglottid, 25 uterine branches are counted. The organism is:",
+    "a": "A. Taenia saginata",
+    "choices": [
+      "A. Taenia saginata",
+      "B. Taenia solium",
+      "C. Taenia asiatica with hooks",
+      "D. Schistosoma mansoni"
+    ]
+  },
+  {
+    "q": "A farmer with new-onset seizures lives with a relative who has a known T. solium intestinal infection. He eats no pork. The most likely mechanism of his infection is:",
+    "a": "B. Fecal-oral ingestion of T. solium eggs",
+    "choices": [
+      "A. Eating cysticercin in undercooked beef",
+      "B. Fecal-oral ingestion of T. solium eggs",
+      "C. Eating cysticercin in undercooked pork",
+      "D. Skin penetration by larvae"
+    ]
+  },
+  {
+    "q": "Brain MRI shows ring-enhancing cystic lesions. Which test best confirms neurocysticercosis serologically?",
+    "a": "C. Enzyme-linked immunoelectrotransfer blot (EITB)",
+    "choices": [
+      "A. Stool microscopy for eggs",
+      "B. India ink injection of proglottids",
+      "C. Enzyme-linked immunoelectrotransfer blot (EITB)",
+      "D. Stool multiplex PCR"
+    ]
+  },
+  {
+    "q": "A patient with seizures has only calcified brain cysts on CT and is seizure-controlled. Which treatment approach is appropriate?",
+    "a": "B. Antiseizure drugs without antiparasitic therapy",
+    "choices": [
+      "A. Albendazole plus praziquantel",
+      "B. Antiseizure drugs without antiparasitic therapy",
+      "C. Praziquantel alone",
+      "D. Niclosamide"
+    ]
+  },
+  {
+    "q": "Which finding would argue AGAINST T. saginata and for T. solium infection?",
+    "a": "B. A scolex with a ring of hooks (rostellum) and 7-13 uterine branches",
+    "choices": [
+      "A. A scolex with four suckers and no hooks",
+      "B. A scolex with a ring of hooks (rostellum) and 7-13 uterine branches",
+      "C. A segment with 20 uterine branches",
+      "D. Cattle as the intermediate host"
+    ]
+  },
+  {
+    "q": "Stool shows round eggs 30-35 μm with a thick radially striated shell. Which statement is correct?",
+    "a": "D. The eggs confirm Taenia but cannot identify the species",
+    "choices": [
+      "A. They identify T. saginata",
+      "B. They identify T. solium",
+      "C. They indicate schistosomiasis",
+      "D. The eggs confirm Taenia but cannot identify the species"
+    ]
+  },
+  {
+    "q": "Five weeks after swimming in a freshwater lake in Africa, a traveler has fever, urticaria, myalgia, and marked eosinophilia. Stool shows no eggs. The best explanation is:",
+    "a": "C. Katayama syndrome",
+    "choices": [
+      "A. Swimmer's itch",
+      "B. Chronic hepatosplenic schistosomiasis",
+      "C. Katayama syndrome",
+      "D. Early trichinosis"
+    ]
+  },
+  {
+    "q": "A man from Egypt has terminal hematuria and eggs in the urine. The most feared long-term complication is:",
+    "a": "C. Squamous cell carcinoma of the bladder",
+    "choices": [
+      "A. Transitional cell carcinoma of the bladder",
+      "B. Hepatocellular carcinoma",
+      "C. Squamous cell carcinoma of the bladder",
+      "D. Colonic polyposis"
+    ]
+  },
+  {
+    "q": "Liver biopsy in a patient with S. mansoni shows egg granulomas and periportal fibrosis with preserved hepatocytes; he has ascites and varices. The fibrosis pattern is called:",
+    "a": "C. Symmers pipestem fibrosis",
+    "choices": [
+      "A. Hepar lobatum",
+      "B. Micronodular alcoholic cirrhosis",
+      "C. Symmers pipestem fibrosis",
+      "D. Centrilobular necrosis"
+    ]
+  },
+  {
+    "q": "A patient has recurrent Salmonella bacteremia with negative stool cultures and chronic bloody diarrhea after years in an endemic area. The underlying disease is most likely:",
+    "a": "D. Intestinal schistosomiasis",
+    "choices": [
+      "A. Trichinosis",
+      "B. Chlamydial proctitis",
+      "C. Donovanosis",
+      "D. Intestinal schistosomiasis"
+    ]
+  },
+  {
+    "q": "Which immune mechanism accounts for most tissue damage in chronic schistosomiasis?",
+    "a": "C. Th2-mediated granulomas around trapped eggs",
+    "choices": [
+      "A. Direct injury by adult worms",
+      "B. Th1 response to cercariae",
+      "C. Th2-mediated granulomas around trapped eggs",
+      "D. Antibody destruction of schistosomula in the lung"
+    ]
+  },
+  {
+    "q": "A migrant has a positive schistosome antibody test 10 weeks after exposure, with no eggs in three stool samples. Which statement is correct?",
+    "a": "B. Antibodies persist after cure and cannot separate active from past infection",
+    "choices": [
+      "A. The negative stools prove he is cured",
+      "B. Antibodies persist after cure and cannot separate active from past infection",
+      "C. Serology is reliable at 2 weeks after exposure",
+      "D. Antibodies are cleared within weeks of treatment"
+    ]
+  },
+  {
+    "q": "Itchy papules appear within hours after wading in a pond where birds are common. This is:",
+    "a": "D. Abortive infection by schistosomes that normally use other hosts",
+    "choices": [
+      "A. Katayama syndrome",
+      "B. Cercurial penetration with mature adult infection",
+      "C. Acute egg granuloma in the skin",
+      "D. Abortive infection by schistosomes that normally use other hosts"
+    ]
+  },
+  {
+    "q": "A man with muscle pain, weakness, and elevated CK is considered for polymyositis. Which finding most favors trichinosis?",
+    "a": "A. Marked peripheral eosinophilia",
+    "choices": [
+      "A. Marked peripheral eosinophilia",
+      "B. Elevated CK",
+      "C. Proximal muscle weakness",
+      "D. Fever"
+    ]
+  },
+  {
+    "q": "Three weeks after eating undercooked bear meat, a hunter has facial swelling around the eyes, myalgia, fever, and subungual splinter hemorrhages. Which test is confirmatory when serology is still negative?",
+    "a": "B. Muscle biopsy",
+    "choices": [
+      "A. Stool ova and parasite exam",
+      "B. Muscle biopsy",
+      "C. Duodenal aspirate",
+      "D. Skin snip"
+    ]
+  },
+  {
+    "q": "Myocarditis is a severe complication of trichinosis, yet cardiac biopsy shows no larvae in nurse cells. This is because:",
+    "a": "A. Cardiac myocytes cannot transform into nurse cells, so larvae die",
+    "choices": [
+      "A. Cardiac myocytes cannot transform into nurse cells, so larvae die",
+      "B. Larva never reach the heart",
+      "C. Nurse cells form only in smooth muscle",
+      "D. Cardiac larvae are cleared by eosinophils"
+    ]
+  },
+  {
+    "q": "A patient with trichinosis has severe myocarditis and neurologic symptoms. Appropriate drug therapy is:",
+    "a": "B. Albendazole or mebendazole plus corticosteroids",
+    "choices": [
+      "A. Praziquantel plus NSAIDs",
+      "B. Albendazole or mebendazole plus corticosteroids",
+      "C. Albendazole alone, avoiding steroids",
+      "D. Ceftriaxone plus prednisone"
+    ]
+  },
+  {
+    "q": "A hunter wants to make wild game safe. Which approach is adequate?",
+    "a": "B. Cook to an internal temperature of 165°F",
+    "choices": [
+      "A. Smoke the meat",
+      "B. Cook to an internal temperature of 165°F",
+      "C. Salt-cure for several days",
+      "D. Freeze at home"
+    ]
+  },
+  {
+    "q": "Muscle biopsy from a trichinosis patient shows modified myocytes. Which change is part of nurse cell formation?",
+    "a": "D. Loss of dystrophin and expansion of smooth ER",
+    "choices": [
+      "A. Increase in myofilaments",
+      "B. Cell cycle progression and muscle regeneration",
+      "C. Absence of a surrounding capsule",
+      "D. Loss of dystrophin and expansion of smooth ER"
+    ]
+  },
+  {
+    "q": "A patient on day 6 after ingesting infected pork has diarrhea and cramping. Intestinal biopsy would most likely show:",
+    "a": "A. Villous atrophy with goblet cell hyperplasia",
+    "choices": [
+      "A. Villous atrophy with goblet cell hyperplasia",
+      "B. Dense plasma cell infiltrate with endarteritis",
+      "C. Epithelioid granulomas around eggs",
+      "D. Intracellular Donovan bodies"
+    ]
+  }
+]
