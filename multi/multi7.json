@@ -1,0 +1,502 @@
+[
+  {
+    "q": "A 3-year-old living in an old house with flaking paint has microcytic anemia and irritability. Lead interferes with heme synthesis by inhibiting which pair of enzymes?",
+    "a": "C. Delta-aminolevulinic acid dehydratase and ferrochelatase",
+    "choices": [
+      "A. Delta-aminolevulinic acid synthase and ferrochelatase",
+      "B. Delta-aminolevulinic acid dehydratase and heme oxygenase",
+      "C. Delta-aminolevulinic acid dehydratase and ferrochelatase",
+      "D. Ferrochelatase and uroporphyrinogen decarboxylase"
+    ]
+  },
+  {
+    "q": "A bone marrow smear from a patient with chronic lead exposure, stained with Prussian blue, shows red cell precursors with iron-laden mitochondria. Which mechanism best explains this finding?",
+    "a": "A. Inhibition of ferrochelatase prevents iron incorporation into heme, so iron accumulates in mitochondria",
+    "choices": [
+      "A. Inhibition of ferrochelatase prevents iron incorporation into heme, so iron accumulates in mitochondria",
+      "B. Aggregation of ribosomes within the cytoplasm leaves blue granules scattered across the red cells",
+      "C. Excess dietary iron absorption overwhelms ferritin storage, so iron accumulates in marrow macrophages",
+      "D. Impaired transferrin receptor expression blocks iron uptake, so iron accumulates in the cytosol"
+    ]
+  },
+  {
+    "q": "A child with unexplained microcytic anemia has a smear showing fine to coarse blue granules in red cells. Which pairing correctly gives the cause of the granules and the supporting laboratory result?",
+    "a": "D. Aggregated ribosomes; elevated blood lead with red cell free protoporphyrin",
+    "choices": [
+      "A. Precipitated hemoglobin; elevated blood lead with red cell free protoporphyrin",
+      "B. Aggregated ribosomes; elevated serum ferritin with low iron-binding capacity",
+      "C. Nuclear remnants; elevated blood lead with an increased reticulocyte count",
+      "D. Aggregated ribosomes; elevated blood lead with red cell free protoporphyrin"
+    ]
+  },
+  {
+    "q": "A patient with lead poisoning has impaired heme synthesis and also mild hemolysis. Which action of lead best explains the increased fragility of the red cells?",
+    "a": "B. Inhibition of sodium- and potassium-dependent ATPases in the red cell membrane",
+    "choices": [
+      "A. Depletion of red cell glutathione, which leaves hemoglobin open to oxidant damage",
+      "B. Inhibition of sodium- and potassium-dependent ATPases in the red cell membrane",
+      "C. Activation of splenic macrophages, which remove structurally normal red cells early",
+      "D. Binding of calcium in the cytosol, which stiffens the red cell cytoskeleton"
+    ]
+  },
+  {
+    "q": "A heavy smoker's heart rate, blood pressure, and cardiac contractility rise within minutes of smoking. Which mechanism best explains these acute effects?",
+    "a": "B. Nicotinic receptor binding in the brain, which stimulates catecholamine release from sympathetic neurons",
+    "choices": [
+      "A. Blockade of muscarinic receptors at the sinoatrial node, which removes vagal braking on the heart",
+      "B. Nicotinic receptor binding in the brain, which stimulates catecholamine release from sympathetic neurons",
+      "C. Inhibition of catecholamine reuptake at nerve terminals, which prolongs norepinephrine action in synapses",
+      "D. Release of endothelin from coronary endothelium, which constricts vessels and raises cardiac afterload"
+    ]
+  },
+  {
+    "q": "A 35-year-old smoker has a persistent HPV type 16 infection. Which explanation best describes how smoking contributes to her risk of cervical carcinoma?",
+    "a": "D. It weakens immune clearance of HPV and exposes cervical cells to DNA-damaging carcinogens",
+    "choices": [
+      "A. It converts low-risk HPV into types 16 and 18 through viral integration in cervical cells",
+      "B. It replaces HPV as the primary cause by directly transforming the cervical epithelium",
+      "C. It raises HPV viral load by promoting viral replication within cervical stromal cells",
+      "D. It weakens immune clearance of HPV and exposes cervical cells to DNA-damaging carcinogens"
+    ]
+  },
+  {
+    "q": "A 62-year-old long-time smoker has painless hematuria, and biopsy shows transitional cell carcinoma. Why is the bladder lining exposed to tobacco carcinogens?",
+    "a": "A. Carcinogens are excreted in the urine and stay in prolonged contact with the bladder lining",
+    "choices": [
+      "A. Carcinogens are excreted in the urine and stay in prolonged contact with the bladder lining",
+      "B. Carcinogens travel through lymphatics from the lungs and deposit in the bladder wall",
+      "C. Nicotine accumulates in urothelial cells and is converted into carcinogenic metabolites",
+      "D. Carcinogens are filtered by the liver and reabsorbed through the bladder venous plexus"
+    ]
+  },
+  {
+    "q": "A researcher studying oxidative stress in bladder cancer cells wants to identify the measures shown in the schematic as prevention rather than treatment. Which set is correct?",
+    "a": "C. Vitamins A, C, and E with catalase, glutathione peroxidase, and superoxide dismutase",
+    "choices": [
+      "A. Cisplatin-based regimens, photodynamic therapy, and cold atmospheric plasma exposure",
+      "B. PPAR pathway targeting, glucose metabolism modulation, and epigenetic alteration therapy",
+      "C. Vitamins A, C, and E with catalase, glutathione peroxidase, and superoxide dismutase",
+      "D. Piperlongumine, glutathione metabolism modulation, and MDR1 and YAP inhibition"
+    ]
+  },
+  {
+    "q": "A 40-year-old nonsmoker develops early-onset emphysema. Which pathogenic mechanism is most consistent with a genetic cause?",
+    "a": "B. Relative deficiency of antiproteases that normally protect connective tissue from released proteases",
+    "choices": [
+      "A. Excess NRF2 activity that overexpresses antioxidant genes and exhausts alveolar epithelial cells",
+      "B. Relative deficiency of antiproteases that normally protect connective tissue from released proteases",
+      "C. Recurrent bacterial infection that initiates the destruction of alveolar septal connective tissue",
+      "D. Overproduction of surfactant that overdistends the alveoli and fractures their elastic fibers"
+    ]
+  },
+  {
+    "q": "Mice lacking the NRF2 gene develop more severe lung injury than normal mice after tobacco smoke exposure. What does this observation indicate?",
+    "a": "D. NRF2 induces genes that defend against oxidants, so its loss increases smoke susceptibility",
+    "choices": [
+      "A. NRF2 drives chemotaxis of inflammatory cells, so its loss should reduce lung injury overall",
+      "B. NRF2 directly degrades alveolar wall elastin, so its loss should limit tissue destruction",
+      "C. NRF2 amplifies inflammatory cytokine release, so its loss should dampen the inflammatory response",
+      "D. NRF2 induces genes that defend against oxidants, so its loss increases smoke susceptibility"
+    ]
+  },
+  {
+    "q": "Specimen 1 shows central areas of marked destruction around respiratory bronchioles with relatively spared peripheral alveoli, while specimen 2 shows enlargement of the entire pulmonary lobule. Which pairing is correct?",
+    "a": "A. Specimen 1 is centriacinar emphysema and specimen 2 is panacinar emphysema",
+    "choices": [
+      "A. Specimen 1 is centriacinar emphysema and specimen 2 is panacinar emphysema",
+      "B. Specimen 1 is panacinar emphysema and specimen 2 is centriacinar emphysema",
+      "C. Both specimens are centriacinar emphysema at different stages of progression",
+      "D. Both specimens are panacinar emphysema at different stages of progression"
+    ]
+  },
+  {
+    "q": "A 45-year-old smoker's bronchial biopsy shows squamous metaplasia. After the patient quits smoking, which outcome best reflects the principles of cellular adaptation?",
+    "a": "C. The metaplasia may reverse once the stimulus is removed, but persistent injury risks carcinoma",
+    "choices": [
+      "A. The metaplasia is already irreversible and will progress to carcinoma despite cessation",
+      "B. The metaplasia becomes a neoplastic change that needs surgical removal to prevent invasion",
+      "C. The metaplasia may reverse once the stimulus is removed, but persistent injury risks carcinoma",
+      "D. The metaplasia will evolve into columnar dysplasia regardless of whether exposure continues"
+    ]
+  },
+  {
+    "q": "A lung biopsy from a long-term smoker shows well-differentiated tumor cells with prominent keratinization, pearl-like structures, and diffuse nuclear p63 staining. Which interpretation is best?",
+    "a": "B. Squamous cell carcinoma, which can arise from preceding squamous metaplasia in smokers",
+    "choices": [
+      "A. Adenocarcinoma, arising from glandular metaplasia of the terminal bronchioles in smokers",
+      "B. Squamous cell carcinoma, which can arise from preceding squamous metaplasia in smokers",
+      "C. Transitional cell carcinoma, arising from urothelium exposed to excreted tobacco carcinogens",
+      "D. Small cell carcinoma, arising directly from normal bronchial epithelium without a precursor"
+    ]
+  },
+  {
+    "q": "A 9-year-old with allergic rhinitis wheezes after exposure to dust mites. Which immune mechanism best explains his asthma?",
+    "a": "A. Th2-driven IgE production, with IL-4, IL-5, and IL-13 promoting eosinophil recruitment",
+    "choices": [
+      "A. Th2-driven IgE production, with IL-4, IL-5, and IL-13 promoting eosinophil recruitment",
+      "B. Th1-driven IgG production, with interferon-gamma promoting macrophage activation in airways",
+      "C. Th17-driven neutrophil recruitment, with IL-17 promoting chronic airway inflammation",
+      "D. Immune complex deposition, with complement activation promoting damage to the airway wall"
+    ]
+  },
+  {
+    "q": "Minutes after inhaling an allergen a patient wheezes, and hours later a second wave of obstruction occurs with epithelial damage. Which pairing correctly explains the two phases?",
+    "a": "D. Mast cell mediators cause the immediate phase, while eosinophil proteins cause the late phase",
+    "choices": [
+      "A. Eosinophil proteins cause the immediate phase, while mast cell mediators cause the late phase",
+      "B. Neutrophil enzymes cause the immediate phase, while IgE cross-linking causes the late phase",
+      "C. Basophil-derived IL-5 causes the immediate phase, while Th2 cytokines cause the late phase",
+      "D. Mast cell mediators cause the immediate phase, while eosinophil proteins cause the late phase"
+    ]
+  },
+  {
+    "q": "A man with long-standing asthma has persistent airflow obstruction that bronchodilators do not fully reverse. Which structural changes best explain this irreversible component?",
+    "a": "C. Sub-basement membrane fibrosis, gland hypertrophy, and smooth muscle hyperplasia",
+    "choices": [
+      "A. Alveolar wall destruction, distal airspace enlargement, and loss of elastic recoil",
+      "B. Goblet cell depletion, epithelial atrophy, and thinning of the basement membrane",
+      "C. Sub-basement membrane fibrosis, gland hypertrophy, and smooth muscle hyperplasia",
+      "D. Peribronchial granulomas, cartilage destruction, and mucosal ulceration of the bronchi"
+    ]
+  },
+  {
+    "q": "A 54-year-old chronic alcoholic is confused and has ophthalmoplegia. If this condition is not recognized and treated, which progression and key features are expected?",
+    "a": "B. Korsakoff syndrome with largely irreversible short-term memory loss and confabulation",
+    "choices": [
+      "A. Chronic Wernicke encephalopathy with persistent psychosis and progressive cerebellar ataxia",
+      "B. Korsakoff syndrome with largely irreversible short-term memory loss and confabulation",
+      "C. Korsakoff syndrome with largely irreversible long-term memory loss and ophthalmoplegia",
+      "D. Subacute combined degeneration with loss of posterolateral spinal cord tracts and ataxia"
+    ]
+  },
+  {
+    "q": "At autopsy, a chronic alcoholic who had memory loss and confabulation shows chronic lesions in several brain regions. Which lesion correlates best with the memory disturbance?",
+    "a": "D. Chronic lesions in the dorsomedial nucleus of the thalamus near the third ventricle",
+    "choices": [
+      "A. Foci of hemorrhage and necrosis in the walls of the third and fourth ventricles",
+      "B. Brown-tan shrinkage of the mammillary bodies with hemosiderin-laden macrophages",
+      "C. Loss of Purkinje and granule cells within the superior vermis of the cerebellum",
+      "D. Chronic lesions in the dorsomedial nucleus of the thalamus near the third ventricle"
+    ]
+  },
+  {
+    "q": "A chronic alcoholic with thiamine deficiency develops lesions in brain regions with high energy requirements. Which sequence best explains how the injury occurs?",
+    "a": "A. Mitochondrial dysfunction lowers ATP, osmotic gradients fail, causing cytotoxic edema and then vasogenic edema",
+    "choices": [
+      "A. Mitochondrial dysfunction lowers ATP, osmotic gradients fail, causing cytotoxic edema and then vasogenic edema",
+      "B. Mitochondrial dysfunction lowers ATP, osmotic gradients fail, causing vasogenic edema and then cytotoxic edema",
+      "C. Glutathione depletion raises free radicals, osmotic gradients fail, causing cytotoxic edema alone",
+      "D. Excess ATP production overloads mitochondria, osmotic gradients fail, causing vasogenic edema first"
+    ]
+  },
+  {
+    "q": "A 60-year-old man with gastric carcinoma and persistent vomiting develops confusion and ophthalmoplegia, yet he has never consumed alcohol. Which statement is most accurate?",
+    "a": "C. Thiamine deficiency from gastric disorders can produce the same syndrome even without alcohol use",
+    "choices": [
+      "A. The syndrome occurs only in chronic alcoholism because of direct alcohol toxicity to the brain",
+      "B. Persistent vomiting causes vitamin A deficiency, which produces the characteristic brain lesions",
+      "C. Thiamine deficiency from gastric disorders can produce the same syndrome even without alcohol use",
+      "D. Gastric carcinoma causes pyridoxine loss, which accounts for the lesions of the mammillary bodies"
+    ]
+  },
+  {
+    "q": "A private car driver is stopped at a checkpoint with a blood alcohol content of 0.05%. According to the LTO rule cited, how is this result interpreted?",
+    "a": "B. It is conclusive proof that the driver was driving under the influence of alcohol",
+    "choices": [
+      "A. It is acceptable unless impaired driving is also observed by the apprehending officer",
+      "B. It is conclusive proof that the driver was driving under the influence of alcohol",
+      "C. It becomes conclusive proof only once the content reaches 0.08% or higher",
+      "D. It is conclusive proof only for professional drivers, not for non-professional drivers"
+    ]
+  },
+  {
+    "q": "A bus driver is found to have a blood alcohol content of 0.02% on a roadside test. Under the cited LTO rule, which interpretation is correct?",
+    "a": "D. It is conclusive proof of influence because any content above 0.0% counts for buses",
+    "choices": [
+      "A. It is within the allowed limit because professionals may drive below 0.05%",
+      "B. It is not conclusive until it reaches 0.05%, the same limit as private drivers",
+      "C. It is within the allowed limit because the cutoff for buses is 0.04% or higher",
+      "D. It is conclusive proof of influence because any content above 0.0% counts for buses"
+    ]
+  },
+  {
+    "q": "A chronic alcoholic's liver has a bumpy capsule with depressed scars and bulging nodules. Which description best defines the underlying process?",
+    "a": "A. Parenchymal nodules ringed by dense fibrous bands after hepatocyte loss and reticulin collapse",
+    "choices": [
+      "A. Parenchymal nodules ringed by dense fibrous bands after hepatocyte loss and reticulin collapse",
+      "B. Diffuse fatty change of hepatocytes with a preserved reticulin framework and smooth capsule",
+      "C. Portal-based fibrosis without nodule formation and with preserved normal lobular architecture",
+      "D. Focal hepatocyte necrosis with regenerative nodules that lack any surrounding fibrous bands"
+    ]
+  },
+  {
+    "q": "An obese patient has a high BMI and high serum leptin, yet continues to overeat. Which interpretation best fits the physiology described?",
+    "a": "C. Leptin rises with fat stores, but resistance prevents satiety signaling in the brain",
+    "choices": [
+      "A. Leptin falls as fat stores expand, so satiety signaling to the hypothalamus is lost",
+      "B. Leptin is made by the stomach in proportion to meal size, so satiety is delayed",
+      "C. Leptin rises with fat stores, but resistance prevents satiety signaling in the brain",
+      "D. Leptin acts mainly on the pancreas to induce insulin release, so satiety is bypassed"
+    ]
+  },
+  {
+    "q": "A researcher compares appetite-regulating signals in a fasting and a fed volunteer. Which pairing of hormone and role is correct?",
+    "a": "B. Ghrelin from the stomach stimulates appetite, while leptin and insulin induce satiety",
+    "choices": [
+      "A. Ghrelin from fat cells induces satiety, while leptin and insulin stimulate appetite",
+      "B. Ghrelin from the stomach stimulates appetite, while leptin and insulin induce satiety",
+      "C. Leptin from the pancreas induces satiety, while insulin from fat cells stimulates appetite",
+      "D. GLP-1 from the stomach stimulates appetite, while ghrelin augments insulin release"
+    ]
+  },
+  {
+    "q": "Two patients have the same BMI. One stores fat in the trunk and around the viscera, while the other stores it in the hips and thighs. Who faces the higher risk of complications?",
+    "a": "A. The patient with trunk and visceral fat, because distribution affects the disease association",
+    "choices": [
+      "A. The patient with trunk and visceral fat, because distribution affects the disease association",
+      "B. The patient with hip and thigh fat, because peripheral adipose releases more inflammatory cytokines",
+      "C. Both patients equally, because only total body fat mass determines the risk of complications",
+      "D. The patient with hip and thigh fat, because subcutaneous fat drives stronger insulin resistance"
+    ]
+  },
+  {
+    "q": "A patient with metabolic syndrome has elevated systemic inflammatory markers. Which mechanism best links excess lipids to this inflammation?",
+    "a": "D. Free fatty acids activate the inflammasome, which stimulates IL-1 secretion in tissues",
+    "choices": [
+      "A. Free fatty acids stimulate Th2 cells to secrete IL-4, driving systemic inflammation",
+      "B. Urate crystals activate the inflammasome, which stimulates IL-1 secretion in tissues",
+      "C. Free fatty acids suppress adiponectin, which directly activates complement in fat tissue",
+      "D. Free fatty acids activate the inflammasome, which stimulates IL-1 secretion in tissues"
+    ]
+  },
+  {
+    "q": "A very obese 50-year-old falls asleep constantly during the day and has signs of right-sided heart failure. Which association best explains this presentation?",
+    "a": "C. Obstructive sleep apnea with hypoventilation, as described in the pickwickian syndrome",
+    "choices": [
+      "A. Left-sided failure from coronary disease driven by hypertriglyceridemia and low HDL",
+      "B. Restrictive chest wall changes from degenerative joint disease of the thoracic spine",
+      "C. Obstructive sleep apnea with hypoventilation, as described in the pickwickian syndrome",
+      "D. Pulmonary congestion from nonalcoholic fatty liver disease progressing to cirrhosis"
+    ]
+  },
+  {
+    "q": "A woman taking megadoses of vitamin A for several months develops bone and joint pain and sustains a fracture. Which mechanism best explains the skeletal injury?",
+    "a": "B. Retinoic acid stimulates osteoclast production and activity, which increases bone resorption",
+    "choices": [
+      "A. Retinoic acid suppresses osteoblast mineralization, which reduces new bone formation",
+      "B. Retinoic acid stimulates osteoclast production and activity, which increases bone resorption",
+      "C. Excess retinol reduces intestinal calcium absorption, which causes osteomalacia in adults",
+      "D. Excess retinol causes metastatic calcification of soft tissues around the joints"
+    ]
+  },
+  {
+    "q": "A mother gives her child high-dose oral vitamin D supplements and believes prolonged sunlight is just as dangerous. Which statement is correct?",
+    "a": "A. Megadoses can cause metastatic calcification such as in the kidney, but prolonged sunlight does not",
+    "choices": [
+      "A. Megadoses can cause metastatic calcification such as in the kidney, but prolonged sunlight does not",
+      "B. Prolonged sunlight can cause metastatic calcification such as in the kidney, but megadoses are safe",
+      "C. Megadoses cause rickets through calcium wasting, while prolonged sunlight causes hypervitaminosis D",
+      "D. Megadoses cause hypercalcemia only in children, while sunlight causes osteomalacia in adults"
+    ]
+  },
+  {
+    "q": "A 14-year-old with cystic fibrosis has progressive ataxia, peripheral neuropathy, and hyporeflexia with normal clotting studies. Which deficiency and mechanism best explain this presentation?",
+    "a": "D. Vitamin E deficiency, since impaired fat absorption limits this fat-soluble antioxidant in nerves",
+    "choices": [
+      "A. Vitamin B12 deficiency, since impaired absorption limits a cofactor needed for myelin synthesis",
+      "B. Vitamin B6 deficiency, since poor dietary intake limits coenzymes needed for myelination of tracts",
+      "C. Vitamin K deficiency, since impaired fat absorption limits carboxylation of clotting factors",
+      "D. Vitamin E deficiency, since impaired fat absorption limits this fat-soluble antioxidant in nerves"
+    ]
+  },
+  {
+    "q": "A neonate given a synthetic menadione preparation develops jaundice, hemolytic anemia, and kernicterus. Which mechanism best explains the hepatocyte injury?",
+    "a": "C. Increased hepatic oxygen uptake, which raises lipid peroxidation and causes cell death",
+    "choices": [
+      "A. Inhibition of hepatic carboxylation, which lowers clotting factor synthesis and causes bleeding",
+      "B. Depletion of hepatic glutathione, which impairs bilirubin conjugation and causes cholestasis",
+      "C. Increased hepatic oxygen uptake, which raises lipid peroxidation and causes cell death",
+      "D. Accumulation in hepatic fat stores, which stimulates osteoclast activity and causes bone injury"
+    ]
+  },
+  {
+    "q": "A 70-year-old widower who lives alone and eats erratically has bleeding gums and poor wound healing and is diagnosed with scurvy. Which biochemical function is impaired?",
+    "a": "B. Hydroxylation of collagen, which is required for normal connective tissue integrity",
+    "choices": [
+      "A. Carboxylation of hepatic clotting factors, which is required for normal coagulation",
+      "B. Hydroxylation of collagen, which is required for normal connective tissue integrity",
+      "C. Decarboxylation reactions, which are required for carbohydrate metabolism pathways",
+      "D. Transfer of one-carbon units, which is required for normal nucleic acid synthesis"
+    ]
+  },
+  {
+    "q": "A child with growth retardation, a rash around the eyes, mouth, nose, and anus, diarrhea, and poor wound healing most likely has which deficiency?",
+    "a": "A. Zinc deficiency, which causes acrodermatitis enteropathica with impaired immune response",
+    "choices": [
+      "A. Zinc deficiency, which causes acrodermatitis enteropathica with impaired immune response",
+      "B. Copper deficiency, which causes abnormal collagen cross-linking with muscle weakness",
+      "C. Selenium deficiency, which causes myopathy with cardiomyopathy in endemic areas",
+      "D. Iron deficiency, which causes hypochromic microcytic anemia with chronic blood loss"
+    ]
+  },
+  {
+    "q": "A family heats their home with a charcoal stove in a closed room and develops headaches and confusion from carbon monoxide. Which statement best explains the danger of this gas?",
+    "a": "C. The gas binds hemoglobin with roughly 200 times the affinity of oxygen, forming carboxyhemoglobin",
+    "choices": [
+      "A. The gas binds hemoglobin with roughly 20 times the affinity of oxygen, forming methemoglobin",
+      "B. The gas oxidizes ferrous iron in hemoglobin to the ferric state, forming carboxyhemoglobin",
+      "C. The gas binds hemoglobin with roughly 200 times the affinity of oxygen, forming carboxyhemoglobin",
+      "D. The gas binds myoglobin with roughly 200 times the affinity of oxygen, forming carboxymyoglobin"
+    ]
+  },
+  {
+    "q": "A pregnant woman and her husband are both exposed to carbon monoxide in an enclosed garage. Which statement about the fetus is most accurate?",
+    "a": "D. The fetus is at special risk because carbon monoxide has even higher affinity for fetal hemoglobin",
+    "choices": [
+      "A. The fetus is protected because fetal hemoglobin has lower affinity for carbon monoxide than adult",
+      "B. The fetus is spared because the placenta filters carboxyhemoglobin from the maternal blood supply",
+      "C. The fetus is at risk only when maternal carboxyhemoglobin rises above the normal level of 0.5%",
+      "D. The fetus is at special risk because carbon monoxide has even higher affinity for fetal hemoglobin"
+    ]
+  },
+  {
+    "q": "A 28-year-old presents with rampant caries, enamel erosion, cracked teeth, weight loss, paranoia, and skin sores from obsessive picking. Which substance and dental correlation fit best?",
+    "a": "A. Methamphetamine, with severe meth mouth and associated xerostomia and bruxism",
+    "choices": [
+      "A. Methamphetamine, with severe meth mouth and associated xerostomia and bruxism",
+      "B. Cocaine, with delayed wound healing from vasoconstriction and associated bruxism",
+      "C. Inhalants, with enamel erosion from acid exposure and soft tissue burns of the mouth",
+      "D. Cannabis, with xerostomia leading to higher caries and periodontal disease risk"
+    ]
+  },
+  {
+    "q": "A patient who snorts cocaine heals slowly after a tooth extraction. Which pathophysiologic mechanism best explains the delayed healing?",
+    "a": "B. Vasoconstriction that reduces tissue perfusion and delays healing of the extraction socket",
+    "choices": [
+      "A. Xerostomia that reduces salivary buffering and delays healing of the extraction socket",
+      "B. Vasoconstriction that reduces tissue perfusion and delays healing of the extraction socket",
+      "C. Tachycardia that increases bleeding and delays clot stabilization in the extraction socket",
+      "D. Nasal septum damage that spreads infection to the extraction socket through the sinuses"
+    ]
+  },
+  {
+    "q": "A teenager who sniffs adhesive cement collapses suddenly during exertion, and the monitor shows a ventricular arrhythmia. Which condition best explains this event?",
+    "a": "D. Sudden sniffing death syndrome from arrhythmias provoked by volatile inhalant exposure",
+    "choices": [
+      "A. Death from respiratory failure from stimulant toxicity, as with amphetamine-type drugs",
+      "B. Hemorrhagic stroke from severe hypertension, as seen with methamphetamine intoxication",
+      "C. Chronic bronchitis with tachycardia, as seen with long-term smoking of cannabis products",
+      "D. Sudden sniffing death syndrome from arrhythmias provoked by volatile inhalant exposure"
+    ]
+  },
+  {
+    "q": "A dental patient asks about potential medical uses of cannabis. Which set matches the potential therapeutic uses listed for it?",
+    "a": "C. Chronic pain, chemotherapy-induced nausea and vomiting, and some multiple sclerosis symptoms",
+    "choices": [
+      "A. Narcolepsy, obesity, and attention-deficit hyperactivity disorder in selected patients",
+      "B. Chronic pain in adults, narcolepsy, and some symptoms of multiple sclerosis patients",
+      "C. Chronic pain, chemotherapy-induced nausea and vomiting, and some multiple sclerosis symptoms",
+      "D. Obesity, chemotherapy-induced nausea and vomiting, and attention-deficit hyperactivity disorder"
+    ]
+  },
+  {
+    "q": "Five days after an anterior myocardial infarction, a patient develops acute pulmonary edema and a new murmur. Echocardiography shows a flail mitral leaflet and a necrotic papillary muscle head. What is the complication?",
+    "a": "B. Acute mitral regurgitation from papillary muscle rupture leaving the leaflets unsupported",
+    "choices": [
+      "A. Acquired ventricular septal defect from necrosis and rupture of the interventricular septum",
+      "B. Acute mitral regurgitation from papillary muscle rupture leaving the leaflets unsupported",
+      "C. Cardiac tamponade from free wall rupture with blood escaping into the pericardial sac",
+      "D. Ventricular aneurysm from thinning and expansion of the infarcted wall without rupture"
+    ]
+  },
+  {
+    "q": "After a myocardial infarction, the ventricular free wall ruptures, but a pericardial adhesion covers the site and keeps the blood contained. What complication develops?",
+    "a": "C. False aneurysm, which can still progress to tamponade if the adhesion later bursts",
+    "choices": [
+      "A. Cardiac tamponade, since blood is already pooling within the pericardial sac",
+      "B. Ventricular aneurysm, since the infarcted wall thins and bulges without any rupture",
+      "C. False aneurysm, which can still progress to tamponade if the adhesion later bursts",
+      "D. Acquired ventricular septal defect, since necrosis perforates the septum itself"
+    ]
+  },
+  {
+    "q": "A patient with an akinetic anterior wall after myocardial infarction, in sinus rhythm, suddenly develops right-sided hemiparesis. Which mechanism best explains this event?",
+    "a": "A. A mural thrombus formed over the akinetic inflamed wall embolized from the left ventricle",
+    "choices": [
+      "A. A mural thrombus formed over the akinetic inflamed wall embolized from the left ventricle",
+      "B. A thrombus formed in a fibrillating left atrium embolized from the left atrial appendage",
+      "C. Vegetations on the inflamed pericardium detached and traveled into the cerebral circulation",
+      "D. Fragments of a necrotic ruptured papillary muscle embolized into the middle cerebral artery"
+    ]
+  },
+  {
+    "q": "A patient with a large infarct has sharply reduced cardiac output, falling blood pressure, acidemia, and signs of renal failure. Echocardiography shows no pericardial effusion or septal defect. Which condition best describes this state?",
+    "a": "D. Cardiogenic shock from profound, acute pump dysfunction with falling systemic perfusion",
+    "choices": [
+      "A. Congestive heart failure from less profound pump dysfunction with atrial distension",
+      "B. Cardiac tamponade from free wall rupture with impaired filling of the ventricles",
+      "C. Acquired ventricular septal defect from septal rupture with left-to-right shunting",
+      "D. Cardiogenic shock from profound, acute pump dysfunction with falling systemic perfusion"
+    ]
+  },
+  {
+    "q": "A 48-year-old woman who smokes has symmetric swelling of both hands with prolonged morning stiffness. Which laboratory finding best supports her likely diagnosis?",
+    "a": "A. Anti-CCP antibodies present in the bloodstream and symmetric joint involvement",
+    "choices": [
+      "A. Anti-CCP antibodies present in the bloodstream and symmetric joint involvement",
+      "B. Uric acid crystals present in the synovial fluid and asymmetric joint involvement",
+      "C. Hyperuricemia from renal impairment with tophi and kidney stone formation",
+      "D. Colchicine responsiveness with involvement of the great toe and migratory attacks"
+    ]
+  },
+  {
+    "q": "A 55-year-old obese hypertensive man wakes with a hot, red, painful great toe. Which sequence best describes the events driving his joint inflammation?",
+    "a": "C. Macrophages engulf urate crystals, activate the inflammasome, release IL-1, and recruit neutrophils",
+    "choices": [
+      "A. Citrullinated self proteins stimulate T and B cell responses, and their cytokines attract neutrophils",
+      "B. Th17 cells and antibodies enter the joint, driving pannus formation and destruction of cartilage",
+      "C. Macrophages engulf urate crystals, activate the inflammasome, release IL-1, and recruit neutrophils",
+      "D. Neutrophils engulf urate crystals first, activate complement, and then recruit macrophages alone"
+    ]
+  },
+  {
+    "q": "A researcher traces the pathogenesis of rheumatoid arthritis. Which sequence correctly describes the process leading to joint destruction?",
+    "a": "B. Citrullination of self proteins prompts Th17, Th1, and antibody responses leading to pannus formation",
+    "choices": [
+      "A. Urate crystal deposition prompts neutrophil and complement responses leading to pannus formation",
+      "B. Citrullination of self proteins prompts Th17, Th1, and antibody responses leading to pannus formation",
+      "C. Citrullination of self proteins prompts IgE and mast cell responses leading to tophus formation",
+      "D. Hyperuricemia prompts Th17 and Th1 responses leading to cartilage calcification and fibrosis"
+    ]
+  },
+  {
+    "q": "After a large whole-body radiation exposure, serial blood counts are monitored. Which order of cytopenias is expected, based on the turnover of each cell type?",
+    "a": "D. Lymphopenia within hours, then neutropenia, then thrombocytopenia, and finally anemia",
+    "choices": [
+      "A. Neutropenia within hours, then lymphopenia, then thrombocytopenia, and finally anemia",
+      "B. Lymphopenia within hours, then thrombocytopenia, then neutropenia, and finally anemia",
+      "C. Lymphopenia within hours, then anemia, then neutropenia, and finally thrombocytopenia",
+      "D. Lymphopenia within hours, then neutropenia, then thrombocytopenia, and finally anemia"
+    ]
+  },
+  {
+    "q": "A patient irradiated for a tumor develops impaired healing and fibrosis in the treated field months to years later. Which mechanism best explains these late changes?",
+    "a": "C. Endothelial damage with vessel narrowing or occlusion, causing ischemic atrophy and fibrosis",
+    "choices": [
+      "A. Direct killing of tissue lymphocytes in the field, causing lymphoid atrophy and fibrosis",
+      "B. Destruction of hematopoietic stem cells in the field, causing permanent marrow aplasia",
+      "C. Endothelial damage with vessel narrowing or occlusion, causing ischemic atrophy and fibrosis",
+      "D. Loss of epidermal melanocytes in the field, causing dyspigmentation and impaired healing"
+    ]
+  },
+  {
+    "q": "Two patients receive marrow-damaging radiation. Patient X has a very high dose and no recovery of blood counts, while Patient Y has a lower dose and recovers. What best explains the difference?",
+    "a": "A. Very high doses kill stem cells and cause permanent aplasia, while lower doses cause transient aplasia",
+    "choices": [
+      "A. Very high doses kill stem cells and cause permanent aplasia, while lower doses cause transient aplasia",
+      "B. Very high doses kill circulating lymphocytes only and cause permanent aplasia, while lower doses spare marrow",
+      "C. Very high doses injure marrow endothelium and cause permanent aplasia, while lower doses cause fibrosis",
+      "D. Very high doses delay red cell turnover and cause permanent aplasia, while lower doses cause anemia only"
+    ]
+  }
+]
