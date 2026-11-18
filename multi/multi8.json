@@ -1,0 +1,502 @@
+[
+  {
+    "q": "Which condition is the classic example of a disruption, arising from secondary destruction of a previously normal body region?",
+    "a": "C. Amniotic bands",
+    "choices": [
+      "A. Anencephaly",
+      "B. Potter sequence",
+      "C. Amniotic bands",
+      "D. Congenital heart defect"
+    ]
+  },
+  {
+    "q": "What is the most common underlying factor responsible for deformations?",
+    "a": "A. Uterine constraint",
+    "choices": [
+      "A. Uterine constraint",
+      "B. Single-gene mutation",
+      "C. Chromosomal aneuploidy",
+      "D. Teratogen exposure"
+    ]
+  },
+  {
+    "q": "Which term describes absence of an organ due to failure of growth of an existing primordium?",
+    "a": "B. Aplasia",
+    "choices": [
+      "A. Agenesis",
+      "B. Aplasia",
+      "C. Atresia",
+      "D. Hypoplasia"
+    ]
+  },
+  {
+    "q": "Which term refers to the absence of an opening in a hollow visceral organ such as the trachea or intestine?",
+    "a": "D. Atresia",
+    "choices": [
+      "A. Dysplasia",
+      "B. Agenesis",
+      "C. Aplasia",
+      "D. Atresia"
+    ]
+  },
+  {
+    "q": "What is the most common cause of oligohydramnios (Potter sequence)?",
+    "a": "C. Rupture of fetal membranes",
+    "choices": [
+      "A. Fetal renal agenesis",
+      "B. Fetal urinary obstruction",
+      "C. Rupture of fetal membranes",
+      "D. Uteroplacental insufficiency"
+    ]
+  },
+  {
+    "q": "Which of the following is a common site of cancer in children rather than adults?",
+    "a": "D. Retina",
+    "choices": [
+      "A. Colon",
+      "B. Prostate",
+      "C. Breast",
+      "D. Retina"
+    ]
+  },
+  {
+    "q": "Since the success of Rh prophylaxis, which form of fetal hydrops has become the more common one?",
+    "a": "D. Nonimmune hydrops",
+    "choices": [
+      "A. ABO-related hydrops",
+      "B. Immune hydrops",
+      "C. Rh-related hydrops",
+      "D. Nonimmune hydrops"
+    ]
+  },
+  {
+    "q": "When is Rhesus immune globulin (RhIg) given to Rh-negative mothers?",
+    "a": "C. At 28 weeks and within 72 hours of delivery",
+    "choices": [
+      "A. At 12 weeks and within 48 hours of delivery",
+      "B. At 20 weeks and within 24 hours of delivery",
+      "C. At 28 weeks and within 72 hours of delivery",
+      "D. At 36 weeks and within 7 days of delivery"
+    ]
+  },
+  {
+    "q": "Initial exposure to Rh antigen evokes which antibody that cannot cross the placenta?",
+    "a": "A. IgM",
+    "choices": [
+      "A. IgM",
+      "B. IgG",
+      "C. IgE",
+      "D. IgA"
+    ]
+  },
+  {
+    "q": "ABO hemolytic disease of the newborn occurs almost exclusively in group A or B infants born to mothers of which blood group?",
+    "a": "D. Group O",
+    "choices": [
+      "A. Group B",
+      "B. Group AB",
+      "C. Group A",
+      "D. Group O"
+    ]
+  },
+  {
+    "q": "In term infants, kernicterus usually requires a blood bilirubin level greater than:",
+    "a": "C. 20 mg/dL",
+    "choices": [
+      "A. 10 mg/dL",
+      "B. 5 mg/dL",
+      "C. 20 mg/dL",
+      "D. 15 mg/dL"
+    ]
+  },
+  {
+    "q": "Which term describes post-nuchal fluid accumulation that is compatible with life?",
+    "a": "B. Cystic hygroma",
+    "choices": [
+      "A. Amnion nodosum",
+      "B. Cystic hygroma",
+      "C. Pleural effusion",
+      "D. Hydrops fetalis"
+    ]
+  },
+  {
+    "q": "Which virus has a tropism for erythroid progenitors and can cause hydrops fetalis through red cell aplasia?",
+    "a": "A. Parvovirus B19",
+    "choices": [
+      "A. Parvovirus B19",
+      "B. Herpes simplex virus",
+      "C. Rubella virus",
+      "D. Cytomegalovirus"
+    ]
+  },
+  {
+    "q": "Pulmonary surfactant consists predominantly of which phospholipid?",
+    "a": "B. Phosphatidylcholine",
+    "choices": [
+      "A. Phosphatidylglycerol",
+      "B. Phosphatidylcholine",
+      "C. Phosphatidylserine",
+      "D. Phosphatidylethanolamine"
+    ]
+  },
+  {
+    "q": "Which surfactant proteins, together with surfactant lipids, reduce surface tension at the air-liquid barrier of the alveoli?",
+    "a": "D. SP-B and SP-C",
+    "choices": [
+      "A. SP-C and SP-D",
+      "B. SP-A and SP-D",
+      "C. SP-A and SP-B",
+      "D. SP-B and SP-C"
+    ]
+  },
+  {
+    "q": "Which modulator's role in surfactant synthesis is described as particularly important, justifying antenatal steroid use?",
+    "a": "C. Cortisol",
+    "choices": [
+      "A. Prolactin",
+      "B. Insulin",
+      "C. Cortisol",
+      "D. Thyroxine"
+    ]
+  },
+  {
+    "q": "Hyaline membranes in neonatal respiratory distress syndrome are largely composed of:",
+    "a": "D. Fibrin and debris from necrotic type II pneumocytes",
+    "choices": [
+      "A. Collagen and debris from necrotic type I pneumocytes",
+      "B. Fibrin and debris from degenerated neutrophils",
+      "C. Surfactant and debris from alveolar macrophages",
+      "D. Fibrin and debris from necrotic type II pneumocytes"
+    ]
+  },
+  {
+    "q": "Phase II of retinopathy of prematurity is characterized by:",
+    "a": "A. VEGF rebound with retinal neovascularization",
+    "choices": [
+      "A. VEGF rebound with retinal neovascularization",
+      "B. VEGF suppression with retinal neovascularization",
+      "C. VEGF suppression with endothelial apoptosis",
+      "D. VEGF rebound with endothelial apoptosis"
+    ]
+  },
+  {
+    "q": "What is the most common cause of early-onset neonatal sepsis and bacterial meningitis?",
+    "a": "D. Group B Streptococcus",
+    "choices": [
+      "A. Listeria monocytogenes",
+      "B. Candida albicans",
+      "C. Escherichia coli",
+      "D. Group B Streptococcus"
+    ]
+  },
+  {
+    "q": "Retinoic acid causes cleft lip and palate through deregulation of which signaling pathway?",
+    "a": "B. TGF-β signaling",
+    "choices": [
+      "A. Notch signaling",
+      "B. TGF-β signaling",
+      "C. Hedgehog signaling",
+      "D. Wnt signaling"
+    ]
+  },
+  {
+    "q": "Which organism is acquired mainly through the transcervical (ascending) route?",
+    "a": "B. Herpes simplex II",
+    "choices": [
+      "A. Treponema pallidum",
+      "B. Herpes simplex II",
+      "C. Parvovirus B19",
+      "D. Toxoplasma gondii"
+    ]
+  },
+  {
+    "q": "Lead poisoning interferes with which two enzymes of heme synthesis?",
+    "a": "A. ALA dehydratase and ferrochelatase",
+    "choices": [
+      "A. ALA dehydratase and ferrochelatase",
+      "B. ALA synthase and ALA dehydratase",
+      "C. Ferrochelatase and uroporphyrinogen synthase",
+      "D. ALA synthase and ferrochelatase"
+    ]
+  },
+  {
+    "q": "Punctate basophilic stippling of red cells in lead poisoning represents:",
+    "a": "A. Abnormally aggregated ribosomes",
+    "choices": [
+      "A. Abnormally aggregated ribosomes",
+      "B. Denatured hemoglobin precipitates",
+      "C. Retained nuclear fragments",
+      "D. Iron-laden mitochondria"
+    ]
+  },
+  {
+    "q": "Nicotine exerts its addictive effect by binding to which receptor in the brain?",
+    "a": "C. Nicotinic acetylcholine receptor",
+    "choices": [
+      "A. Muscarinic acetylcholine receptor",
+      "B. GABA-A receptor",
+      "C. Nicotinic acetylcholine receptor",
+      "D. Dopamine D2 receptor"
+    ]
+  },
+  {
+    "q": "Smoking is the leading cause of which histologic type of bladder carcinoma?",
+    "a": "B. Transitional cell carcinoma",
+    "choices": [
+      "A. Small cell neuroendocrine carcinoma",
+      "B. Transitional cell carcinoma",
+      "C. Adenocarcinoma",
+      "D. Squamous cell carcinoma"
+    ]
+  },
+  {
+    "q": "Which HPV types are most strongly associated with cervical carcinoma?",
+    "a": "A. Types 16 and 18",
+    "choices": [
+      "A. Types 16 and 18",
+      "B. Types 1 and 2",
+      "C. Types 6 and 11",
+      "D. Types 31 and 33"
+    ]
+  },
+  {
+    "q": "Korsakoff syndrome is marked by:",
+    "a": "A. Memory loss with confabulation",
+    "choices": [
+      "A. Memory loss with confabulation",
+      "B. Memory loss with ophthalmoplegia",
+      "C. Psychosis with ophthalmoplegia",
+      "D. Psychosis with confabulation"
+    ]
+  },
+  {
+    "q": "Lesions in which area correlate best with memory disturbance and confabulation in Korsakoff syndrome?",
+    "a": "D. Dorsomedial thalamic nucleus",
+    "choices": [
+      "A. Periventricular third ventricle wall",
+      "B. Mamillary bodies",
+      "C. Superior cerebellar vermis",
+      "D. Dorsomedial thalamic nucleus"
+    ]
+  },
+  {
+    "q": "According to the LTO, what is the legal blood alcohol limit for non-professional drivers?",
+    "a": "A. 0.05%",
+    "choices": [
+      "A. 0.05%",
+      "B. 0.02%",
+      "C. 0.10%",
+      "D. 0.08%"
+    ]
+  },
+  {
+    "q": "Which hormone produced by the stomach is a potent stimulator of appetite?",
+    "a": "C. Ghrelin",
+    "choices": [
+      "A. Oxyntomodulin",
+      "B. Cholecystokinin",
+      "C. Ghrelin",
+      "D. Peptide YY"
+    ]
+  },
+  {
+    "q": "Which molecule is nicknamed the \"guardian angel against obesity\"?",
+    "a": "A. Adiponectin",
+    "choices": [
+      "A. Adiponectin",
+      "B. Leptin",
+      "C. Cholecystokinin",
+      "D. Oxyntomodulin"
+    ]
+  },
+  {
+    "q": "Toxicity of which vitamin is notably manifested by an increased risk of bleeding?",
+    "a": "B. Vitamin E",
+    "choices": [
+      "A. Vitamin K",
+      "B. Vitamin E",
+      "C. Vitamin A",
+      "D. Vitamin D"
+    ]
+  },
+  {
+    "q": "Megadoses of which vitamin cause hypercalcemia and metastatic calcification and can act as a rodenticide?",
+    "a": "C. Vitamin D",
+    "choices": [
+      "A. Vitamin E",
+      "B. Vitamin K",
+      "C. Vitamin D",
+      "D. Vitamin A"
+    ]
+  },
+  {
+    "q": "Chronic vitamin A toxicity increases fracture risk through which mechanism?",
+    "a": "B. Retinoic acid stimulating osteoclast activity",
+    "choices": [
+      "A. Retinoic acid suppressing parathyroid hormone",
+      "B. Retinoic acid stimulating osteoclast activity",
+      "C. Retinoic acid increasing urinary calcium loss",
+      "D. Retinoic acid inhibiting osteoblast activity"
+    ]
+  },
+  {
+    "q": "Rampant caries, enamel erosion, and cracked teeth (\"meth mouth\") are dental correlations of:",
+    "a": "B. Methamphetamine",
+    "choices": [
+      "A. Cannabis (smoked)",
+      "B. Methamphetamine",
+      "C. Cocaine (crack)",
+      "D. Inhalants (solvents)"
+    ]
+  },
+  {
+    "q": "Sudden sniffing death syndrome due to arrhythmias is associated with:",
+    "a": "D. Inhalants",
+    "choices": [
+      "A. Cannabis",
+      "B. Methamphetamine",
+      "C. Cocaine",
+      "D. Inhalants"
+    ]
+  },
+  {
+    "q": "Which transcription factor acts as an oxidant sensor that protects alveolar cells from smoke-induced damage?",
+    "a": "C. NRF2",
+    "choices": [
+      "A. p53",
+      "B. HIF-1α",
+      "C. NRF2",
+      "D. NF-κB"
+    ]
+  },
+  {
+    "q": "Which is the key inflammatory cell in atopic asthma?",
+    "a": "C. Eosinophil",
+    "choices": [
+      "A. Plasma cell",
+      "B. Neutrophil",
+      "C. Eosinophil",
+      "D. Basophil"
+    ]
+  },
+  {
+    "q": "Which feature adds an irreversible component to airway obstruction in asthma?",
+    "a": "C. Airway remodeling",
+    "choices": [
+      "A. Mucus plugging",
+      "B. Bronchoconstriction",
+      "C. Airway remodeling",
+      "D. Eosinophil infiltration"
+    ]
+  },
+  {
+    "q": "After marrow irradiation, which circulating cell has a half-life of about 10 days?",
+    "a": "D. Platelets",
+    "choices": [
+      "A. Granulocytes",
+      "B. Lymphocytes",
+      "C. Red cells",
+      "D. Platelets"
+    ]
+  },
+  {
+    "q": "Which hepatitis virus progresses to chronic liver disease in more than 80% of cases?",
+    "a": "C. Hepatitis C",
+    "choices": [
+      "A. Hepatitis D",
+      "B. Hepatitis E",
+      "C. Hepatitis C",
+      "D. Hepatitis B"
+    ]
+  },
+  {
+    "q": "During the window period of hepatitis B infection, which markers are positive?",
+    "a": "B. Anti-HBc and anti-HBe",
+    "choices": [
+      "A. HBsAg and anti-HBc total",
+      "B. Anti-HBc and anti-HBe",
+      "C. Anti-HBs and HBeAg",
+      "D. Anti-HBs and anti-HBe"
+    ]
+  },
+  {
+    "q": "Which is the earliest serologic indicator of hepatitis B infection?",
+    "a": "D. HBsAg",
+    "choices": [
+      "A. Anti-HBc",
+      "B. Anti-HBs",
+      "C. HBeAg",
+      "D. HBsAg"
+    ]
+  },
+  {
+    "q": "Chronic hepatitis B develops in about what proportion of infections acquired in infancy or early childhood?",
+    "a": "A. About 95%",
+    "choices": [
+      "A. About 95%",
+      "B. Less than 5%",
+      "C. About 25%",
+      "D. About 50%"
+    ]
+  },
+  {
+    "q": "Which of the following is an alphavirus rather than a flavivirus?",
+    "a": "B. Chikungunya virus",
+    "choices": [
+      "A. Dengue virus",
+      "B. Chikungunya virus",
+      "C. Yellow fever virus",
+      "D. Zika virus"
+    ]
+  },
+  {
+    "q": "Retro-orbital pain and bone pain are classic features of:",
+    "a": "A. Dengue",
+    "choices": [
+      "A. Dengue",
+      "B. Malaria",
+      "C. Chikungunya",
+      "D. Zika"
+    ]
+  },
+  {
+    "q": "Which of the following belongs to the Hutchinson triad of congenital syphilis?",
+    "a": "B. Interstitial keratitis",
+    "choices": [
+      "A. Frontal bossing of skull",
+      "B. Interstitial keratitis",
+      "C. Saddle nose deformity",
+      "D. Saber shin deformity"
+    ]
+  },
+  {
+    "q": "A tuberculous granuloma shows central necrosis surrounded by which type of giant cell?",
+    "a": "B. Langhans-type",
+    "choices": [
+      "A. Warthin-Finkeldey-type",
+      "B. Langhans-type",
+      "C. Touton-type",
+      "D. Foreign body-type"
+    ]
+  },
+  {
+    "q": "What is the correct sequence of monkeypox lesion stages?",
+    "a": "D. Macule, papule, vesicle, pustule, scab",
+    "choices": [
+      "A. Papule, macule, vesicle, pustule, scab",
+      "B. Macule, vesicle, papule, pustule, scab",
+      "C. Macule, papule, pustule, vesicle, scab",
+      "D. Macule, papule, vesicle, pustule, scab"
+    ]
+  },
+  {
+    "q": "Which test is the most sensitive and specific for diagnosing COVID-19?",
+    "a": "A. RT-PCR assay",
+    "choices": [
+      "A. RT-PCR assay",
+      "B. Chest X-ray",
+      "C. Rapid antigen test",
+      "D. Serology (IgM/IgG)"
+    ]
+  }
+]
